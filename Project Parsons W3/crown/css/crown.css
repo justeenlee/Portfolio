@@ -1,0 +1,36 @@
+
+#link-projects{text-decoration: underline;}
+
+/*set theme color*/
+.quote>h3,i, #title-description{
+	color: #c79a87 ;
+}
+
+/*----------------Title----------------*/
+/*crown only*/
+.title-image-group{
+	/*can adjust this to fit image*/
+    margin-top: 25%; 
+	margin-left: 20%;
+    width: 50%; 
+}
+
+/*----------------intro----------------*/
+
+/*----------------Promotion----------------*/
+
+/*----------------Research----------------*/
+
+/*----------------Product----------------*/
+
+
+/* for 680px or less */
+@media screen and (max-width: 680px){
+	/*crown only*/
+	.title-image-group{
+	/*can adjust this to fit image*/
+		margin: 10% 0 5% 20%; 
+		width: 65%; 
+	}
+
+}

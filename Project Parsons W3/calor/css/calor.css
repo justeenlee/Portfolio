@@ -1,0 +1,133 @@
+#link-projects{text-decoration: underline;}
+
+/*<i> for in-text hightlight*/
+.quote>h3,i, #title-description
+{color: #FFC413;}
+
+/*----------------Title----------------*/
+
+/*calor only*/
+.title-image-group{
+    margin-top: 18%;
+	margin-left:30px;
+    width: 85%; 
+}
+
+#title-description{
+	left: 60%;
+}
+
+/*----------------Promotion----------------*/
+
+/*----------------Research----------------*/
+
+.issue, .issue-icon, .issue-detail{
+	position:relative;
+	height: auto;
+	//background-color: yellow;
+	//opacity: .6;
+}
+
+.issue{
+	padding: 0px 20px 60px 20px;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+.issue-icon{
+	width: 100%;	
+	//background-color: red;
+}
+
+.issue-detail{
+	padding-top: 20px;
+	width: 100%%; 
+	//background-color: blue;
+}
+
+.issue-detail>h4{
+	margin: 0px;
+	left: 0px;
+	width: auto;
+	font-size: 20pt;
+	line-height: 1;
+}
+
+.issue-detail>h5{
+	padding-top: 10px;
+	font-size: 16pt;
+}
+
+
+/*----------------Ideation----------------*/
+.value{
+	padding: 20px 0;
+	background-color: #F5F5F5;
+}
+
+.value>*{
+	text-align: center;
+}
+
+/*----------------prototype----------------*/
+#xbee-demo{margin-top: 30px;}
+
+.demo{
+	position: relative;
+	left: 50%;
+	margin-left: -440px;
+	width: 100%;
+	min-height: 543px;
+	height: auto;
+	background-color: #000;
+}
+
+#video-cartridge-mechanism{
+	
+}
+/*----------------Product----------------*/
+
+#product-panel>img {
+	margin-bottom: 30px;
+	border-top: 1px solid #ddd;	
+}
+
+#product-panel>img:first-child, #product-panel>img:last-child{
+	border-top: none;	
+}
+
+#product-panel>img:last-child{
+	margin-bottom: 0px;
+}
+
+
+
+/* for 680px or less */
+@media screen and (max-width: 680px){
+	/*calor only*/
+	.title-image-group{
+	/*can adjust this to fit image*/
+		margin: 0 0 0 2%; 
+		width: 100%;
+	}
+	
+	#title-description{left: 30px;}
+
+	/*calor only?*/
+	.demo{
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+		min-height: 543px;
+		height: auto;
+		background-color: #000;
+	}
+	
+	.issue{
+		width: auto;
+
+	}
+
+}

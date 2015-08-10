@@ -1,0 +1,173 @@
+
+#link-projects{text-decoration: underline;}
+/*----------------Title----------------*/
+/*
+#title-panel{
+    position: relative;
+    width:100%;
+    height: auto;
+	//overflow: hidden;
+}
+*/
+
+
+
+#first-o, #second-o{
+	position: absolute;
+	top: 229px;
+	left: 34.7%;
+	display:none;
+}
+
+#second-o{
+	left: 57.5%;
+}
+
+
+.animation-first-spin{
+	-webkit-animation: rotation 3s linear infinite alternate;
+	-moz-animation: rotation 3s linear infinite alternate;
+	animation: rotation 3s linear infinite alternate;
+}
+
+.animation-second-spin{
+	-webkit-animation: rotation 3s linear 3s infinite alternate;
+	-moz-animation: rotation 3s linear 3s infinite alternate;
+	animation: rotation 3s linear 3s infinite alternate;
+}
+
+
+/*name duration timing-function delay iteration-count direction fill-mode play-state*/
+@-webkit-keyframes rotation {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(180deg);}
+}
+
+
+/*--------------------------------*/
+/*
+#product-panel {
+	position: relative;
+    width: 100%;
+    height: auto;
+	min-height: 1950px;
+}
+*/
+
+
+
+.gif-container, .gif-object{
+	position: relative;
+}
+
+.gif-container{
+	min-height: inherit;
+	height: auto;
+	width: 100%;
+}
+
+.gif-object{
+	margin: 12px 0px 0px 12px;
+	width:422px;
+	height: 470px;
+	float:left;
+	text-align: center;
+}
+
+.gif-object>h2{
+	font-size: 16pt;
+	margin: 5px 0px;
+}
+
+.gif-object>p{
+	left: 0;
+	margin: 0;
+	width: auto;
+}
+
+
+div[data-type="motion-gif"]{
+	width: 422px;
+	height: 316px;
+	background-color:#000;
+}
+
+
+#badge, #parsons, #symbio, #worldCup, #ring, #bounce{
+	position:relative;
+	top: 50%;
+	overflow: hidden;
+}
+
+
+/*--------------------------
+--------Media Query---------
+----------------------------*/
+/* for 680px or less */
+@media screen and (max-width: 680px) {	
+	.gif-container, 
+	.gif-object, 
+	div[data-type="motion-gif"]{
+		width: auto;
+		float: none;
+	}
+	
+	.gif-container{
+		width: 100%;
+	}
+	
+	.gif-container, .gif-object{
+		height: auto;
+	}
+	
+	.gif-object{
+		margin:0;
+		margin-top: 70px;
+		height: auto;
+	}
+
+	
+}/* for 700px or less media query ends */
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	
+	
+}/* for 480px or less media query ends */
+
+
+
+
+/*----------------Comment----------------*/
+
+/*----------------Animations----------------*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@-webkit-keyframes down1 {
+    0% {-webkit-transform: translate(0px, -50px);}
+    100% {-webkit-transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes up1 {
+    0% {-webkit-transform: translate(0px, 0px);}
+    100% {-webkit-transform: translate(0px, -30px);}
+}
+
+
+@-webkit-keyframes down2 {
+    0% {-webkit-transform: translate(0px, -30px);}
+    100% {-webkit-transform: translate(0px, 0px);}
+}
+
+
+
+
+
+
+/*----------------native tags----------------*/
+
+

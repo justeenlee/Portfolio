@@ -1,0 +1,87 @@
+#link-projects{text-decoration: underline;}
+
+
+.quote>h3, i, #title-description{
+	color: #101b7d;
+}
+
+/*----------------Title----------------*/
+.title-image-group{
+    margin-top: 30%;
+    width: 90%; 
+}
+
+#title-img-product-shadow{
+	position: relative;
+    top:-30%;
+    -webkit-animation: shadow-in 1.3s ease-in-out forwards;
+	-moz-animation: shadow-in 1.3s ease-in-out forwards; 
+	animation: shadow-in 1.3s ease-in-out forwards; 
+	
+}
+/*----------------Promotion----------------*/
+
+
+/*----------------Research----------------*/
+
+/*----------------Ideation----------------*/
+
+/*----------------prototype----------------*/
+
+
+/*----------------Product----------------*/
+
+.ui{
+	position: relative;
+	left: 50%;
+	margin-left: -300px;
+	width: 600px;
+	height: auto;
+}
+
+.ui>img{
+	margin-bottom: 20px;
+}
+
+.ui>img:last-child{
+	margin-bottom: 10px;
+
+}
+
+/*----------------other----------------*/
+
+/*----------------Comment----------------*/
+
+/*----------------Animations----------------*/
+
+@-webkit-keyframes shadow-in {
+    0% {opacity: 0;-webkit-transform: translate(0,0px);}
+    50% {opacity: 0;}
+    85% {opacity: .32;}
+    100% {opacity: 1; -webkit-transform: translate(0,-50px);}
+}
+
+@keyframes shadow-in {
+    0% {opacity: 0;transform: translate(0,0px);}
+    50% {opacity: 0;}
+    85% {opacity: .32;}
+    100% {opacity: 1;transform: translate(0,-50px);}
+}
+
+
+/* for 680px or less */
+@media screen and (max-width: 680px){
+	/*native only*/
+	.title-image-group{
+	/*can adjust this to fit image*/
+		margin: 15% 0 -13% 12%; 
+		width: 80%; 
+	}
+	
+	.ui{
+		left: 0;
+		margin-left: 0;
+		width: auto;
+	}
+	
+}

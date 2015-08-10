@@ -1,0 +1,47 @@
+#link-projects{text-decoration: underline;}
+
+
+.quote>h3, i, #title-description{
+	color: #3078f0;
+}
+
+/*----------------Title----------------*/
+.title-image-group{
+    margin-top:45%;
+	margin-left: 25%;
+    width: 40%; 
+}
+
+
+/*----------------Promotion----------------*/
+
+
+/*----------------Research----------------*/
+
+/*----------------Ideation----------------*/
+
+/*----------------prototype----------------*/
+
+
+/*----------------Product----------------*/
+
+
+/*----------------other----------------*/
+
+/*----------------Comment----------------*/
+
+/*----------------Animations----------------*/
+
+
+/* for 680px or less */
+@media screen and (max-width: 680px){
+	/*native only*/
+	.title-image-group{
+	/*can adjust this to fit image*/
+		margin: 15% 0 13% 30%; 
+		//width: 80%; 
+	}
+	
+
+	
+}

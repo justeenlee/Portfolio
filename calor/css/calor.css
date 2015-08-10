@@ -1,0 +1,180 @@
+#link-projects{text-decoration: underline;}
+
+/*<i> for in-text hightlight*/
+.quote>h3,i, #title-description
+{color: #FFC413;}
+
+/*----------------Title----------------*/
+
+/*calor only*/
+.title-image-group{
+    margin-top: 18%;
+	margin-left:30px;
+    width: 85%; 
+}
+
+#title-description{
+	left: 60%;
+}
+
+/*----------------Promotion----------------*/
+
+/*----------------Research----------------*/
+
+.issue, .issue-icon, .issue-detail{
+	position:relative;
+	height: auto;
+	//background-color: yellow;
+	//opacity: .6;
+}
+
+.issue{
+	padding: 0px 20px 60px 20px;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+.issue-icon{
+	width: 100%;	
+	//background-color: red;
+}
+
+.issue-detail{
+	padding-top: 20px;
+	width: 100%%; 
+	//background-color: blue;
+}
+
+.issue-detail>h4{
+	margin: 0px;
+	left: 0px;
+	width: auto;
+	font-size: 20pt;
+	line-height: 1;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.issue-detail>h5{
+	padding-top: 10px;
+	font-size: 16pt;
+    line-height: 1.2;
+}
+
+
+/*----------------Ideation----------------*/
+.value{
+	padding: 20px 0;
+	background-color: #F5F5F5;
+}
+
+.value>*{
+	text-align: center;
+}
+
+/*----------------prototype----------------*/
+
+.video-demo{
+	position: relative;
+	left: 50%;
+	margin-left: -440px;
+	width: 100%;
+	min-height: 543px;
+	height: auto;
+	background-color: #000;
+}
+
+
+
+/*----------------Product----------------*/
+
+#product-panel>img {
+	margin-bottom: 30px;
+	border-top: 1px solid #ddd;	
+}
+
+#product-panel>img:first-child, #product-panel>img:last-child{
+	border-top: none;	
+}
+
+#product-panel>img:last-child{
+	margin-bottom: 0px;
+}
+
+/*----------------Advertise----------------*/
+.app-left, .app-right{
+    width: auto;
+    height: 543px;
+    margin-bottom: 50px;
+}
+
+.app-left-ui, .app-left-info, .app-right-ui, .app-right-info{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.app-left-ui>img, .app-right-ui>img{
+    position: relative;
+    margin-top: -240px;
+    top: 50%;
+    left: 50%;
+    margin-left: -115px;   
+}
+
+.app-left-info>*, .app-right-info>*{
+    position: relative;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    height:auto;
+}
+
+.app-left-info, .app-right-info{
+    padding: 110px 0;
+    height: auto;
+}
+
+#advertise-panel h2{font-size: 40pt;}
+#advertise-panel h3{font-size: 25pt;margin-bottom: 15px;line-height: 1.2;}
+
+#advertise-panel h4{line-height: 1.2;}
+
+
+
+
+
+
+
+
+
+/* for 680px or less */
+@media screen and (max-width: 680px){
+	/*bristol only*/
+	.title-image-group{
+	/*can adjust this to fit image*/
+		margin: 0; 
+		width: 100%;
+	}
+
+	
+	#title-description{left: 30px;}
+
+	/*calor only?*/
+	#prototype-panel>#video-cartridge-mechanism, #prototype-panel>#video-set-temp{
+		left: 0;
+		margin-left: 0;
+        padding: 0; //0621
+		width: 100%;
+        height: 150px;
+	}
+	
+	.issue{
+		width: auto;
+	}
+
+}

@@ -1,0 +1,124 @@
+#link-projects{text-decoration: underline;}
+
+.quote>h3, i, #title-description{
+	color: #35a1e1;
+	color: #444;
+}
+
+a>i{color: #aaa}
+p>a:link {color: #aaa;}
+p>a:visited {color: #aaa;}
+p>a:hover{text-decoration: underline;}
+
+
+/*----------------Title----------------*/
+.title-image-group{
+    margin-top: 18%;
+	margin-left: 15%;
+    width: 70%; 
+}
+
+#title-description{
+    font-size: 80px;
+}
+
+/*----------------Promotion----------------*/
+/*----------------Ideation----------------*/
+#ideation-panel>img{
+	box-shadow: initial;
+}
+/*----------------Research----------------*/
+.user-img{
+	position: relative;
+	left: 50%;
+	margin-left: -200px;
+}
+
+.imperative, .imperative-img, .imperative-detail{
+	margin-top: 30px;
+	position:relative;
+	width: 100%;
+	height: 200px;
+}
+
+#reserach-panel>.imperative: first-child{
+	margin-top: 0px;
+}
+
+.imperative-img, .imperative-detail{
+	max-height: 200px;
+	float: left;
+}
+
+.imperative-img{width: 40%;}
+.imperative-detail{width: 60%;}
+
+.imperative-detail>h4{
+	padding-top: 12%;
+	margin: 0px;
+	left: 0px;
+	width: auto;
+}
+
+.imperative-img>img{
+	position: relative;
+	left: 50%;
+	margin-left: -100px;	
+}
+
+/*----------------Ideation----------------*/
+/*----------------prototype----------------*/
+.demo{
+	margin-top: 30px;
+	position: relative;
+	left: 50%;
+	margin-left: -440px;
+	width: 100%;
+	min-height: 543px;
+	height: auto;
+	background-color: #000;
+}
+/*----------------Product----------------*/
+
+/*----------------other----------------*/
+
+/*----------------Comment----------------*/
+
+/*----------------Animations----------------*/
+
+@media screen and (max-width: 680px){
+	/*soap hero only*/
+	.title-image-group{
+		margin: 0 0 0 10%;
+		width: 80%; 	
+	}
+	
+	#research-panel>.imperative{
+		margin-bottom: 50px;
+	}
+	
+	.imperative, .imperative-img, .imperative-detail{
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+
+	.imperative-img{
+		left: 50%;
+		width: 200px;
+		margin-left: -100px;
+	}
+
+	.imperative-detail{
+		margin-top: 5px;
+		text-align: center;
+		overflow:hidden;
+	}
+
+	.imperative-detail>h4{
+		padding-top: 0;
+	}
+
+	
+	
+}

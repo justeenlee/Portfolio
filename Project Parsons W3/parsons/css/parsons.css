@@ -1,0 +1,145 @@
+#link-projects{text-decoration: underline;}
+.quote>h3, i, #title-description{
+	color: #fa4b2a; /*the verge*/
+	//color: #fe0032; /*parsons color*/
+}
+
+p>a:link {color: #fa4b2a;}
+p>a:visited {color: #fa4b2a;}
+p>a:hover{text-decoration: underline;}
+
+/*----------------Title----------------*/
+/*parsons only*/
+.title-image-group{
+	/*can adjust this to fit image*/
+    margin-top: 20%; 
+	margin-left: 25%;
+    width: 50%; 
+}
+
+#title-description-supplement{
+    margin-top: -3%;
+}
+
+
+/*----------------intro----------------*/
+
+/*----------------Problem----------------*/
+
+/*----------------Product----------------*/
+.product-wrapper{
+	margin-bottom: 100px;
+}
+
+#product-panel>.shadow {
+	margin-bottom: 20px;
+	box-shadow: 0 0 7px 0px grey;
+}
+
+#product-panel>p {
+	margin-bottom: 20px;
+}
+
+.requirement>h1, h2{
+	text-align: center;
+}
+
+.requirement>h1{
+	color: #444;
+}
+
+.requirement{
+	position: relative;
+	width: 880px;
+	margin-top: 50px;
+	margin-bottom: 20px;	
+} /*rewritten in media query*/
+
+.requirement>h2{
+	width: 620px;
+	margin-left:130px;
+	line-height: 1;
+	font-size: 26px;
+} /*rewritten in media query*/
+
+.requirement>h3{
+	font-size: 16px;
+	text-align: center;
+}
+
+.album{
+	position: relative;
+	left: 50%;
+	margin-left: -240px;
+	width: 480px;
+} /*rewritten in media query 480*/
+
+.raymond{
+	position: relative;
+	left: 50%;
+	margin-left: -187px;
+	width: 375px;
+} /*rewritten in media query 480*/
+
+
+.gigPoster{
+	position: relative;
+	left: 50%;
+	margin-left: -154px;
+	width: 308px;
+} /*rewritten in media query 480*/
+
+.picture-2{
+	position: relative;
+	max-height:357px;
+	width: 100%;
+}
+
+.klick-gif{
+	position: absolute;
+	margin-top: -31%;
+	margin-left: 76%;
+	width:20%;
+}
+
+#animation-parsons{
+	width: 100%;
+}
+
+/*----------------other----------------*/
+
+/*----------------Comment----------------*/
+
+/*----------------Animations----------------*/
+
+/*----------------native tags----------------*/
+
+
+/* for 680px or less */
+@media screen and (max-width: 680px){
+	/*parsons only*/
+	.title-image-group{
+	/*can adjust this to fit image*/
+		margin: 10% 0 15% 20%; 
+		width: 65%; 
+	}
+
+	.requirement{
+		width: 100%;
+	}
+	
+	.requirement>h2{
+		width: 100%;
+		margin-left:0;
+		line-height: 1;
+		font-size: 26px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.album, .raymond, .gigPoster{
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+}

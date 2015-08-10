@@ -1,0 +1,255 @@
+
+#link-projects{text-decoration: underline;}
+
+/*----------------Title----------------*/
+#title-panel{
+    position: relative;
+    width:100%;
+    height: 550px;
+    //background-color: rgb(230,230,230); /*testing*/
+}
+
+#title-img{
+    position: absolute;
+    width: 50%;
+    height: 600px;
+    overflow: hidden;  
+	-webkit-animation: landing 1.2s; 
+    -webkit-animation-timing-function:ease-in-out;
+}
+
+.title-image-group{
+	/*can adjust this to fit image*/
+    margin-top: 11%; 
+	margin-left: 20%;
+    width: 70%; 
+}
+
+#title-description{
+    position: absolute;
+    left:50%;
+    width: 50%;
+    height: 500px;
+    font-size: 90px;
+    line-height: 1;
+	color: #fa4b2a; /*the verge*/
+}
+
+.title-description-group{
+    position: relative;
+    margin-top: 55%;
+	margin-left: 10%;
+    width: 100%; 
+	font-family: "MYRIADPRO-REGULAR";
+}
+
+#title-description-supplement{
+    margin-top: -.5%;
+	margin-left: 11%;
+    font-size: 20pt;
+}
+
+/*----------------intro----------------*/
+
+#intro-panel{
+	position: relative;
+	left: 50%;
+	margin-left: -350px;
+
+    width: 700px;
+    height: 150px;
+    //background-color: rgb(240,240,240); /*testing*/
+}
+
+
+
+/*----------------Problem----------------*/
+
+#problem-panel{
+	height: auto;
+	min-height: 800px;
+	//background-color: #F5F5F5;
+}
+
+
+
+.task{
+	//margin-top: 20px;
+	width: 100%;
+	height: 100px;
+}
+
+.quote{
+	margin-top: 35px;
+	margin-bottom: 35px;
+	min-height: 150px;
+}
+
+
+.lion{
+	margin-top: 125px;
+	margin-right: 80px;
+}
+
+.quote>p{
+	float:none;
+}
+
+
+
+.corner-text {
+	margin-top: -160px;
+	width: 67%;
+	height: auto;
+}
+
+
+.corner-text>p {
+	margin: 0;
+	left: 0;
+}
+
+/*----------------Product----------------*/
+#product-panel {
+	position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+#product-panel>shadow {
+	margin-bottom: 20px;
+	box-shadow: 0 0 7px 0px grey;
+}
+
+
+
+#product-panel>p {
+	margin-bottom: 20px;
+}
+
+
+.requirement>h1, h2{
+	text-align: center;
+}
+
+.requirement>h2{
+	width: 620px;
+	margin-left:130px;
+	line-height: 1;
+	font-size: 26px;
+}
+
+.requirement>h3{
+	font-size: 16px;
+	text-align: center;
+}
+
+.requirement{
+	margin-top: 50px;
+	margin-bottom: 20px;	
+}
+
+
+.album{
+	position: relative;
+	left: 50%;
+	margin-left: -275px;
+}
+
+.raymond{
+	position: relative;
+	left: 50%;
+	margin-left: -206px;
+}
+.gigPoster{
+	position: relative;
+	left: 50%;
+	margin-left: -154px;
+}
+
+
+
+.text-after{
+	margin-bottom: 10px;
+}
+
+.setWidth{
+	position:relative;
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+}
+
+.picture-2{
+	position: relative;
+	max-height:357px;
+}
+.gif{
+	position: relative;
+	top: -275px;
+	left: 650px;
+}
+
+
+#animation-parsons{
+	width: 100%;
+	height: 459px;
+	background-image: url(../images/book-animation-small-static.jpg);
+	background-repeat: no-repeat;
+	background-size: 880px;
+	background-color: black;
+}
+
+/*----------------other----------------*/
+#other-panel {
+	position: relative;
+    width: 100%;
+    height: auto;
+    //background-color: #F5F5F5; /*testing*/
+}
+
+#other-panel>p{
+	font-size: 18px;
+}
+
+/*----------------Comment----------------*/
+
+/*----------------Animations----------------*/
+@-webkit-keyframes landing {
+    0% {opacity: 0;top: -20px;}
+    100% {opacity: 1;top: 0%;}
+}
+
+
+/*----------------native tags----------------*/
+p>a:link {color: #fa4b2a;}
+p>a:visited {color: #fa4b2a;}
+p>a:hover{text-decoration: underline;}
+
+i{
+	letter-spacing: -2px;
+	color: #444;
+}
+
+h1{
+	color: #444;
+}
+
+h3{	
+	font-size: 1.4em;
+	text-align: center;	
+}
+
+h4{
+    color: #555;
+	word-spacing: 1px;
+	font-size: 1.4em;
+}
+
+h5{
+	font-size: 15pt;
+	text-align: left;
+	color: #555;
+	line-height: 1.1;
+}

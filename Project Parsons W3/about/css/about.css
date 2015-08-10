@@ -1,0 +1,238 @@
+#link-about{text-decoration: underline;}
+
+
+
+/*----------------Title----------------*/
+#title-panel{
+    position: relative;
+    width:880px;
+    height: 520px;
+    background-color: rgb(230,230,230); /*testing*/
+	overflow: hidden;
+}
+
+
+img.second {
+	width: 900px;
+	height: 540px;
+}
+
+#about-wrapper{
+	padding-top:60px;/*no cf for smoothness*/
+	width: 880px;
+	height: auto;
+	background: -webkit-linear-gradient(top, #8e44ad 10%,  #156ba7 100%);
+	background: -moz-linear-gradient(top, #8e44ad 10%,  #156ba7 100%);
+	background: linear-gradient(top, #8e44ad 10%,  #156ba7 100%);
+}
+
+/*----------------intro----------------*/
+#me-panel{
+	position: relative;
+	min-height: 350px;
+    height: auto;
+	padding: 60px 150px 60px 50px;
+	color: white;
+	overflow: hidden;
+
+}
+
+/*about me + about this site*/
+.panel-name{
+	margin-bottom: 20px;
+	width: 162px;
+	padding: 0px 10px;
+	font-size: 1.1em;
+	color: #0D8278;
+	color: #8e44ad;
+	background-color: white;
+}
+
+
+.panel-name+h3{
+	line-height: 1;
+	margin-bottom: 10px;
+	font-size: 20pt;
+}
+
+.contact{
+	margin-top: 60px;
+	margin-bottom: 25px;
+}
+
+.contact-info{
+	width: 300px;
+}
+
+
+/*----------------site panel----------------*/
+#site-panel {
+	position: relative;
+	margin-bottom: 25px;
+	min-height: 350px;
+    height: auto;
+	padding: 60px 120px 60px 50px;
+	color: white;
+	overflow: hidden;
+	//background-color: #156ba7;
+}
+
+.panel-name-site{
+	width: 240px;
+	color: #156ba7;
+}
+
+
+/*----------------Comment----------------*/
+span.top{
+	position: relative;
+	left: 50%;
+	width: 25px;
+	display: block;
+	float: none;
+	font-size: 16px;
+	text-align: center;
+}
+
+span>a:link {color: rgb(117,117,117); text-decoration:none;}
+span>a:visited {color: rgb(117,117,117);}
+
+.arrow{
+	margin-left: -25px;
+	width: 50px;
+	height: 25px;
+	background-color: ;
+	background-image: url(../images/top-arrow.png);
+	background-size: 50px;
+	background-repeat: no-repeat;
+	transition: background-image .5s;
+}
+
+.arrow:hover {
+	background-image: url(../images/top-text.png);
+}
+
+
+
+
+/*----------------Animations----------------*/
+@-webkit-keyframes slideUp {
+    0% {top: 0px;}
+	33.3% {top: 0px;}
+	66.6% {top: -540px;}
+    100% {top: -540px;}
+}
+
+
+/*----------------native tags----------------*/
+
+/*---<p>---restyle-----------------------------*/
+p{
+	margin: 0;
+	left:0;
+	width: auto;
+    font-size: 15pt;
+    line-height: 1.2;
+	word-spacing: 1px;
+	text-align: left;
+	color: white;
+	//color: #0D8278;
+}
+
+*~p{margin-bottom: 15px;}
+
+/*---<p>---restyle-----------------------------*/
+
+
+
+h1{color: #444;}
+
+li>div, li>h3 {
+	position: absolute;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -250px;
+	width: 500px;
+	color: white;
+	text-align: center;	
+}
+
+
+h4{word-spacing: 1px;}
+
+h5{
+	font-size: 15pt;
+	text-align: left;
+	line-height: 1.1;
+}
+
+p>a:link {color: #ffd05c ;}
+p>a:visited {color: #ffd05c ;}
+p>a:hover{text-decoration: underline;}
+
+
+
+/* for 680px or less */
+@media screen and (max-width: 680px) {
+	/*--responsive all testing--*/
+	/*title panel height, title pic and caption relation, key phrase length*/
+	body{
+		width: auto;
+		left: 0;
+		margin: 0;
+	}
+	#title-panel, 
+	#intro-panel, 
+	#research-panel,
+	#ideation-panel,
+	#prototype-panel,
+	#product-panel,
+	#product-panel>div,
+	#resume-panel,
+	#about-wrapper,
+	.comment,
+	.quote>*{
+		width:100%;
+		height: auto;
+		left: 0;
+		margin: 0;
+	}
+	
+	p{
+		width: auto;
+		left: 0;
+		margin-left: 0;
+		padding:0px 12px;
+	}
+	/*--responsive all testing--*/
+	
+	/* for about.css only*/
+	#me-panel, #site-panel{
+		width: auto;
+		padding: 60px 12px 0px 12px;
+	}
+
+	p{padding:0;}
+	
+
+	
+}
+
+@media screen and (max-width: 480px){
+	/* for about.css only*/
+	.panel-name{
+		position: relative;
+		left: 50%;
+		margin-left: -81px;
+		width: 162px;
+		padding: 0px 10px;
+	}
+	
+	.panel-name-site{
+		width:240px;
+		margin-left: -120px;
+	}
+	/* for about.css only*/
+
+	
+}
