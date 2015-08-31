@@ -32,6 +32,7 @@
 
 	
 <body>
+<!--
 	<div id = "navigation">
         <ul>
     <li class="li-nav"><a id="link-home" href="../index.html">PLAYGROUND</a></li>
@@ -40,19 +41,33 @@
     <li class="li-nav"><a  id="link-about"  href="../about/about.html">ABOUT</a></li>
         </ul>
 	</div>	
+-->
+    <div id = "navigation">
+        <ul>
+            <li class="li-nav"><a id="link-home" onmouseover = "moveDot('index')" onmouseout = "returnDotHome()" href="../index.html">PLAYGROUND</a></li>
+            
+    <li class="li-nav"><a id="link-projects" onmouseover = "moveDot('projects')" onmouseout = "returnDotHome()" href="../projects/projects.html">PROJECTS</a></li>
+            
+    <li class="li-nav"><a id="link-resume" onmouseover = "moveDot('resume')" onmouseout = "returnDotHome()" href="../resume/resume.html">RESUME</a></li>
+            
+    <li class="li-nav"><a  id="link-about" onmouseover = "moveDot('about')" onmouseout = "returnDotHome()" href="../about/">ABOUT</a></li>
+        </ul>
+        <span id="indicator-dot"></span>
+	</div>
 	<div id = "cf"></div>
 
 <!--title panel------------------------------>
     <div id = "title-panel">
 		<div id = "title-img">
-            <img src="images/placeholder-title-img.jpg" id = "title-img-product" class = "title-image-group">
+            <img src="images/placeholder-title-img.png" id = "title-img-product">
         </div>
 		
         <div id ="title-description">
-            <div>CALOR</div>
-            <div id = "title-description-supplement">
+            <h1>CALOR</h1>
+            <h2 id = "title-description-supplement">
                 Digital Faucet System
-            </div>
+            </h2>
+            <h3>Efficient and reliable shower experience</h3>
         </div>           
     </div>
 	
@@ -60,7 +75,7 @@
 <!--intro panel------------------------------>
     <div id = "intro-panel">
         <p>
-		Calor is digital faucet system that enhances your shower experience and promote mindful water use by letting you set your temperature and suggesting when to get out of shower.
+		Calor is a faucet system that safely and efficiently delivers your desired water temperature with a temperature sensor and promotes a mindful water use with integration technology. It’s smart to let you set your water temperature and suggest when to get out of shower.
 		</p>
     </div>
 
@@ -272,6 +287,65 @@
 	$(window).bind("load",function() {setTimeout(addVideo, 1400);});
 
     $(window).scroll(function (){gifCheck()});
+	
+</script>
+<script type="text/javascript">  	
+	(function(){
+       returnDotHome();
+    })();
+    
+    function returnDotHome(){
+        var dot = document.getElementById("indicator-dot");
+        var currentPath = window.location.pathname.split("/")[1];
+        switch(currentPath){
+            case "index":
+                dot.style.left = "210px";
+                dot.style.left = "24%";
+                break;
+            case "projects":
+                dot.style.left = "395px";
+                dot.style.left = "44.5%";
+                break;
+            case "resume":
+                dot.style.left = "552px";
+                dot.style.left = "62%";
+                break;
+            case "about":
+                dot.style.left = "695px";
+                dot.style.left = "78.5%";
+                break;
+        }
+        
+    }
+    
+
+    
+    
+    function moveDot(cue){
+        var dot = document.getElementById("indicator-dot");
+        if (window.outerWidth > 680){
+             switch(cue){
+                case "index":
+                    dot.style.left = "210px";
+                    dot.style.left = "24%";
+                    break;
+                case "projects":
+                    dot.style.left = "395px";
+                    dot.style.left = "44.5%";
+                    break;
+                case "resume":
+                    dot.style.left = "552px";
+                    dot.style.left = "62%";
+                    break;
+                case "about":
+                    dot.style.left = "695px";
+                    dot.style.left = "78.5%";
+                    break;
+              }
+        }
+    
+    }
+    
 	
 </script>	
 

@@ -111,7 +111,7 @@ a:active {color: darkgrey;} /*when clicked*/
     width: 880px;
     height: 50px;
 	background-color: white;
-    opacity: .9;
+    opacity: .8; /*0830 .9 to .8*/
 	overflow: hidden;
 }
 
@@ -127,14 +127,14 @@ a:active {color: darkgrey;} /*when clicked*/
 .li-nav{
     margin-left: 70px;
     padding: 0px;
-	font-size: 20px;
+	font-size: 20px; /*0731 24 to 20*/
     display: inline;
 }
 
 #cf{
 	position: relative;
 	width: 100%;
-	height: 50px;
+	height: 50px; /*0731 60 to 50*/
 }
 
 
@@ -187,7 +187,7 @@ body{
     width: 50%;
     height: 500px;
     font-size: 90px;
-    line-height: 1;
+    /*line-height: 1; 0830 delete*/
 	margin-top: 25%;
 }
 /*

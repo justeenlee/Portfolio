@@ -8,7 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 h1, h2, h3, h4, h5, h6, p, div{
 	font-family: "TyponineSans Regular 18";
 	margin: 0px; /*delete if fix issue1*/
-    font-weight: 300;
+    /*font-weight: 300; 0830 delete*/
 }
 
 bold{font-family: "TyponineSans Text 16";}
@@ -19,9 +19,9 @@ html{
 	margin-top: -10px; 
 	min-height: 500px; 
 	height: auto;
-	//-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 	/*the following makes typo regular 18 look same as chrome*/
-	//-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
 	//-webkit-font-smoothing: none;	
 }
 
@@ -30,14 +30,16 @@ html{
 p{
 	position: relative;
 	left: 50%;
-	margin: 20px 0px;
-	margin-left: -300px;
-	width: 600px;
-    font-size: 14pt;
+	margin: 30px 0px; /*0830 20 to 30*/
+	margin-left: -350px; /*0830 -300 to -350*/
+	width: 700px; /*0830 600 to 700*/
+    font-size: 25px; /*0830 14 to 25*/
     color: #555;
-    line-height: 1.2;
-	word-spacing: 1px;
-	text-align: left;
+    /*line-height: 1.2; 0830 delete*/
+	/*word-spacing: 1px; 0830 delete*/
+	/*text-align: left; */
+    font-family: Baskerville, sans-serif; /*0830 added*/
+    color: #555; 
 }
 
 .quoate~p{margin-top: -15px;}
@@ -95,33 +97,51 @@ a:active {color: darkgrey;} /*when clicked*/
 #navigation{
     z-index: 20;
     position: fixed;
-    width: 880px;
-    height: 60px;
-	background-color: white;
-    opacity: .9;
+    width: 700px; /*0830 880 to 700*/ 
+    height: 50px; /*0830 60 to 50*/
+	background-color: transparent; /*0830 white to trans*/
+    opacity: .8; /*0830 .9 to .8*/
 	overflow: hidden;
 }
 
 /*0116+#navigation>*/
 #navigation>ul{
     padding: 0px;
-    margin-left: 50px; /*4-link placement*/
+    margin-top: 12px;
+    margin-left: 0px; /*4-link placement*/ /*0830 80 to 0*/ 
     list-style-type: none;
-    font-family: "MYRIADPRO-BOLD";
-	
+    font-family: "MYRIADPRO-Regular"; /*0731 bold to regular*/
 }
+
 
 .li-nav{
     margin-left: 70px;
     padding: 0px;
-	font-size: 24px;
+	font-size: 20px; /*0731 24 to 20*/
     display: inline;
 }
 
 #cf{
-	position: relative;
-	width: 100%;
-	height: 60px;
+	position: fixed; /*0830 relative to fixed*/
+	width: 1366px; /*0830 100% to 1366*/
+	height: 50px; /*0731 60 to 50*/
+    /*0830*/
+     z-index: 10;
+    background-color: #fff;
+    opacity: .15;
+    left: 50%;
+    margin-left: -684px;
+    
+}
+
+#indicator-dot{
+position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    top: 38px;
+    transition: .7s ease;
 }
 
 
@@ -129,8 +149,8 @@ a:active {color: darkgrey;} /*when clicked*/
 body{
     position: absolute;
     left: 50%;
-    margin-left:-440px;    
-    width: 880px;
+    margin-left:-350px; /*0830 -440 to -350*/    
+    width: 700px; /*0830 880 to 700*/ 
     min-height: 500px;
 	height: auto;
     font-size: 22px;
@@ -160,7 +180,7 @@ body{
     width: 50%;
     height: 500px;
     font-size: 90px;
-    line-height: 1;
+    /*line-height: 1; 0830 delete*/
 	margin-top: 25%;
 }
 /*
@@ -171,7 +191,7 @@ body{
 */
 
 #title-panel{
-	overflow: hidden;
+	//overflow: hidden;
 }
 
 #title-description{
@@ -192,7 +212,7 @@ body{
 /*----------------Promotion----------------*/
 #promotion-panel{
     position: relative;
-    width: 100%;
+    //width: 100%;
     height: 500px;
     background-color: #000;
 }
