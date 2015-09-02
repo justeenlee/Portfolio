@@ -62,19 +62,20 @@ p{
 .slide-container{margin-top: 10px;}
 
 .quote{
+	position: relative;
 	margin-top: 35px;
 	margin-bottom: 35px;
 	height: auto;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-	text-align: center;	
+    left: 50%;
+	margin-left: -211px;
+	width: 422px;
+	
 }
 
 .quote>h3{
-	position: relative;
-	left: 50%;
-	margin-left: -330px;
-	width: 660px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	text-align: center;	
 	font-family: quote-font;
 	font-size: 1.4em;
 	text-align: center;	
@@ -238,19 +239,26 @@ body{
     height: auto;
 }
 
-.driving-question{
+.driving-question, .statement{
     width: 505px;
     position: relative;
     left: 50%;
     margin-left: -252px;
-    font-size: 30px;
     margin-top: 100px;
     margin-bottom: 100px;
-    
 }
-.driving-question>h3{
+
+.statement{
+    width: 644px;
+    margin-left: -322px;
+}
+
+.driving-question>h3, .statement>h3{
     font-family: Baskerville, sans-serif;
+    font-size: 30px;
 }
+
+
 /*----------------Ideation----------------*/
 #ideation-panel>img {
 	box-shadow: 0 0 7px 0px grey;
