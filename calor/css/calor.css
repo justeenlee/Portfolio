@@ -5,20 +5,17 @@
 {color: #FFC413;}
 
 /*0830*/
-a:link {color: #fff; text-decoration:none;}
-
+li>a:link {color: #fff; text-decoration:none;}
+/*once pass rendering, change color*/
 
 /*----------------Title----------------*/
 
 
 #title-panel{
     left: 50%;
-    margin-left: -684px;
-    min-width: 1366px;
-    width: 1366px;
     height: 650px;
     background-color: #282828;
-    overflow: auto;
+    overflow: hidden;
 }
 
 /*calor only*/
@@ -92,13 +89,12 @@ a:link {color: #fff; text-decoration:none;}
 
 /*----------------Research----------------*/
 
-.issue, .issue-icon, .issue-detail{
+.issue, .issue-icon, .issue-detail>h4, .issue-detail>h5{
 	position:relative;
 	height: auto;
 	//background-color: yellow;
-	//opacity: .6;
     float: left;
-    font-size: 25pt;
+    font-size: 25px;
 
 }
 
@@ -109,6 +105,8 @@ a:link {color: #fff; text-decoration:none;}
 }
 
 
+
+
 .issue-icon{
 	width:257px;
 	//background-color: red;
@@ -117,7 +115,7 @@ a:link {color: #fff; text-decoration:none;}
 
 .issue-detail{
     float: left;
-	//margin-top: 20px;
+	margin-top: 10px;
 	width: 422px;; 
 	//background-color: blue;
     
@@ -128,13 +126,12 @@ a:link {color: #fff; text-decoration:none;}
 	left: 0px;
 	width: auto;
 	line-height: 1;
-    font-weight: 600;
-    
+    font-family: Roboto-bold, sans-serif; /*0830 added*/
 }
 
 .issue-detail>h5{
 	padding-top: 10px;
-    line-height: 1.2;
+    //line-height: 1.2;
     font-family: Baskerville, sans-serif; /*0830 added*/
 
 }
