@@ -143,14 +143,13 @@ li>a:link {color: #fff; text-decoration:none;}
 /*----------------Ideation----------------*/
 
 /*to structure*/
-.value{
-	padding: 20px 0;
-	background-color: #F5F5F5;
+.statement{
+
 }
 
-.value>*{
-	text-align: center;
-}
+
+
+
 
 /*----------------prototype----------------*/
 
