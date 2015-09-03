@@ -135,27 +135,43 @@
 			<h3>How to elevate shower experience while promote mindful water use?
 			</h3>
 		</div>
-    </div>
-
-<!--ideation panel------------------------------>
-	
-	<div id = "ideation-panel" class = "panel">
-        <img src="images/placeholder-research-task-flow-after.jpg" width="100%">
+ 
+    <img src="images/placeholder-research-task-flow-after.jpg" width="100%">
         <div class="statement">
             <h3>Devise a system that captures a more efficient shower experience with sensor and integration technology</h3>
         </div>
 		<div class="value">
-            <div class="quote">
+            <div class="highlight">
                 <h3>STREAMLINE TASK FLOW with temperature sensor
                 </h3>
             </div>
             <p>Calor benefits from a temperature sensor that results a perfect shower temperature you desire.</p>
 		</div>
         
+        <div class="band">
+		<div class="quote">
+                <h3>What you set is what you get. 
+No more trial and error.
+                </h3>
+            </div>
+	   </div>
+		<div class="highlight">
+                <h3>A Viable Solution
+                </h3>
+        </div>
+        <p>Current market offers faucet fixtures/system with either simple yet limited functions at a low cost or high-end at a cost up to $5000, not including cost for installing or any pipe rerouting.
+        </p>
+        <img src="images/research-market-matrix.png">
+        <img src="images/research-cartridge-breakdown.jpg">
+        <p>Disassemblying a fixure and understand how a valve and a cartridge work together, along with the conclusion from the maket analysis matrix, result an approach: innovate through improving existing experience.</p>
         
-		
-		<p>What you set is what you get. Transforming a typical shower experience into one that is more personalized, efficient, safe and predictable.</p>
-		<img src="images/ideation-main-concept.jpg" width="100%">
+        
+    </div><!--research panel end -->
+
+<!--ideation panel------------------------------>
+	
+	<div id = "ideation-panel" class = "panel">
+        
 		<div class = "loading slide-container">
 		  <section class="slider">
 			<div class="flexslider" slidespeed = "3800">
@@ -173,7 +189,7 @@
 			</div>
 		  </section>
 		</div>		
-		
+		<P>As cartridge remains to be a hardware, I begin to explore organic/dynamic forms that would give a break from the traditional handle-turning faucet fixture sterotype.</P>
 		<img src="images/ideation-sketches-wireframe.jpg" width="100%">
     </div><!--ideation panel ends-------------------->
 
@@ -362,21 +378,41 @@
     
     }
     
-     (function(){
-        var tPanel = document.getElementById("title-panel");
+//     (function(){
+//        var tPanel = document.getElementById("title-panel");
+//        var newWidth = window.outerWidth;
+//        console.log(newWidth);
+//        tPanel.style.width = newWidth + "px";
+//        tPanel.style.marginLeft = "-" + (newWidth/2)+ "px";
+//    })();
+//    
+//        $(window).resize(function(){
+//        var tPanel = document.getElementById("title-panel");
+//        var newWidth = window.innerWidth;
+//        console.log(newWidth);
+//        tPanel.style.width = newWidth + "px";
+//        tPanel.style.marginLeft = "-" + (newWidth/2)+ "px";
+//            
+//        });
+    (function(){
         var newWidth = window.outerWidth;
+        var newMarginLeft = (-(newWidth/2))+"px";
         console.log(newWidth);
-        tPanel.style.width = newWidth + "px";
-        tPanel.style.marginLeft = "-" + (newWidth/2)+ "px";
+        $("#title-panel").width(newWidth);
+        $("#title-panel").css("margin-left", newMarginLeft);
+        $(".band").width(newWidth);
+        $(".band").css("margin-left", newMarginLeft);
     })();
-        $(window).resize(function(){
-        var tPanel = document.getElementById("title-panel");
-        var newWidth = window.innerWidth;
-        console.log(newWidth);
-        tPanel.style.width = newWidth + "px";
-        tPanel.style.marginLeft = "-" + (newWidth/2)+ "px";
-        });
     
+        $(window).resize(function(){
+         var newWidth = window.outerWidth;
+        var newMarginLeft = (-(newWidth/2))+"px";
+        console.log(newWidth);
+        $("#title-panel").width(newWidth);
+        $("#title-panel").css("margin-left", newMarginLeft);
+        $(".band").width(newWidth);
+        $(".band").css("margin-left", newMarginLeft);
+        });
 	
 </script>	
 

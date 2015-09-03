@@ -61,7 +61,9 @@ p{
 
 .slide-container{margin-top: 10px;}
 
-.quote{
+
+/*quote to highlight 0902*/
+.highlight{
 	position: relative;
 	margin-top: 35px;
 	margin-bottom: 35px;
@@ -72,12 +74,11 @@ p{
 	
 }
 
-.quote>h3{
+.highlight>h3{
 	text-transform: uppercase;
-	letter-spacing: -1px;
 	text-align: center;	
 	font-family: quote-font;
-	font-size: 1.4em;
+	font-size: 40px;
 	text-align: center;	
 }
 
@@ -87,6 +88,24 @@ p{
 	margin-left: -300px;
 	width:600px;
 	height: 400px;
+}
+
+.quote{
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: auto;
+    left: 50%;
+	margin-left: -190px;
+	width: 380px;
+	
+}
+
+.quote>h3{
+	font-family: Baskerville;
+    font-style: italic;
+	font-size: 30px;
+	//text-align: center;	
 }
 
 /*---navigation---------------------------------*/
@@ -258,6 +277,9 @@ body{
     font-size: 30px;
 }
 
+#research-panel>img{
+    margin: 30px 0;
+}
 
 /*----------------Ideation----------------*/
 #ideation-panel>img {
@@ -280,18 +302,15 @@ body{
 
 /*no clue where it's from*/
 .band {
-	padding-top: 15px;
-	width: 100%;
-	height:40px;
-	background-color: #c3996f;
+    position: relative;
+    left: 50%;
+    padding: 10px 0;
+	background-color: #fff;
+    
+    
 }
 
-.band>p{
-	margin:0; 
-	left: 0; 
-	width: auto; 
-	color: white; 
-	text-align: center;}
+
 
 /*----------------Comment----------------*/
 h6>a:link {color: #00aeef; text-decoration:none;}
