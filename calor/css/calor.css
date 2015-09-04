@@ -6,6 +6,7 @@
 
 /*0830*/
 li>a:link {color: #fff; text-decoration:none;}
+p>a:link {color: #FFC413; text-decoration:underline}
 /*once pass rendering, change color*/
 
 /*----------------Title----------------*/
@@ -153,15 +154,7 @@ li>a:link {color: #fff; text-decoration:none;}
 
 /*----------------prototype----------------*/
 
-.video-demo{
-	position: relative;
-	left: 50%;
-	margin-left: -440px;
-	width: 100%;
-	min-height: 543px;
-	height: auto;
-	background-color: #000;
-}
+
 
 
 
