@@ -94,6 +94,7 @@ p{
 	position: relative;
 	padding: 50px 0;
 	height: auto;	
+    float: none;
 }
 
 .quote>h3{
@@ -189,7 +190,7 @@ body{
     font-size: 22px;
     color: rgb(117,117,117);
 	background-color: #fff;
-    //background-color: #FbFbFb; /*0901*/
+    background-color: #FbFbFb; /*0901*/
 }
 
 /*-------------title------------------------*/

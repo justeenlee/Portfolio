@@ -89,52 +89,67 @@ p>a:link {color: #FFC413; text-decoration:underline}
 /*----------------Promotion----------------*/
 
 /*----------------Research----------------*/
-
-.issue, .issue-icon, .issue-detail>h4, .issue-detail>h5{
-	position:relative;
-	height: auto;
-	//background-color: yellow;
-    float: left;
-    font-size: 25px;
-
-}
-
-.issue{
-	padding: 0px 20px 60px 20px;
-	width: 100%;
-	height: auto;
-}
-
 /*to structure*/
 .group-wrapper{
-	margin: 50px 0;
+    position: relative;
+	padding: 30px 0;
+/*
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+*/
+    height: auto;
 }
 
 
-.issue-icon{
+.issue, .issue-icon, .issue-detail>h4, .issue-detail>h5,
+.feature, .feature-icon, .feature-detail>h4, .feature-detail>h5{
+	position:relative;
+	//height: auto;
+    font-size: 25px;
+    //float: left;
+}
+
+.issue, .feature{
+	padding: 40px 0;
+	height: auto;
+    min-height: 120px; /*200 - 40*2padding*/
+    display: block;
+    width: 700px; 
+    left:50%; 
+    margin-left: -350px;
+    //    background-color: yellow;
+
+}
+
+
+
+
+.issue-icon, .feature-icon{
 	width:257px;
 	//background-color: red;
-    
+    float: left;
 }
 
-.issue-detail{
+.issue-detail, .feature-detail{
     float: left;
 	margin-top: 10px;
-	width: 422px;;     
+	width: 440px;;     
 }
 
-.issue-detail>h4{
+.issue-detail>h4, .feature-detail>h4{
 	margin: 0px;
 	left: 0px;
 	width: auto;
 	line-height: 1;
-    font-family: Roboto-bold, sans-serif; /*0830 added*/
+    font-family: Roboto-Semibold, sans-serif; /*0830 added*/
 }
 
-.issue-detail>h5{
+.issue-detail>h5, .feature-detail>h5{
 	padding-top: 10px;
     //line-height: 1.2;
     font-family: Baskerville, sans-serif; /*0830 added*/
+    font-size: 25px;
 
 }
 
@@ -162,12 +177,13 @@ p>a:link {color: #FFC413; text-decoration:underline}
 
 /*----------------Advertise----------------*/
 .app-left, .app-right{
-    width: 700px;
-    height: 435px;
-    overflow: hidden;
     position: relative;
     left: 50%;
     margin-left: -350px;
+    width: 700px;
+    height: 435px;
+    overflow: hidden;
+   
 }
 
 .app-left img, .app-right img {
@@ -224,9 +240,13 @@ p>a:link {color: #FFC413; text-decoration:underline}
 
 #advertise-panel .band{padding: 0px;}
 
-
-
-
+#water-bucket img{margin-top: 25px;}
+#water-bucket>img:last-child{
+    margin-top: 50px;
+}
+/*#water-bucket{width: 700px; left:50%; margin-left: -350px;}*/
+#badges img{margin-top:40px;}
+#badges{min-height: 205px;}
 
 /* for 680px or less */
 @media screen and (max-width: 680px){
@@ -249,7 +269,7 @@ p>a:link {color: #FFC413; text-decoration:underline}
         height: 150px;
 	}
 	
-	.issue{
+	.issue, .issue-detail{
 		width: auto;
 	}
 
