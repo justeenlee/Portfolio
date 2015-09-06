@@ -120,9 +120,7 @@ p>a:link {color: #FFC413; text-decoration:underline}
 .issue-detail{
     float: left;
 	margin-top: 10px;
-	width: 422px;; 
-	//background-color: blue;
-    
+	width: 422px;;     
 }
 
 .issue-detail>h4{
@@ -164,47 +162,67 @@ p>a:link {color: #FFC413; text-decoration:underline}
 
 /*----------------Advertise----------------*/
 .app-left, .app-right{
-    width: auto;
-    height: 543px;
-    margin-bottom: 50px;
+    width: 700px;
+    height: 435px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
 }
+
+.app-left img, .app-right img {
+    margin-top: 60px;
+}
+
 
 .app-left-ui, .app-left-info, .app-right-ui, .app-right-info{
-    width: 50%;
-    height: 100%;
     position: relative;
     float: left;
+    overflow: hidden;
 }
 
-.app-left-ui>img, .app-right-ui>img{
-    position: relative;
-    margin-top: -240px;
-    top: 50%;
-    left: 50%;
-    margin-left: -115px;   
+.app-left-ui>img{
+    position: relative;  
+    margin-left: 70px;
+}
+
+.app-right-ui>img{
+    position: relative;  
+    margin-left: 30px;
 }
 
 .app-left-info>*, .app-right-info>*{
-    position: relative;
-    left: 50%;
-    width: 400px;
-    margin-left: -200px;
-    height:auto;
+    width: 350px;
 }
 
 .app-left-info, .app-right-info{
-    padding: 110px 0;
-    height: auto;
+    margin-left: 50px;
+}
+    
+
+.app-left-info, .app-right-info{
+    padding-top: 100px;
 }
 
-#advertise-panel h2{font-size: 40pt;}
-#advertise-panel h3{font-size: 25pt;margin-bottom: 15px;line-height: 1.2;}
+.app-left h2, .app-right h2{
+    font-size: 50px;
+    font-family: Roboto-Regular;
+}
+.app-left h3, .app-right h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-family: Roboto-Light;
+}
 
-#advertise-panel h4{line-height: 1.2;}
+.app-left h4, .app-right h4{
+    font-size: 22px;
+    line-height: 1.4;
+    font-family: Roboto-Light;
 
+}
 
-
-
+#advertise-panel .band{padding: 0px;}
 
 
 

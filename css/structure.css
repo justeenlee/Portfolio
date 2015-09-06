@@ -92,20 +92,31 @@ p{
 
 .quote{
 	position: relative;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	height: auto;
-    left: 50%;
-	margin-left: -190px;
-	width: 380px;
-	
+	padding: 50px 0;
+	height: auto;	
 }
 
 .quote>h3{
+    position: relative;
+    left: 50%;
+	margin-left: -190px;
+	width: 380px;
 	font-family: Baskerville;
     font-style: italic;
 	font-size: 30px;
-	//text-align: center;	
+}
+
+.quote>h4{
+    position:relative;
+    font-family: Roboto-Light;
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: right;
+}
+
+.long-quote>h3{
+	width: 590px;
+    margin-left: -295px;
 }
 
 /*---navigation---------------------------------*/
@@ -178,7 +189,7 @@ body{
     font-size: 22px;
     color: rgb(117,117,117);
 	background-color: #fff;
-    background-color: #FbFbFb; /*0901*/
+    //background-color: #FbFbFb; /*0901*/
 }
 
 /*-------------title------------------------*/
@@ -324,6 +335,10 @@ body{
     left: 50%;
     width: 700px;
     margin-left: -350px;
+}
+
+.process{
+    margin: 70px 0;
 }
 
 
