@@ -174,7 +174,7 @@ p>a:link {color: #FFC413; text-decoration:underline}
 	margin-bottom: 0px;
 }
 
-/*----------------Advertise----------------*/
+/*----------------Market----------------*/
 .app-left, .app-right{
     position: relative;
     left: 50%;
@@ -237,7 +237,7 @@ p>a:link {color: #FFC413; text-decoration:underline}
 
 }
 
-#advertise-panel .band{padding: 0px;}
+#market-panel .band{padding: 0px;}
 
 #water-bucket img{margin-top: 25px;}
 #water-bucket>img:last-child{
@@ -260,7 +260,7 @@ p>a:link {color: #FFC413; text-decoration:underline}
 	#title-description{left: 30px;}
 
 	/*calor only?*/
-	#prototype-panel>#video-cartridge-mechanism, #prototype-panel>#video-set-temp{
+	#prototype-panel>#market-cartridge-mechanism, #prototype-panel>#video-set-temp{
 		left: 0;
 		margin-left: 0;
         padding: 0; //0621
