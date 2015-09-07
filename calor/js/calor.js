@@ -1,7 +1,9 @@
-//$(window).bind("load", function() {  
-//	setTimeout(function() {addVideo()}, 1400);
-//    //gifCheck();
-//}); 
+$(window).bind("load",function() {setTimeout(addVideo, 1400);});
+
+$(window).scroll(function (){
+    gifCheck();
+    navCheck();
+});
 
 
 
@@ -12,6 +14,27 @@ function addVideo(){
     document.getElementById('video-interaction').innerHTML= '<iframe src="http://player.vimeo.com/video/133002593?byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 };
 
+var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
+
+function navCheck(){
+    var currentViewTopEdgePosition = $(window).scrollTop();
+    if (currentViewTopEdgePosition > 625){
+        for (var i=0; i<navLinkArray.length; i++){
+            var linkName = "#"+navLinkArray[i];
+            $(linkName).css("color", "#555");
+        }
+        $("#indicator-dot").css("backgroundColor", "#555");
+        $("#cf").css("opacity", ".7");
+    } else {
+         for (var i=0; i<navLinkArray.length; i++){
+            var linkName = "#"+navLinkArray[i];
+            $(linkName).css("color", "#fff");
+        }
+        $("#indicator-dot").css("backgroundColor", "#fff");
+        $("#cf").css("opacity", ".1");
+    }
+
+}
 
 
 var gifDisplayArray = [false, false, false, false];

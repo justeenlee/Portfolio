@@ -33,16 +33,6 @@
 
 	
 <body>
-<!--
-	<div id = "navigation">
-        <ul>
-    <li class="li-nav"><a id="link-home" href="../index.html">PLAYGROUND</a></li>
-    <li class="li-nav"><a id="link-projects"  href="../projects/projects.html#floor-three">PROJECTS</a></li>
-    <li class="li-nav"><a id="link-resume"  href="../resume/resume.html">RESUME</a></li>
-    <li class="li-nav"><a  id="link-about"  href="../about/about.html">ABOUT</a></li>
-        </ul>
-	</div>	
--->
     <div id = "navigation">
         <ul>
             <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
@@ -51,7 +41,7 @@
             
     <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
             
-    <li class="li-nav"><a  id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/">ABOUT</a></li>
+    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/">ABOUT</a></li>
         </ul>
         <span id="indicator-dot"></span>
 	</div>
@@ -434,11 +424,6 @@ No more trial and error.</h3>
 		}
 	  });
 	});
-    
-	//load video
-	$(window).bind("load",function() {setTimeout(addVideo, 1400);});
-
-    $(window).scroll(function (){gifCheck()});
 </script>
     
     
@@ -448,6 +433,7 @@ No more trial and error.</h3>
     (function(){
         move("currentPath");
         setFullWidth();
+        navCheck();
     })();
     
     $(window).resize(function(){setFullWidth();});
@@ -455,7 +441,6 @@ No more trial and error.</h3>
     function setFullWidth(){
         var newWidth = window.innerWidth;
         var newMarginLeft = (-(newWidth/2))+"px";
-        console.log(newWidth);
         $("#title-panel").width(newWidth);
         $("#title-panel").css("margin-left", newMarginLeft);
         $(".band").width(newWidth);
@@ -466,7 +451,6 @@ No more trial and error.</h3>
         var dot = document.getElementById("indicator-dot");
         if (input == "currentPath"){
             var currentPath = window.location.pathname.split("/")[(window.location.pathname.split("/").length)-2];
-        console.log(currentPath);
             var input = currentPath;
         }
         

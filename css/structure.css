@@ -106,7 +106,7 @@ p{
 
 .quote{
 	position: relative;
-	padding: 50px 0;
+	padding: 80px 0;
 	height: auto;	
     float: none;
     width: 700px;
@@ -191,11 +191,11 @@ a:active {color: darkgrey;} /*when clicked*/
 /*once pass rendering, change opacity*/
     left: 50%;
     margin-left: -684px;
-    
+    transition: .7s ease;
 }
 
 #indicator-dot{
-position: absolute;
+    position: absolute;
     width: 4px;
     height: 4px;
     background-color: #fff;
@@ -216,7 +216,7 @@ body{
     font-size: 22px;
     color: rgb(117,117,117);
 	background-color: lightblue;
-    //background-color: #FbFbFb; /*0901*/
+    background-color: #FbFbFb; /*0901*/
 }
 
 /*-------------title------------------------*/
@@ -273,8 +273,7 @@ body{
 /*----------------Promotion----------------*/
 #promotion-panel{
     position: relative;
-    //width: 100%;
-    height: 500px;
+    min-height: 395px;
     background-color: #000;
     margin: 50px 0;
 }
@@ -316,11 +315,8 @@ body{
 
 .video-demo{
 	position: relative;
-	//left: 50%;
-	//margin-left: -440px;
 	width: 100%;
-	min-height: 543px;
-	height: auto;
+    min-height: 395px;
 	background-color: #000;
     margin: 50px 0;
 }
@@ -344,6 +340,7 @@ body{
     left: 50%;
     width: 700px;
     margin-left: -350px;
+    padding: 50px 0;
 }
 
 .process{
