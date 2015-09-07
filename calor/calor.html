@@ -439,9 +439,6 @@ No more trial and error.</h3>
 	$(window).bind("load",function() {setTimeout(addVideo, 1400);});
 
     $(window).scroll(function (){gifCheck()});
-    
-
-	
 </script>
     
     
@@ -450,6 +447,12 @@ No more trial and error.</h3>
     
     (function(){
         move("currentPath");
+        setFullWidth();
+    })();
+    
+    $(window).resize(function(){setFullWidth();});
+    
+    function setFullWidth(){
         var newWidth = window.innerWidth;
         var newMarginLeft = (-(newWidth/2))+"px";
         console.log(newWidth);
@@ -457,17 +460,7 @@ No more trial and error.</h3>
         $("#title-panel").css("margin-left", newMarginLeft);
         $(".band").width(newWidth);
         $(".band").css("margin-left", newMarginLeft);
-    })();
-    
-    $(window).resize(function(){
-     var newWidth = window.innerWidth;
-    var newMarginLeft = (-(newWidth/2))+"px";
-    console.log(newWidth);
-    $("#title-panel").width(newWidth);
-    $("#title-panel").css("margin-left", newMarginLeft);
-    $(".band").width(newWidth);
-    $(".band").css("margin-left", newMarginLeft);
-    });
+    }
     
     function move(input){
         var dot = document.getElementById("indicator-dot");
