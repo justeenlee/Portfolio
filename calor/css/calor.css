@@ -152,7 +152,11 @@ p>a:link {color: #FFC413; text-decoration:underline}
 
 }
 
-
+.statement>h3{
+    margin-left: -324px;
+    width: 644px;
+    text-align: center;
+}
 /*----------------Ideation----------------*/
 
 
