@@ -150,6 +150,7 @@ a:link {color: #5b5b5b; text-decoration:none;}
 a:visited {color: #5b5b5b; } 
 a:hover {color: silver;}
 a:active {color: darkgrey;} /*when clicked*/
+li>a:link {transition: .7s ease;}
 
 #navigation{
     z-index: 20;

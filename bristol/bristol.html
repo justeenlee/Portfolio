@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="../css/structure.css">
 	<link rel="stylesheet" href="css/bristol.css">
 	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/overall.js" defer></script>
 	<script src="../js/jquery.flexslider.js" defer></script>
 <!--
 	<script>
@@ -34,25 +35,30 @@
 <body>
 	<div id = "navigation">
         <ul>
-    <li class="li-nav"><a id="link-home" href="../index.html">PLAYGROUND</a></li>
-    <li class="li-nav"><a id="link-projects"  href="../projects/projects.html#floor-three">PROJECTS</a></li>
-    <li class="li-nav"><a id="link-resume"  href="../resume/resume.html">RESUME</a></li>
-    <li class="li-nav"><a  id="link-about"  href="../about/about.html">ABOUT</a></li>
+            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+            
+    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+            
+    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
+            
+    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/">ABOUT</a></li>
         </ul>
-	</div>	
+        <span id="indicator-dot"></span>
+	</div>
 	<div id = "cf"></div>
 
 <!--title panel------------------------------>
     <div id = "title-panel">
 		<div id = "title-img">
-            <img src="images/title-pic.jpg" id = "title-img-product" class = "title-image-group">
+            <img src="images/title-pic.jpg" id = "title-img-product">
         </div>
 		
         <div id ="title-description">
-            <div>Bristol</div>
-            <div id = "title-description-supplement">
+            <h1>Bristol</h1>
+            <h2 id = "title-description-supplement">
                 Portable VR Viewer
-            </div>
+            </h2>
+            <h3>Efficient and reliable shower experience</h3>
         </div>           
     </div>
 	
@@ -194,7 +200,7 @@
 	//load video
 	$(window).bind("load",
 		function() {
-			setTimeout(addVideo, 1400);
+			//setTimeout(addVideo, 1400);
 		}
 	);
 	//load animation
