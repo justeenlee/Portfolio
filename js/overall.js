@@ -1,3 +1,8 @@
+var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
+
+
+
+
 //auto run function to set up when page is loaded
 (function(){
     move("currentPath");
@@ -46,7 +51,7 @@ function move(input){
     }
 }
 
-var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
+
 function navCheck(){
     var currentViewTopEdgePosition = $(window).scrollTop();
     if (currentViewTopEdgePosition > 625){
