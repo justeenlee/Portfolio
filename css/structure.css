@@ -137,12 +137,14 @@ p{
     margin-left: -250px;
 }
 
-.quote-mark, .question-mark, .statement-mark{
+.quote-mark, .question-mark, .statement-mark, .exclamation-mark{
     position: absolute;
     margin-left: -25px;
 }
 
-.statement-mark{margin: -10px 0 0 -10px;}
+.statement-mark{margin: -20px 0 0 -10px;}
+.exclamation-mark{margin: 25px 0 0 -10px;}
+
 
 /*---navigation---------------------------------*/
 a:link {color: #5b5b5b; text-decoration:none;}
@@ -221,18 +223,30 @@ body{
 /*-------------title------------------------*/
 #title-panel{
     position: relative;
-    width:100%;
-    height: 550px;
+    left: 50%;
+    height: 650px;
+    background-color: #fb4489;
+    overflow: hidden;
 }
 
 #title-img{
-    position: absolute;
-    width: 60%;
-    height: 600px;
-    //overflow: hidden;  
-	-webkit-animation: landing 1.2s; 
+    position: relative;
+    width: 700px;
+    height: auto;
+    top: 15%;
+    left: 50%;
+    margin-left: -350px;
+    -webkit-animation: landing 1.2s; 
     -webkit-animation-timing-function:ease-in-out;
 }
+
+#title-img-product{
+    position: relative;
+    left: 50%;
+    height: 290px;
+    margin-left: -150px;
+}
+
 
 #title-description{
     position: absolute;
@@ -240,35 +254,58 @@ body{
     width: 50%;
     height: 500px;
     font-size: 90px;
-    /*line-height: 1; 0830 delete*/
 	margin-top: 25%;
-}
-/*
-
-.title-description-group{
-    -webkit-animation: float 2.2s ease-in-out forwards;
-}
-*/
-
-#title-panel{
-	//overflow: hidden;
-}
-
-#title-description{
-	-webkit-animation: float 2.2s; 
+    -webkit-animation: float 2.2s; 
     -webkit-animation-timing-function:ease-in-out;
 	-webkit-animation-fill-mode: forwards;
 }
 
-#title-description>div{
-	font-family: "MYRIADPRO-REGULAR";
+
+
+#title-description{	
+    position: relative;
+    height: auto;
+    width: 700px;
+    margin-left: -350px;
+    left: 50%;
+    margin-top: 150px;
+    -webkit-animation: float 2.2s; 
+    -webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-fill-mode: forwards;
 }
+
+
+#title-description>h1{
+    font-size: 60px;
+    line-height: 1.3;
+    font-family: Roboto-Regular;
+}
+#title-description>h2{
+    /*0830 reset*/
+    margin-top: 0; 
+	margin-left: 0;
+    font-size: 40px;
+    line-height: 1.2;
+	font-family: Roboto-Light;
+}
+
+#title-description>h3{
+    font-size: 30px;
+    font-family: Roboto-Light;
+}
+
 
 #title-description-supplement{
     margin-top: -.5%;
 	margin-left: 5px;
     font-size: 20pt;
 }
+
+
+
+
+
+
 /*----------------Promotion----------------*/
 #promotion-panel{
     position: relative;
@@ -510,17 +547,19 @@ footer{
     100% {opacity: 1; -webkit-transform:translate(0px, 0px)}
 }
 
+
+
 @-webkit-keyframes float {
-	0%{
-		opacity: 0;
-		-webkit-transform:translate(0px, 0px);
-	}
-	40%{
-		opacity: 0;
-		-webkit-transform:translate(0px, 0px);
-	}
-	100%{
-		opacity: 1;
-		-webkit-transform:translate(-20px, 0px);
-	}
+0%{
+    opacity: 0;
+    -webkit-transform:translate(20px, 0px);
+}
+40%{
+    opacity: 0;
+    -webkit-transform:translate(20px, 0px);
+}
+100%{
+    opacity: 1;
+    -webkit-transform:translate(0px, 0px);
+}
 }
