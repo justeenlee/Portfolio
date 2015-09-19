@@ -1,8 +1,9 @@
 /*#link-projects{text-decoration: underline;}*/
 
 /*<i> for in-text hightlight*/
-.quote>h3,i, #title-description
-{color: #fb4489;}
+.quote>h3,i {color: #fb4489;}
+
+#title-description{color: #fff;}
 
 /*0916 move to structure if all have non white bg*/
 li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
@@ -17,7 +18,6 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
     width: 85%; 
 }
 */
-
 
 #title-panel{
     left: 50%;
@@ -39,8 +39,7 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 #title-img-product{
     position: relative;
     left: 50%;
-    margin-left: -146px;
-
+    margin-left: -300px;
 }
 
 #title-description{	
