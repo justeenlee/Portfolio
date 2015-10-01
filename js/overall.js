@@ -1,8 +1,5 @@
 var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
 
-
-
-
 //auto run function to set up when page is loaded
 (function(){
     move("currentPath");
@@ -15,7 +12,6 @@ $(window).scroll(function (){
     navCheck();
 });
 $(window).resize(function(){setFullWidth();});
-
 
     
 function setFullWidth(){
@@ -50,7 +46,6 @@ function move(input){
         }   
     }
 }
-
 
 function navCheck(){
     var currentViewTopEdgePosition = $(window).scrollTop();
