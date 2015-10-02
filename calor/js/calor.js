@@ -2,7 +2,7 @@ $(window).bind("load",function() {setTimeout(addVideo, 1400);});
 
 $(window).scroll(function (){
     gifCheck();
-    navCheck();
+    //navCheck();
 });
 
 function addVideo(){
