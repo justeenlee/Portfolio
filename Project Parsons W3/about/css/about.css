@@ -21,9 +21,9 @@ img.second {
 	padding-top:60px;/*no cf for smoothness*/
 	width: 880px;
 	height: auto;
-	background: -webkit-linear-gradient(top, #8e44ad 10%,  #156ba7 100%);
-	background: -moz-linear-gradient(top, #8e44ad 10%,  #156ba7 100%);
-	background: linear-gradient(top, #8e44ad 10%,  #156ba7 100%);
+	background: -webkit-linear-gradient(top, #FF0990   3%,  #7B21A4  80%);
+	background: -moz-linear-gradient(top, #FF0990 10%,  #7B21A4 100%);
+	background: linear-gradient(top, #FF0990 10%,  #7B21A4 100%);
 }
 
 /*----------------intro----------------*/
@@ -38,18 +38,16 @@ img.second {
 }
 
 /*about me + about this site*/
-.panel-name{
-	margin-bottom: 20px;
-	width: 162px;
-	padding: 0px 10px;
-	font-size: 1.1em;
-	color: #0D8278;
-	color: #8e44ad;
+#site-panel>h2, #me-panel>h2{
+    margin-bottom: 20px;
+	width: 140px;
+	padding: 10px 20px;
+	font-size: 30px;
+	color: #FF0990;
 	background-color: white;
 }
 
-
-.panel-name+h3{
+#site-panel>h3, #me-panel>h3{
 	line-height: 1;
 	margin-bottom: 10px;
 	font-size: 20pt;
@@ -66,7 +64,7 @@ img.second {
 
 
 /*----------------site panel----------------*/
-#site-panel {
+#site-panel{
 	position: relative;
 	margin-bottom: 25px;
 	min-height: 350px;
@@ -77,9 +75,9 @@ img.second {
 	//background-color: #156ba7;
 }
 
-.panel-name-site{
-	width: 240px;
-	color: #156ba7;
+#site-panel>h2{
+	width: 200px;
+	color: #7B21A4;
 }
 
 
