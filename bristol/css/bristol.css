@@ -40,13 +40,13 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 .ue::after{
     content:'';
     height: 5px;
-    margin-left: -110px;
+    margin-left: -100px;
     margin-top: 35px;
     position:absolute;
 }
 
-span.tailored::after {width: 115px;}
-span.everywhere::after {margin-left: -170px; width: 175px;}
+span.tailored::after {width: 105px;}
+span.everywhere::after {margin-left: -145px; width: 150px;}
 /*----------------Ideation----------------*/
 .value{
 	padding: 20px 0;
