@@ -1,7 +1,11 @@
 /*#link-projects{text-decoration: underline;}*/
 
 /*<i> for in-text hightlight*/
-.quote>h3,i {color: #fb4489;}
+.highlight>h3,i {color: #EEA257;}
+.ue::after{background-color: #EEA257 ;}
+p>a:link {color: #EEA257; text-decoration:underline}
+a:visited {color: #EEA257;}
+
 
 #title-description{color: #fff;}
 
@@ -35,7 +39,6 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 
 .ue::after{
     content:'';
-    background-color: #fb4489;
     height: 5px;
     margin-left: -110px;
     margin-top: 35px;
