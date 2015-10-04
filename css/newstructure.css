@@ -150,9 +150,9 @@ p{
 /*---navigation---------------------------------*/
 a:link {color: #fff; text-decoration:none;}
 /*unvisited link=visited link*/
-a:visited {color: #5b5b5b;}
-a:hover {color: silver;}
-a:active {color: darkgrey;} /*when clicked*/
+a:visited {color: #fff;}
+//a:hover {color: silver;}
+a:active {color: darkgrey;} /*being clicked*/
 li>a:link {transition: .7s ease;}
 
 #navigation{
@@ -161,7 +161,7 @@ li>a:link {transition: .7s ease;}
     width: 700px; /*0830 880 to 700*/ 
     height: 50px; /*0830 60 to 50*/
 	background-color: transparent; /*0830 white to trans*/
-    opacity: .8; /*0830 .9 to .8*/
+    opacity: .9;
 	overflow: hidden;
 }
 
