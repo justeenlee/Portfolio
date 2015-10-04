@@ -1,15 +1,22 @@
 var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
 
+var currentPath = window.location.pathname.split("/")[(window.location.pathname.split("/").length)-2];
+
+
 //auto run function to set up when page is loaded
 (function(){
     move("currentPath");
     setFullWidth();
-    navCheck();
+    if (currentPath != "about"){
+        navCheck();
+    }
 })();
 
 
 $(window).scroll(function (){
-    navCheck();
+    if (currentPath != "about"){
+        navCheck();
+    }
 });
 $(window).resize(function(){setFullWidth();});
 
@@ -23,10 +30,13 @@ function setFullWidth(){
     $(".band").css("margin-left", newMarginLeft);
 }
     
+
+
+
 function move(input){
     var dot = document.getElementById("indicator-dot");
+    //for setting up dot position after page loaded
     if (input == "currentPath"){
-        var currentPath = window.location.pathname.split("/")[(window.location.pathname.split("/").length)-2];
         var input = currentPath;
     }
 
@@ -49,6 +59,7 @@ function move(input){
 
 function navCheck(){
     var currentViewTopEdgePosition = $(window).scrollTop();
+    
     if (currentViewTopEdgePosition > 625){
         for (var i=0; i<navLinkArray.length; i++){
             var linkName = "#"+navLinkArray[i];
