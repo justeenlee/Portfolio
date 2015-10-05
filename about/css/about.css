@@ -61,10 +61,9 @@ img.second {
 }
 
 #site-panel>h3, #me-panel h3{
-	line-height: 2;
 	margin-bottom: 10px;
 	font-size: 20pt;
-    font-family: roboto;
+    font-family: roboto-regular;
 }
 
 .contact{

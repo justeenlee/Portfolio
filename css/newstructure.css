@@ -430,7 +430,6 @@ footer{
 @media screen and (max-width: 680px) {
 /*	#navigation{width:100%;}*/
 	
-    
 	#navigation>ul{
 		position:inherit;
 		padding: 0px;
