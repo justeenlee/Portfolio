@@ -2,7 +2,7 @@
 /*----------------Title----------------*/
 #title-panel{
     position: relative;
-    width:880px;
+    //width:880px;
     height: 520px;
     background-color: rgb(230,230,230); /*testing*/
 	overflow: hidden;
@@ -16,8 +16,7 @@ img.second {
 
 #title-panel{
 	padding-top:60px;/*no cf for smoothness*/
-	//width: 880px;
-	height: auto;
+    height: auto;
 	background: -webkit-linear-gradient(top, #FF0990   3%,  #7B21A4  80%);
 	background: -moz-linear-gradient(top, #FF0990 10%,  #7B21A4 100%);
 	background: linear-gradient(top, #FF0990 10%,  #7B21A4 100%);   
@@ -26,6 +25,8 @@ img.second {
 #about-section-wrapper p{
     font-size: 25px;
     font-family: roboto-light;
+	word-spacing: 1px;
+	color: #fff;
 }
 
 #about-section-wrapper{
@@ -33,7 +34,7 @@ img.second {
     position: relative;
     left: 50%;
     margin-left: -350px;
-    
+    margin-top: 100px;
 }
 
 
@@ -42,10 +43,10 @@ img.second {
 	position: relative;
 	min-height: 350px;
     height: auto;
-	margin-top: 50px;
 	color: white;
 	overflow: hidden;
 }
+
 
 
 /*about me + about this site*/
@@ -138,76 +139,42 @@ span>a:visited {color: rgb(117,117,117);}
 
 /*----------------native tags----------------*/
 
-/*---<p>---restyle-----------------------------*/
-p{
-	margin: 0;
-	left:0;
-	//width: auto;
-    //font-size: 15pt;
-    //line-height: 1.2;
-	word-spacing: 1px;
-	text-align: left;
-	color: #fff;
-}
 
-*~p{margin-bottom: 15px;}
-
-footer{
-    margin-top:15px;
-}
 
 p>a:link {color: #ffd05c ;}
 p>a:visited {color: #ffd05c ;}
 p>a:hover{text-decoration: underline;}
 
-
 .inline-highlight{text-decoration: underline}
+
+footer{margin-top:15px;}
+
 
 /* for 680px or less */
 @media screen and (max-width: 680px) {
 	/*--responsive all testing--*/
-	/*title panel height, title pic and caption relation, key phrase length*/
-	body{
-		width: auto;
-		left: 0;
-		margin: 0;
-	}
-	#title-panel, 
-	#intro-panel, 
-	#research-panel,
-	#ideation-panel,
-	#prototype-panel,
-	#product-panel,
-	#product-panel>div,
-	#resume-panel,
-	#about-wrapper,
-	.comment,
-	.quote>*{
-		width:100%;
-		height: auto;
-		left: 0;
-		margin: 0;
-	}
-	
-	p{
-		width: auto;
-		left: 0;
-		margin-left: 0;
-		padding:0px 12px;
-	}
-	/*--responsive all testing--*/
-	
-	/* for about.css only*/
-	#me-panel, #site-panel{
-		width: auto;
-		padding: 60px 12px 0px 12px;
-	}
-
-	p{padding:0;}
-	
-
-	
+/* for about.css only*/
+    
+#title-panel{
+    padding: 0; /* full bleed on about page*/
 }
+    
+#me-panel, #site-panel{
+    width: auto;
+    padding: 60px 20px 0px 20px;
+}
+
+p{padding:0;}
+
+#about-section-wrapper{
+    width: auto;
+    margin-left: 0; /*reset >680px*/
+    left: 0; /*reset >680px*/
+}
+    
+#link-about{text-decoration: underline}
+.li-nav:hover{text-decoration: underline}
+
 
 @media screen and (max-width: 480px){
 	/* for about.css only*/

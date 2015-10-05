@@ -189,7 +189,7 @@ li>a:link {transition: .7s ease;}
     /*0830*/
      z-index: 10;
     background-color: #fff;
-    opacity: .15;
+    opacity: .25;
 /*once pass rendering, change opacity*/
     left: 50%;
     margin-left: -684px;
@@ -428,8 +428,9 @@ footer{
 /*----------Media Query starts--------------*/
 /* for 680px or less */
 @media screen and (max-width: 680px) {
-	#navigation{width:100%;}
+/*	#navigation{width:100%;}*/
 	
+    
 	#navigation>ul{
 		position:inherit;
 		padding: 0px;
@@ -447,13 +448,30 @@ footer{
 		padding: 0px;
 		font-size: 20px;
 	}
+    
+    #navigation, #cf{
+        width: 100%;
+    }
+    
+    #cf{
+        left: 0; /*reset >680px*/
+        margin-left: 0; /*reset >680px*/
+    }
+    #indicator-dot{
+        width: 0px;
+        height: 0px;
+        border-radius: 0;
+        top: 0px;
+    }
 	
 	body{
 		width: auto;
 		width: 100%; /*for slider to work*/
-		left: 0;
-		margin: 0;
+		left: 0; /*reset >680px*/
+		margin-left: 0; /*reset >680px*/
 	}
+    
+    
 	#title-panel, 
 	#intro-panel, 
 	#problem-panel,
@@ -464,16 +482,15 @@ footer{
 	#product-panel,
 	#product-panel>div,
 	#resume-panel,
-	#about-wrapper,
 	#work-panel,
 	.comment
 	{
 		width: 100%;
 		width:auto;/*0121 for padding*/
 		height: auto;
-		left: 0;
-		margin-left: 0;
-		margin-right: 0;
+		//left: 50%;
+		//margin-left: 0px;
+		//margin-right: 0;
 		padding: 0 10px;/*0121*/
 	}
 	
@@ -511,6 +528,9 @@ footer{
 		margin-top: 100px;
 		height: auto;
 		max-height: 50px;
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
 	}	
 
 	.author, .copyright{
@@ -523,7 +543,7 @@ footer{
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
-	#navigation{
+	#cf{
 		height: 82px;
 	}
 	#navigation>ul{
@@ -545,7 +565,9 @@ footer{
 	footer{
 		padding-left: 12px;
 		margin-bottom: 20px;
-		text-align:left;
+		//text-align:left;
+       
+        
 	}
 }
 /*--------------Media Query ends-----------------*/
