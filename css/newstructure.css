@@ -102,7 +102,7 @@ p{
 
 .quote{
 	position: relative;
-	padding: 80px 0;
+	margin: 80px 0;
 	height: auto;	
     float: none;
     width: 700px;
@@ -127,6 +127,10 @@ p{
     margin-top: 20px;
     font-size: 17px;
     text-align: right;
+}
+
+.long-quote{
+    position: relative;
 }
 
 .long-quote>h3{
@@ -306,13 +310,6 @@ body{
 
 
 
-/*----------------Promotion----------------*/
-#promotion-panel{
-    position: relative;
-    min-height: 395px;
-    background-color: #000;
-    margin: 50px 0;
-}
 
 /*----------------intro----------------*/
 #intro-panel{
@@ -334,6 +331,18 @@ body{
     vertical-align: middle;
     opacity: .75;
 }
+
+/*----------------Promotion----------------*/
+#promotion-panel{
+    position: relative;
+    min-height: 395px;
+    margin: 50px 0;
+    left: 50%;
+	margin-left: -350px;
+    width: 700px;
+}
+
+
 
 /*----------------Research----------------*/
 #research-panel{
@@ -497,30 +506,18 @@ footer{
         margin-left: 0; /*reset >680px*/
     }
     #indicator-dot{
-/*
-        width: 0px;
-        height: 0px;
-        border-radius: 0;
-        top: 0px;
-*/
         opacity: 0;
     }
 	
 	body{
-		width: auto;
-		//width: 100%; /*for slider to work*/
+		width: 100%; /*for slider, title-panel, band to work*/
 		left: 0; /*reset >680px*/
 		margin-left: 0; /*reset >680px*/
-        padding: 0 12px;
+        padding: 0;
 	}
     
-    /*add padding to all text*/
-    .band>.quote,
-    .quote>h3,
-    .driving-question>h3,
-    .statement>h3,
-    {padding: 0 12px;}
     
+
     
 /*
     .app-left *, .app-right *, .feature *{
@@ -528,20 +525,35 @@ footer{
         opacity: .9;}
 */
     
-
+    	
     
+/*add padding to all text, images*/   
+	#intro-panel, 
+    #promotion-panel,
+	#problem-panel,
+	#research-panel,
+	#ideation-panel,
+	#prototype-panel,
+    #market-panel,
     .quote,
     .quote>h3,
     .long-quote>h3,
-    .statement,
+    .driving-question>h3
     .statement>h3,
-    .driving-question,
-    .driving-question>h3,
-    .highlight,
-    .highlight>h3{
-        width: auto;
-        left: 0; /*reset >680px*/
-        margin-left: 0; /*reset >680px*/
+    .comment
+    {
+        padding: 0 12px;
+    }
+    
+    
+    
+    .band>img,
+    .market-panel-process>img,
+    .feature>img,
+    #prototype-panel>img{
+        width: 100%; /* 100% for img?*/
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
     }
     
     .quote-mark, 
@@ -553,12 +565,11 @@ footer{
     
     .exclamation-mark{
         left: 0%; /*reset >680px*/
-		margin-left: 0px; /*reset >680px*/
-
     }
     
 	#title-panel, 
 	#intro-panel, 
+    #promotion-panel,
 	#problem-panel,
 	#research-panel,
 	#ideation-panel,
@@ -568,20 +579,21 @@ footer{
 	#product-panel>div,
 	#resume-panel,
 	#work-panel,
-	.comment
+	.comment,
+    p,
+    .quote,
+    .quote>h3,
+    .long-quote>h3,
+    .statement,
+    .statement>h3,
+    .driving-question,
+    .driving-question>h3,
+    .highlight,
+    .highlight>h3
 	{
 		width:auto;/*0121 for padding*/
-		height: auto;
         left: 0%; /*reset >680px*/
 		margin-left: 0px; /*reset >680px*/
-	}
-	
-    
-	
-	p{
-		width: auto;
-		left: 0;
-		margin-left: 0;
 	}
 	
 	#title-img, 
@@ -601,15 +613,7 @@ footer{
 	#title-description{left: 30px;}
 	#title-description-supplement{margin-left: 4px;}
 
-    .band>img,
-    .market-panel-process>img,
-    .feature>img,
-    #prototype-panel>img{
-        width: 100%; /* 100% for img?*/
-        //width:auto;
-        left: 0%; /*reset >680px*/
-		margin-left: 0px; /*reset >680px*/
-    }
+
     
     .issue,
     .issue-icon,
@@ -682,6 +686,8 @@ footer{
 	
 	#link-resume, #link-about{line-height:2;}
 
+
+    
 	footer{
 		padding-left: 12px;
 		margin-bottom: 20px;

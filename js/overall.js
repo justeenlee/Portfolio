@@ -21,7 +21,13 @@ $(window).scroll(function (){
 
 $(window).resize(function(){
     setFullWidth();
-    move("currentPath");
+    if (window.innerWidth>679){
+        document.getElementById("indicator-dot").style.opacity = "1";
+        move("currentPath");
+        
+    } else{
+        document.getElementById("indicator-dot").style.opacity = "0";
+    }
 });
 
     
@@ -40,6 +46,7 @@ function setFullWidth(){
 function move(input){
     var dot = document.getElementById("indicator-dot");
     //for setting up dot position after page loaded
+    
     if (input == "currentPath"){
         var input = currentPath;
     }

@@ -1,4 +1,4 @@
-/*#link-projects{text-decoration: underline;}*/
+
 
 /*<i> for in-text hightlight*/
 .highlight>h3,i, #title-description{color: #FFC413;}
@@ -233,7 +233,9 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 
 /* for 680px or less */
 @media screen and (max-width: 680px){
-	/*bristol only*/
+
+    #link-projects{text-decoration: underline;}
+	/*calor only*/
 	.title-image-group{
 	/*can adjust this to fit image*/
 		margin: 0; 
