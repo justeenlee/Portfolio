@@ -62,16 +62,12 @@ p{
 
 .slide-container{margin-top: 10px;}
 
-
-
 .driving-question, .statement, .highlight{
     position: relative;
     left: 50%;
     margin: 100px 0 100px -350px;
     width: 700px;
 }
-
-
 
 .driving-question>h3, .statement>h3{
     position: relative;
@@ -162,7 +158,7 @@ li>a:link {transition: .7s ease;}
     height: 50px; /*0830 60 to 50*/
 	background-color: transparent; /*0830 white to trans*/
     opacity: .9;
-	overflow: hidden;
+	//overflow: hidden;
 }
 
 /*0116+#navigation>*/
@@ -172,6 +168,7 @@ li>a:link {transition: .7s ease;}
     margin-left: 0px; /*4-link placement*/ /*0830 80 to 0*/ 
     list-style-type: none;
     font-family: "MYRIADPRO-Regular"; /*0731 bold to regular*/
+//    font-family: futura; /*1005 myriad pro regular to futura*/
 }
 
 
@@ -224,11 +221,12 @@ body{
 /*-------------title------------------------*/
 #title-panel{
     position: relative;
-    left: 50%;
     height: 650px;
     background-color: #fb4489;
     overflow: hidden;
 }
+
+
 
 #title-img{
     position: relative;
@@ -253,9 +251,9 @@ body{
     position: absolute;
     left:56%; /*adjust this for position*/
     width: 50%;
-    height: 500px;
+    height: auto;
     font-size: 90px;
-	margin-top: 25%;
+	margin-top: 150px;
     -webkit-animation: float 2.2s; 
     -webkit-animation-timing-function:ease-in-out;
 	-webkit-animation-fill-mode: forwards;
@@ -349,6 +347,47 @@ body{
     width: 100%;
 }
 
+/*move to structure from calor 1005*/
+.issue, .feature{
+	padding: 40px 0;
+	height: auto;
+    min-height: 120px; /*200 - 40*2padding*/
+    display: block;
+    width: 700px; 
+    left:50%; 
+    margin-left: -350px;
+}
+
+.issue-icon, .feature-icon{
+	width:257px;
+    float: left;
+}
+
+.issue-detail, .feature-detail{
+    float: left;
+	margin-top: 10px;
+	width: 440px;;     
+}
+
+.issue-detail>h4, .feature-detail>h4{
+	margin: 0px;
+	left: 0px;
+	width: auto;
+	line-height: 1;
+    font-family: Roboto-Semibold, sans-serif;
+}
+
+.issue-detail>h5, .feature-detail>h5{
+	padding-top: 10px;
+    font-family: Baskerville, sans-serif;
+    font-size: 25px;
+}
+
+.statement>h3{
+    margin-left: -324px;
+    width: 644px;
+    text-align: center;
+}
 /*----------------Ideation----------------*/
 #ideation-panel>img {
 	box-shadow: 0 0 7px 0px grey;
@@ -391,7 +430,7 @@ body{
     padding: 50px 0;
 }
 
-.process{
+.market-panel-process{
     margin: 70px 0;
 }
 
@@ -434,7 +473,7 @@ footer{
 		position:inherit;
 		padding: 0px;
 		margin-left: 0px; /*4-link placement*/
-		font-family: "MYRIADPRO-BOLD";
+		//font-family: "MYRIADPRO-BOLD";
 		width: 460px;
 		height:auto;
 		left: 50%;
@@ -457,19 +496,65 @@ footer{
         margin-left: 0; /*reset >680px*/
     }
     #indicator-dot{
+/*
         width: 0px;
         height: 0px;
         border-radius: 0;
         top: 0px;
+*/
+        opacity: 0;
     }
 	
 	body{
 		width: auto;
-		width: 100%; /*for slider to work*/
+		//width: 100%; /*for slider to work*/
 		left: 0; /*reset >680px*/
 		margin-left: 0; /*reset >680px*/
+        padding: 0 12px;
 	}
     
+    /*add padding to all text*/
+    .band>.quote,
+    .quote>h3,
+    .driving-question>h3,
+    .statement>h3,
+    {padding: 0 12px;}
+    
+    
+/*
+    .app-left *, .app-right *, .feature *{
+        background-color: yellow; 
+        opacity: .9;}
+*/
+    
+
+    
+    .quote,
+    .quote>h3,
+    .long-quote>h3,
+    .statement,
+    .statement>h3,
+    .driving-question,
+    .driving-question>h3,
+    .highlight,
+    .highlight>h3{
+        width: auto;
+        left: 0; /*reset >680px*/
+        margin-left: 0; /*reset >680px*/
+    }
+    
+    .quote-mark, 
+    .question-mark, 
+    .statement-mark, 
+    .exclamation-mark{
+		margin-left: 0px; /*reset >680px*/
+    }
+    
+    .exclamation-mark{
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
+
+    }
     
 	#title-panel, 
 	#intro-panel, 
@@ -484,42 +569,76 @@ footer{
 	#work-panel,
 	.comment
 	{
-		width: 100%;
 		width:auto;/*0121 for padding*/
 		height: auto;
-		//left: 50%;
-		//margin-left: 0px;
-		//margin-right: 0;
-		padding: 0 10px;/*0121*/
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
 	}
 	
-	.quote>h3{
-		left: 0;
-		margin-left: 0;
-		width: auto;
-	}
+    
 	
 	p{
 		width: auto;
 		left: 0;
 		margin-left: 0;
-		padding:0px 12px;
 	}
 	
-	#title-img, #title-description, .title-image-groupx, #title-description-supplement {
+	#title-img, 
+    #title-description, 
+    #title-img-product,
+    .title-image-group, 
+    #title-description-supplement {
 		position: relative;
-		width: 100%;
-		left: 0;
+		width: auto;
 		height: auto;
-		margin:0;
+        left: 0%; /*reset >680px*/
+		margin-left: 0; /*reset >680px*/
 	}
 	
+    #title-panel{height: 700px;}
 	#title-img{margin-top: 30px;}
-
 	#title-description{left: 30px;}
-	
 	#title-description-supplement{margin-left: 4px;}
-	
+
+    .band>img,
+    .market-panel-process>img,
+    .feature>img,
+    #prototype-panel>img{
+        width: 100%; /* 100% for img?*/
+        //width:auto;
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
+    }
+    
+    .issue,
+    .issue-icon,
+    .issue-icon>img,
+    .issue-detail,
+    .issue-detail>h4,
+    .issue-detail>h5,
+    .feature-detail,
+    .feature-detail>h4,
+    .feature-detail>h5
+    {
+        width: auto;
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
+        text-align: center;
+    }
+    
+    .issue{
+        min-height: 220px;
+    }
+
+
+    .issue-icon{
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    
+
+    
 	footer{
 		width:auto;
 		left: 0;
@@ -537,11 +656,12 @@ footer{
 		text-align: center;
 		display: block;
 		line-height: 1.5;
-	}	
+	}
 }
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
+        
 	#cf{
 		height: 82px;
 	}
@@ -564,9 +684,6 @@ footer{
 	footer{
 		padding-left: 12px;
 		margin-bottom: 20px;
-		//text-align:left;
-       
-        
 	}
 }
 /*--------------Media Query ends-----------------*/

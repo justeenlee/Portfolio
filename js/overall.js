@@ -18,7 +18,13 @@ $(window).scroll(function (){
         navCheck();
     }
 });
-$(window).resize(function(){setFullWidth();});
+
+$(window).resize(function(){
+    setFullWidth();
+    if (currentPath != "about"){
+        navCheck();
+    }
+});
 
     
 function setFullWidth(){

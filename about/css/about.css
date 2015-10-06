@@ -23,7 +23,7 @@ img.second {
 }
 
 #about-section-wrapper p{
-    font-size: 25px;
+    font-size: 23px;
     font-family: roboto-light;
 	word-spacing: 1px;
 	color: #fff;
@@ -62,7 +62,7 @@ img.second {
 
 #site-panel>h3, #me-panel h3{
 	margin-bottom: 10px;
-	font-size: 20pt;
+	font-size: 22pt;
     font-family: roboto-regular;
 }
 

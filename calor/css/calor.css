@@ -15,19 +15,17 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 
 #title-panel{
     left: 50%;
-    height: 650px;
     background-color: #282828;
-    overflow: hidden;
 }
 
 /*calor only*/
 #title-img{
+    position: relative;
     width: 700px;
     height: auto;
     top: 15%;
     left: 50%;
     margin-left: -350px;
-    position: relative;
 }
 
 #title-img-product{
@@ -37,14 +35,7 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 
 }
 
-#title-description{	
-    position: relative;
-    height: auto;
-    width: 700px;
-    margin-left: -350px;
-    left: 50%;
-    margin-top: 150px;
-}
+
 
 #title-description>h1{
     font-size: 60px;
@@ -106,30 +97,24 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 .issue, .issue-icon, .issue-detail>h4, .issue-detail>h5,
 .feature, .feature-icon, .feature-detail>h4, .feature-detail>h5{
 	position:relative;
-	//height: auto;
     font-size: 25px;
     //float: left;
+	//height: auto;
 }
 
-.issue, .feature{
-	padding: 40px 0;
-	height: auto;
-    min-height: 120px; /*200 - 40*2padding*/
-    display: block;
-    width: 700px; 
-    left:50%; 
-    margin-left: -350px;
-    //background-color: yellow;
-}
+
 
 .feature{padding: 80px 0;}
 
+/*
 .issue-icon, .feature-icon{
 	width:257px;
 	//background-color: red;
     float: left;
 }
+*/
 
+/* 1005
 .issue-detail, .feature-detail{
     float: left;
 	margin-top: 10px;
@@ -141,22 +126,23 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 	left: 0px;
 	width: auto;
 	line-height: 1;
-    font-family: Roboto-Semibold, sans-serif; /*0830 added*/
+    font-family: Roboto-Semibold, sans-serif;
 }
 
 .issue-detail>h5, .feature-detail>h5{
 	padding-top: 10px;
-    //line-height: 1.2;
-    font-family: Baskerville, sans-serif; /*0830 added*/
+    font-family: Baskerville, sans-serif;
     font-size: 25px;
-
 }
+*/
 
+/* 1005
 .statement>h3{
     margin-left: -324px;
     width: 644px;
     text-align: center;
 }
+*/
 /*----------------Ideation----------------*/
 
 
@@ -186,29 +172,26 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
     width: 700px;
     height: 435px;
     overflow: hidden;
-   
-}
-
-.app-left img, .app-right img {
-    margin-top: 60px;
 }
 
 
-.app-left-ui, .app-left-info, .app-right-ui, .app-right-info{
+.app-left-ui, 
+.app-left-info, 
+.app-right-ui, 
+.app-right-info{
     position: relative;
     float: left;
     overflow: hidden;
 }
 
-.app-left-ui>img{
+.app-left-ui, .app-right-ui {
     position: relative;  
-    margin-left: 70px;
+    margin-top: 60px;
 }
-
-.app-right-ui>img{
-    position: relative;  
-    margin-left: 30px;
-}
+.app-left-ui{margin-left: 70px;}
+/*reposition app-right content*/
+.app-right>*{position: absolute;}
+.app-right-ui{left: 450px;}
 
 .app-left-info>*, .app-right-info>*{
     width: 350px;
@@ -216,25 +199,22 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 
 .app-left-info, .app-right-info{
     margin-left: 50px;
-}
-    
-
-.app-left-info, .app-right-info{
     padding-top: 100px;
 }
 
-.app-left h2, .app-right h2{
+
+.app-left-info>h2, .app-right-info>h2{
     font-size: 50px;
     font-family: Roboto-Regular;
 }
-.app-left h3, .app-right h3{
+.app-left-info>h3, .app-right-info>h3{
     font-size: 30px;
     margin-bottom: 15px;
     line-height: 1.4;
     font-family: Roboto-Light;
 }
 
-.app-left h4, .app-right h4{
+.app-left-info>h4, .app-right-info>h4{
     font-size: 22px;
     line-height: 1.4;
     font-family: Roboto-Light;
@@ -259,12 +239,12 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 		margin: 0; 
 		width: 100%;
 	}
-
 	
 	#title-description{left: 30px;}
 
 	/*calor only?*/
-	#prototype-panel>#market-cartridge-mechanism, #prototype-panel>#video-set-temp{
+	#prototype-panel>#market-cartridge-mechanism, 
+    #prototype-panel>#video-set-temp{
 		left: 0;
 		margin-left: 0;
         padding: 0; //0621
@@ -275,5 +255,62 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 	.issue, .issue-detail{
 		width: auto;
 	}
+    
+    .app-left, .app-right{
+        margin-bottom: 100px;
+        height: 650px;
+    }
+    
+    .app-right>*{position:relative;}
+    
+    .app-left,
+    .app-left-ui, 
+    .app-left-info, 
+    .app-left-info>h2,
+    .app-left-info>h3,
+    .app-left-info>h4,
+    .app-left-info>h5,
+    .app-right,
+    .app-right-ui, 
+    .app-right-info,
+    .app-right-info>h2,
+    .app-right-info>h3,
+    .app-right-info>h4,
+    .app-right-info>h5,
+    .feature,
+    .feature-icon,
+    .feature-detail{
+        //max-width: 680px;
+        width: auto;
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
+        padding: 0;
+        overflow: visible;
+        text-align: center;
+    }
+    
+    
+    .band>.feature{height: 500px;}
+    .band+.feature{height: 400px; margin-top: 24px;}
+    
+    .app-left+.band{
+        height: 800px;
+    }
+    
+    
+    /*center app, feature img*/
+    .feature-icon, 
+    .app-left-ui, 
+    .app-right-ui{
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    
+    .feature-detail,
+    .app-left-info,
+    .app-right-info{
+        padding: 0 12px;}
+    .app-right-info, .app-left-info{margin-top: 24px;}
 
 }
