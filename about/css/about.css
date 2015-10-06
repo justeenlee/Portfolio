@@ -2,7 +2,6 @@
 /*----------------Title----------------*/
 #title-panel{
     position: relative;
-    //width:880px;
     height: 520px;
     background-color: rgb(230,230,230); /*testing*/
 	overflow: hidden;
@@ -154,8 +153,15 @@ footer{margin-top:15px;}
 	/*--responsive all testing--*/
 /* for about.css only*/
     
+    /*Changes for body since there is no other structure besides title-panel*/
+    body{
+        width: 100%;
+        padding: 0;
+    }    
+    
 #title-panel{
     padding: 0; /* full bleed on about page*/
+    left: 50%;
 }
     
 #me-panel, #site-panel{

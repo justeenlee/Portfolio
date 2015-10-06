@@ -21,9 +21,7 @@ $(window).scroll(function (){
 
 $(window).resize(function(){
     setFullWidth();
-    if (currentPath != "about"){
-        navCheck();
-    }
+    move("currentPath");
 });
 
     
