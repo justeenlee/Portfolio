@@ -1,41 +1,30 @@
-/*#link-projects{text-decoration: underline;}*/
-
 /*<i> for in-text hightlight*/
 .highlight>h3,i {color: #EEA257;}
 .ue::after{background-color: #EEA257 ;}
 p>a:link {color: #EEA257; text-decoration:underline}
 a:visited {color: #EEA257;}
 
-
-#title-description{color: #fff;}
-
 /*0916 move to structure if all have non white bg*/
 li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 }
 /*----------------Title----------------*/
 
+#title-description{color: #fff;}
 
-/*bristol only*/
-#title-img{top: 20%;}
+
+#title-panel{height: 600px;}
+#title-img>img{
+    width: 500px;
+    margin-left: -250px; /*center combo*/
+}
+#title-description{
+    margin-top: 20px;
+}
 
 /*----------------Promotion----------------*/
 
 /*----------------Research----------------*/
 
-.design-statement{
-	padding: 50px 5%;
-    //background-color: #eee;
-    text-align: center;
-    width: auto;
-    height: auto;
-    max-height: 150px;
-}
-
-
-.design-statement h3{
-    font-weight: 300;
-    font-size: 25pt;
-}
 
 .ue::after{
     content:'';
@@ -48,26 +37,9 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 span.tailored::after {width: 105px;}
 span.everywhere::after {margin-left: -145px; width: 150px;}
 /*----------------Ideation----------------*/
-.value{
-	padding: 20px 0;
-	background-color: #F5F5F5;
-}
 
-.value>*{
-	text-align: center;
-}
 /*----------------prototype----------------*/
-#xbee-demo{margin-top: 30px;}
 
-.demo{
-	position: relative;
-	left: 50%;
-	margin-left: -440px;
-	width: 100%;
-	min-height: 543px;
-	height: auto;
-	background-color: #000;
-}
 /*----------------Product----------------*/
 
 #product-panel>img {
@@ -90,20 +62,25 @@ span.everywhere::after {margin-left: -145px; width: 150px;}
 
 /* for 680px or less */
 @media screen and (max-width: 680px){
-	/*bristol only*/
-	.title-image-group{
-	/*can adjust this to fit image*/
-		margin: 0; 
-		width: 100%;
-	}
-	/*bristol only?*/
-	.demo{
-		left: 0;
-		margin-left: 0;
-		width: 100%;
-		min-height: 543px;
-		height: auto;
-		background-color: #000;
-	}
+    #link-projects{text-decoration: underline;}
+
+    #title-panel{height: 550px;}
+    #title-img>img{
+        width: 400px;
+        margin-left: -200px; /*center combo*/
+    }
+
+    
+
+}
+
+@media screen and (max-width: 480px){
+    #title-panel{height: 530px;}
+    #title-img>img{
+        width: 300px;
+        margin-left: -150px; /*center combo*/
+    }
+
+
 
 }

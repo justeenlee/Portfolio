@@ -237,33 +237,17 @@ body{
     position: relative;
     width: 700px;
     height: auto;
-    top: 15%;
+    margin-top: 100px;
     left: 50%;
     margin-left: -350px;
     -webkit-animation: landing 1.2s; 
     -webkit-animation-timing-function:ease-in-out;
 }
 
-#title-img-product{
+#title-img>img{
     position: relative;
     left: 50%;
-    height: 290px;
-    margin-left: -150px;
 }
-
-
-#title-description{
-    position: absolute;
-    left:56%; /*adjust this for position*/
-    width: 50%;
-    height: auto;
-    font-size: 90px;
-	margin-top: 150px;
-    -webkit-animation: float 2.2s; 
-    -webkit-animation-timing-function:ease-in-out;
-	-webkit-animation-fill-mode: forwards;
-}
-
 
 
 #title-description{	
@@ -272,7 +256,7 @@ body{
     width: 700px;
     margin-left: -350px;
     left: 50%;
-    margin-top: 150px;
+    margin-top: 50px;
     -webkit-animation: float 2.2s; 
     -webkit-animation-timing-function:ease-in-out;
 	-webkit-animation-fill-mode: forwards;
@@ -288,8 +272,8 @@ body{
     /*0830 reset*/
     margin-top: 0; 
 	margin-left: 0;
-    font-size: 40px;
     line-height: 1.2;
+    font-size: 40px;
 	font-family: Roboto-Light;
 }
 
@@ -297,14 +281,6 @@ body{
     font-size: 30px;
     font-family: Roboto-Light;
 }
-
-
-#title-description-supplement{
-    margin-top: -.5%;
-	margin-left: 5px;
-    font-size: 20pt;
-}
-
 
 
 
@@ -600,7 +576,7 @@ footer{
     #title-description, 
     #title-img-product,
     .title-image-group, 
-    #title-description-supplement {
+    #title-description>h2{
 		position: relative;
 		width: auto;
 		height: auto;
@@ -608,13 +584,12 @@ footer{
 		margin-left: 0; /*reset >680px*/
 	}
 	
-    #title-panel{height: 700px;}
-	#title-img{margin-top: 30px;}
-	#title-description{left: 30px;}
-	#title-description-supplement{margin-left: 4px;}
-
-
+    #title-panel{height: 700px;left: 50%}
     
+	#title-description{
+        padding: 0 12px;
+    }
+
     .issue,
     .issue-icon,
     .issue-icon>img,
@@ -666,7 +641,7 @@ footer{
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
-        
+    
 	#cf{
 		height: 82px;
 	}
