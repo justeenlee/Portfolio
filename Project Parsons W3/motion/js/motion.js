@@ -1,6 +1,16 @@
 $(document).ready(function() {
 	
-	
+$("#flashynyc").hover(
+	function()
+	{
+		$(this).attr("src", "images/FlashyNYC.gif");
+	},
+	function()
+	{
+		$(this).attr("src", "images/FlashyNYC-static.jpg");
+	}                         
+);		
+
 $("#dynamiccube").hover(
 	function()
 	{

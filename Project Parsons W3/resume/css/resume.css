@@ -84,7 +84,18 @@ em{
 
 #pdf a:link {color: black; text-decoration:none;}
 #pdf a:visited {color: black;}
-#pdf a:hover {color: silver;}
+#pdf a:hover {color: #999;animation: 1s ease;}
+
+
+#pdf:hover a span{
+    display: none;
+}
+
+#pdf:hover a:after{
+    content: "Thanks for your interest :)";
+    animation: 1s ease;
+}
+
 
 
 /*--------------Media Query starts-----------------*/

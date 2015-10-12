@@ -7,6 +7,11 @@ Modify and further developed by Justeen Lee
 
 */
 
+/*
+frequency of the cloud and shadow movement:
+add-black-cloud, add-shadow
+*/
+
 
 #target{
 	z-index: 1000;
@@ -18,8 +23,8 @@ Modify and further developed by Justeen Lee
 	margin-top: 75px;
 	background-color: white;
 	opacity: 0;
-	-webkit-animation: add-black-cloud 6s ease-in-out infinite;
-	animation: add-black-cloud 6s ease-in-out infinite;
+	-webkit-animation: add-black-cloud 4s ease-in-out infinite;
+	animation: add-black-cloud 4s ease-in-out infinite;
 	border-top-right-radius: 90%;
 	border-top-left-radius: 90%;
 	border-bottom-right-radius: 70%;
@@ -30,7 +35,6 @@ Modify and further developed by Justeen Lee
 	cursor: wait;
 }
 
-
 #target:hover~.black-cloud{
 	background: #fafafa;
 	box-shadow: 
@@ -39,6 +43,7 @@ Modify and further developed by Justeen Lee
 		#fafafa 30px 10px, 
 		#fafafa 60px 15px 0 -10px, 
 		#fafafa 85px 5px 0 -5px;
+    /*how fast from thunderstorm to sunny*/
 	transition: all 5s;
 }
 
@@ -78,10 +83,10 @@ Modify and further developed by Justeen Lee
 		#222 30px 10px, 
 		#222 60px 15px 0 -10px, 
 		#222 85px 5px 0 -5px;
-	-webkit-animation: add-black-cloud 6s ease-in-out infinite;
-	animation: add-black-cloud 6s ease-in-out infinite;
-	/*from sunny to black cloud*/
-	transition: all 5s 5s; 
+	-webkit-animation: add-black-cloud 4s ease-in-out infinite;
+	animation: add-black-cloud 4s ease-in-out infinite;
+    /*from sunny to thunderstorm part 2/5*/
+	transition: all 5s 4s; 
 }
 
 
@@ -97,9 +102,9 @@ Modify and further developed by Justeen Lee
 	left: 5px; 
 	margin-top: 125px;
 	-webkit-transform: scale(.95);
-	-webkit-animation: add-shadow 6s ease-in-out infinite;
-	animation: add-shadow 6s ease-in-out infinite;
-	/*from sunny to thunder*/
+	-webkit-animation: add-shadow 4s ease-in-out infinite;
+	animation: add-shadow 4s ease-in-out infinite;
+    /*from sunny to thunderstorm part 3/5*/
 	transition: all 5s 5s; 
 }
 
@@ -113,7 +118,7 @@ Modify and further developed by Justeen Lee
 	margin-top: 100px;
 	background-color: transparent;
 	border-radius: 50%;
-	/*from sunny to thunder*/
+    /*from sunny to thunderstorm part 4/5*/
 	transition: all 5s 5s; 
 }
 
@@ -174,9 +179,9 @@ Modify and further developed by Justeen Lee
 	margin-top: 100px;
 	display: block;
 	background-color: transparent;
-	/*from sunny to rain*/
 	/*rain falls last*/
-	transition: all 6s 8s; 
+	/*from sunny to thunderstorm part 5/5*/
+	transition: all 5s 5s; 
 }
 
 .rain:before {
@@ -310,6 +315,7 @@ Modify and further developed by Justeen Lee
 	); 
 	/*from sunny to thunder*/
 	/*sun disappears first*/
+    /*from sunny to thunderstorm part 1/5*/
 	transition: all 2s 3s;
 }
 
