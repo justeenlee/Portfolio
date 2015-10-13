@@ -1,14 +1,12 @@
 
 
 /*<i> for in-text hightlight*/
-.highlight>h3,i, #title-description{color: #fff;}
-p>a:link {color: #FFC413; text-decoration:underline}
-a:visited {color: #FFC413;}
+#title-description{color: #fff;}
 
-/*0830 to newstructure?*/ 
-li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
-}
-/*once pass rendering, change color*/
+p>a:link {text-decoration:underline}
+.highlight>h3,i, a:visited,p>a:link {color: #fa3c52;}
+
+
 
 /*----------------Title----------------*/
 
