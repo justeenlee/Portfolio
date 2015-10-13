@@ -4,13 +4,13 @@
 #title-description{color: #fff;}
 
 p>a:link {text-decoration:underline}
-.highlight>h3,i, a:visited,p>a:link {color: #fa3c52;}
+.highlight>h3,i, a:visited,p>a:link {color: #FF4D70;}
 
 
 
 /*----------------Title----------------*/
 
-#title-panel{background-color: #E44C56;}
+#title-panel{background-color: #FF4D70;}
 
 #title-panel{height: 650px;}
 #title-img>img{
