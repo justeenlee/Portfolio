@@ -14,7 +14,7 @@
     left: 50%;
     margin-left: -600px;
     z-index: 100;
-    opacity: 0;
+    opacity: .05;
 }
 
 #mountains>img {
@@ -51,21 +51,138 @@
     z-index: 1;
 }
 
-#about-section-wrapper p{
-    font-size: 23px;
-    font-family: roboto-light;
-	word-spacing: 1px;
-	color: #fff;
-    
+#designer{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    opacity: .9;
 }
 
-#about-section-wrapper{
+#designer>h1{
+    font-family: futura;
+    color: #fff;
+    font-weight: 500;
     width: 700px;
-    position: relative;
-    left: 50%;
-    margin-left: -350px;
-    margin-top: 100px;
 }
+#stars>svg, #astroid{position: absolute;z-index: 100;}
+
+#star1{
+    top: 95px;
+    left: 54px;
+    animation: blink-first 6s infinite;
+}
+
+#star2{
+    top: 75px;
+    left: 205px;
+    animation: blink-second 6s infinite;
+}
+
+#star3{
+    top: 75px;
+    left: 355px;
+    animation: blink-first 6s infinite;
+}
+
+#star4{
+    top: 75px;
+    left: 765px;
+    animation: blink-second 6s infinite;
+}
+
+#star5{
+    top: 95px;
+    left: 1040px;
+    animation: blink-first 6s infinite;
+}
+
+#star6{
+    top: 159px;
+    left: 476px;
+    animation: blink-second 6s infinite;
+}
+
+#star7{
+    top: 65px;
+    left: 650px;
+    animation: blink-first 6s infinite;
+}
+
+#star8{
+    top: 148px;
+    left: 739px;
+    animation: blink-first 6s infinite;
+}
+
+#star9{
+    top: 158px;
+    left: 928px;
+    animation: blink-first 6s infinite;
+}
+
+#star10{
+    top: 255px;
+    left: 1082px;
+    animation: blink-first 6s infinite;
+}
+
+#star11{
+    top: 148px;
+    left: 1125px;
+    animation: blink-first 6s infinite;
+}
+
+#star12{
+    top: 278px;
+    left: 35px;
+    animation: blink-first 6s infinite;
+}
+
+#star13{
+    top: 310px;
+    left: 450px;
+    animation: blink-first 6s infinite;
+}
+
+/*small stars*/
+#star14{
+    top: 320px;
+    left: 275px;
+    animation: blink-first 6s infinite;
+}
+
+#star15{
+    top: 405px;
+    left: 82px;
+    animation: blink-first 6s infinite;
+}
+#star16{
+    top: 375px;
+    left: 585px;
+    animation: blink-first 6s infinite;
+}
+
+#star17{
+    top: 348px;
+    left: 783px;
+    animation: blink-first 6s infinite;
+}
+
+#star18{
+    top: 375px;
+    left: 1129px;
+    animation: blink-first 6s infinite;
+}
+
+
+
+#astroid{
+    z-index: 0;
+    left: 900px;
+    animation: fall 2s 3s infinite;
+}
+
+
 
 
 /*----------------intro----------------*/
@@ -96,7 +213,27 @@
     font-family: roboto-regular;
 }
 
+@-webkit-keyframes blink-first {
+    0% {opacity: 1;}
+	50% {opacity: .5;}
+    100% {opacity: 1;}
+}
 
+@-webkit-keyframes blink-second {
+    0% {opacity: .5;}
+	50% {opacity: 1;}
+    100% {opacity: .5;}
+}
+
+@-webkit-keyframes fall {
+    0% {opacity: 0;
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-700px,500px);
+    }
+}
 
 
 /*----------------native tags----------------*/
