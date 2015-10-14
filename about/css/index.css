@@ -1,0 +1,159 @@
+
+/*----------------Title----------------*/
+#title-panel{
+    position: relative;
+	overflow: hidden;
+    padding-top:60px;/*no cf for smoothness*/
+    background-image: url("../gradient%20stella.jpg");
+}
+
+
+#testbg{
+    position: absolute;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 100;
+    opacity: 0;
+}
+
+#mountains>img {
+	position: absolute;
+}
+
+#m1{
+    top: 49%;
+    left: 14%;
+    z-index: 5;
+}
+
+#m2{
+    top:61%;
+    left: -22%;
+    z-index: 4;
+}
+
+#m3{
+    top:64%;
+    left: -8%;
+    z-index: 3;
+}
+
+#m4{
+    top:60%;
+    left: 9%;
+    z-index: 2;
+}
+
+#m5{
+    top:63%;
+    left: -22%;
+    z-index: 1;
+}
+
+#about-section-wrapper p{
+    font-size: 23px;
+    font-family: roboto-light;
+	word-spacing: 1px;
+	color: #fff;
+    
+}
+
+#about-section-wrapper{
+    width: 700px;
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: 100px;
+}
+
+
+/*----------------intro----------------*/
+#me-panel{
+	position: relative;
+	min-height: 350px;
+    height: auto;
+	color: white;
+	overflow: hidden;
+}
+
+
+
+/*about me + about this site*/
+#site-panel>h2, #me-panel>h2{
+    margin-bottom: 20px;
+	width: 140px;
+	padding: 10px 20px;
+	font-size: 30px;
+	color: #FF0990;
+	background-color: white;
+    
+}
+
+#site-panel>h3, #me-panel h3{
+	margin-bottom: 10px;
+	font-size: 22pt;
+    font-family: roboto-regular;
+}
+
+
+
+
+/*----------------native tags----------------*/
+
+
+
+p>a:link {color: #ffd05c ;}
+p>a:visited {color: #ffd05c ;}
+p>a:hover{text-decoration: underline;}
+
+.inline-highlight{text-decoration: underline}
+
+footer{margin-top:15px;}
+
+
+/* for 680px or less */
+@media screen and (max-width: 680px) {
+	/*--responsive all testing--*/
+/* for about.css only*/
+    
+#title-panel{
+    padding: 0; /* full bleed on about page*/
+    left: 50%;
+}
+    
+#me-panel, #site-panel{
+    width: auto;
+    padding: 60px 20px 0px 20px;
+}
+
+p{padding:0;}
+
+#about-section-wrapper{
+    width: auto;
+    margin-left: 0; /*reset >680px*/
+    left: 0; /*reset >680px*/
+}
+    
+#link-about{text-decoration: underline}
+.li-nav:hover{text-decoration: underline}
+
+
+@media screen and (max-width: 480px){
+	/* for about.css only*/
+	.panel-name{
+		position: relative;
+		left: 50%;
+		margin-left: -81px;
+		width: 162px;
+		padding: 0px 10px;
+	}
+	
+	.panel-name-site{
+		width:240px;
+		margin-left: -120px;
+	}
+	/* for about.css only*/
+
+	
+}
