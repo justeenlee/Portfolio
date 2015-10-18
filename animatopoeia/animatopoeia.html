@@ -171,7 +171,7 @@
         
 		<div class = "loading slide-container">
 		  <section class="slider">
-			<div class="flexslider" slidespeed = "3800">
+			<div class="flexslider">
 			  <ul class="slides">
 				<li>
 				<img src="images/ideation-game-concept-1.jpg" width="100%">
@@ -197,7 +197,7 @@
 	<div id = "prototype-panel" class = "panel">
 		<div class = "loading slide-container">
 		  <section class="slider">
-			<div class="flexslider" slidespeed = "3800">
+			<div class="flexslider">
 			  <ul class="slides">
 				<li>
 				<img src="images/prototype-hardware-1.jpg" width="100%">
@@ -212,7 +212,7 @@
         <p>Having a direction on the interface while keeping it loose, I can begin prototyping the hardware to making it interactive. Along the way, I also test the game several times facing the challenges of types of circuits, sound library, signal boosting and debounce methods.</p>
         <div class = "loading slide-container">
 		  <section class="slider">
-			<div class="flexslider" slidespeed = "3800">
+			<div class="flexslider">
 			  <ul class="slides">
 				<li>
 				<img src="images/prototype-software-game-logic.jpg" width="100%">
@@ -231,9 +231,9 @@
             </h3>
         </div>
         
-                <div class = "loading slide-container">
+        <div class = "loading slide-container">
 		  <section class="slider">
-			<div class="flexslider" slidespeed = "3800">
+			<div class="flexslider">
 			  <ul class="slides">
 				<li>
 				<img src="images/ideation-form-1.jpg" width="100%">
@@ -250,11 +250,30 @@
             <h3>Balance of aesthetic and ergonomics</h3>
         </div>
         <p>Testing with different radius and dimensions begins to form something that looks more sleek, comfortable and friendly. I then 3D print the shell, button and a rough circuit board to further test the assembly side of the product.</p>
+        
         <img src="images/prototype-PCB-fail.jpg" width="100%">
         <p>Next is to fit all parts under the shell. I first try to make circuit board using conductive ink with parts mounted on a piece of chipboard for a quick PCB prototype, but I fail since later I find out the ink has resistance as high as 2 million Ohms.</p>
-        <img src="images/prototype-PCB-EAGLE.png" width="100%">
+        <div class = "loading slide-container">
+		  <section class="slider">
+			<div class="flexslider" id="PCB-fade" speed = "3000">
+			  <ul class="slides">
+				<li>
+				<img src="images/prototype-PCB-EAGLE.png" width="100%">
+				</li>
+				<li>
+				<img src="images/prototype-PCB-unsoldered.jpg" width="100%">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+		</div>	
+        
         <p>Thus I go back to EAGLE for the PCB design. It takes a few passes to get correct the dimensions since I have to modify pad spacing for some particilar part. Then I use the circuit mill to cut out the traces and board. Check out the EAGLE file on GitHub.</p>
 	</div> <!--prototype panel ends-------------------->
+    <!--market panel------------------------------>
+	<div id="market-panel" class="panel">
+        <img src="images/market-hero.jpg" width="100%">
+    </div>
     
 <!--comment panel------------------------------>
 	<div class = "comment">
@@ -276,14 +295,24 @@
 
 
 <script type="text/javascript"> 
-//    for slideshow
 	$(window).load(function(){
-	  $('.flexslider').flexslider({
-		animation: "slide",
+        $('#PCB-fade').flexslider({
+		animation: "fade",
+        slideshowSpeed: $('#PCB-fade').attr("speed"),  
 		start: function(slider){
 		  $('div').removeClass('loading');
 		}
 	  });
+	  $('.flexslider').flexslider({
+		animation: "slide",
+        slideshowSpeed: 3800,  
+		start: function(slider){
+		  $('div').removeClass('loading');
+		}
+	  });
+        
+       
+        
 	});
     
 </script>

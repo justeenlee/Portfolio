@@ -6,8 +6,6 @@
 
 //delete keyboard control
 
-
-
 function slideSpeed(element){
 	//var thisSpeed = $(element).attr("slidespeed");
 	//console.log("running");
@@ -15,12 +13,12 @@ function slideSpeed(element){
 }
 
 
-function setSpeed(){
-	var newSpeed = $("[slidespeed]").attr("slidespeed");
-	//console.log("setting speed now");
-	//console.log("speed is set to " + newSpeed)
-	return newSpeed;
-}
+//function setSpeed(){
+//	var newSpeed = $("[slidespeed]").attr("slidespeed");
+//	console.log("setting speed now");
+//	console.log("speed is set to " + newSpeed)
+//	return newSpeed;
+//}
 
 ;
 (function ($) {
@@ -1088,7 +1086,7 @@ function setSpeed(){
 	  
     startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
     slideshow: true,                //Boolean: Animate slider automatically
-    slideshowSpeed: setSpeed(),
+    slideshowSpeed: 3800,
   
 	  //document.getElementById("slider-research").getAttribute("data-speed"),   
 	  
