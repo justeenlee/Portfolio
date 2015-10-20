@@ -41,13 +41,14 @@
 	</div>
 	<div id = "cf"></div>
     <img src="test%20bg.png" id="testbg" width="100%">
+    
 	<div id="title-panel">
        <section id="mountains">
-            <img src="m1.png" width="100%" id="m1">
-            <img src="m2.png" width="100%" id="m2">
-            <img src="m3.png" width="100%" id="m3">
-            <img src="m4.png" width="100%" id="m4">
-            <img src="m5.png" width="100%" id="m5">
+            <img src="m1.png" width="auto" id="m1">
+            <img src="m2.png" width="auto" id="m2">
+            <img src="m3.png" width="auto" id="m3">
+            <img src="m4.png" width="auto" id="m4">
+            <img src="m5.png" width="auto" id="m5">
         </section>
         <section id="stars">
             <svg id="star1" width="15px" height="15px" viewBox="0 0 15 15">
@@ -223,7 +224,6 @@
             <h1>
                 I'm Justeen.<br>
                 I craft microinteractions and crack smiles.
-                
             </h1>
                 
         </section>
@@ -237,7 +237,29 @@
 	</footer>
 </body>
     
-
+    <script>
+    $(document).on("mousemove", function(e){
+        var halfBrowserWidth = window.innerWidth/2;
+        var gain = (event.pageX - halfBrowserWidth)/halfBrowserWidth/10;
+        var loss = (halfBrowserWidth - event.pageX )/halfBrowserWidth/10;
+        if (event.pageX>=halfBrowserWidth){
+            $("#m1").css("left", 49+gain*10+"%");
+            $("#m2").css("left", "-"+(14-gain*7)+"%");
+            $("#m3").css("left", 18.5+gain*4+"%");
+            $("#m4").css("left", 33.3+gain*3+"%");
+            $("#m5").css("left", 2+gain*2+"%");
+        } else {
+            $("#m1").css("left", 49-loss*10+"%");
+            $("#m2").css("left", "-"+(14+loss*7)+"%");
+            $("#m3").css("left", 18.5-loss*4+"%");
+            $("#m4").css("left", 33.3-loss*3+"%");
+            $("#m5").css("left", 2-loss*2+"%");
+        }
+    });
+    
+    
+    
+    </script>
 
 	
 	

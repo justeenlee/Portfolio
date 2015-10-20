@@ -4,12 +4,10 @@
 /*----------------Title----------------*/
 #title-panel{
     position: relative;
-    background-color:black;
-	overflow: visible;
-
+    background-color:white;
+	overflow: hidden; /*block m1 stick out*/
+    height: 768px;
 }
-
-
 
 
 #testbg{
@@ -23,45 +21,56 @@
 
 #mountains{
     height: 768px;
-	overflow: visible;
+	overflow: hidden;
     padding-top:60px;/*no cf for smoothness*/
     background-image: url("../gradient%20stella.jpg");
-    background-size: auto 100%;
-    
+    background-size: auto auto;
+    background-repeat: no-repeat;
 }
 
 #mountains>img {
 	position: absolute;
+    bottom: 0;
 }
 
+
+
 #m1{
-    top: 49%;
-    left: 14%;
+    //top: 53%;
+    bottom: 0;
+
+    left: 49%;
     z-index: 5;
 }
 
 #m2{
-    top:61%;
-    left: -22%;
+    //top:66%;
+    bottom: 0;
+    left: -14%;
     z-index: 4;
 }
 
 #m3{
-    top:64%;
-    left: -8%;
+    //top:64%;
+    left: 18.5%;
     z-index: 3;
+    //opacity: 0;
 }
 
 #m4{
-    top:60%;
-    left: 9%;
+    //top:60%;
+    left: 33.3%;
     z-index: 2;
+        //opacity: 0;
+
 }
 
 #m5{
-    top:63%;
-    left: -22%;
+    //top:63%;
+    left: 2%;
     z-index: 1;
+        //opacity: 0;
+
 }
 
 #designer{
@@ -226,7 +235,7 @@
     
     100% {
         opacity: 1;
-        transform: translate(-700px,500px);
+        transform: translate(-900px,600px);
     }
 }
 
