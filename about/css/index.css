@@ -1,6 +1,5 @@
 
 
-
 /*----------------Title----------------*/
 #title-panel{
     position: relative;
@@ -206,13 +205,130 @@
     animation: fall 2s 3s infinite;
 }
 
+/*----------------overview panel----------------*/
+#overview-panel{
+    position: relative;
+    background-color: aqua;
+    width:1020px;
+    left: 50%;
+    margin-left: -510px;
+    height: auto;
+}
+
+
+#overview-panel>.panel{
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 550px;
+}
+
+/*test purpose*/
+.panel{
+    background-color: aqua;
+}
+
+#motion-panel{
+    background-color: #FFFF01;
+}
+#project-panel{
+    background-color: #212121;
+    color: #eee;
+}
+#upcoming-panel{
+    background-color: #8128BE ;
+    color: #fff;
+}
+
+.panel-image{height: 255px;}
+#upcoming-panel img{
+    position:relative;
+    left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    margin-top: 40px;
+}
+
+
+.panel-caption{
+    margin-top: 30px;
+    text-align: center;
+    height: 150px;
+}
+
+.panel-caption>h2{
+    font-size: 26px;
+}
+
+.panel-caption>h3{
+    position: relative;
+    left:50%;
+    margin-left: -135px;
+    width: 270px;
+    margin-top: 13px;
+    font-size: 20px;   
+}
+
+#upcoming-panel h3{
+    line-height: 1.1;
+}
+
+.button {
+    position: relative;
+	margin-top: 13px;
+	left: 50%;
+	margin-left: -85px;
+    height: 50px;
+    width: 170px;
+	color:white;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;   
+    cursor: pointer;
+}
+
+.button:hover .bar{top: -50px;}
+
+.button>a{
+	color:#fff;
+	-webkit-transition: color 0.35s;
+    -moz-transition: color 0.35s;
+    transition: color 0.35s; 
+}
+
+.label {
+	z-index: 10;
+    position: relative;
+    top: 10px;
+    height: 100%;
+	width: 100%;
+	display: block;
+    -webkit-transition: top 0.2s ease-out;
+    -moz-transition: top 0.2s ease-out;
+    transition: top 0.2s ease-in-out;    
+}
+
+
+.bar{
+	z-index: 0;
+	top: -5px;
+	height: 50px;
+	background-color: white;
+}
+
+#project-panel .button>a:hover {
+	color: #212121;
+	-webkit-transition: color 0.35s;
+    -moz-transition: color 0.35s;
+    transition: color 0.35s; 
+}
+
+body div *{background-color: aqua;}
 
 
 
-/*----------------intro----------------*/
 
-
-
+/*----------------animations ----------------*/
 
 @-webkit-keyframes blink-first {
     0% {opacity: 1;}
