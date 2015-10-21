@@ -379,6 +379,10 @@ body{
 	box-shadow: 0 0 7px 0px grey;
 }
 
+img+.slide-container{
+    margin-top: 60px
+}
+
 /*----------------prototype----------------*/
 #prototype-panel {
 	position: relative;

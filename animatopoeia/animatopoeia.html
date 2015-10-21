@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="../css/newstructure.css">
 	<link rel="stylesheet" href="css/animatopoeia.css">
 	<script src="../js/jquery-1.11.1.min.js"></script>
-<!--    <script src="js/calor.js" defer></script>-->
+    <script src="js/animatopoeia.js" defer></script>
     <script src="../js/overall.js" defer></script>
 	<script src="../js/jquery.flexslider.js" defer></script>
 
@@ -188,7 +188,20 @@
 		</div>		
 		<P>Looking at classic arcade games and exploring possiblities of this simple yet limited goal, I jot down some game concepts along with the interaction and implementation.</P>
         <img src="images/ideation-animal-sound.jpg" width="100%">
-        <p>//interface design</p>
+        <div class = "loading slide-container">
+		  <section class="slider">
+			<div class="flexslider">
+			  <ul class="slides">
+				<li>
+				<img src="images/ideation-interface-1.jpg" width="100%">
+				</li>
+				<li>
+				<img src="images/ideation-interface-2.jpg" width="100%">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+		</div>		
         <p>With sole animal sounds and lights as the major feedbacks in the game, I work within the boundary of handheld size to place elements such as graphics and buttons.</p>
         
     </div><!--ideation panel ends-------------------->
@@ -225,7 +238,8 @@
 		  </section>
 		</div>	
         <p>The challenges remain to be keeping track of what the current state is, which button is pressed, whether there is an open spot in the recall array and when to match the pattern with the recall. Check out the Code on <a href="https://github.com/justeenlee/AnimalKingdom/blob/master/SoundTest/combineTest/combineTest.ino" target="_blank">GitHub</a>.</p>
-        <img src="images/placeholder-prototype-video.jpg" width="100%">
+        <div id="video-correct-match" class="video-demo"></div>
+        <div id="video-incorrect-match" class="video-demo"></div>
         <div class="highlight">
             <h3>Inside out: everything under the shell
             </h3>
@@ -249,7 +263,8 @@
         <div class="highlight">
             <h3>Balance of aesthetic and ergonomics</h3>
         </div>
-        <p>Testing with different radius and dimensions begins to form something that looks more sleek, comfortable and friendly. I then 3D print the shell, button and a rough circuit board to further test the assembly side of the product.</p>
+        <img src="images/prototype-foam-models.jpg" width="100%">
+        <p>Testing different radius and dimensions with foam begins to form something that looks more sleek, comfortable and friendly. I then 3D print the shell and a rough circuit board to test the space allocation.</p>
         
         <img src="images/prototype-PCB-fail.jpg" width="100%">
         <p>Next is to fit all parts under the shell. I first try to make circuit board using conductive ink with parts mounted on a piece of chipboard for a quick PCB prototype, but I fail since later I find out the ink has resistance as high as 2 million Ohms.</p>
