@@ -1,4 +1,7 @@
 
+/*body div *{background-color: aqua;}*/
+
+html, body, footer{background-color: #2E2E2E;}
 
 /*----------------Title----------------*/
 #title-panel{
@@ -37,7 +40,6 @@
 #m1{
     //top: 53%;
     bottom: 0;
-
     left: 49%;
     z-index: 5;
 }
@@ -323,7 +325,6 @@
     transition: color 0.35s; 
 }
 
-body div *{background-color: aqua;}
 
 
 
@@ -366,7 +367,7 @@ p>a:hover{text-decoration: underline;}
 
 .inline-highlight{text-decoration: underline}
 
-footer{margin-top:15px;}
+footer{margin-top:15px; color: #fff;}
 
 
 /* for 680px or less */
