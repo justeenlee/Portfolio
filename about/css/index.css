@@ -223,22 +223,24 @@ html, body, footer{background-color: #2E2E2E;}
     float: left;
     width: 340px;
     height: 550px;
+
 }
 
 /*test purpose*/
 .panel{
-    background-color: aqua;
+    //background-color: aqua;
 }
 
 #motion-panel{
     background-color: #FFFF01;
+    color: #212121;
 }
 #project-panel{
     background-color: #212121;
     color: #eee;
 }
 #upcoming-panel{
-    background-color: #8128BE ;
+    background-color: #8128BE;
     color: #fff;
 }
 
@@ -298,6 +300,11 @@ html, body, footer{background-color: #2E2E2E;}
     transition: color 0.35s; 
 }
 
+#motion-panel .button>a{
+    color: #212121;
+}
+
+
 .label {
 	z-index: 10;
     position: relative;
@@ -307,7 +314,7 @@ html, body, footer{background-color: #2E2E2E;}
 	display: block;
     -webkit-transition: top 0.2s ease-out;
     -moz-transition: top 0.2s ease-out;
-    transition: top 0.2s ease-in-out;    
+    transition: top 0.2s ease-out;    
 }
 
 
@@ -318,8 +325,19 @@ html, body, footer{background-color: #2E2E2E;}
 	background-color: white;
 }
 
+#motion-panel .bar{
+    background-color: #212121;
+}
+
 #project-panel .button>a:hover {
 	color: #212121;
+	-webkit-transition: color 0.35s;
+    -moz-transition: color 0.35s;
+    transition: color 0.35s; 
+}
+
+#motion-panel .button>a:hover {
+	color: #FFFF01;
 	-webkit-transition: color 0.35s;
     -moz-transition: color 0.35s;
     transition: color 0.35s; 
