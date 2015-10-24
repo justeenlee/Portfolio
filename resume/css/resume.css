@@ -1,4 +1,8 @@
-/*#link-resume{text-decoration: underline;}*/
+.li-nav>a:link,
+.li-nav>a:visited 
+{color: #555;}
+#indicator-dot{background-color: #555;}
+
 
 p{
 	left: 0;
