@@ -206,7 +206,7 @@ li>a:link {transition: .7s ease;}
     border-radius: 5px;
     top: 38px;
     transition: .7s ease;
-    opacity: 0; /*hide when loading 1022*/
+    opacity: 1; /*hide when loading 1022*/
 }
 
 

@@ -2,6 +2,7 @@
 .li-nav>a:visited 
 {color: #555;}
 #indicator-dot{background-color: #555;}
+#cf{opacity: .75;}
 
 
 p{
@@ -9,11 +10,10 @@ p{
 	margin: 0;
 	margin-left: 20px;
 	font-family: "TyponineSans Regular 18";
-    font-size: 12pt;
+    font-size: 20px;
     color: #555;
     line-height: 1.1;
-	word-spacing: 0px;
-    width: 600px; //added on 0729
+    width: 600px; /*added on 0729*/
 }
 
 h1, h2{
@@ -21,27 +21,30 @@ h1, h2{
 	text-align: center;	
 }
 
-.section>h1{
+#header>h1{
 	padding-top: 10px; 
 	font-size: 75px;
 }
 
-.section>h2{	
+
+#header>h2{	
 	margin-top: -18px;
 	margin-bottom: 30px; 
-	font-size: 1.09em; 
-	letter-spacing: -1px;
+	font-size: 16px;; 
 	color: #999
 }
 
 
 .section>h3{
-	font-family: "MYRIADPRO-BOLD";
+	font-family: "MYRIADPRO-semibold";
+    font-size: 23px;
+    color:#DA2565;
 }
 
 .section>h4{
-	font-family: "MYRIADPRO-SEMIBOLD";
+	font-family: "MYRIADPRO-regular";
 	color: #333;
+    font-size: 20px;
 }
 
 .section>h4>span{
@@ -49,12 +52,12 @@ h1, h2{
 }
 
 .h4-nonfirst{
-	margin-top: 5px;
+	margin-top: 20px;
 }
 
 em{
-	font-family: "MYRIADPRO-SEMIBOLDIT";
-	color: grey;
+	font-family: "MYRIADPRO-regular";
+	color: #aaa;
 }
 
 .section{margin-top: 10px;}
@@ -63,7 +66,7 @@ em{
 /*----------------Resume----------------*/
 #resume-panel {
 	position: relative;
-	margin-top: 30px;
+	margin-top: 100px;
 	height: auto;
     margin-left:-325px;   
 	left: 50%;
@@ -73,6 +76,12 @@ em{
 
 #header{
 	margin-bottom: 45px;
+}
+
+#skill>p{
+    padding-bottom: 10px;
+    
+
 }
 
 #resume-panel, #pdf{
@@ -143,11 +152,14 @@ em{
 	.offset-height {
 		height: 40px;
 	}
+
 }
 
 
 @media screen and (max-width: 480px){
-	#resume-panel{margin-top: 60px;}	
+        h4+h4{
+        margin-top: 10px;
+    }
 }
 
 
@@ -158,4 +170,5 @@ em{
 		font-size: 15vw;
 		margin-bottom: 10px;
 	}
+        
 }

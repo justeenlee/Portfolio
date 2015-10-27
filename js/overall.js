@@ -7,23 +7,15 @@ var currentPath = window.location.pathname.split("/")[(window.location.pathname.
 
 //auto run function to set up when page is loaded
 (function(){
-    move("currentPath");
+    move(currentPath);
     setFullWidth();
     navCheck();
-//    if (currentPath != "about"){
-//        navCheck();
-//    }
+    console.log("break1"+currentPath);
 })();
 
 
 $(window).scroll(function (){
-    if (currentPath != "about"){
-        navCheck();
-    }
-
-    
-    
-    console.log(currentPath);
+    navCheck();
 });
 
 $(window).resize(function(){
@@ -47,91 +39,39 @@ function setFullWidth(){
     $(".band").css("margin-left", newMarginLeft);
 }
     
-
-
-
 function move(input){
-    var dot = document.getElementById("indicator-dot");
-    //for setting up dot position after page loaded
-    
+    var dot = $("#indicator-dot");
+    //so that all navigation have the same tags
     if (input == "currentPath"){
-        var input = currentPath;
+        input = currentPath;
+    }
+    if ((input =="Portfolio")||(input=="justeenlee.com")){
+        input = "index";
     }
 
+    console.log("break2"+input);
     if (window.outerWidth > 680){
         if(input == "index"){
             //dot.style.left = "210px";
-            dot.style.left = "18%";
+            dot.css("left","18.5%");
         } else if (input == "resume"){
             //dot.style.left = "552px";
-            dot.style.left = "65%";
+            dot.css("left","65%");
         } else if (input == "about"){
             //dot.style.left = "695px";
-            dot.style.left = "85%";
+            dot.css("left","85%");
         } else {
             //dot.style.left = "395px";
-            dot.style.left = "43.5%";
+            dot.css("left","43.5%");
         }   
     }
 }
 
-//1022 backup navCheck()
-//function navCheck(){
-//    var currentViewTopEdgePosition = $(window).scrollTop();
-//    
-//    if (currentViewTopEdgePosition > 625){
-//        for (var i=0; i<navLinkArray.length; i++){
-//            var linkName = "#"+navLinkArray[i];
-//            $(linkName).css("color", "#555");
-//        }
-//        $("#indicator-dot").css("backgroundColor", "#555");
-//        $("#cf").css("opacity", ".7");
-//    } else {
-//         for (var i=0; i<navLinkArray.length; i++){
-//            var linkName = "#"+navLinkArray[i];
-//            $(linkName).css("color", "#fff");
-//        }
-//        $("#indicator-dot").css("backgroundColor", "#fff");
-//        $("#cf").css("opacity", ".1");
-//    }
-//
-//}
-
-
-
-//function navCheck(){
-//    var toChangeNavColor = false;
-//    var counter = 0;
-//    for (var i=0; i<navItemArray.length; i++){
-//        if (currentPath != navItemArray[i]){
-//           counter ++;
-//        }
-//    }
-//    if (counter == 4){toChangeNavColor=true;}    
-//        if (toChangeNavColor){    
-//        var currentViewTopEdgePosition = $(window).scrollTop();
-//        if (currentViewTopEdgePosition > 625){
-//            setDefaultNavColor();
-//        } else {
-//            for (var i=0; i<navLinkArray.length; i++){
-//                var linkName = "#"+navLinkArray[i];
-//                $(linkName).css("color", "#fff");
-//            }
-//            $("#indicator-dot").css("backgroundColor", "#fff");
-//            $("#cf").css("opacity", ".1");
-//        }
-//    }
-//
-//}
 
 function navCheck(){
     var toChangeNavColor = false;
     var i = 0;
-    //if equal, then fase
-    while(currentPath!=navItemArray[i]){
-        
-    }
-        if (toChangeNavColor){    
+    if (toChangeNavColor){    
         var currentViewTopEdgePosition = $(window).scrollTop();
         if (currentViewTopEdgePosition > 625){
             setDefaultNavColor();
