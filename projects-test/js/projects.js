@@ -19,7 +19,20 @@ var projects = new Array(
 	"#project-calor",
 	"#project-bristol"
 );
-var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
+
+var links = new Array(
+	"../motion/motion.html",
+	"../expression/expression.html",
+	"./archive/archive.html",
+	"../steam/steam.html",
+	"./soaphero/soaphero.html",
+	"../symbio/symbio.html",
+	"../drive/drive.html",
+	"../native/native.html",
+	"../bristol/bristol.html",
+	"../turo/turo.html",
+	"../calor/calor.html"
+);
 
 $(document).ready(
 	hoverLoop()
@@ -27,8 +40,7 @@ $(document).ready(
 
 
 function hoverLoop(){
-	for (var i = 0; i < projects.length; i++) {
-		$(projects[i]).mouseover(fadeImage(projects[i]));
+	for (var i = 0; i < projects.length; i++) {	$(projects[i]).mouseover(fadeImage(projects[i]));
 	}
 };
 
@@ -43,15 +55,6 @@ function fadeImage(projectName){
 	);
 };
 
-
-var currentPath = window.location.pathname.split("/")[(window.location.pathname.split("/").length)-2];
-
-
-//auto run function to set up when page is loaded
-(function(){
-    move("currentPath");
-    $("#indicator-dot").css("opacity", 1);
-})();
 
 
 function move(input){
@@ -79,7 +82,13 @@ function move(input){
     }
 }
 
+function getRandom(){
+    var num = Math.floor(Math.random() * 11);
+    console.log(num);
+        console.log($("#random").attr("href"));
 
+    $("#random").attr("href", links[num]);
+}
 
 
 
