@@ -1,6 +1,8 @@
 
 /*body div *{background-color: aqua;}*/
 
+#overall-panel{background-color: aqua;}
+
 html, body, footer{background-color: #2E2E2E;}
 
 /*----------------Title----------------*/
@@ -38,36 +40,30 @@ html, body, footer{background-color: #2E2E2E;}
 
 
 #m1{
-    //top: 53%;
-    bottom: 0;
     left: 49%;
     z-index: 5;
 }
 
 #m2{
-    //top:66%;
     bottom: 0;
     left: -14%;
     z-index: 4;
 }
 
 #m3{
-    //top:64%;
     left: 18.5%;
     z-index: 3;
     //opacity: 0;
 }
 
 #m4{
-    //top:60%;
     left: 33.3%;
     z-index: 2;
-        //opacity: 0;
+    //opacity: 0;
 
 }
 
 #m5{
-    //top:63%;
     left: 2%;
     z-index: 1;
         //opacity: 0;
@@ -77,7 +73,7 @@ html, body, footer{background-color: #2E2E2E;}
 #designer{
     position: absolute;
     left: 15%;
-    top: 30%;
+    top: 25%;
     opacity: .9;
 }
 
@@ -204,13 +200,12 @@ html, body, footer{background-color: #2E2E2E;}
     top: 10px;
     left: 900px;
     opacity: 0;
-    animation: fall 2s 3s infinite;
+    animation: fall 4s 3s infinite;
 }
 
 /*----------------overview panel----------------*/
 #overview-panel{
     position: relative;
-    background-color: aqua;
     width:1020px;
     left: 50%;
     margin-left: -510px;
@@ -223,7 +218,6 @@ html, body, footer{background-color: #2E2E2E;}
     float: left;
     width: 340px;
     height: 550px;
-
 }
 
 /*test purpose*/
@@ -365,12 +359,21 @@ html, body, footer{background-color: #2E2E2E;}
     0% {opacity: 0;
         transform: translate(0,0);
     }
-    
-    50 {opacity: .3}
-    
-    100% {
+    25% {opacity: .3}
+    50%,100% {
         opacity: 1;
         transform: translate(-900px,600px);
+    }
+}
+
+@-webkit-keyframes fall480 {
+    0% {opacity: 0;
+        transform: translate(0,-150px);
+    }
+    50 {opacity: .3}
+    100% {
+        opacity: 1;
+        transform: translate(-1000px,500px);
     }
 }
 
@@ -392,44 +395,66 @@ footer{margin-top:15px; color: #fff;}
 @media screen and (max-width: 680px) {
 	/*--responsive all testing--*/
 /* for about.css only*/
-    
-#title-panel{
+    #link-home{text-decoration: underline}
+    .li-nav:hover{text-decoration: underline}
+    #title-panel{
     padding: 0; /* full bleed on about page*/
     left: 50%;
 }
+    #designer{
+        top: 20%;
+        left: 5%;
+    }
     
-#me-panel, #site-panel{
-    width: auto;
-    padding: 60px 20px 0px 20px;
-}
+    #designer>h1{width: 95%;}
+    
+    #mountains>img {
+        position: absolute;
+        bottom: 0;
+        margin-left: -150px;
+    }
+
+    #overview-panel{
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        height: 1600px;
+    }
+    
+    #overview-panel>.panel{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .panel-image{
+        position: relative;
+        width: 340px;
+        left: 50%;
+        margin-left: -170px;
+    }
+    
+    #overview-panel>#upcoming-panel{
+        height: 470px;
+    }
 
 p{padding:0;}
 
-#about-section-wrapper{
-    width: auto;
-    margin-left: 0; /*reset >680px*/
-    left: 0; /*reset >680px*/
-}
-    
-#link-about{text-decoration: underline}
-.li-nav:hover{text-decoration: underline}
+
+
 
 
 @media screen and (max-width: 480px){
-	/* for about.css only*/
-	.panel-name{
-		position: relative;
-		left: 50%;
-		margin-left: -81px;
-		width: 162px;
-		padding: 0px 10px;
-	}
-	
-	.panel-name-site{
-		width:240px;
-		margin-left: -120px;
-	}
-	/* for about.css only*/
+    #m1{left: 20%;}
 
-	
+    #m2{left: -40%;}
+
+    #m3{left: 10%;}
+
+    #m4{left: -10%;top: 450px;}
+
+    #m5{left: -2%;top: 450px;}
+    
+    #comet{
+        animation: fall480 2s 3s infinite;
+    }
 }

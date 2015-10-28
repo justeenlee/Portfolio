@@ -287,18 +287,20 @@
         var halfBrowserWidth = window.innerWidth/2;
         var gain = (event.pageX - halfBrowserWidth)/halfBrowserWidth/10;
         var loss = (halfBrowserWidth - event.pageX )/halfBrowserWidth/10;
-        if (event.pageX>=halfBrowserWidth){
-            $("#m1").css("left", 49+gain*10+"%");
-            $("#m2").css("left", "-"+(14-gain*7)+"%");
-            $("#m3").css("left", 18.5+gain*4+"%");
-            $("#m4").css("left", 33.3+gain*3+"%");
-            $("#m5").css("left", 2+gain*2+"%");
-        } else {
-            $("#m1").css("left", 49-loss*10+"%");
-            $("#m2").css("left", "-"+(14+loss*7)+"%");
-            $("#m3").css("left", 18.5-loss*4+"%");
-            $("#m4").css("left", 33.3-loss*3+"%");
-            $("#m5").css("left", 2-loss*2+"%");
+        if (window.outerWidth>480){
+            if (event.pageX>=halfBrowserWidth){
+                $("#m1").css("left", 49+gain*10+"%");
+                $("#m2").css("left", "-"+(14-gain*7)+"%");
+                $("#m3").css("left", 18.5+gain*4+"%");
+                $("#m4").css("left", 33.3+gain*3+"%");
+                $("#m5").css("left", 2+gain*2+"%");
+            } else {
+                $("#m1").css("left", 49-loss*10+"%");
+                $("#m2").css("left", "-"+(14+loss*7)+"%");
+                $("#m3").css("left", 18.5-loss*4+"%");
+                $("#m4").css("left", 33.3-loss*3+"%");
+                $("#m5").css("left", 2-loss*2+"%");
+            }
         }
     });
     
