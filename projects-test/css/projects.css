@@ -13,11 +13,15 @@
 }
 
 html,body{background-color: #f5f5f5}
+body{//background-color: aqua;}
+
 
 img~img{
 	margin-top: 0px; /*overrule structure.css*/
 }
 
+body{height: 900px;}
+footer{margin-top: 80px;}
 
 /*----------------Product----------------*/
 #product-panel {
@@ -25,8 +29,9 @@ img~img{
     width: 814px; /*880-16*2(padding)*/
     left: 50%;
     margin-left: -407px;
-	min-height: 1000px;
+	min-height: 900px;
     height: auto;
+    margin-top: 30px;
 }
 
 .square{
@@ -154,50 +159,6 @@ img~img{
 	margin:16px 0px 0px 16px;
 }
 
-.left-content{
-	//background-color: #eee;
-}
-
-.mid-content{
-	//background-color: grey;
-}
-
-
-.floor>h3{
-	margin: 0px auto;
-	width: 200px;
-	border-top-style: solid;
-	border-top-color: black;
-	border-top-width: 2px;
-	margin-top: 10px;
-}
-
-.floor>h2, .floor>h3, .floor>h4{
-	margin: 0px auto;
-}
-
-.floor>h3 {
-	font-size:1em;
-	line-height: 1;
-}
-
-.floor>h4{
-	font-size:.75em;
-	line-height: 1.2;
-}
-
-.floor>h5{
-	font-size: .5em;
-	font-weight: 100;
-	
-}
-
-
-/*delete after finished*/
-.block{
-	//background-color: white;
-	//border: 1px solid #eee;
-}
 
 
 
@@ -206,68 +167,57 @@ img~img{
 ----------------------------*/
 /* for 680px or less */
 @media screen and (max-width: 680px) {
+    #link-projects{text-decoration: underline;}
 	#product-panel{
 		width: auto;
-		min-height: 1900px;
+		//min-height: 1900px;
 		padding: 0;
+        width: 100%;
+        left: 0;
+        margin-left: 0;
 	}
 		
 	/*clear padding for all floors*/
 	#product-panel>div{padding: 0;}
-	
-	
-	
-	/*-- case 1 --*/
-	/*-- left=wide | mid=square | right=square --*/
-	.wide~.mid-content~.right-content{
-		left: 0px;
-	}
-	.wide~.mid-content~.right-content~.block{
-		right: 0px;
-	}
-	
-	.floor{
-		width: 632px;
-		height: auto;
-	}
-	.block{
-		height: 0px;
-		width: 0px;
-		margin: 0px;
-	}
-	/*delete after finished*/
-	.block{
-		background-color: initial;
-		border: 0;
-	}
+    
 
-	.floor>h2,h3,h4{
-		text-align: center;
-	}
 	
-	.floor>h2, .floor>h3, .floor>h4{
-		line-height: 1.2;
-		margin: 0px auto;
-	}
-	
-	.floor>h3{
-		width: 250px;
-		margin-top: 10px;
-	}
-	.floor>h4{
-		margin-top: -5px;
-	}
+
+    
 }/* for 680px or less media query ends */
 
 
 
+@media screen and (max-width: 548px) {
+    #product-panel{height: 1350px;}
+}
+
+@media screen and (max-width: 532px) {
+    #product-panel{height: 2500px;}
+}
+
+
 /* for 480px or less */
 @media screen and (max-width: 480px) {
+    
+    
+    
 	#floor-three, #floor-two, #floor-one, #lower-level{
 		width: auto;
 		float: none;
 		
 	}
+    
+    #product-panel{margin-top: 100px;height: auto;
+}
+
+    
+    .square-img{
+        width:250px;
+        position: relative;
+        left: 50%;
+        margin-left: -125px;
+    }
 	
 	.square, .wide{
 		margin-right: 16px;
