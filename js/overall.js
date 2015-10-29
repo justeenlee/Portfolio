@@ -10,7 +10,7 @@ var currentPath = window.location.pathname.split("/")[(window.location.pathname.
     move(currentPath);
     setFullWidth();
     navCheck();
-    console.log("break1"+currentPath);
+    //console.log("break1"+currentPath);
 })();
 
 
@@ -35,6 +35,8 @@ function setFullWidth(){
     var newMarginLeft = (-(newWidth/2))+"px";
     $("#title-panel").width(newWidth);
     $("#title-panel").css("margin-left", newMarginLeft);
+    $("#cf").width(newWidth);
+    $("#cf").css("margin-left", newMarginLeft);
     $(".band").width(newWidth);
     $(".band").css("margin-left", newMarginLeft);
 }

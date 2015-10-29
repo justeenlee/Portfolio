@@ -23,9 +23,9 @@ var projects = new Array(
 var links = new Array(
 	"../motion/motion.html",
 	"../expression/expression.html",
-	"./archive/archive.html",
+	"../archive/archive.html",
 	"../steam/steam.html",
-	"./soaphero/soaphero.html",
+	"../soaphero/soaphero.html",
 	"../symbio/symbio.html",
 	"../drive/drive.html",
 	"../native/native.html",

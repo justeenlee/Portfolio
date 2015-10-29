@@ -11,32 +11,62 @@ html, body, footer{background-color: #2E2E2E;}
     background-color:white;
 	overflow: hidden; /*block m1 stick out*/
     height: 768px;
+    background-image: url("../images/gradient%20stella.jpg");
+    background-size: 100% 768px;
+    background-repeat: no-repeat;
 }
 
 
 #testbg{
+    top: 0;
     position: absolute;
     width: 1200px;
     left: 50%;
     margin-left: -600px;
     z-index: 100;
-    opacity: .0;
+    opacity: .05;
 }
 
 #mountains{
-    height: 768px;
-	overflow: hidden;
+    position: relative;
+    left:50%;
+    margin-left: -684px;
+    width: 1368px;
+    height: 735px;
+	//overflow: hidden;
     padding-top:60px;/*no cf for smoothness*/
-    background-image: url("../images/gradient%20stella.jpg");
-    background-size: auto auto;
-    background-repeat: no-repeat;
+    //background-color: cyan;
 }
+
+#stars{
+   position: absolute;
+    left:50%;
+    margin-left: -600px;
+    width: 1368px; 
+    height: 735px;
+    top: 0;
+}
+
+@media screen and (max-width: 1368px) {
+    #mountains{
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+    }
+    
+    #mountains>img{
+        margin-left: -20px;
+    }
+}
+
+
+
+
 
 #mountains>img {
 	position: absolute;
     bottom: 0;
 }
-
 
 
 #m1{
@@ -45,28 +75,27 @@ html, body, footer{background-color: #2E2E2E;}
 }
 
 #m2{
-    bottom: 0;
-    left: -14%;
+    left: -7%;
     z-index: 4;
 }
 
 #m3{
-    left: 18.5%;
+    left: 22%;
     z-index: 3;
     //opacity: 0;
 }
 
 #m4{
-    left: 33.3%;
+    left: 35%;
     z-index: 2;
     //opacity: 0;
 
 }
 
 #m5{
-    left: 2%;
+    left: 8%;
     z-index: 1;
-        //opacity: 0;
+    //opacity: 0;
 
 }
 
@@ -75,6 +104,13 @@ html, body, footer{background-color: #2E2E2E;}
     left: 15%;
     top: 25%;
     opacity: .9;
+}
+
+@media screen and (min-width: 1368px) {
+    #designer{
+        margin-left: -480px;
+        left: 50%;
+    }
 }
 
 #designer>h1{
@@ -198,9 +234,9 @@ html, body, footer{background-color: #2E2E2E;}
 #comet{
     z-index: 0;
     top: 10px;
-    left: 900px;
+    left: 1100px;
     opacity: 0;
-    animation: fall 4s 3s infinite;
+    animation: fall 5s 3s infinite;
 }
 
 /*----------------overview panel----------------*/
@@ -288,6 +324,7 @@ html, body, footer{background-color: #2E2E2E;}
 .button:hover .bar{top: -50px;}
 
 .button>a{
+    text-decoration: none;
 	color:#fff;
 	-webkit-transition: color 0.35s;
     -moz-transition: color 0.35s;
@@ -341,6 +378,8 @@ html, body, footer{background-color: #2E2E2E;}
 
 
 
+
+
 /*----------------animations ----------------*/
 
 @-webkit-keyframes blink-first {
@@ -359,10 +398,10 @@ html, body, footer{background-color: #2E2E2E;}
     0% {opacity: 0;
         transform: translate(0,0);
     }
-    25% {opacity: .3}
+    25% {opacity: .8}
     50%,100% {
         opacity: 1;
-        transform: translate(-900px,600px);
+        transform: translate(-1200px,800px);
     }
 }
 
@@ -382,14 +421,39 @@ html, body, footer{background-color: #2E2E2E;}
 
 
 
-p>a:link {color: #ffd05c ;}
-p>a:visited {color: #ffd05c ;}
-p>a:hover{text-decoration: underline;}
 
 .inline-highlight{text-decoration: underline}
 
 footer{margin-top:15px; color: #fff;}
 
+@media screen and (max-width: 1024px) {
+    
+    #mountains>img {
+        margin-left: -100px;
+    }
+    
+    #overview-panel{
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+    
+    #overview-panel>.panel{
+        width: 100%;
+    }
+    
+    .panel-image{
+        position: relative;
+        width: 340px;
+        left: 50%;
+        margin-left: -170px;
+    }
+    
+    #overview-panel>#upcoming-panel{
+        height: 470px;
+    }
+
+}
 
 /* for 680px or less */
 @media screen and (max-width: 680px) {
@@ -399,7 +463,6 @@ footer{margin-top:15px; color: #fff;}
     .li-nav:hover{text-decoration: underline}
     #title-panel{
     padding: 0; /* full bleed on about page*/
-    left: 50%;
 }
     #designer{
         top: 20%;
@@ -409,10 +472,10 @@ footer{margin-top:15px; color: #fff;}
     #designer>h1{width: 95%;}
     
     #mountains>img {
-        position: absolute;
-        bottom: 0;
         margin-left: -150px;
     }
+    
+    #m2{left: -15%;}
 
     #overview-panel{
         width: 100%;
@@ -442,17 +505,18 @@ p{padding:0;}
 
 
 
-
 @media screen and (max-width: 480px){
+
+    
     #m1{left: 20%;}
 
     #m2{left: -40%;}
 
     #m3{left: 10%;}
 
-    #m4{left: -10%;top: 450px;}
+    #m4{left: -10%;top: 470px;}
 
-    #m5{left: -2%;top: 450px;}
+    #m5{left: -2%;top: 480px;}
     
     #comet{
         animation: fall480 2s 3s infinite;

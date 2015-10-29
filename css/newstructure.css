@@ -185,7 +185,7 @@ li>a:link {transition: .7s ease;}
 
 #cf{
 	position: fixed; /*0830 relative to fixed*/
-	width: 1366px; /*0830 100% to 1366*/
+	min-width: 1366px; /*0830 100% to 1366*/
 	height: 50px; /*0731 60 to 50*/
     /*0830*/
     z-index: 20;
@@ -194,7 +194,7 @@ li>a:link {transition: .7s ease;}
 /*once pass rendering, change opacity*/
     left: 50%;
     margin-left: -684px;
-    transition: .7s ease;
+    //transition: .7s ease;
 }
 
 
