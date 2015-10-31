@@ -47,7 +47,7 @@ function move(input){
     if (input == "currentPath"){
         input = currentPath;
     }
-    if ((input =="Portfolio")||(input=="justeenlee.com")){
+    if ((input =="Portfolio")||(input=="justeenlee.com")||(input == "")){
         input = "index";
     }
 

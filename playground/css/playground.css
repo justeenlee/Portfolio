@@ -8,7 +8,7 @@ html, body, footer{background-color: #2E2E2E;}
 /*----------------Title----------------*/
 #title-panel{
     position: relative;
-    background-color:white;
+    background-color:#2E2E2E;
 	overflow: hidden; /*block m1 stick out*/
     height: 768px;
     background-image: url("../images/gradient%20stella.jpg");

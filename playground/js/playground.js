@@ -1,6 +1,5 @@
 $(window).bind("load",function(){
 		init();
-	}
 );
 
 $( window ).resize(function() {
