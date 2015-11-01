@@ -1,6 +1,5 @@
 var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
-var navItemArray = ["justeenlee.com","projects","resume","about"];
-
+//var navItemArray = ["justeenlee.com","projects","resume","about"];
 
 var currentPath = window.location.pathname.split("/")[(window.location.pathname.split("/").length)-2];
 
@@ -50,8 +49,7 @@ function move(input){
     if ((input =="Portfolio")||(input=="justeenlee.com")||(input == "")){
         input = "index";
     }
-
-    console.log("break2"+input);
+//    console.log("break2"+input);
     if (window.outerWidth > 680){
         if(input == "index"){
             //dot.style.left = "210px";
