@@ -72,32 +72,47 @@ html, body, footer{background-color: #2E2E2E;}
 #m1{
     left: 49%;
     z-index: 5;
+    animation: rise 1s ease-out;
+    -webkit-animation: rise 1s ease-out;
 }
 
 #m2{
     left: -7%;
     z-index: 4;
+    animation: rise 2s ease-out;
+    -webkit-animation: rise 2s ease-out;
 }
 
 #m3{
     left: 22%;
     z-index: 3;
-    //opacity: 0;
+    animation: rise 3s ease-out;
+    -webkit-animation: rise 3s ease-out;
 }
 
 #m4{
     left: 35%;
     z-index: 2;
-    //opacity: 0;
-
+    animation: rise 3.5s ease-out;
+    -webkit-animation: rise 3.5s ease-out;
 }
 
 #m5{
     left: 8%;
     z-index: 1;
-    //opacity: 0;
-
+    animation: rise 4s ease-out;
+    -webkit-animation: rise 4s ease-out;
 }
+
+@-webkit-keyframes rise{
+    0% {
+        transform: translate(0,500px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
 
 #designer{
     position: absolute;
@@ -124,111 +139,102 @@ html, body, footer{background-color: #2E2E2E;}
 #star1{
     top: 95px;
     left: 54px;
-    animation: blink-first 6s infinite;
 }
 
 #star2{
     top: 75px;
     left: 205px;
-    animation: blink-second 6s infinite;
 }
 
 #star3{
     top: 75px;
     left: 355px;
-    animation: blink-first 6s infinite;
 }
 
 #star4{
     top: 75px;
     left: 765px;
-    animation: blink-second 6s infinite;
 }
 
 #star5{
     top: 95px;
     left: 1040px;
-    animation: blink-first 6s infinite;
 }
 
 #star6{
     top: 159px;
     left: 476px;
-    animation: blink-second 6s infinite;
 }
 
 #star7{
     top: 65px;
     left: 650px;
-    animation: blink-first 6s infinite;
 }
 
 #star8{
     top: 148px;
     left: 739px;
-    animation: blink-first 6s infinite;
 }
 
 #star9{
     top: 158px;
     left: 928px;
-    animation: blink-first 6s infinite;
 }
 
 #star10{
     top: 255px;
     left: 1082px;
-    animation: blink-first 6s infinite;
 }
 
 #star11{
     top: 148px;
     left: 1125px;
-    animation: blink-first 6s infinite;
 }
 
 #star12{
     top: 278px;
     left: 35px;
-    animation: blink-first 6s infinite;
 }
 
 #star13{
     top: 310px;
     left: 450px;
-    animation: blink-first 6s infinite;
 }
 
 /*small stars*/
 #star14{
     top: 320px;
     left: 275px;
-    animation: blink-first 6s infinite;
 }
 
 #star15{
     top: 405px;
     left: 82px;
-    animation: blink-first 6s infinite;
 }
 #star16{
     top: 375px;
     left: 585px;
-    animation: blink-first 6s infinite;
 }
 
 #star17{
     top: 348px;
     left: 783px;
-    animation: blink-first 6s infinite;
 }
 
 #star18{
     top: 375px;
     left: 1129px;
-    animation: blink-first 6s infinite;
 }
 
+
+#star1,#star3,#star5,#star7,#star9,#star11,#star13,#star15,#star17{
+    animation: blink-first 6s infinite;
+    -webkit-animation: blink-first 6s infinite;
+}
+#star2,#star4,#star6,#star8,#star10,#star12,#star14,#star16,#star18{
+    animation: blink-second 6s infinite;
+    -webkit-animation: blink-second 6s infinite;
+}
 
 
 #comet{
@@ -381,19 +387,38 @@ html, body, footer{background-color: #2E2E2E;}
 
 
 /*----------------animations ----------------*/
-
+@keyframes blink-first {
+    0% {opacity: 1;}
+	50% {opacity: .5;}
+    100% {opacity: 1;}
+}
 @-webkit-keyframes blink-first {
     0% {opacity: 1;}
 	50% {opacity: .5;}
     100% {opacity: 1;}
 }
 
+@keyframes blink-second {
+    0% {opacity: .5;}
+	50% {opacity: 1;}
+    100% {opacity: .5;}
+}
 @-webkit-keyframes blink-second {
     0% {opacity: .5;}
 	50% {opacity: 1;}
     100% {opacity: .5;}
 }
 
+@keyframes fall {
+    0% {opacity: 0;
+        transform: translate(0,0);
+    }
+    25% {opacity: .8}
+    50%,100% {
+        opacity: 1;
+        transform: translate(-1200px,800px);
+    }
+}
 @-webkit-keyframes fall {
     0% {opacity: 0;
         transform: translate(0,0);
@@ -402,6 +427,17 @@ html, body, footer{background-color: #2E2E2E;}
     50%,100% {
         opacity: 1;
         transform: translate(-1200px,800px);
+    }
+}
+
+@keyframes fall480 {
+    0% {opacity: 0;
+        transform: translate(0,-150px);
+    }
+    50 {opacity: .3}
+    100% {
+        opacity: 1;
+        transform: translate(-1000px,500px);
     }
 }
 
