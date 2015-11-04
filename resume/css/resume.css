@@ -38,7 +38,7 @@ h1, h2{
 .section>h3{
 	font-family: "MYRIADPRO-semibold";
     font-size: 23px;
-    color:#DA2565;
+    color:#63b092;
 }
 
 .section>h4{
@@ -114,6 +114,8 @@ em{
 /*--------------Media Query starts-----------------*/
 /* for 680px or less */
 @media screen and (max-width: 680px) {
+    #link-resume{text-decoration: underline}
+
 	/* for resume.css only*/
 	#product-panel>div{padding: 0;}
 
