@@ -7,7 +7,9 @@
 */
 
 
-#link-projects{text-decoration: underline;}
+#title-panel{
+    background-color: transparent;   
+}
 
 
 /*----------------product panel----------------*/
@@ -51,10 +53,10 @@
 
 .poster-container>img{
 	position: relative;
-	left: 50%;
-	margin-left: -193px;
-	width: 386px;
-	display: block;
+	margin-right: 50px;
+	width: 300px;
+	display: inline-block;
+    float: left;
 	margin-bottom: 20px;
 	box-shadow: 0 0 10px 0px grey;
 }
@@ -74,6 +76,11 @@
 .shadow {
 	box-shadow: 0 0 10px 0px grey;
 }
+
+@media screen and (max-width: 680px){
+    #link-projects{text-decoration: underline;}
+}
+
 
 @media screen and (max-width: 480px){
 	#techbadminton-logo{
