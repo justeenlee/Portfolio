@@ -4,17 +4,18 @@ var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
 var currentPath = window.location.pathname.split("/")[(window.location.pathname.split("/").length)-2];
 
 
+
 //auto run function to set up when page is loaded
 (function(){
     move(currentPath);
     setFullWidth();
-    navCheck();
-    //console.log("break1"+currentPath);
+    setNav();
 })();
 
 
 $(window).scroll(function (){
-    navCheck();
+    check();
+    setNav();
 });
 
 $(window).resize(function(){
@@ -27,7 +28,6 @@ $(window).resize(function(){
         document.getElementById("indicator-dot").style.opacity = "0";
     }
 });
-
     
 function setFullWidth(){
     var newWidth = window.innerWidth;
@@ -67,9 +67,7 @@ function move(input){
     }
 }
 
-
-function navCheck(){
-    var toChangeNavColor = false;
+function setNav(){
     var i = 0;
     if (toChangeNavColor){    
         var currentViewTopEdgePosition = $(window).scrollTop();
@@ -84,7 +82,21 @@ function navCheck(){
             $("#cf").css("opacity", ".1");
         }
     }
+}
 
+var toChangeNavColor = false;
+
+function check(){
+    if ((currentPath != "") &&
+       (currentPath != "index") &&
+       (currentPath != "projects") &&
+       (currentPath != "resume") &&
+       (currentPath != "about")){
+        console.log("yes");
+        toChangeNavColor = true;
+    } else {
+        toChangeNavColor = false;
+    } 
 }
 
 

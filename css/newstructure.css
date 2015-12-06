@@ -306,10 +306,8 @@ body{
 }
 
 .recognition a:link{
-    height: 40px;
     margin-left: 20px;
     text-decoration: none;
-    cursor: default;
 }
 
 .recognition img{
