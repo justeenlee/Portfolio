@@ -302,13 +302,22 @@ body{
 .recognition>p{
     text-align: center;
     font-size: 20px;
+
+}
+
+.recognition a:link{
+    height: 40px;
+    margin-left: 20px;
+    text-decoration: none;
+    cursor: default;
 }
 
 .recognition img{
-    margin-left: 20px;
     vertical-align: middle;
-    opacity: .75;
+    opacity: 1;
 }
+
+
 
 /*----------------Promotion----------------*/
 #promotion-panel{

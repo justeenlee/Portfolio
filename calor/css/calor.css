@@ -25,6 +25,15 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
     margin-top: 50px; /*share 20px margin with p class*/
 }
 
+#test2{
+    background-image: url("../images/2016IxDAwards_Shortlist_Pin.png");
+    background-size: 100% 40px;
+    background-color: yellow;
+    background-repeat: no-repeat;
+    overflow: visible;
+
+}
+
 /*----------------Promotion----------------*/
 
 /*----------------Research----------------*/
