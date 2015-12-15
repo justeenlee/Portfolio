@@ -12,8 +12,7 @@
     background-color: #FCFCFC;
 }
 
-html,body{background-color: #f5f5f5}
-body{//background-color: aqua;}
+html,body{background-color: #f9f9f9}
 
 
 img~img{
@@ -51,13 +50,6 @@ footer{margin-top: 80px;}
 	color:grey;
 }
 
-.square>img{
-	display: block;
-}
-
-.data-img{
-	position: absolute;
-}
 
 .wide{
 	position: relative;
@@ -96,13 +88,24 @@ footer{margin-top: 80px;}
     text-decoration: none;
 }
 
-
 .square-img{
 	position:relative;
     width: 250px;
     height: 165px;
-    //opacity: .5;
 }
+
+.square-img>img{
+    position: absolute
+}
+
+.square>img{
+	display: block;
+}
+
+.data-img{
+	position: absolute;
+}
+
 .square-caption{
 	position:relative;
     width: 100%;
