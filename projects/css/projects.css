@@ -1,165 +1,133 @@
 .li-nav>a:link,
 .li-nav>a:visited 
 {color: #555;}
+
 #indicator-dot{background-color: #555;}
 
 #product-panel{
-    //background-color: yellow;
+    //background-color: antiquewhite;
 }
 
-.square{
-    //background-color: yellow;
+.square, .wide, .tall{
+    background-color: yellow;
     background-color: #FCFCFC;
 }
 
 html,body{background-color: #f9f9f9}
-
+html,body{background-color: #fff}
 
 img~img{
 	margin-top: 0px; /*overrule structure.css*/
 }
 
-body{height: 900px;}
+body{height: auto;width: 990px; margin-left: -495px}
+
+#navigation{left: 50%; margin-left: -350px;}
+
 footer{margin-top: 80px;}
 
 /*----------------Product----------------*/
 #product-panel {
 	position: relative;
-    width: 814px; /*880-16*2(padding)*/
+    width: 990px; /*880-16*2(padding)*/
     left: 50%;
-    margin-left: -407px;
-	min-height: 900px;
+    margin-left: -495px;
+	min-height: 1400px;
     height: auto;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
-.square{
+/*square property*/
+.square, .wide, .tall{
 	position: relative;
-	width: 250px;
-	height: 215px;
+	width: 310px;
+	height: 290px;
 	overflow: hidden;
 }
+
+.wide{width: 635px;}
+
+.tall{height: 595px;}
 
 .square a{
 	-webkit-transition: color .8s; /* For Safari 3.1 to 6.0 */
     transition: color .8s;
 }
 
-.square a:hover{
-	color:white;
-	color:grey;
-}
-
-
-.wide{
-	position: relative;
-	width: 416px;
-	height: 200px;
-	//background-color: grey;
-}
-
-.wide a:hover{
-	color:white;
-	color:grey;
-}
-
 
 
 /*-- case 1 --*/
-/*-- left=wide | mid=square | right=square --*/
-.wide~.mid-content~.right-content{
-	left: 216px;
-}
-.wide~.mid-content~.right-content~.block{
-	right: 216px;
-}
+/*-- wide, tall, square --*/
+.wide+.tall+.square{margin-top: -290px;}
+.tall+.square+.square{margin: -290px 0 0 340px;}
 
 
-.tall{
-	position: inherit;
-	width: 200px;
-	height: 400px;
-	//background-color: grey;
-	opacity: .2;
-}
-
-.square>a{
-    color: #555;
+#product-panel a:link, 
+#product-panel a:visited{
+    color: #333;
     text-decoration: none;
 }
 
-.square-img{
+.square-img, .wide-img, .tall-img{
 	position:relative;
+    width: 310px;
+    height: 290px;
+}
+
+.wide-img{width: 635px;}
+.tall-img{height: 595px;}
+
+.square-img>img, .wide-img>img, .tall-img>img{
+    position: absolute;
+    display: block;
+}
+
+
+[href="../motion/motion.html"]>.square-img{
     width: 250px;
-    height: 165px;
+    left: 50%;
+    margin-left: -125px;
+    padding-top: 20px;
 }
-
-.square-img>img{
-    position: absolute
-}
-
-.square>img{
-	display: block;
-}
-
-.data-img{
-	position: absolute;
-}
-
-.square-caption{
-	position:relative;
-    width: 100%;
-    height: 50px;
-    text-align: center;
+[href="../motion/motion.html"]>.caption{
+    margin-top: -75px; /*55default + 20adjustment*/
 }
 
 
-.square-caption>h2, .wide a>h2, .tall a>h2{
+#project-motion>img{
+    width: 250px;
+    
+}
+
+h2{
 	font-size: 20px;
     font-family: roboto;
 }
 
-.square-caption>h3{
-	font-size: 15px;
+h3{
+	font-size: 16px;
     font-family: roboto-light;
 }
 
-.small{height: 100px;width: 250px;}
-.small .square-caption{
+.caption{
+	position:relative;
+    width: auto;
+    height: 50px;
+    text-align: left;
+    margin-top: -55px;
+    margin-left: 15px;
+}
+
+.small{height: 100px;width: 310px;}
+.small .caption{
     margin-top: 25px;
 }
 
 
-.square a>.project-caption, 
-.wide a>.project-caption, 
-.tall a>.project-caption{
-	margin-top: -24px;
-	font-size: 10pt;
-}
-
-
-
-#floor-three, #floor-two, #floor-one, #lower-level {
-	position: relative;
-	height: auto;
+/*padding property*/
+.square, .wide, .tall{
 	float: left;
-}
-
-#floor-three{
-	margin-top: 50px;
-}
-
-/*------------span only one row-----------------*/
-#floor-three, #lower-level {
-	//background-color: yellow;
-	width: 100%;
-	min-height: 0px;
-}/*---------------------------------------------*/
-
-
-.floor, .left-content, .mid-content, .right-content, .block{
-	float: left;
-	margin:16px 0px 0px 16px;
+	margin:15px 0px 0px 15px;
 }
 
 
@@ -236,7 +204,7 @@ footer{margin-top: 80px;}
 		font-weight: 100;
 	}
 	
-	.floor, .left-content, .mid-content, .right-content, .block{
+	.square, .wide, .tall{
 		float:none;
 	}
 	

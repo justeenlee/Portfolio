@@ -18,7 +18,7 @@
 	min-height: 743px;
 }
 
-.product-wrapper>img{
+.product-wrapper img{
 	margin-bottom: 20px;
 }
 
@@ -51,6 +51,15 @@
 	width: auto;
 }
 
+.product-img>img{
+    width: 345px;
+    float: left;
+}
+.product-img>img:last-child{
+   margin-left: 10px;
+}
+
+
 .poster-container>img{
 	position: relative;
 	margin-right: 50px;
@@ -66,8 +75,9 @@
 	width: 100%;
 	height: 543px;
 	background-color: black;
-	margin-bottom: 20px;
 }
+
+.comment{margin-top: 20px;}
 /*----------------intro----------------*/
 .slide-container{
 	margin-top: 20px;

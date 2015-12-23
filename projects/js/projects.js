@@ -17,7 +17,8 @@ var projects = new Array(
 	"project-lift",
 	"project-drive",
 	"project-calor",
-	"project-bristol"
+	"project-bristol",
+    "project-flash"
 );
 
 var links = new Array(
@@ -40,6 +41,11 @@ function focusOn(obj){
         if (projects[i] != obj.id){
             $("#"+projects[i]).stop().fadeTo(fadeOutSpeed,0);
         }
+        if (obj.id != "project-motion"){
+            $("#project-motion").stop().fadeTo(fadeOutSpeed,1);
+        } else {
+            $("#project-motion").stop().fadeTo(fadeOutSpeed,0);
+        }
     }
 }
 
@@ -47,6 +53,7 @@ function focusOut(){
     for (i=0; i<projects.length; i++){
          $("#"+projects[i]).stop().fadeTo(fadeOutSpeed,1);
     }
+    $("#project-motion").stop().fadeTo(fadeOutSpeed,1);
 }
 
 
