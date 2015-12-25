@@ -10,9 +10,10 @@
 	<link rel="shortcut icon" href="../assets/favicon.ico"/>
     <link rel="stylesheet" href="../css/font.css">
 	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="../css/structure.css">
+	<link rel="stylesheet" href="../css/newstructure.css">
 	<link rel="stylesheet" href="css/native.css">
     <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/overall.js" defer></script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,29 +28,33 @@
 
 	
 <body>
-	<div id = "navigation">
+    <div id = "navigation">
         <ul>
-    <li class="li-nav"><a id="link-home" href="../index.html">PLAYGROUND</a></li>
-    <li class="li-nav"><a id="link-projects"  href="../projects/projects.html#floor-three">PROJECTS</a></li>
-    <li class="li-nav"><a id="link-resume"  href="../resume/resume.html">RESUME</a></li>
-    <li class="li-nav"><a  id="link-about"  href="../about/about.html">ABOUT</a></li>
+            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+            
+    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+            
+    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
+            
+    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/">ABOUT</a></li>
         </ul>
+        <span id="indicator-dot"></span>
 	</div>
 	<div id = "cf"></div>
 
 <!--title panel------------------------------>
     <div id = "title-panel">
 		<div id = "title-img">
-            <img src="images/iPadOnly.png" class = "title-image-group" width="100%">
-            <img  src="images/shadowOnly.png" id = "title-img-product-shadow" class = "title-image-group">
-        </div>
-		
-        <div id ="title-description">
-            <div>Native</div>
-            <div id = "title-description-supplement">
+            <img src="images/iPadOnly.png" width="100%">
+        </div>        
+         <div id ="title-description">
+            <h1>Native</h1>
+            <h2>
                 New Parking Experience
-            </div>
-        </div>           
+            </h2>
+            <h3>Tailored for everyone everywhere</h3>
+        </div>     
+        
     </div>
 	
 	
@@ -65,7 +70,6 @@
 <!--research panel------------------------------>
     <div id = "research-panel" class = "panel">
 		<img src="images/interfaceIssues.jpg" width="100%">
-		<p>On-site research on issues users currently encounter in parking and paying.</p>
 		<div class = "loading slide-container">
 			<div id="main" role="main">
 			  <section class="slider">
@@ -88,9 +92,11 @@
 		<img src="images/satisfaction.jpg" width="100%">
 		<img src="images/problems.jpg" width="100%">
 
-		<div class="quote">
+		<div class="highlight">
 			<h3>Not just the UI, but the system</h3>
 		</div>
+        
+        
 		<p>I realize the issues are about not only the UI, but the entire system. <br>Thus, a better parking system is in demand to solve all the problems.</p>
 		
     </div>
@@ -102,25 +108,25 @@
 <!--product panel------------------------------>
 	<div id = "product-panel" class = "panel">
 		<img src="images/new-parking-system.gif" width="100%">
-		<div class="quote">
+		<div class="highlight">
 			<h3>
 				Pay by spot ?  Instead, pay by zone
 			</h3>
 		</div>
 		<p>In the new parking system, I divide all spots into 10 zones; in each zone there is one pole, which plays the significant role in memory offloading.
 		</p>
-		<div class="quote">
+		<div class="highlight">
 			<h3>
 				 Harness Existing Technology
 			</h3>
 		</div>	
 		<img class="shadow-off" src="images/technology.jpg" width="100%">
-		<div class="quote">
+		<div class="highlight">
 			<h3>Recognition rather than recall</h3>
 		</div>
 		<p>Using recognition instead of recall provides memoery offload, which benefits users a more effortless parking payment experience.</p>
 		<div class="quote">
-			<h3>You can forget about the space number<br>but not how your car looks like</h3>
+			<h3>You can forget about the space number, but not how your car looks like</h3>
 		</div>
 		<img src="images/pole-placeholder.jpg" width="100%">
 		<div class = "loading slide-container">

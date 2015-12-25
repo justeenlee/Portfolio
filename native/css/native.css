@@ -1,24 +1,18 @@
-#link-projects{text-decoration: underline;}
 
-
-.quote>h3, i, #title-description{
+.highlight, i, #title-description{
 	color: #101b7d;
 }
 
 /*----------------Title----------------*/
-.title-image-group{
-    margin-top: 30%;
-    width: 90%; 
+
+#title-panel{
+    background-color: #101b7d;
 }
 
-#title-img-product-shadow{
-	position: relative;
-    top:-30%;
-    -webkit-animation: shadow-in 1.3s ease-in-out forwards;
-	-moz-animation: shadow-in 1.3s ease-in-out forwards; 
-	animation: shadow-in 1.3s ease-in-out forwards; 
-	
+#title-img>img{
+    margin-left: -300px; /*center combo*/
 }
+
 /*----------------Promotion----------------*/
 
 
@@ -54,19 +48,7 @@
 
 /*----------------Animations----------------*/
 
-@-webkit-keyframes shadow-in {
-    0% {opacity: 0;-webkit-transform: translate(0,0px);}
-    50% {opacity: 0;}
-    85% {opacity: .32;}
-    100% {opacity: 1; -webkit-transform: translate(0,-50px);}
-}
 
-@keyframes shadow-in {
-    0% {opacity: 0;transform: translate(0,0px);}
-    50% {opacity: 0;}
-    85% {opacity: .32;}
-    100% {opacity: 1;transform: translate(0,-50px);}
-}
 
 
 /* for 680px or less */
