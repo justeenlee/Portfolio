@@ -27,6 +27,14 @@ html{
     background-color: #FbFbFb; /*0901*/
 }
 
+
+.coming-soon{
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+}
+
 .panel>img{margin-top: 10px;}
 
 p{
@@ -262,6 +270,7 @@ body{
     -webkit-animation: float 2.2s; 
     -webkit-animation-timing-function:ease-in-out;
 	-webkit-animation-fill-mode: forwards;
+    color: #fff;
 }
 
 

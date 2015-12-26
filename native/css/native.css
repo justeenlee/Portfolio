@@ -1,16 +1,19 @@
 
-.highlight, i, #title-description{
+.highlight, i{
 	color: #101b7d;
 }
 
 /*----------------Title----------------*/
 
 #title-panel{
-    background-color: #101b7d;
+    background-color: #4480E9;
 }
 
 #title-img>img{
-    margin-left: -300px; /*center combo*/
+    margin-left: -320px; /*center combo*/
+}
+
+#title-description{
 }
 
 /*----------------Promotion----------------*/
