@@ -1,0 +1,77 @@
+/*---------font setup ----------------------------------*/
+@font-face {
+	font-family: futura;	
+	src:url('../assets/fontbook/futura.otf');
+}
+
+@font-face {
+	font-family: navigation;	
+	src:url('../assets/fontbook/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: quote-font;	
+	src:url('../assets/fontbook/Mohave Italics.otf');
+}
+
+@font-face {
+	font-family: Roboto-Black;
+	src:url('../assets/fontbook/Roboto-Black.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Bold;
+	src:url('../assets/fontbook/Roboto-Bold.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src:url('../assets/fontbook/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Regular;
+	src:url('../assets/fontbook/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url(../assets/fontbook/baskvl.ttf);
+}
+
+@font-face {
+	font-family: "TyponineSans Regular 18";
+	src: url("../assets/fontbook/TyponineSansRegular.eot");
+	src: url("../assets/fontbook/TyponineSansRegular.eot?#iefix") format("embedded-opentype"), 
+		url("../assets/fontbook/TyponineSansRegular.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "TyponineSans Text 16";
+	src: url("../assets/fontbook/TyponineSansText.eot");
+	src: url("../assets/fontbook/TyponineSansText.eot?#iefix") format("embedded-opentype"), 
+		url("../assets/fontbook/TyponineSansText.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+
+@font-face {
+    font-family: MYRIADPRO-REGULAR;
+    src: url('../assets/fontbook/MYRIADPRO-REGULAR.OTF');
+}
+
+@font-face {
+    font-family: MYRIADPRO-SEMIBOLD;
+    src: url('../assets/fontbook/MYRIADPRO-SEMIBOLD.OTF');
+}
+
+@font-face {
+    font-family: MYRIADPRO-BOLD;
+    src: url('../assets/fontbook/MYRIADPRO-BOLD.OTF');
+}
+

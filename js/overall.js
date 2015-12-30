@@ -53,16 +53,17 @@ function move(input){
     if (window.outerWidth > 680){
         if(input == "index"){
             //dot.style.left = "210px";
-            dot.css("left","18.5%");
+            dot.css("left","18%");
         } else if (input == "resume"){
             //dot.style.left = "552px";
-            dot.css("left","65%");
+            dot.css("left","64.5%");
         } else if (input == "about"){
             //dot.style.left = "695px";
-            dot.css("left","85%");
+            dot.css("left","84.5%");
         } else {
+            // projects
             //dot.style.left = "395px";
-            dot.css("left","43.5%");
+            dot.css("left","43%");
         }   
     }
 }

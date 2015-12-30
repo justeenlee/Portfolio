@@ -3,8 +3,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: bottom;
 	padding: 0px;
 	//margin: 0px; /*issue1 here!!*/
-    font-weight: normal
+    font-weight: normal;
 }
+
 
 h1, h2, h3, h4, h5, h6, p, div{
 	font-family: "TyponineSans Regular 18";
@@ -31,7 +32,7 @@ html{
 .coming-soon{
     position: relative;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -85px;
     width: 200px;
 }
 
@@ -176,19 +177,19 @@ li>a:link {transition: .7s ease;}
 /*0116+#navigation>*/
 #navigation>ul{
     padding: 0px;
-    margin-top: 12px;
+    margin-top: 5px;
     margin-left: 0px; /*4-link placement*/ /*0830 80 to 0*/ 
     list-style-type: none;
-    font-family: "MYRIADPRO-Regular"; /*0731 bold to regular*/
-//    font-family: futura; /*1005 myriad pro regular to futura*/
 }
 
 
 .li-nav{
+    display: inline;
     margin-left: 70px;
     padding: 0px;
-	font-size: 20px; /*0731 24 to 20*/
-    display: inline;
+	font-size: 19px;
+    letter-spacing: 0px;
+    font-family: navigation, sans-serif;  /*1229*/
 }
 
 #cf{
@@ -481,7 +482,6 @@ footer{
 		position:inherit;
 		padding: 0px;
 		margin-left: 0px; /*4-link placement*/
-		//font-family: "MYRIADPRO-BOLD";
 		width: 460px;
 		height:auto;
 		left: 50%;
@@ -693,8 +693,6 @@ footer{
 /*--------------Media Query ends-----------------*/
 
 
-
-
 /*--------------animation------------------*/
 @-webkit-keyframes landing {
     0% {opacity: 0; -webkit-transform:translate(0px, -20px)}
@@ -717,3 +715,83 @@ footer{
     -webkit-transform:translate(0px, 0px);
 }
 }
+
+
+/*---------font setup ----------------------------------*/
+@font-face {
+	font-family: futura;	
+	src:url('../assets/fontbook/futura.otf');
+}
+
+@font-face {
+	font-family: navigation;	
+	src:url('../assets/fontbook/Geomanist-Regular.otf');
+}
+
+@font-face {
+	font-family: quote-font;	
+	src:url('../assets/fontbook/Mohave Italics.otf');
+}
+
+@font-face {
+	font-family: Roboto-Black;
+	src:url('../assets/fontbook/Roboto-Black.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Bold;
+	src:url('../assets/fontbook/Roboto-Bold.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src:url('../assets/fontbook/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Regular;
+	src:url('../assets/fontbook/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url(../assets/fontbook/baskvl.ttf);
+}
+
+@font-face {
+	font-family: "TyponineSans Regular 18";
+	src: url("../assets/fontbook/TyponineSansRegular.eot");
+	src: url("../assets/fontbook/TyponineSansRegular.eot?#iefix") format("embedded-opentype"), 
+		url("../assets/fontbook/TyponineSansRegular.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "TyponineSans Text 16";
+	src: url("../assets/fontbook/TyponineSansText.eot");
+	src: url("../assets/fontbook/TyponineSansText.eot?#iefix") format("embedded-opentype"), 
+		url("../assets/fontbook/TyponineSansText.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+
+@font-face {
+    font-family: MYRIADPRO-REGULAR;
+    src: url('../assets/fontbook/MYRIADPRO-REGULAR.OTF');
+}
+
+@font-face {
+    font-family: MYRIADPRO-SEMIBOLD;
+    src: url('../assets/fontbook/MYRIADPRO-SEMIBOLD.OTF');
+}
+
+@font-face {
+    font-family: MYRIADPRO-BOLD;
+    src: url('../assets/fontbook/MYRIADPRO-BOLD.OTF');
+}
+
+
