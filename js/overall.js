@@ -93,7 +93,7 @@ function check(){
        (currentPath != "projects") &&
        (currentPath != "resume") &&
        (currentPath != "about")){
-        console.log("yes");
+//        console.log("yes");
         toChangeNavColor = true;
     } else {
         toChangeNavColor = false;

@@ -6,16 +6,17 @@
 5.others like animation
 */
 
+p>a:link {color: #FFC413; text-decoration:underline}
+a:visited {color: #FFC413;}
 
 #title-panel{
     background-color: transparent;   
 }
 
-
 /*----------------product panel----------------*/
 .product-wrapper{
 	margin-bottom: 100px;
-	min-height: 743px;
+	min-height: auto;
 }
 
 .product-wrapper img{
@@ -50,6 +51,8 @@
 .poster-container{
 	width: auto;
 }
+
+.product-img{height: 409px;}
 
 .product-img>img{
     width: 345px;
