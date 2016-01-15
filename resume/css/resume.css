@@ -19,19 +19,22 @@ p{
 h1, h2{
 	font-family: "MYRIADPRO-REGULAR";
 	text-align: center;	
+    
 }
 
 #header>h1{
 	padding-top: 10px; 
-	font-size: 75px;
+	font-size: 85px;
+    color:#63b092;
 }
 
 
 #header>h2{	
-	margin-top: -18px;
+	margin-top: -5px;
 	margin-bottom: 30px; 
 	font-size: 16px;; 
-	color: #999
+	color: #999;
+    color:#63b092;
 }
 
 
@@ -39,6 +42,8 @@ h1, h2{
 	font-family: "MYRIADPRO-semibold";
     font-size: 23px;
     color:#63b092;
+    //color: purple;
+
 }
 
 .section>h4{

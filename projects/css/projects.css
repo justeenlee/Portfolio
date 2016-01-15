@@ -24,6 +24,8 @@ body{height: auto;width: 990px; margin-left: -495px}
 
 #navigation{left: 50%; margin-left: -350px;}
 
+#cf{opacity: .93;}
+
 footer{margin-top: 80px;}
 
 /*----------------Product----------------*/
@@ -101,12 +103,12 @@ footer{margin-top: 80px;}
 
 h2{
 	font-size: 20px;
-    font-family: roboto;
+    font-family: Roboto-Regular;
 }
 
 h3{
 	font-size: 16px;
-    font-family: roboto-light;
+    font-family: Roboto-Light;
 }
 
 .caption{
@@ -139,55 +141,75 @@ h3{
 /* for 680px or less */
 @media screen and (max-width: 680px) {
     #link-projects{text-decoration: underline;}
-	#product-panel{
-		width: auto;
-		//min-height: 1900px;
-		padding: 0;
-        width: 100%;
+    
+    body{
+        width: 665px;
+        margin-left: -332.5px;
+        //background-color: yellow;
+        height: auto;
+        left: 50%;
+    }
+    
+    #product-panel{
+        margin-top: 100px;
+        width: auto;
         left: 0;
         margin-left: 0;
-	}
-		
+        //background-color: blue;
+        padding: 0 15px;
+        height: 2100px;
+    }
+
+    
 	/*clear padding for all floors*/
 	#product-panel>div{padding: 0;}
-    
 
+    
+    .wide~.tall~.square{
+        margin-top: 15px;
+    }
+    
+    #product-panel>.square~.square~.square{
+        margin-left: 0px;
+    }
 	
-
+    #product-panel>.square{
+        margin-left: 15px;
+        width: 310px;
+    }
+   
     
+    /*not a good practice, jsut for temporary visualization*/
+    #product-panel>.tall+.three+.square+.square+.three,
+    #product-panel>.tall+.three+.square+.square+.three+.one+.two,
+    #product-panel>.tall+.three+.square+.square+.three+.one+.two+.three+.one,
+    #product-panel>.tall+.three+.square+.square+.three+.one+.two+.three+.one+.two+.three{
+        margin-left: 15px;
+    }
+    
+
 }/* for 680px or less media query ends */
 
 
-
-@media screen and (max-width: 548px) {
-    #product-panel{height: 1350px;}
-}
-
-@media screen and (max-width: 532px) {
-    #product-panel{height: 2500px;}
-}
 
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
     
+    body,#product-panel{min-height: 3600px;}
     
-    
-	#floor-three, #floor-two, #floor-one, #lower-level{
-		width: auto;
-		float: none;
-		
-	}
-    
-    #product-panel{margin-top: 100px;height: auto;
-}
-
-    
+    body{
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+        
     .square-img{
-        width:250px;
+        width:320px;
         position: relative;
         left: 50%;
-        margin-left: -125px;
+        margin-left: -160px;
+        //background-color: blue;
     }
 	
 	.square, .wide{
@@ -207,6 +229,40 @@ h3{
 	.square, .wide, .tall{
 		float:none;
 	}
+    
+    .wide-img{
+        width: 100%;
+    }
+    
+    .tall-img{
+        width: 85%;
+        margin-left: 40px;
+    }
+    
+    .tall-img>img{max-width: 300px;}
 	
+    #product-panel>.square,
+    #product-panel>.wide,
+    #product-panel>.tall{
+        width: 100%;
+    }
+    
+    
+    /*not a good practice, jsut for temporary visualization*/
+    #product-panel>.tall+.three+.square+.square+.three,
+    #product-panel>.tall+.three+.square+.square+.three+.one+.two,
+    #product-panel>.tall+.three+.square+.square+.three+.one+.two+.three+.one,
+    #product-panel>.tall+.three+.square+.square+.three+.one+.two+.three+.one+.two+.three{
+        margin-left: 0px;
+    }
+    
+    #product-panel>.square~.square~.square{
+        margin-left: 0px;
+    }
+	
+    #product-panel>.square{
+        margin-left: 0px;
+    }
+
 }/* for 460px or less media query ends */
 

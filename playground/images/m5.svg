@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="629px" height="328px" viewBox="0 0 629 328" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
+    <title>m5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="61.6187629%" cy="5.16972279%" fx="61.6187629%" fy="5.16972279%" r="33.5862152%" id="radialGradient-1">
+            <stop stop-color="#AF288E" offset="0%"></stop>
+            <stop stop-color="#541637" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="1021-playground-full-width" sketch:type="MSArtboardGroup" transform="translate(-79.000000, -514.000000)" fill-opacity="0.25" fill="url(#radialGradient-1)">
+            <g id="mountains" sketch:type="MSLayerGroup" transform="translate(-139.000000, 392.000000)">
+                <g id="m5" transform="translate(218.000000, 122.000000)" sketch:type="MSShapeGroup">
+                    <path d="M2.04655656,328 L628.683157,328 L324.475341,0 L2.04655656,328 Z" id="5"></path>
+                    <path d="M0.705865004,328 L530.462562,328 L323.471788,0 L0.705865004,328 Z" id="5-copy-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

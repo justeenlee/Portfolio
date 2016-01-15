@@ -51,11 +51,12 @@ img.second {
 /*about me + about this site*/
 #site-panel>h2, #me-panel>h2{
     margin-bottom: 20px;
-	width: 140px;
+	width: 130px;
 	padding: 10px 20px;
 	font-size: 30px;
 	color: #FF0990;
 	background-color: white;
+    text-align: center;
     
 }
 
