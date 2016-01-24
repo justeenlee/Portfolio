@@ -12,13 +12,17 @@ p>a:link {text-decoration:underline}
 
 #title-panel{background-color: #FF4D70;}
 
-#title-panel{height: 650px;}
+#title-img{
+    margin-top: 100px;
+}
+
 #title-img>img{
     width: 580px;
     margin-left: -300px; /*center combo*/
 }
+
 #title-description{
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 /*----------------intro----------------*/
