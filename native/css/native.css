@@ -6,18 +6,25 @@
 /*----------------Title----------------*/
 
 #title-panel{
-    background-color: #4480E9;
+    background-color: #283374;
+}
+
+#title-img{
+    margin-top: 100px;
 }
 
 #title-img>img{
-    margin-left: -320px; /*center combo*/
+    width: 680px;
+    left: 50%;
+    margin-left: -340px;
 }
 
 #title-description{
+    margin-top: 30px;
 }
 
-/*----------------Promotion----------------*/
 
+/*----------------Promotion----------------*/
 
 /*----------------Research----------------*/
 
@@ -52,21 +59,15 @@
 /*----------------Animations----------------*/
 
 
-
-
 /* for 680px or less */
 @media screen and (max-width: 680px){
-	/*native only*/
-	.title-image-group{
-	/*can adjust this to fit image*/
-		margin: 15% 0 -13% 12%; 
-		width: 80%; 
-	}
+    #title-img>img{
+        width: 480px;
+        margin-left: -240px;
+    }
+
 	
-	.ui{
-		left: 0;
-		margin-left: 0;
-		width: auto;
-	}
-	
+
+    
+    
 }

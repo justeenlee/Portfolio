@@ -13,12 +13,15 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 /*flash only*/
 #title-panel{background-color: #FFC413;}
 
-
-#title-img>img{
-    margin-left: -250px; /*center combo*/
+#title-img{
+    margin-top: 100px;;
 }
 
-#title-description{color: white;}
+#title-img>img{
+    width: 500px;
+    margin-left: -250px;
+}
+
 
 /*----------------intro----------------*/
 #intro-panel{

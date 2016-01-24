@@ -12,13 +12,18 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 
 /*----------------Title----------------*/
 
-/*calor only*/
-#title-panel{background-color: #282828;}
+/*calor only begins -------*/
+#title-panel{background-color: #212121;}
 
-
-#title-img>img{
-    margin-left: -146px; /*center combo*/
+#title-img{
+    margin-top: -60px;
 }
+
+#title-description{
+    margin-top: -230px;
+}
+/*calor only ends -------*/
+
 
 /*----------------intro----------------*/
 #intro-panel{
@@ -147,10 +152,8 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 /* for 680px or less */
 @media screen and (max-width: 680px){
 
-    #link-projects{text-decoration: underline;}
+/*    #link-projects{text-decoration: underline;}*/
     
-
-
 	/*calor only?*/
 	#prototype-panel>#market-cartridge-mechanism, 
     #prototype-panel>#video-set-temp{
@@ -231,6 +234,16 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 @media screen and (max-width: 480px) {
     #title-panel{height: 750px;}
 
+    /*calor only begins------*/
+    #title-img{
+        margin-left: -630px;
+    }
+    #title-description{
+        margin-top: -210px;
+    }
+    /*calor only ends------*/
+    
+    
     .app-left, .app-right{
         height: 730px;
     }

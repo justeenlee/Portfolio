@@ -1,0 +1,118 @@
+.highlight>h3,i
+{color: #ff7b03;}
+
+/*----------------Title----------------*/
+
+#title-panel{
+    background-color: #ff9d4d;
+}
+
+#title-img{
+    margin-top: -50px;
+}
+
+#title-img>img{
+    width: 680px;
+    left: 50%;
+    margin-left: -340px;
+}
+
+#title-description{
+    margin-top: -160px;
+}
+
+
+/*----------------Promotion----------------*/
+
+/*----------------Research----------------*/
+
+.current-study, .primary-research{
+	padding: 20px 0px;
+	width: 100%;
+	height: auto;
+	max-height: 543px;
+}
+
+.current-study{
+	background-color:#fafafa;
+}
+
+.current-study p{
+	font-size: 25pt;
+}
+
+.current-study img{
+	position: relative;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+}
+
+
+.insight{
+	left:0;
+	margin-left: 0;
+	margin-bottom: 30px;
+	padding: 30px 0;
+	width: 100%;
+	color: #ff7b03;
+	font-size: 20pt;
+	text-align: center;
+	color: #fff;
+	background-color: #ff7b03;
+    font-family: Roboto;
+}
+/*----------------Ideation----------------*/
+
+/*----------------prototype----------------*/
+#xbee-demo{margin-top: 30px;}
+
+.demo{
+	width: 100%;
+	min-height: 543px;
+	height: auto;
+	background-color: #000;
+}
+/*----------------Product----------------*/
+
+#product-panel>img {
+	margin-bottom: 30px;
+	border-top: 1px solid #ddd;	
+}
+
+#product-panel>img:first-child, #product-panel>img:last-child{
+	border-top: none;	
+}
+
+#product-panel>img:last-child{
+	margin-bottom: 0px;
+}
+
+/* for 680px or less */
+@media screen and (max-width: 680px){
+
+    #title-img{
+        margin-top: 100px;
+    }
+
+    #title-img>img{
+        width: 480px;
+        left: 50%;
+        margin-left: -240px;
+    }
+
+    #title-description{
+        margin-top: -100px;
+    }
+
+    
+	.demo{
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+		min-height: 543px;
+		height: auto;
+		background-color: #000;
+	}
+
+}

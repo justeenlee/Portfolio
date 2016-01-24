@@ -265,7 +265,7 @@ html, body, footer{background-color: #2E2E2E;}
 
 /*test purpose*/
 .panel{
-    //background-color: aqua;
+    background-color: aqua;
 }
 
 #motion-panel{
@@ -273,7 +273,7 @@ html, body, footer{background-color: #2E2E2E;}
     color: #212121;
 }
 #project-panel{
-    background-color: #212121;
+    background-color: rgb(44,44,44);
     color: #eee;
 }
 #upcoming-panel{

@@ -239,18 +239,18 @@ body{
     height: 650px;
     background-color: #fb4489;
     overflow: hidden;
-    left: 50%
+    left: 50%;
 }
 
+/*set 1200px and -600px to structure after adding all*/
 
 
 #title-img{
     position: relative;
-    width: 700px;
-    height: auto;
-    margin-top: 100px;
     left: 50%;
-    margin-left: -350px;
+    width: 1200px;
+    margin-left: -600px;
+    height: auto;
     -webkit-animation: landing 1.2s; 
     -webkit-animation-timing-function:ease-in-out;
 }
@@ -258,6 +258,7 @@ body{
 #title-img>img{
     position: relative;
     left: 50%;
+
 }
 
 
@@ -514,7 +515,23 @@ footer{
         padding: 0;
 	}
     
+    #title-panel{height: 700px;}
+
+    #title-description, 
+    #title-img-product, 
+    #title-description>h2{
+		position: relative;
+		width: auto;
+		height: auto;
+        left: 0%; /*reset >680px*/
+		margin-left: 0; /*reset >680px*/
+	}
+	
     
+	#title-description{
+        padding: 0 12px;
+    }
+
 
     
 /*
@@ -532,6 +549,7 @@ footer{
 	#research-panel,
 	#ideation-panel,
 	#prototype-panel,
+    #product-panel,
     #market-panel,
     .quote,
     .quote>h3,
@@ -542,8 +560,6 @@ footer{
     {
         padding: 0 12px;
     }
-    
-    
     
     .band>img,
     .market-panel-process>img,
@@ -565,7 +581,6 @@ footer{
         left: 0%; /*reset >680px*/
     }
     
-	#title-panel, 
 	#intro-panel, 
     #promotion-panel,
 	#problem-panel,
@@ -594,24 +609,7 @@ footer{
 		margin-left: 0px; /*reset >680px*/
 	}
 	
-	#title-img, 
-    #title-description, 
-    #title-img-product,
-    .title-image-group, 
-    #title-description>h2{
-		position: relative;
-		width: auto;
-		height: auto;
-        left: 0%; /*reset >680px*/
-		margin-left: 0; /*reset >680px*/
-	}
 	
-    #title-panel{height: 700px;left: 50%}
-    
-	#title-description{
-        padding: 0 12px;
-    }
-
     .issue,
     .issue-icon,
     .issue-icon>img,
