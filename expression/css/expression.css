@@ -17,8 +17,13 @@ i{
     background-color: #fff;
 }
 
+#title-img{
+    margin-top: 100px;;
+}
+
 #title-img>img{
-    margin-left: -330px; /*center combo*/
+    width: 800px;
+    margin-left: -400px;
 }
 
 /*----------------work----------------*/

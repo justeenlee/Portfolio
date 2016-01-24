@@ -1,0 +1,113 @@
+/*
+1.position
+2.size
+3.font
+4.background
+5.others like animation
+*/
+
+p>a:link {color: #FFC413; text-decoration:underline}
+a:visited {color: #FFC413;}
+
+#title-panel{
+    background-color: transparent;   
+}
+
+/*----------------product panel----------------*/
+.product-wrapper{
+	margin-bottom: 100px;
+	min-height: auto;
+}
+
+.product-wrapper img{
+	margin-bottom: 20px;
+}
+
+#techbadminton-logo{
+	position: relative;
+	left: 50%;
+	margin-left: -240px;
+}
+
+.product-title{
+	margin-bottom: 20px;
+}
+
+.product-title>h1, .product-title>h2{
+	font-family: "MYRIADPRO-REGULAR";
+	text-align: center;
+}
+
+.product-title>h1{
+	font-size: 40pt;
+	color: #444;
+}
+
+.product-title>h2{
+	line-height: 1;
+	font-size: 15pt;
+}
+
+.poster-container{
+	width: auto;
+}
+
+.product-img{height: 409px;}
+
+.product-img>img{
+    width: 345px;
+    float: left;
+}
+.product-img>img:last-child{
+   margin-left: 10px;
+}
+
+
+.poster-container>img{
+	position: relative;
+	margin-right: 50px;
+	width: 300px;
+	display: inline-block;
+    float: left;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px 0px grey;
+}
+
+
+.demo{
+	width: 100%;
+	height: 543px;
+	background-color: black;
+}
+
+.comment{margin-top: 20px;}
+/*----------------intro----------------*/
+.slide-container{
+	margin-top: 20px;
+}
+
+.shadow {
+	box-shadow: 0 0 10px 0px grey;
+}
+
+@media screen and (max-width: 680px){
+    #link-projects{text-decoration: underline;}
+}
+
+
+@media screen and (max-width: 480px){
+	#techbadminton-logo{
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	.poster-container>img{
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+}
+
+
+

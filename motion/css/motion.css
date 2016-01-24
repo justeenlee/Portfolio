@@ -1,17 +1,20 @@
+.highlight>h3, a:link,a:visited {color: #fb4489;}
 
-#link-projects{text-decoration: underline;}
 /*----------------Title----------------*/
-/*
-#title-panel{
-    position: relative;
-    width:100%;
-    height: auto;
-	//overflow: hidden;
+
+#title-panel{background-color: #fff;}
+
+#title-img{
+    margin-top: 100px;;
 }
-*/
+
+#title-img>img{
+    width: 500px;
+    margin-left: -250px;
+}
 
 
-
+/*----------------Title animation----------------*/
 #first-o, #second-o{
 	position: absolute;
 	top: 229px;
@@ -44,18 +47,7 @@
 }
 
 
-/*--------------------------------*/
-/*
-#product-panel {
-	position: relative;
-    width: 100%;
-    height: auto;
-	min-height: 1950px;
-}
-*/
-
-
-
+/*----------------gif container----------------*/
 .gif-container, .gif-object{
 	position: relative;
 }
@@ -68,15 +60,15 @@
 
 .gif-object{
 	margin: 12px 0px 0px 12px;
-	width:422px;
+	width: 338px;
 	height: 470px;
 	float:left;
-	text-align: center;
 }
 
 .gif-object>h2{
 	font-size: 16pt;
 	margin: 5px 0px;
+    text-align: center;
 }
 
 .gif-object>p{
@@ -87,8 +79,7 @@
 
 
 div[data-type="motion-gif"]{
-	width: 422px;
-	height: 316px;
+	width: 338px;
 	background-color:#000;
 }
 
@@ -131,7 +122,9 @@ div[data-type="motion-gif"]{
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
-	
+    #title-panel{
+        height: 300px;
+    }
 	
 }/* for 480px or less media query ends */
 
