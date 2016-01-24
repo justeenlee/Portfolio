@@ -9,17 +9,18 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 }
 /*----------------Title----------------*/
 
-#title-description{color: #fff;}
-
 
 #title-panel{height: 600px;}
+
+#title-img{
+    margin-top: 100px;;
+}
+
 #title-img>img{
     width: 500px;
-    margin-left: -250px; /*center combo*/
+    margin-left: -250px;
 }
-#title-description{
-    margin-top: 20px;
-}
+
 
 /*----------------Promotion----------------*/
 

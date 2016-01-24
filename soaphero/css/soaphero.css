@@ -1,8 +1,8 @@
-#link-projects{text-decoration: underline;}
 
-.quote>h3, i, #title-description{
+
+.highlight>h3, i{
 	color: #35a1e1;
-	color: #444;
+	color: #5cb9b0;
 }
 
 a>i{color: #aaa}
@@ -12,15 +12,18 @@ p>a:hover{text-decoration: underline;}
 
 
 /*----------------Title----------------*/
-.title-image-group{
-    margin-top: 18%;
-	margin-left: 15%;
-    width: 70%; 
+
+#title-panel{background-color: #5fc4cf;}
+
+#title-img{
+    margin-top: 100px;;
 }
 
-#title-description{
-    font-size: 80px;
+#title-img>img{
+    width: 500px;
+    margin-left: -250px;
 }
+
 
 /*----------------Promotion----------------*/
 /*----------------Ideation----------------*/
@@ -28,8 +31,11 @@ p>a:hover{text-decoration: underline;}
 	box-shadow: initial;
 }
 /*----------------Research----------------*/
-.user-img{
+
+/*override structure specifity*/
+#research-panel>#user-img{
 	position: relative;
+    width: 400px;
 	left: 50%;
 	margin-left: -200px;
 }
@@ -68,16 +74,7 @@ p>a:hover{text-decoration: underline;}
 
 /*----------------Ideation----------------*/
 /*----------------prototype----------------*/
-.demo{
-	margin-top: 30px;
-	position: relative;
-	left: 50%;
-	margin-left: -440px;
-	width: 100%;
-	min-height: 543px;
-	height: auto;
-	background-color: #000;
-}
+
 /*----------------Product----------------*/
 
 /*----------------other----------------*/

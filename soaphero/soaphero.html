@@ -8,13 +8,16 @@
     <meta name="description" content="Soap Hero is a game designed specifically for pediatric waiting room in hospital.">
 	<meta name="keywords" content="turo, orange, temperature, sensor,interaction design, user experience, UX, IX, product design, industrial, design, justeen, san francisco, new york, hong kong" />
 	<link rel="shortcut icon" href="../assets/favicon.ico"/>
-	<link rel="stylesheet" href="../css/structure.css">
-    <link rel="stylesheet" href="../css/font.css">
-	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+    
+    <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../css/newstructure.css">
 	<link rel="stylesheet" href="css/soaphero.css">
 	<script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="js/soaphero.js" defer></script>
+    <script src="../js/overall.js" defer></script>
 	<script src="../js/jquery.flexslider.js" defer></script>
-	<script src="js/soaphero.js" defer></script>
+
+    
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,27 +34,32 @@
 
 	
 <body>
-	<div id = "navigation">
-	<ul>
-		<li class="li-nav"><a id="link-home" href="../index.html">PLAYGROUND</a></li>
-		<li class="li-nav"><a id="link-projects"  href="../projects/projects.html#floor-three">PROJECTS</a></li>
-		<li class="li-nav"><a id="link-resume"  href="../resume/resume.html">RESUME</a></li>
-		<li class="li-nav"><a  id="link-about"  href="../about/about.html">ABOUT</a></li>
-	</ul>
+    <div id = "navigation">
+        <ul>
+            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+            
+    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+            
+    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
+            
+    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/">ABOUT</a></li>
+        </ul>
+        <span id="indicator-dot"></span>
 	</div>
 	<div id = "cf"></div>
 
-<!--title panel------------------------------>
+<!--title panel------------------------------>    
     <div id = "title-panel">
 		<div id = "title-img">
-            <img src="images/title-pic.jpg" class = "title-image-group">
+            <img src="images/title-pic.png" width="100%">
         </div>
 		
         <div id ="title-description">
-            <div>Soap Hero</div>
-            <div id = "title-description-supplement">
+            <h1>Soap Hero</h1>
+            <h2>
                 Interactive Pediatric Waiting Room
-            </div>
+            </h2>
+            <h3></h3>
         </div>           
     </div>
 	
@@ -62,31 +70,52 @@
 		Soap Hero is a game designed for the pediatric waiting room. It gives children a playful and interactive experience while they wait, and in addition to teach them some basic health knowledge.
 		</p>
     </div>
-    	
+
+<!--promotion panel------------------------------>
+	<div id = "promotion-panel">
+        <div id="playing-demo" class="video-demo"></div>
+    </div>
+
+
 <!--research panel------------------------------>
 	<div id = "research-panel" class = "panel">
-		<div class="quote">
+		<div class="highlight">
 			<h3>Children just sit in a pediatric waiting room?
 			</h3>
 		</div>
 		<img src="images/research-sitting.jpg" width="100%">
-		<div class="quote">
+		<div class="highlight">
 			<h3>or
 				<br>play with germs?
 			</h3>
 		</div>
 		<img src="images/research-toy-germ.jpg" width="100%">
-		<div class="quote">
+		<div class="highlight">
 			<h3>safe and fun waiting environment
 			</h3>
 		</div>
-		<p class="short-caption"><i>"Deliver a more engaging and playful experience for children."</i></p>
-		<img class="user-img" src="images/research-main-audience.png" width="400px">
-		<div class="quote">
-			<h3>2-6 years old ill children
+
+        
+        <div class="statement">
+            <svg class="statement-mark" width="10px" height="123px" viewBox="0 0 10 123" >
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-323.000000, -3981.000000)" fill="#5cb9b0">
+                        <g transform="translate(323.000000, 3981.000000)">
+                            <rect x="0" y="0" width="10" height="123"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <h3>Deliver a more engaging and playful experience for children without compromising on hygiene</h3>
+        </div>
+        
+        
+		<img id="user-img" src="images/research-main-audience.png" width="100%">
+        <p>They are ill children in the pediatric waiting room with age from 2 to 6 years old, and these two facts inform design imperatives.</p>
+        <div class="highlight">
+			<h3>what do they imply?
 			</h3>
 		</div>
-		<p class="short-caption"><i>"who will be in this space? what does it imply?"</i></p>
 		<div class="imperative">
 			<div class="imperative-img">
 			<img src="images/research-no-touching.png" width="200px">
@@ -146,14 +175,14 @@
 <!--ideation panel------------------------------>
 	<div id = "ideation-panel" class = "panel">
 		<img src="images/ideation-both.jpg" width="100%">
-		<div class="quote">
+		<div class="highlight">
 			<h3>Imperatives as filters
 			</h3>
 		</div>
 		<p class="short-caption"><i>A narrow-down processing results a plausible concept</i></p>
 		<img src="images/ideation-filttered.jpg" width="100%">
 		<p>Now something has emerged: a game about catching dragonflies as a player steps on a pressure-sensitive tile.</p>
-		<div class="quote">
+		<div class="highlight">
 			<h3>Soaps and germs instead
 			</h3>
 		</div>
@@ -181,15 +210,15 @@
 			  </section>
 			</div>
 		</div><!-----flexslider ends----->
-		<div class="quote">
+		<div class="highlight">
 			<h3>Software
 			</h3>
 		</div>
 		<p>The first thing I need is software, the gaming part. Thus, I use Processing with Object-oriented programming to code up the game logic.</p>
-		<div id="shooting-test" class="demo"></div>
+		<div id="shooting-test" class="video-demo"></div>
 		<img src="images/prototype-software-code.jpg" width="100%">
 		<p>After several iterations and testing, I move on to the hardware part.</p>
-		<div class="quote">
+		<div class="highlight">
 			<h3>Hardware
 			</h3>
 		</div>
@@ -211,7 +240,7 @@
 		</div><!-----flexslider ends----->
 		<img src="images/prototype-hardware-switch-structure.jpg" width="100%">
 		<img src="images/prototype-interaction-stepping.jpg" width="100%">
-		<div class="quote">
+		<div class="highlight">
 			<h3>Connecting hardware and software
 			</h3>
 		</div>
@@ -232,16 +261,15 @@
 		<p>To ensure more consistent and stable input signals by plate switches, I use an RC circuit to debounce each of them.</p>
 
 		<img src="images/prototype-arduino-hardware.jpg" width="100%">
-		<div id="step-test" class="demo"></div>
+		<div id="step-test" class="video-demo"></div>
 		<img src="images/prototype-arduino-processing.jpg" width="100%">
 		<img src="images/prototype-hardware-plates.jpg" width="100%">
-		<div id="playing-demo" class="demo"></div>
-		<div class="quote">
+		<div class="highlight">
 			<h3>Reload soap
 			</h3>
 		</div>
-		<p class="short-caption"><i>"Adding a reload function to mimic the reality helps their cognitive development"</i></p>
-		<div id="reload-demo" class="demo"></div>
+        <div class="highlight"><h3>Mimicing the reality helps their cognitive development</h3></div>
+		<div id="reload-demo" class="video-demo"></div>
 		<p>*Visual design is subject to change</p>
 	</div> 
 	
