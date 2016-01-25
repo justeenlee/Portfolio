@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web UX | Justeen Lee</title>
+    <meta name="description" content="A collection of selected side projects exploring and experimenting with different mediums">
+	<meta name="keywords" content="experiment, exploration, pet, cooking, christmas, interaction, IX, industrial, design, user experience, UX, user interface, UI, justeen, san francisco, new york, hong kong" />
+ 	<link rel="shortcut icon" href="../assets/favicon.ico"/>
+	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../css/newstructure.css">
+	<link rel="stylesheet" href="css/webux.css">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/overall.js" defer></script>
+
+    
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58728717-1', 'auto');
+  ga('send', 'pageview');
+	</script>
+</head>
+
+	
+<body>
+    <div id = "navigation">
+        <ul>
+            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+            
+    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+            
+    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/">RESUME</a></li>
+            
+    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/">ABOUT</a></li>
+        </ul>
+        <span id="indicator-dot"></span>
+	</div>
+	<div id = "cf"></div>
+
+<!--title panel------------------------------>	
+	<div id = "title-panel">
+		<div id = "title-img">
+            <img src="images/safari.png" width="100%">
+        </div>
+        <div id ="title-description">
+            <h1>Web UX</h1>
+        </div>   
+    </div>
+	
+<!--intro panel------------------------------>
+    <div id = "intro-panel">
+        <p>
+		A collection of selected web UX projects from internships/clients.
+		</p>
+    </div>
+
+<!--product panel------------------------------>
+	<div id = "product-panel">
+        <!--MuleSoft------------------------------>
+		<div class = "product-wrapper">
+			<div class = "product-title">
+				<h1>MuleSoft | UX Dashboard</h1>
+				<h2>"Monitor All MuleSoft Products at a time "</h2>
+			</div>
+            <section class="product-img">
+                <img src="images/OverallProducts.jpg" height="100%">
+                <img src="images/AnypointStudio.jpg" height="100%">
+            </section>
+            <p>While at MuleSoft, I worked with all PM's to design a UX dashboard for internal assessment of all MuleSoft Products, with a unforseeable mix of explorations on data visualization, D3.js, Google Analytics, Kissmetrics, JIRA and cross-team collaboration.</p>
+			<div class = "comment">
+				<h6><bold>Date</bold>: 2015</h6>
+				<h6><bold>State</bold>: Prototype/Production</h6>
+			</div>
+		</div>
+        <!--steam------------------------------>
+		<div class = "product-wrapper">
+			<div class = "product-title">
+				<h1>STE(A)M | STE(A)M Web Design</h1>
+				<h2>Visual design, web design and ux design</h2>
+			</div>
+           <img src="images/steam.png" width="100%">
+            <p>I worked with a non-profit organization promoting STEAM education with a mobile classroom called STE(A)M Truck in Atlanta. Besides changes in visual, I extended the brand and program into a service design. Check it out the full process <a href="../steam/steam.html" target="_blank">here</a>.</p>
+			<div class = "comment">
+				<h6><bold>Date</bold>: 2014</h6>
+			</div>
+		</div>
+
+	</div> <!--product panel ends-->
+	
+	
+    <footer>
+		<span class="author">Designed and Handcrafted by Justeen Lee</span>
+		<span class="copyright">© 2016 Justeen Lee | Crafe Delightful Experience</span>
+	</footer>
+</body>
+    
+    <script>
+        //load video
+        $(window).bind("load",
+            function() {setTimeout(addVideo, 1400);}
+        );
+        function addVideo(){
+            document.getElementById("puppy-watch").innerHTML =	'<iframe src="http://player.vimeo.com/video/101643280?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+            document.getElementById("seesaw").innerHTML =	'<iframe src="http://player.vimeo.com/video/152912369?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+        };
+    </script>
+
+	
+
+    
+</html>

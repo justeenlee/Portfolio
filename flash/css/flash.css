@@ -1,5 +1,5 @@
 /*<i> for in-text hightlight*/
-.highlight>h3,i, #title-description{color: #FFC413;}
+.highlight>h3,i{color: #FFC413;}
 p>a:link {color: #FFC413; text-decoration:underline}
 a:visited {color: #FFC413;}
 
@@ -11,7 +11,7 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 /*----------------Title----------------*/
 
 /*flash only*/
-#title-panel{background-color: #FFC413;}
+#title-panel{background-color: #4B2D80;}
 
 #title-img{
     margin-top: 100px;;
@@ -21,6 +21,11 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
     width: 500px;
     margin-left: -250px;
 }
+
+#title-description{
+
+}
+
 
 
 /*----------------intro----------------*/
