@@ -19,6 +19,10 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
     margin-top: -60px;
 }
 
+#title-img>img{
+    margin-left: -600px;
+}
+
 #title-description{
     margin-top: -230px;
 }

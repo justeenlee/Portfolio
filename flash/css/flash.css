@@ -1,5 +1,5 @@
 /*<i> for in-text hightlight*/
-.highlight>h3,i{color: #FFC413;}
+.highlight>h3,i{color: #4B2D80;}
 p>a:link {color: #FFC413; text-decoration:underline}
 a:visited {color: #FFC413;}
 
@@ -23,7 +23,8 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 }
 
 #title-description{
-
+    color: #FFC413;
+    margin-top: -30px;
 }
 
 
@@ -39,7 +40,6 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
     background-color: yellow;
     background-repeat: no-repeat;
     overflow: visible;
-
 }
 
 /*----------------Promotion----------------*/
@@ -103,11 +103,13 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
     position: relative;
     float: left;
     overflow: hidden;
+    
 }
 
+/*override the one in calor*/
 .app-left-ui, .app-right-ui {
     position: relative;  
-    margin-top: 60px;
+    margin-top: 12px;
 }
 .app-left-ui{margin-left: 70px;}
 /*reposition app-right content*/
@@ -118,11 +120,16 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
     width: 350px;
 }
 
+/*add to calor*/
+.app-left-ui>img, .app-right-ui>img{
+    width: 230px;
+}
+
+/*info can be pushed to next line due to app width*/
 .app-left-info, .app-right-info{
     margin-left: 50px;
     padding-top: 100px;
 }
-
 
 .app-left-info>h2, .app-right-info>h2{
     font-size: 50px;
@@ -141,6 +148,7 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
     font-family: Roboto-Light;
 
 }
+
 
 #market-panel .band{padding: 0px;}
 

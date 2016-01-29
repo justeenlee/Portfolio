@@ -56,106 +56,6 @@ p{
 .quoate~p{margin-top: -15px;}
 
 
-/*feature-type--------------*/
-.shadow{
-	/*box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;*/
-	box-shadow: 0px 0px 10px 0px grey ;
-}
-
-/*shoud use jquery remove class*/
-.shadow-off{box-shadow: ;}
-
-.panel{margin-bottom: 50px;}
-
-.short-caption{text-align: center;}
-
-.slide-container{margin-top: 10px;}
-
-.driving-question, .statement, .highlight{
-    position: relative;
-    left: 50%;
-    margin: 100px 0 100px -350px;
-    width: 700px;
-}
-
-.driving-question>h3, .statement>h3{
-    position: relative;
-    left: 50%;
-    margin-left: -252px;
-    width: 505px;
-    font-family: Baskerville, sans-serif;
-    font-size: 30px;
-    color: #555;
-}
-
-
-.highlight>h3{
-	position: relative;
-    left: 50%;
-	margin-left: -211px;
-	width: 422px;
-	text-transform: uppercase;
-	text-align: center;	
-	font-family: quote-font;
-	font-size: 40px;
-	text-align: center;	
-}
-
-.animation-abstract{
-	position:relative;
-	left: 50%;
-	margin-left: -300px;
-	width:600px;
-	height: 400px;
-}
-
-.quote{
-	position: relative;
-	margin: 80px 0;
-	height: auto;	
-    float: none;
-    width: 700px;
-    left: 50%;
-    margin-left: -350px;
-}
-
-.quote>h3{
-    position: relative;
-    left: 50%;
-	margin-left: -190px;
-	width: 380px;
-	font-family: Baskerville;
-    font-style: italic;
-	font-size: 30px;
-    color: #555;
-}
-
-.quote>h4{
-    position:relative;
-    font-family: Roboto-Light;
-    margin-top: 20px;
-    font-size: 17px;
-    text-align: right;
-}
-
-.long-quote{
-    position: relative;
-}
-
-.long-quote>h3{
-	width: 530px;
-    margin-left: -250px;
-}
-
-.quote-mark, .question-mark, .statement-mark, .exclamation-mark{
-    position: absolute;
-    margin-left: -25px;
-}
-
-.statement-mark{margin: -20px 0 0 -10px;}
-.exclamation-mark{margin: 25px 0 0 -10px;}
-
-
 /*---navigation---------------------------------*/
 .li-nav>a:link {color: #fff; text-decoration:none;}
 /*unvisited link=visited link*/
@@ -258,7 +158,6 @@ body{
 #title-img>img{
     position: relative;
     left: 50%;
-
 }
 
 
@@ -474,6 +373,109 @@ footer{
 	float: right;
 	display: inline;
 }
+
+/*feature-type--------------*/
+.shadow{
+	/*box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;*/
+	box-shadow: 0px 0px 10px 0px grey ;
+}
+
+/*shoud use jquery remove class*/
+.shadow-off,
+#ideation-panel>.shadow-off
+{box-shadow: 0px;}
+
+.panel{margin-bottom: 50px;}
+
+.short-caption{text-align: center;}
+
+.slide-container{margin-top: 10px;}
+
+.driving-question, .statement, .highlight{
+    position: relative;
+    left: 50%;
+    margin: 100px 0 100px -350px;
+    width: 700px;
+}
+
+.driving-question>h3, .statement>h3{
+    position: relative;
+    left: 50%;
+    margin-left: -252px;
+    width: 505px;
+    font-family: Baskerville, sans-serif;
+    font-size: 30px;
+    color: #555;
+}
+
+
+.highlight>h3{
+	position: relative;
+    left: 50%;
+	margin-left: -211px;
+	width: 422px;
+	text-transform: uppercase;
+	text-align: center;	
+	font-family: quote-font;
+	font-size: 40px;
+	text-align: center;	
+}
+
+.animation-abstract{
+	position:relative;
+	left: 50%;
+	margin-left: -300px;
+	width:600px;
+	height: 400px;
+}
+
+.quote{
+	position: relative;
+	margin: 80px 0;
+	height: auto;	
+    float: none;
+    width: 700px;
+    left: 50%;
+    margin-left: -350px;
+}
+
+.quote>h3{
+    position: relative;
+    left: 50%;
+	margin-left: -190px;
+	width: 380px;
+	font-family: Baskerville;
+    font-style: italic;
+	font-size: 30px;
+    color: #555;
+}
+
+.quote>h4{
+    position:relative;
+    font-family: Roboto-Light;
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: right;
+}
+
+.long-quote{
+    position: relative;
+}
+
+.long-quote>h3{
+	width: 530px;
+    margin-left: -250px;
+}
+
+.quote-mark, .question-mark, .statement-mark, .exclamation-mark{
+    position: absolute;
+    margin-left: -25px;
+}
+
+.statement-mark{margin: -20px 0 0 -10px;}
+.exclamation-mark{margin: 25px 0 0 -10px;}
+
+
 /*----------Media Query starts--------------*/
 /* for 680px or less */
 @media screen and (max-width: 680px) {

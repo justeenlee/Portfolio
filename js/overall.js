@@ -97,7 +97,7 @@ function check(){
         toChangeNavColor = true;
     } else {
         toChangeNavColor = false;
-    } 
+    }
 }
 
 
