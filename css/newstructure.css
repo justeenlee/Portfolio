@@ -610,6 +610,11 @@ footer{
         left: 0%; /*reset >680px*/
 		margin-left: 0px; /*reset >680px*/
 	}
+    
+    /*reset attr after above*/
+    #product-panel.panel>.band{
+        left: 50%;
+    }
 	
 	
     .issue,

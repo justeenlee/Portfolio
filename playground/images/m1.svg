@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="645px" height="450px" viewBox="0 0 645 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="786px" height="450px" viewBox="0 0 786 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
     <title>m1</title>
     <desc>Created with Sketch.</desc>
@@ -14,9 +14,9 @@
         </radialGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="1021-playground-full-width" sketch:type="MSArtboardGroup" transform="translate(-721.000000, -392.000000)">
-            <g id="mountains" sketch:type="MSLayerGroup" transform="translate(-139.000000, 392.000000)">
-                <g id="m1" transform="translate(860.000000, 0.000000)" sketch:type="MSShapeGroup">
+        <g id="1021-playground-full-width" sketch:type="MSArtboardGroup" transform="translate(-482.000000, -289.000000)">
+            <g id="mountains" sketch:type="MSLayerGroup" transform="translate(-139.000000, 289.000000)">
+                <g id="m1" transform="translate(621.000000, 0.000000)" sketch:type="MSShapeGroup">
                     <path d="M0.731488453,449.915387 L185.488927,449.915387 L404.372512,5.68434189e-14 L0.731488453,449.915387 Z" id="1-copy" fill="url(#radialGradient-1)"></path>
                     <path d="M182.095359,449.915387 L785.532719,449.915387 L404.372512,5.68434189e-14 L182.095359,449.915387 Z" id="1-copy-2" fill="url(#radialGradient-2)"></path>
                 </g>

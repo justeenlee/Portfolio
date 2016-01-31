@@ -246,6 +246,15 @@ html, body, footer{background-color: #2E2E2E;}
     animation: fall 5s 3s infinite;
 }
 
+#arrow{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 100;
+    animation: guide 2s infinite;
+}
+
 /*----------------overview panel----------------*/
 #overview-panel{
     position: relative;
@@ -268,10 +277,30 @@ html, body, footer{background-color: #2E2E2E;}
     background-color: aqua;
 }
 
-#motion-panel{
-    background-color: #FFFF01;
+
+/*-------- motion panel setting --------*/
+/*--specify text color--*/
+#motion-panel,
+#motion-panel .button>a{
     color: #212121;
 }
+
+#motion-panel .bar{
+    background-color: #212121;
+}
+
+/*--specify theme color--*/
+#motion-panel{
+    background-color: #fefefe;
+}
+#motion-panel .button>a:hover {
+	color: #fefefe;
+	-webkit-transition: color 0.35s;
+    -moz-transition: color 0.35s;
+    transition: color 0.35s; 
+}
+
+/*-------- project panel setting --------*/
 #project-panel{
     background-color: rgb(44,44,44);
     color: #eee;
@@ -338,11 +367,6 @@ html, body, footer{background-color: #2E2E2E;}
     transition: color 0.35s; 
 }
 
-#motion-panel .button>a{
-    color: #212121;
-}
-
-
 .label {
 	z-index: 10;
     position: relative;
@@ -363,9 +387,7 @@ html, body, footer{background-color: #2E2E2E;}
 	background-color: white;
 }
 
-#motion-panel .bar{
-    background-color: #212121;
-}
+
 
 #project-panel .button>a:hover {
 	color: #212121;
@@ -374,12 +396,7 @@ html, body, footer{background-color: #2E2E2E;}
     transition: color 0.35s; 
 }
 
-#motion-panel .button>a:hover {
-	color: #FFFF01;
-	-webkit-transition: color 0.35s;
-    -moz-transition: color 0.35s;
-    transition: color 0.35s; 
-}
+
 
 
 
@@ -388,6 +405,19 @@ html, body, footer{background-color: #2E2E2E;}
 
 
 /*----------------animations ----------------*/
+@keyframes guide {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0ox);
+    }
+    50%{opacity: .75;}
+    100% {opacity: 0;
+        transform: translateY(10px);
+        -webkit-transform: translateY(20px);
+    }
+}
+
 @keyframes blink-first {
     0% {opacity: 1;}
 	50% {opacity: .5;}
@@ -544,6 +574,7 @@ p{padding:0;}
 
 @media screen and (max-width: 480px){
 
+    #title-panel{background-color: #212121;}
     
     #m1{left: 20%;}
 

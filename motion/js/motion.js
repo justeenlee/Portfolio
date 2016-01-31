@@ -1,5 +1,16 @@
 $(document).ready(function() {
 	
+$("#dots").hover(
+	function()
+	{
+		$(this).attr("src", "images/bring-life-surprise-and-delight.gif");
+	},
+	function()
+	{
+		$(this).attr("src", "images/bring-life-surprise-and-delight.jpg");
+	}                         
+);	
+    
 $("#flashynyc").hover(
 	function()
 	{
