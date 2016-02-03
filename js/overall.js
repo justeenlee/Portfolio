@@ -10,6 +10,7 @@ var currentPath = window.location.pathname.split("/")[(window.location.pathname.
     move(currentPath);
     setFullWidth();
     setNav();
+    tempNavSet();
 })();
 
 
@@ -92,7 +93,9 @@ function check(){
        (currentPath != "index") &&
        (currentPath != "projects") &&
        (currentPath != "resume") &&
-       (currentPath != "about")){
+       (currentPath != "about") &&
+       (currentPath != "motion") &&
+       (currentPath != "expression")){
 //        console.log("yes");
         toChangeNavColor = true;
     } else {
@@ -100,13 +103,25 @@ function check(){
     }
 }
 
-
-//only each project is set here, else set in css
-function setDefaultNavColor(){
-     for (var i=0; i<navLinkArray.length; i++){
+function tempNavSet(){
+    if  ((currentPath != "motion") ||
+       (currentPath != "expression")){
+        for (var i=0; i<navLinkArray.length; i++){
             var linkName = "#"+navLinkArray[i];
             $(linkName).css("color", "#555");
         }
         $("#indicator-dot").css("backgroundColor", "#555");
-        $("#cf").css("opacity", ".7");
+        $("#cf").css("opacity", ".7");    
+    }
+}
+
+
+//only each project is set here, else set in css
+function setDefaultNavColor(){
+    for (var i=0; i<navLinkArray.length; i++){
+            var linkName = "#"+navLinkArray[i];
+            $(linkName).css("color", "#555");
+        }
+    $("#indicator-dot").css("backgroundColor", "#555");
+    $("#cf").css("opacity", ".7");
 }
