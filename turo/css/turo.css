@@ -4,7 +4,7 @@
 /*----------------Title----------------*/
 
 #title-panel{
-    background-color: #ff9d4d;
+    background-color: #ff984d;
 }
 
 #title-img{
@@ -12,13 +12,13 @@
 }
 
 #title-img>img{
-    width: 680px;
+    width: 1000px;
     left: 50%;
-    margin-left: -340px;
+    margin-left: -500px;
 }
 
 #title-description{
-    margin-top: -160px;
+    margin-top: -220px;
 }
 
 
@@ -92,17 +92,11 @@
 @media screen and (max-width: 680px){
 
     #title-img{
-        margin-top: 100px;
-    }
-
-    #title-img>img{
-        width: 480px;
-        left: 50%;
-        margin-left: -240px;
+        margin-top: 0px;
     }
 
     #title-description{
-        margin-top: -100px;
+        margin-top: -200px;
     }
 
     
