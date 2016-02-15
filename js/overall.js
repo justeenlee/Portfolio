@@ -96,7 +96,6 @@ function check(){
        (currentPath != "about") &&
        (currentPath != "motion") &&
        (currentPath != "expression")){
-//        console.log("yes");
         toChangeNavColor = true;
     } else {
         toChangeNavColor = false;
@@ -104,8 +103,8 @@ function check(){
 }
 
 function tempNavSet(){
-    if  ((currentPath != "motion") ||
-       (currentPath != "expression")){
+    if  ((currentPath == "motion") ||
+       (currentPath == "expression")){
         for (var i=0; i<navLinkArray.length; i++){
             var linkName = "#"+navLinkArray[i];
             $(linkName).css("color", "#555");

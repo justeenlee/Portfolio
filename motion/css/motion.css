@@ -77,6 +77,12 @@
 	width: auto;
 }
 
+.gif-object iframe{
+    position: relative;
+    width: 100%;
+    height: 190px;
+}
+
 
 div[data-type="motion-gif"]{
 	width: 338px;

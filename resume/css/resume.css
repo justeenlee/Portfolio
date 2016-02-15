@@ -56,6 +56,17 @@ h1, h2{
 	float: right;
 }
 
+h4>a:link,
+h4>a:visited{
+    text-decoration: none;
+    color: #555;
+}
+
+h4>a:hover {
+    color: #00A3E0;
+    
+}
+
 .h4-nonfirst{
 	margin-top: 20px;
 }
