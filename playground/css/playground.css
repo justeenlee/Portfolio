@@ -282,29 +282,49 @@ html, body, footer{background-color: #2E2E2E;}
 /*--specify text color--*/
 #motion-panel,
 #motion-panel .button>a{
-    color: #212121;
+    color: #eee;
 }
 
 #motion-panel .bar{
-    background-color: #212121;
+    background-color: #eee;
 }
 
-/*--specify theme color--*/
+/*--specify bg color--*/
 #motion-panel{
-    background-color: #fefefe;
+    background-color: #141414;
 }
 #motion-panel .button>a:hover {
-	color: #fefefe;
+	color: #141414;
 	-webkit-transition: color 0.35s;
     -moz-transition: color 0.35s;
     transition: color 0.35s; 
 }
 
 /*-------- project panel setting --------*/
-#project-panel{
-    background-color: rgb(44,44,44);
-    color: #eee;
+/*--specify text color--*/
+#project-panel,
+#project-panel .button>a{
+    color: #4B2D80;
 }
+
+#project-panel .bar{
+    background-color: #4B2D80;
+}
+
+/*--specify bg color--*/
+#project-panel{
+    background-color: #eee;
+}
+#project-panel .button>a:hover {
+	color: #eee;
+	-webkit-transition: color 0.35s;
+    -moz-transition: color 0.35s;
+    transition: color 0.35s; 
+}
+
+
+
+/*-------- upcoming panel setting --------*/
 #upcoming-panel{
     background-color: #8128BE;
     color: #fff;
@@ -389,12 +409,6 @@ html, body, footer{background-color: #2E2E2E;}
 
 
 
-#project-panel .button>a:hover {
-	color: #212121;
-	-webkit-transition: color 0.35s;
-    -moz-transition: color 0.35s;
-    transition: color 0.35s; 
-}
 
 
 
