@@ -1,0 +1,41 @@
+.highlight>h3, i{color: #63ae92;}
+
+/*----------------Title----------------*/
+#title-panel{background-color: #63ae92;}
+
+#title-img{
+    margin-top: 120px;
+}
+
+#title-img>img{
+    width: 580px;
+    margin-left: -300px; /*center combo*/
+}
+
+#title-description{
+    margin-top: 0px;
+}
+
+/*----------------Promotion----------------*/
+
+/*----------------Research----------------*/
+
+/*----------------Ideation----------------*/
+
+/*----------------prototype----------------*/
+
+
+/*----------------Product----------------*/
+
+/*----------------other----------------*/
+
+/*----------------Animations----------------*/
+
+
+/* for 680px or less */
+@media screen and (max-width: 680px){
+	#title-img{
+        margin-top: 120px;
+    }
+
+}

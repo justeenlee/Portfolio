@@ -57,6 +57,22 @@
 
 <!--product panel------------------------------>
 	<div id = "product-panel">
+        <!--QM------------------------------>
+		<div class = "product-wrapper">
+			<div class = "product-title">
+				<h1>Particle In A Box | Quantum Mechanics Game</h1>
+				<h2>Research, Quantum Mechanics, Game/Interaction/Motion Design</h2>
+			</div>
+           <div id="qm-trailer" class="video-demo"></div>
+            <p>I worked with a research lab designing the interaction and motion for a quantum mechanics game and a trailer for it. 
+            <br>Visit <a href="http://learnqm.gatech.edu" target="_blank">the site</a> for more information.</p>
+            <br><h5>*The trailer is still in progress, but the password for a sneak peek is "hi";)
+            <br>*None of the interaction and motion have been implemented in the game yet.
+            </h5>
+			<div class = "comment">
+				<h6><bold>Date</bold>: Since 2015</h6>
+			</div>
+		</div>
         <!--agent------------------------------>
 		<div class = "product-wrapper">
 			<div class = "product-title">
@@ -140,6 +156,7 @@
             function() {setTimeout(addVideo, 1400);}
         );
         function addVideo(){
+             document.getElementById("qm-trailer").innerHTML =	'<iframe src="http://player.vimeo.com/video/156731404?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
             document.getElementById("puppy-watch").innerHTML =	'<iframe src="http://player.vimeo.com/video/101643280?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
             document.getElementById("seesaw").innerHTML =	'<iframe src="http://player.vimeo.com/video/152912369?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
         };
