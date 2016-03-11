@@ -55,6 +55,11 @@ p{
 
 .quoate~p{margin-top: -15px;}
 
+.emphasis{
+    //text-decoration: underline;
+    border-bottom: 4px solid #555;
+}
+
 
 /*---navigation---------------------------------*/
 .li-nav>a:link {color: #fff; text-decoration:none;}
@@ -279,7 +284,8 @@ body{
 	left: 0px;
 	width: auto;
 	line-height: 1;
-    font-family: Roboto-Semibold, sans-serif;
+    color: #595959;
+    font-family: issue-title, sans-serif;
 }
 
 .issue-detail>h5, .feature-detail>h5{
@@ -374,6 +380,14 @@ footer{
 	display: inline;
 }
 
+.author:after{
+    content: "Designed and Handcrafted by Justeen Lee";
+}
+
+.copyright:after{
+    content: "© 2016 Justeen Lee | Craft Delightful Experience";
+}
+
 /*feature-type--------------*/
 .shadow{
 	/*box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;*/
@@ -442,8 +456,8 @@ footer{
 .quote>h3{
     position: relative;
     left: 50%;
-	margin-left: -190px;
-	width: 380px;
+	margin-left: -180px;
+	width: 410px;
 	font-family: Baskerville;
     font-style: italic;
 	font-size: 30px;
@@ -798,5 +812,11 @@ footer{
     font-family: MYRIADPRO-BOLD;
     src: url('../assets/fontbook/MYRIADPRO-BOLD.OTF');
 }
+
+@font-face {
+    font-family: issue-title;
+    src: url('../assets/fontbook/FrutigerLTStd-Bold.otf');
+}
+
 
 

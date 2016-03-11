@@ -18,8 +18,8 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 }
 
 #title-img>img{
-    width: 500px;
-    margin-left: -250px;
+    width: 700px;
+    margin-left: -350px;
 }
 
 #title-description{
@@ -162,9 +162,6 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 
 /* for 680px or less */
 @media screen and (max-width: 680px){
-
-    #link-projects{text-decoration: underline;}
-    
 
 
 	/*calor only?*/

@@ -34,7 +34,7 @@ footer{margin-top: 80px;}
     width: 990px; /*880-16*2(padding)*/
     left: 50%;
     margin-left: -495px;
-	min-height: 1400px;
+	min-height: 1100px;
     height: auto;
     margin-top: 80px;
 }
@@ -139,6 +139,8 @@ h3{
 --------Media Query---------
 ----------------------------*/
 /* for 680px or less */
+
+
 @media screen and (max-width: 680px) {
     #link-projects{text-decoration: underline;}
     
@@ -168,24 +170,64 @@ h3{
     .wide~.tall~.square{
         margin-top: 15px;
     }
-    
-    #product-panel>.square~.square~.square{
-        margin-left: 0px;
-    }
 	
     #product-panel>.square{
-        margin-left: 15px;
         width: 310px;
     }
-   
+    
+    
+    
     
     /*not a good practice, jsut for temporary visualization*/
+/* before 0308 2016, full-stacked UX
     #product-panel>.tall+.three+.square+.square+.three,
     #product-panel>.tall+.three+.square+.square+.three+.one+.two,
     #product-panel>.tall+.three+.square+.square+.three+.one+.two+.three+.one,
     #product-panel>.tall+.three+.square+.square+.three+.one+.two+.three+.one+.two+.three{
         margin-left: 15px;
     }
+    
+    #product-panel>.square~.square~.square{
+        margin-left: 0px;
+    }
+*/
+    
+    /*---tall wide square square--*/
+/*
+    #product-panel>.tall+.wide+.square{
+        left: 310px;
+        top: -915px;
+    }
+    #product-panel>.tall+.wide+.square+.square{
+        left: 310px;
+        top: -915px;
+    }
+*/
+    
+    #product-panel>.square+.three,
+    #product-panel>.wide>.square+.one,
+    .small
+    {
+        margin-left: 15px;
+    }
+    
+    #product-panel>.small.two,
+    #product-panel>.small.one
+    {
+         margin-left: 15px;
+    }
+    /*---tall wide square square ends--*/
+
+    
+    
+    
+    /*---------span tall shade---------------*/
+    #product-panel>.tall{
+        width: 100%;
+    }
+    
+    
+    
     
 
 }/* for 680px or less media query ends */
@@ -196,7 +238,7 @@ h3{
 /* for 480px or less */
 @media screen and (max-width: 480px) {
     
-    body,#product-panel{min-height: 3600px;}
+    body, #product-panel{min-height: 2700px;}
     
     body{
         left: 0;

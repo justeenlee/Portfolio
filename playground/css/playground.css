@@ -241,18 +241,22 @@ html, body, footer{background-color: #2E2E2E;}
 #comet{
     z-index: 0;
     top: 10px;
-    left: 1100px;
+    //left: 1100px;
     opacity: 0;
     animation: fall 5s 3s infinite;
 }
 
 #arrow{
     position: absolute;
-    top: 83%;
+    top: 81%;
     left: 50%;
     margin-left: -20px;
     z-index: 100;
-    animation: guide 2s infinite;
+    opacity: 0;
+}
+
+.arrowMove{
+    animation: guide 2s 3s infinite;
 }
 
 /*----------------overview panel----------------*/

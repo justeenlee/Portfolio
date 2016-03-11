@@ -3,6 +3,14 @@
 	color: #101b7d;
 }
 
+.statement-mark>g>g{
+    fill: #101b7d;
+}
+
+.emphasis{
+    border-bottom-color: #101b7d;
+}
+
 /*----------------Title----------------*/
 
 #title-panel{
