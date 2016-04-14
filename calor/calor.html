@@ -60,7 +60,7 @@
 <!--intro panel------------------------------>
     <div id = "intro-panel">
         <p>
-		Calor is a faucet system that safely and efficiently delivers your desired water temperature with a temperature sensor and promotes a mindful water use  with modern technology. It’s smart to let you set your water temperature and suggest when to get out of shower.
+		Calor is a faucet system that safely and efficiently delivers your desired water temperature with a temperature sensor and gradually guides you to a 5-min shower recommended by EPA through suggestion and reward system. It’s smart to let you set your water temperature and suggest when to get out of shower.
 		</p>
         <div class="recognition">
             <p>As seen on:
@@ -190,10 +190,10 @@
         </div>
 		<div class="value">
             <div class="highlight">
-                <h3>STREAMLINE TASK FLOW with temperature sensor
+                <h3>perfect comfort with temperature sensor
                 </h3>
             </div>
-            <p>Calor benefits from a temperature sensor that results a perfect shower temperature you desire.</p>
+<!--            <p>Calor benefits from a temperature sensor that results a perfect shower temperature you desire.</p>-->
 		</div>
         
         <div class="band">
@@ -218,10 +218,25 @@ No more trial and error.</h3>
         <p>Current market offers faucet fixtures/systems with either simple yet limited functions at a low cost or high-end at a high cost up to $5000, not including any cost for installing or pipe rerouting.
         </p>
         <img src="images/research-market-matrix.png">
-        <img src="images/research-cartridge-breakdown.jpg">
-        <p>Disassembling a fixture and understanding how a valve and a cartridge work together result an approach: design through improving existing experience.</p>
-        
-        
+       
+         <p>Disassembling a fixture and understanding how a valve and a cartridge work together result an approach: design for retrofitting.</p>
+		<div class = "loading slide-container">
+		  <section class="slider">
+			<div class="flexslider" slidespeed = "3800">
+			  <ul class="slides">
+                  <li> <img src="images/research-cartridge-breakdown.jpg"></li>
+				<li>
+				<img src="images/prototype-new-cartridge-mechanism-1.jpg" width="100%">
+				</li>
+				<li>
+				<img src="images/prototype-new-cartridge-mechanism-2.jpg" width="100%">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+		</div>	
+<!--		<p>Designing from outside in, I then study the structure and mechanism of existing models and try to devise a mechanism that could deliver that turning interaction.</p>-->
+ 
     </div><!--research panel end -->
 
 <!--ideation panel------------------------------>
@@ -275,7 +290,8 @@ No more trial and error.</h3>
 			</div>
 		  </section>
 		</div>
-        <p>Through series refining, I clean up the interface to a level that quickly and sufficiently tells the information yet not overwhelms with complexity. I keep the “turning-a-nob” interaction because it connects back to the circular form and reminds the nostalgic and analogical interaction of turning a handle.</p>
+        <p>I clean up the interface to display quick and sufficient information without adding too much complexity. I decide on the “turning-a-nob” interaction for its familarity of current interaction and remains its nostalgic and analogical feeling of turning a faucet handle.</p>
+        <div id="video-interaction" class="video-demo"></div>
         
     </div><!--ideation panel ends-------------------->
 
@@ -283,30 +299,28 @@ No more trial and error.</h3>
 <!--protytype panel------------------------------>
 	
 	<div id = "prototype-panel" class = "panel">
-		<div class = "loading slide-container">
-		  <section class="slider">
-			<div class="flexslider" slidespeed = "3800">
-			  <ul class="slides">
-				<li>
-				<img src="images/prototype-new-cartridge-mechanism-1.jpg" width="100%">
-				</li>
-				<li>
-				<img src="images/prototype-new-cartridge-mechanism-2.jpg" width="100%">
-				</li>
-			  </ul>
-			</div>
-		  </section>
-		</div>	
-		<p>Designing from outside in, I then study the structure and mechanism of existing models and try to devise a mechanism that could deliver that turning interaction.</p>
 		<div id="video-cartridge-mechanism" class="video-demo"></div>
 		<p>With this attempt, I replicate the task of water-mixing with a 3D-printed cartridge prototype driven by a motor. </p>
 		<div id="video-set-temp" class="video-demo"></div>
 		<p>I also prototype the setting temperature interaction with Arduino to test the setting and counting down. Check out the code on <a href="https://github.com/justeenlee/Faucet-Fixture" target="_blank">Github</a>.
 		</p>
-        <img src="images/prototype-arduino.jpg" width="100%">
-         <img src="images/prototype-mechanism.jpg" width="100%">
-        <img src="images/prototype-physical-models.jpg">
-		<div id="video-interaction" class="video-demo"></div>
+        <div class="video-demo" id="video-mechanism"></div>
+        <div class = "loading slide-container">
+		  <section class="slider">
+			<div class="flexslider" slidespeed = "3800">
+			  <ul class="slides">
+                  <li><img src="images/prototype-physical-models.jpg"></li>
+				<li>
+				<img src="images/prototype-model-display.jpg" width="100%">
+				</li>
+				<li>
+				<img src="images/prototype-model-turning.jpg" width="100%">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+		</div>
+        <img src="images/prototype-mechanism.jpg" width="100%">
 	</div> 
 	
 <!--product panel------------------------------>

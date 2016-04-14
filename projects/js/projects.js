@@ -20,7 +20,8 @@ var projects = new Array(
 	"project-bristol",
     "project-flash",
     "project-animatopoeia",
-    "project-experiment"
+    "project-experiment",
+    "project-webux"
 );
 
 var links = new Array(

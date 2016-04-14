@@ -39,6 +39,17 @@ footer{margin-top: 80px;}
     margin-top: 80px;
 }
 
+#product-panel>div{
+    box-shadow: 0 0 0 0 #ccc;
+    transition: .3s;
+}
+
+#product-panel>div:hover{
+    box-shadow: 0 0 10px 0 #ccc;
+    transition: .3s;
+}
+
+
 /*square property*/
 .square, .wide, .tall{
 	position: relative;

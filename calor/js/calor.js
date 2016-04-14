@@ -10,6 +10,7 @@ function addVideo(){
 	document.getElementById('video-cartridge-mechanism').innerHTML= '<iframe src="http://player.vimeo.com/video/123803268?byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 	document.getElementById('video-set-temp').innerHTML= '<iframe src="http://player.vimeo.com/video/123803900?byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
     document.getElementById('video-interaction').innerHTML= '<iframe src="http://player.vimeo.com/video/145598752?byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+    document.getElementById('video-mechanism').innerHTML= '<iframe src="http://player.vimeo.com/video/161575406?byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 };
 
 var gifDisplayArray = [false, false, false, false];
