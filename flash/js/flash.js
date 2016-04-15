@@ -5,3 +5,13 @@ function addVideo(){
 
 };
 
+$("#user-flow").hover(
+		function()
+		{
+			$(this).attr("src", "images/research-new-flow.gif");
+		},
+		function()
+		{
+			$(this).attr("src", "images/research-old-flow.png");
+		}
+        );
