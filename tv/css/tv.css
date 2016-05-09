@@ -1,0 +1,158 @@
+.highlight>h3, a:link,a:visited {color: #DF3437 ;}
+
+/*----------------Title----------------*/
+
+html, body{background-color: #eee;}
+footer{color: #555;}
+
+#title-panel{background-color: #555;}
+
+#title-img{
+    margin-top: 100px;;
+}
+
+#title-motion{
+    position: absolute;
+    width: 1340px;
+    left: 50%;
+    margin-left: -670px;
+    margin-top: -30px;
+}
+
+p{font-family: roboto-light;}
+
+#cf{
+    background-color: #000;
+    opacity: 1;
+}
+
+/*----------------Title animation----------------*/
+iframe{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*----------------gif container----------------*/
+.gif-container, .gif-object{
+	position: relative;
+}
+
+.gif-container{
+	min-height: 1500px;
+	height: auto;
+	width: 100%;
+}
+
+.gif-object{
+	margin: 12px 12px 0px 0px;
+	width: 338px;
+	//height: 470px;
+    height: auto;
+	float:left;
+}
+
+.gif-object>h2{
+	font-size: 16pt;
+	margin: 5px 0px;
+    text-align: center;
+}
+
+.gif-object>p{
+	left: 0;
+	margin: 0;
+	width: auto;
+}
+
+.gif-object iframe{
+    position: relative;
+    width: 100%;
+    height: 190px;
+}
+
+
+div[data-type="motion-gif"]{
+	width: 338px;
+	background-color:#000;
+}
+
+
+#badge, #parsons, #symbio, #worldCup, #ring, #bounce{
+	position:relative;
+	top: 50%;
+	overflow: hidden;
+}
+
+/*--------------------------
+--------Media Query---------
+----------------------------*/
+/* for 680px or less */
+@media screen and (max-width: 680px) {	
+	.gif-container, 
+	.gif-object, 
+	div[data-type="motion-gif"]{
+		width: auto;
+		float: none;
+	}
+	
+	.gif-container{
+		width: 100%;
+	}
+	
+	.gif-container, .gif-object{
+		height: auto;
+	}
+	
+	.gif-object{
+		margin:0;
+		margin-top: 70px;
+		height: auto;
+	}
+
+	
+}/* for 700px or less media query ends */
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+    #title-panel{
+        height: 300px;
+    }
+	
+}/* for 480px or less media query ends */
+
+
+
+
+/*----------------Comment----------------*/
+
+/*----------------Animations----------------*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@-webkit-keyframes down1 {
+    0% {-webkit-transform: translate(0px, -50px);}
+    100% {-webkit-transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes up1 {
+    0% {-webkit-transform: translate(0px, 0px);}
+    100% {-webkit-transform: translate(0px, -30px);}
+}
+
+
+@-webkit-keyframes down2 {
+    0% {-webkit-transform: translate(0px, -30px);}
+    100% {-webkit-transform: translate(0px, 0px);}
+}
+
+
+
+
+
+
+/*----------------native tags----------------*/
+
+

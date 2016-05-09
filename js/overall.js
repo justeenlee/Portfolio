@@ -69,6 +69,23 @@ function move(input){
     }
 }
 
+var toChangeNavColor = false;
+function check(){
+    if ((currentPath != "") &&
+       (currentPath != "index") &&
+       (currentPath != "projects") &&
+       (currentPath != "resume") &&
+       (currentPath != "about") &&
+       (currentPath != "motion") &&
+       (currentPath != "expression") &&
+       (currentPath != "tv")){
+        toChangeNavColor = true;
+    } else {
+        toChangeNavColor = false;
+    }
+}
+
+//update navigation text color and cf color,opa
 function setNav(){
     var i = 0;
     if (toChangeNavColor){    
@@ -83,22 +100,6 @@ function setNav(){
             $("#indicator-dot").css("backgroundColor", "#fff");
             $("#cf").css("opacity", ".1");
         }
-    }
-}
-
-var toChangeNavColor = false;
-
-function check(){
-    if ((currentPath != "") &&
-       (currentPath != "index") &&
-       (currentPath != "projects") &&
-       (currentPath != "resume") &&
-       (currentPath != "about") &&
-       (currentPath != "motion") &&
-       (currentPath != "expression")){
-        toChangeNavColor = true;
-    } else {
-        toChangeNavColor = false;
     }
 }
 
@@ -122,5 +123,5 @@ function setDefaultNavColor(){
             $(linkName).css("color", "#555");
         }
     $("#indicator-dot").css("backgroundColor", "#555");
-    $("#cf").css("opacity", ".7");
+    $("#cf").css("opacity", ".8");
 }
