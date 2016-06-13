@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p, div{
     /*font-weight: 300; 0830 delete*/
 }
 
-bold{font-family: "TyponineSans Text 16";}
+bold{font-family: "TyponineSansText";}
 
 iframe{position: absolute;}
 
@@ -738,6 +738,21 @@ footer{
 
 /*---------font setup ----------------------------------*/
 @font-face {
+    font-family: DINPro-Light;
+    src: url('../assets/fontbook/DINPro-Light.otf');
+}
+@font-face {
+    font-family: DINPro-Regular;
+    src: url('../assets/fontbook/DINPro-Regular.otf');
+}
+@font-face {
+    font-family: DINPro-Medium;
+    src: url('../assets/fontbook/DINPro-Medium.otf');
+}
+
+
+
+@font-face {
 	font-family: futura;	
 	src:url('../assets/fontbook/futura.otf');
 }
@@ -778,7 +793,7 @@ footer{
 }
 
 @font-face {
-	font-family: "TyponineSans Regular 18";
+	font-family: "TyponineSansRegular";
 	src: url("../assets/fontbook/TyponineSansRegular.eot");
 	src: url("../assets/fontbook/TyponineSansRegular.eot?#iefix") format("embedded-opentype"), 
 		url("../assets/fontbook/TyponineSansRegular.woff") format("woff");
@@ -788,7 +803,7 @@ footer{
 }
 
 @font-face {
-	font-family: "TyponineSans Text 16";
+	font-family: "TyponineSansText";
 	src: url("../assets/fontbook/TyponineSansText.eot");
 	src: url("../assets/fontbook/TyponineSansText.eot?#iefix") format("embedded-opentype"), 
 		url("../assets/fontbook/TyponineSansText.woff") format("woff");
