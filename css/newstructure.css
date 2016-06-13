@@ -8,7 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 h1, h2, h3, h4, h5, h6, p, div{
-	font-family: "TyponineSans Regular 18";
+	font-family: "TyponineSansRegular";
 	margin: 0px; /*delete if fix issue1*/
     /*font-weight: 300; 0830 delete*/
 }
@@ -106,7 +106,7 @@ li>a:link {transition: .35s ease;}
     height: 4px;
     background-color: #fff;
     border-radius: 5px;
-    top: 42px;
+    top: 48px;
     transition: .7s ease;
     opacity: 1; /*hide when loading 1022*/
 }
