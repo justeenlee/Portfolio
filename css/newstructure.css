@@ -2,7 +2,7 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
 	vertical-align: bottom;
 	padding: 0px;
-	//margin: 0px; /*issue1 here!!*/
+	margin: 0px; /*0612 set, could cause issue!!*/
     font-weight: normal;
 }
 
@@ -16,6 +16,8 @@ h1, h2, h3, h4, h5, h6, p, div{
 bold{font-family: "TyponineSansText";}
 
 iframe{position: absolute;}
+
+
 
 html{
 	margin-top: -10px; 
@@ -66,23 +68,24 @@ p{
 .li-nav>a:visited {color: #fff;}
 /*a:hover {color: silver;}*/
 .li-nav>a:active {color: darkgrey;} /*being clicked*/
-li>a:link {transition: .7s ease;}
+li>a:link {transition: .35s ease;}
 
 #navigation{
     z-index: 21;
     position: relative;
     width: 700px; /*0830 880 to 700*/ 
-    height: 50px; /*0830 60 to 50*/
+    height: 40px; /*0830 60 to 50*/
     background-color: yellow;
 	background-color: transparent; /*0830 white to trans*/
-    opacity: .9;
+    opacity: .96;
+    padding-top: 14px;
 	//overflow: hidden;
 }
 
 /*0116+#navigation>*/
 #navigation>ul{
     padding: 0px;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-left: 0px; /*4-link placement*/ /*0830 80 to 0*/ 
     list-style-type: none;
 }
@@ -103,7 +106,7 @@ li>a:link {transition: .7s ease;}
     height: 4px;
     background-color: #fff;
     border-radius: 5px;
-    top: 38px;
+    top: 42px;
     transition: .7s ease;
     opacity: 1; /*hide when loading 1022*/
 }

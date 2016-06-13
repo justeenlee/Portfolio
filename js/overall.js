@@ -69,6 +69,7 @@ function move(input){
 
 var toChangeNavColor = false;
 function check(){
+//basically set all project nav to change color
     if ((currentPath != "") &&
        (currentPath != "index") &&
        (currentPath != "projects") &&
@@ -83,7 +84,7 @@ function check(){
     }
 }
 
-//update navigation text color and cf color,opa
+//set nav color from start + update navigation text color and cf color,opacity as scroll
 function setNav(){
     var i = 0;
     if (toChangeNavColor){    
@@ -97,8 +98,15 @@ function setNav(){
             }
             $("#indicator-dot").css("backgroundColor", "#fff");
             $("#cf").css("opacity", ".1");
+            $("#navigation").css("backgroundColor", "transparent");
         }
     }
+    if (currentPath == "about") {
+        $("#navigation").css("backgroundColor", "#222");
+    } else if (currentPath == "resume") {
+        $("#navigation").css("backgroundColor", "#FbFbFb");
+    }
+    
 }
 
 function tempNavSet(){
@@ -122,6 +130,7 @@ function setDefaultNavColor(){
         }
     $("#indicator-dot").css("backgroundColor", "#555");
     $("#cf").css("opacity", ".8");
+    $("#navigation").css("backgroundColor", "#FbFbFb");
 }
 
 //=============headroom================
