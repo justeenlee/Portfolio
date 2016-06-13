@@ -13,6 +13,7 @@
     background-color: #fafafa;
 }
 
+header{left: 50%; margin-left: -350px;}
 html,body{background-color: #f9f9f9}
 html,body{background-color: #fff}
 
@@ -21,10 +22,6 @@ img~img{
 }
 
 body{height: auto;width: 990px; margin-left: -495px}
-
-#navigation{left: 50%; margin-left: -350px;}
-
-#cf{opacity: .93;}
 
 footer{margin-top: 80px;}
 
@@ -186,35 +183,6 @@ h3{
         width: 310px;
     }
     
-    
-    
-    
-    /*not a good practice, jsut for temporary visualization*/
-/* before 0308 2016, full-stacked UX
-    #product-panel>.tall+.three+.square+.square+.three,
-    #product-panel>.tall+.three+.square+.square+.three+.one+.two,
-    #product-panel>.tall+.three+.square+.square+.three+.one+.two+.three+.one,
-    #product-panel>.tall+.three+.square+.square+.three+.one+.two+.three+.one+.two+.three{
-        margin-left: 15px;
-    }
-    
-    #product-panel>.square~.square~.square{
-        margin-left: 0px;
-    }
-*/
-    
-    /*---tall wide square square--*/
-/*
-    #product-panel>.tall+.wide+.square{
-        left: 310px;
-        top: -915px;
-    }
-    #product-panel>.tall+.wide+.square+.square{
-        left: 310px;
-        top: -915px;
-    }
-*/
-    
     #product-panel>.square+.three,
     #product-panel>.wide>.square+.one,
     .small
@@ -229,17 +197,12 @@ h3{
     }
     /*---tall wide square square ends--*/
 
-    
-    
+
     
     /*---------span tall shade---------------*/
     #product-panel>.tall{
         width: 100%;
     }
-    
-    
-    
-    
 
 }/* for 680px or less media query ends */
 

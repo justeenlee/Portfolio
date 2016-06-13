@@ -25,6 +25,7 @@
 
 
 <body>
+    <header id="header">
 	<div id = "navigation">
         <ul>
             <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
@@ -37,7 +38,7 @@
         </ul>
         <span id="indicator-dot"></span>
 	</div>
-	<div id = "cf"></div>
+    </header>
 
 <!--    <img src="test%20bg.png" id="testbg" width="100%">-->
     
@@ -334,6 +335,7 @@
           });
         });
         
+//----scroll arrow display-----
         $(window).scroll(function (){
             //console.log(this.scrollY);
             if (this.scrollY >= 170) {
@@ -363,7 +365,9 @@
                 leftValue += 100;
                 star.css("left", leftValue+"px");
             }
-        })
+        });
+    
+        
         
     </script>
 

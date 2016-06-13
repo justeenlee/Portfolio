@@ -28,11 +28,10 @@ html{
     background-color: #FbFbFb; /*0901*/
 }
 
-
 .coming-soon{
     position: relative;
     left: 50%;
-    margin-left: -85px;
+    margin-left: -100px;
     width: 200px;
 }
 
@@ -71,9 +70,10 @@ li>a:link {transition: .7s ease;}
 
 #navigation{
     z-index: 21;
-    position: fixed;
+    position: relative;
     width: 700px; /*0830 880 to 700*/ 
     height: 50px; /*0830 60 to 50*/
+    background-color: yellow;
 	background-color: transparent; /*0830 white to trans*/
     opacity: .9;
 	//overflow: hidden;
@@ -97,21 +97,6 @@ li>a:link {transition: .7s ease;}
     font-family: navigation, sans-serif;  /*1229*/
 }
 
-#cf{
-	position: fixed; /*0830 relative to fixed*/
-	min-width: 1366px; /*0830 100% to 1366*/
-	height: 50px; /*0731 60 to 50*/
-    /*0830*/
-    z-index: 20;
-    background-color: #fff;
-    opacity: .15;
-/*once pass rendering, change opacity*/
-    left: 50%;
-    margin-left: -684px;
-    //transition: .7s ease;
-}
-
-
 #indicator-dot{
     position: absolute;
     width: 4px;
@@ -123,6 +108,25 @@ li>a:link {transition: .7s ease;}
     opacity: 1; /*hide when loading 1022*/
 }
 
+header{
+    position: fixed;
+    z-index: 21;
+}
+
+
+.headroom {
+    will-change: transform;
+    -webkit-transition: transform 200ms linear;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
 
 /*---body---------------------------------*/
 body{
@@ -502,7 +506,7 @@ footer{
 		width: 460px;
 		height:auto;
 		left: 50%;
-		margin-left: -230px;
+		margin-left: -240px;
 	}
 
 	#navigation .li-nav{
@@ -512,14 +516,13 @@ footer{
 		font-size: 20px;
 	}
     
+/*
     #navigation, #cf{
-        width: 100%;
+        //width: 100%;
     }
+*/
     
-    #cf{
-        left: 0; /*reset >680px*/
-        margin-left: 0; /*reset >680px*/
-    }
+
     #indicator-dot{
         opacity: 0;
     }
@@ -547,16 +550,6 @@ footer{
 	#title-description{
         padding: 0 12px;
     }
-
-
-    
-/*
-    .app-left *, .app-right *, .feature *{
-        background-color: yellow; 
-        opacity: .9;}
-*/
-    
-    	
     
 /*add padding to all text, images*/   
 	#intro-panel, 
@@ -683,9 +676,11 @@ footer{
 /* for 480px or less */
 @media screen and (max-width: 480px) {
     
+/*
 	#cf{
 		height: 82px;
 	}
+*/
 	#navigation>ul{
 		width: 320px;
 		margin-left: -160px;
