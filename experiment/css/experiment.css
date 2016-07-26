@@ -13,6 +13,12 @@ a:visited {color: #FFC413;}
     background-color: transparent;   
 }
 
+#navBand {
+    background-color: #CBCED7;
+}
+
+
+
 /*----------------product panel----------------*/
 .product-wrapper{
 	margin-bottom: 100px;
@@ -40,13 +46,13 @@ a:visited {color: #FFC413;}
 }
 
 .product-title>h1{
-	font-size: 40pt;
+	font-size: 44px;
 	color: #444;
 }
 
 .product-title>h2{
 	line-height: 1;
-	font-size: 15pt;
+	font-size: 26px;
 }
 
 .poster-container{

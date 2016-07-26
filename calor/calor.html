@@ -29,19 +29,18 @@
 </head>
 
 <body>
-     <header id="header">
-	<div id = "navigation">
-        <ul>
-            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
-            
-    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="projects/projects.html">PROJECTS</a></li>
-            
-    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="resume/resume.html">RESUME</a></li>
-            
-    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="about/about.html">ABOUT</a></li>
-        </ul>
-        <span id="indicator-dot"></span>
-	</div>
+    <header id="header">
+    <ul id = "navigation">
+        <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+
+        <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+
+        <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
+
+        <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/about.html">ABOUT</a></li>
+    </ul>
+    <span id="indicator-dot"></span>
+    <div class="band" id="navBand"></div>
     </header>
 
 <!--title panel------------------------------>
@@ -53,16 +52,16 @@
         <div id ="title-description">
             <h1>CALOR</h1>
             <h2>
-                Smart Faucet System
+                Smart Faucet
             </h2>
-            <h3>An effortless, safe and water-saving shower</h3>
+            <h3>A simple, safe and water-saving shower</h3>
         </div>           
     </div>
 
 <!--intro panel------------------------------>
     <div id = "intro-panel">
         <p>
-		Calor is a faucet system that safely and efficiently delivers your desired water temperature with a temperature sensor and gradually guides you to a 5-min shower recommended by EPA through suggestion and reward system. It’s smart to let you set your water temperature and suggest when to get out of shower.
+		Calor is a smart faucet that safely and efficiently delivers your desired water temperature with a temperature sensor and through suggestion and reward system, it gradually guides you to the 5-min shower recommended by EPA to save water.
 		</p>
         <div class="recognition">
             <p>As seen on:
@@ -303,7 +302,7 @@ No more trial and error.</h3>
 	<div id = "prototype-panel" class = "panel">
 		<div id="video-cartridge-mechanism" class="video-demo"></div>
 		<p>With this attempt, I replicate the task of water-mixing with a 3D-printed cartridge prototype driven by a motor. </p>
-		<div id="video-set-temp" class="video-demo"></div>
+<!--		<div id="video-set-temp" class="video-demo"></div>-->
 		<p>I also prototype the setting temperature interaction with Arduino to test the setting and counting down. Check out the code on <a href="https://github.com/justeenlee/Faucet-Fixture" target="_blank">Github</a>.
 		</p>
         <div class="video-demo" id="video-mechanism"></div>

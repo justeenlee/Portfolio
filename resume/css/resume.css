@@ -4,27 +4,35 @@
 #indicator-dot{background-color: #555;}
 
 
+
+#navBand {
+    background-color: #FbFbFb;
+}
+
+
 p{
 	left: 0;
 	margin: 0;
 	margin-left: 20px;
-	font-family: "TyponineSansRegular";
+	font-family: "MYRIADPRO-regular";
     font-size: 20px;
     color: #555;
-    line-height: 1.1;
+    //line-height: 1.1;
     width: 600px; /*added on 0729*/
 }
 
 h1, h2{
-	font-family: "MYRIADPRO-REGULAR";
-	text-align: center;	
-    
+	font-family: "DINPRO-REGULAR";
+	text-align: center;
+    //color:#63b092;
+    color: #961176;
 }
 
 #header>h1{
 	padding-top: 10px; 
 	font-size: 75px;
-    color:#63b092;
+    letter-spacing: -4px;
+    
 }
 
 
@@ -32,21 +40,21 @@ h1, h2{
 	margin-top: -5px;
 	margin-bottom: 30px; 
 	font-size: 16px;; 
-	color: #999;
-    color:#63b092;
+	color: #222;
 }
 
 
 .section>h3{
-	font-family: "MYRIADPRO-semibold";
+	font-family: "DINPRO-MEDIUM";
     font-size: 23px;
     color:#63b092;
-    //color: purple;
-
+    color: purple;
 }
 
 .section>h4{
-	font-family: "MYRIADPRO-regular";
+	font-family: "MYRIADPRO-semibold";
+	font-family: "DINPRO-MEDIUM";
+    letter-spacing: -.4px;
 	color: #333;
     font-size: 20px;
 }
@@ -81,7 +89,7 @@ em{
 /*----------------Resume----------------*/
 #resume-panel {
 	position: relative;
-	margin-top: 100px;
+	margin-top: 70px;
 	height: auto;
     margin-left:-325px;   
 	left: 50%;

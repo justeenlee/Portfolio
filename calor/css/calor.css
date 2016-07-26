@@ -5,8 +5,8 @@
 p>a:link {color: #FFC413; text-decoration:underline}
 a:visited {color: #FFC413;}
 
-/*0830 to newstructure?*/ 
-li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
+#navBand {
+    background-color: #212121;
 }
 /*once pass rendering, change color*/
 
