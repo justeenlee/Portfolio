@@ -3,10 +3,17 @@
 {color: #555;}
 #indicator-dot{background-color: #555;}
 
-
+/*purple #961176*/
 
 #navBand {
     background-color: #FbFbFb;
+}
+span.course{
+    //padding-bottom: 10px;
+    border-bottom: 1px solid rgba(150,17,118, .75);
+}
+span.course::after{
+    
 }
 
 

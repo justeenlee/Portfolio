@@ -148,7 +148,7 @@ span>a:visited {color: rgb(117,117,117);}
 /*----------------native tags----------------*/
 
 
-p>a:link, p>a:visited {color: #FF0990; opacity: .75;}
+p>a:link, p>a:visited {font-weight: 900; color:#FF0990; opacity: .75;}
 p>a:hover {text-decoration: none;}
 
 .inline-highlight{text-decoration: underline}
