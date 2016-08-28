@@ -4,8 +4,17 @@ p>a:link {color: #FFC413; text-decoration:underline}
 a:visited {color: #FFC413;}
 
 /*0830 to newstructure?*/ 
+/*
 li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 }
+*/
+
+#navBand {
+    background-color: #fec94b;
+}
+
+
+
 /*once pass rendering, change color*/
 
 /*----------------Title----------------*/
@@ -141,6 +150,9 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 
 /*----------------Ideation----------------*/
 
+#ideation-panel>img{
+    box-shadow: 0 0 ;
+}
 
 /*----------------prototype----------------*/
 
@@ -207,18 +219,18 @@ li>a:link {color: #fff; text-decoration:none;    transition: .7s ease;
 }
 
 .app-left-info>h2, .app-right-info>h2{
-    font-size: 50px;
-    font-family: Roboto-Regular;
+    font-size: 48px;
+    font-family: Roboto-Light;
 }
 .app-left-info>h3, .app-right-info>h3{
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 10px;
     line-height: 1.4;
     font-family: Roboto-Light;
 }
 
 .app-left-info>h4, .app-right-info>h4{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.4;
     font-family: Roboto-Light;
 

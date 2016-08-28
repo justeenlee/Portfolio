@@ -11,6 +11,41 @@
     border-bottom-color: #101b7d;
 }
 
+#navBand{
+    background-color: #283374;
+}
+
+/*specific for natiev 061816*/
+#early-concepts{
+    padding: 0;
+    width: 960px;
+    position: relative;
+    left: 50%;
+    margin-left: -480px;
+    
+}
+.quote>svg{
+    background-image: url("../images/svg-quote.svg");
+    background-repeat: no-repeat;
+    width: 61px;
+    height: 50px;
+
+    
+}
+
+#research-panel>.band{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.short-caption{
+    font-style: italic;
+    font-size: 15px;
+    
+}
+/*specific ends*/
+
 /*----------------Title----------------*/
 
 #title-panel{
@@ -49,10 +84,12 @@
 	margin-left: -300px;
 	width: 600px;
 	height: auto;
+    margin-top: 50px;
 }
 
 .ui>img{
 	margin-bottom: 20px;
+    box-shadow: 0 0 4px 0px #bbb;
 }
 
 .ui>img:last-child{

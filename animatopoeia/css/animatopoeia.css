@@ -6,7 +6,9 @@
 p>a:link {text-decoration:underline}
 .highlight>h3,i, a:visited,p>a:link {color: #FF4D70;}
 
-
+#navBand {
+    background-color: #FF4D70;
+}
 
 /*----------------Title----------------*/
 
