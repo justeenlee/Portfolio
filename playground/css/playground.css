@@ -1,4 +1,5 @@
-/*body div *{background-color: aqua;}*/
+//megenta #F51488
+
 
 //html, body, footer{background-color: #2E2E2E;}
 
@@ -30,6 +31,13 @@ body{
     color: #ddd;
     overflow: hidden;
 }
+#indicator-dot {
+    //width: 10px;
+    //height: 10px;
+    border-radius: 0;
+    background-color: #F51488;
+}
+
 #block{
     position: absolute;
     left: 0;
@@ -122,7 +130,7 @@ svg{
     width: 1600px;
     left: 50%;
     margin-left: -800px;
-    opacity: .225;
+    opacity: .35;
     //background-color: #000;
     //background-blend-mode: multiply;
 }
@@ -155,7 +163,12 @@ div[data-value = "10"]{width: 10px; top: 100px; left: 310px;}
 div[data-value = "20"]{width: 20px; top: 100px; left: 330px;}
 div[data-value = "80"]{width: 80px; top: 150px; left: 420px;}
 div[data-value = "700"]{width: 700px; background-color: #fff; top: 538px; left: 0px;}
-div[data-value = "400"]{width: 400px; top: 533px; left: 325px; animation: linearSlide1 20s linear}
+div[data-value = "400"]{
+    width: 400px; 
+    top: 533px; 
+    left: 325px; 
+    animation: linearSlide1 20s linear infinite;
+}
 
 @keyframes linearSlide1 {
     0% {
