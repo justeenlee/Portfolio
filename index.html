@@ -44,7 +44,7 @@
             <video autoplay loop src="playground/images/morph5s.mp4"></video>
 <!--            <img src="playground/images/morph5s.gif">-->
         </div>
-        <div id="block" data-movement = "random" onclick="move()"></div>
+        <div id="block" data-movement = "random" onclick="explode()"></div>
         <svg id = "grid"></svg><!--grid ends-->
         <svg id = "dotGrid"></svg><!--grid ends-->
 <!--        <div id="test"></div>-->
@@ -210,11 +210,15 @@
                         //display.innerHTML = "top = "+newObjX;
                     }
                 }
-                    
-                 
                 display.innerHTML = curX+" , "+curY;
-                
-                
             }
+         
+         //mouse interaction =========
+         function explode(){
+             horizontalPress = Math.floor(Math.random() * 19 + 1);
+             verticalPress = Math.floor(Math.random() * 11 + 1);
+             
+             mapToDesination(horizontalPress, verticalPress);
+         }
         </script>
 </html>

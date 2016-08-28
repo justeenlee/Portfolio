@@ -1,4 +1,4 @@
-#navBand {
+#navBand, html, body {
     background-color: #222;
 }
 
@@ -7,7 +7,7 @@
 #title-panel{
     position: relative;
     height: 520px;
-    background-color: rgb(230,230,230); /*testing*/
+    //background-color: rgb(230,230,230); /*testing*/
 	overflow: hidden;
 }
 
@@ -153,7 +153,7 @@ p>a:hover {text-decoration: none;}
 
 .inline-highlight{text-decoration: underline}
 
-footer{margin-top:15px;}
+footer{margin-top:15px; color: #bbb;}
 
 
 /* for 680px or less */

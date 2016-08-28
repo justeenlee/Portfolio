@@ -57,6 +57,7 @@ body{
 #block:hover{
     cursor: pointer;
     opacity: .2;
+    animation: flashOnHover 1s;
 }
 
 svg{
@@ -212,6 +213,18 @@ div[data-value = "400"]{
 
 
 /*----------------animations ----------------*/
+@keyframes flashOnHover {
+    0% {opacity: .1;}
+    10%{opacity: 0;}
+    15%{opacity: .3;}
+    20%{opacity: 0;}
+    25%{opacity: .3;}
+    30%{opacity: 0;}
+    35%{opacity: .2}
+    60%{opacity: .2;}
+}
+
+
 @keyframes guide {
     0% {
         opacity: 0;

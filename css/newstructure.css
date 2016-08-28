@@ -77,10 +77,11 @@ p{
 
 #navBand{
     position: absolute;
-    height: 54px;
+    height: 62px;
     top: 0;
     padding: 0;
     opacity: .96;
+    background-color: white;
 }
 
 
