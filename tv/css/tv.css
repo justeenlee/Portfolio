@@ -5,7 +5,12 @@
 html, body{background-color: #eee;}
 footer{color: #555;}
 
-#title-panel{background-color: #555;}
+#navBand {
+    background-color: #000;
+}
+
+
+#title-panel{background-color: #000;}
 
 #title-img{
     margin-top: 100px;;
@@ -30,8 +35,22 @@ p{font-family: roboto-light;}
 iframe{
     height: 100%;
     width: 100%;
+    z-index: 11;
 }
 
+#light{
+    position: fixed;
+    background-color: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    transition: .75s;
+}
 
 /*----------------gif container----------------*/
 .gif-container, .gif-object{

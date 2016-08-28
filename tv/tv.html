@@ -28,19 +28,19 @@
 
 	
 <body>
-    <div id = "navigation">
-        <ul>
-            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
-            
-    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
-            
-    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
-            
-    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/">ABOUT</a></li>
-        </ul>
-        <span id="indicator-dot"></span>
-	</div>
-	<div id = "cf"></div>
+    <header id="header">
+    <ul id = "navigation">
+        <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+
+        <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+
+        <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
+
+        <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/about.html">ABOUT</a></li>
+    </ul>
+    <span id="indicator-dot"></span>
+    <div class="band" id="navBand"></div>
+    </header>
 <!--title panel------------------------------>
     <div id = "title-panel">
          <img id="title-motion" src="images/cinema.jpg" width="100%">
@@ -189,11 +189,8 @@
 -->
 			</div>
 		</div>
-		
-		
-
 	</div><!--product panel ends------------------->
-
+    <div id="light"></div>
 	
 	
 
@@ -204,7 +201,58 @@
 	</footer>
     
 </body>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+<script defer>
+    var bw = $( document ).width(),
+        bh = $( document ).height();
+    var light = $("#light");
+    light.css("width", bw);
+    light.css("height", bh);
     
+
+    var iframes = document.querySelectorAll('iframe');
+    var players = [];
+    for (var i=0; i < iframes.length; i++) {
+        players[i] = new Vimeo.Player(iframes[i]);
+        players[i].on('play', function() {
+            light.css("opacity", .75);
+            for (var j = 0; j < iframes.length; j++) {
+                if (this != players[j]) {
+                    //console.log(j);
+                    iframes[j].style.zIndex = "9";
+                }
+            }
+        });
+    
+        players[i].on('pause', function() {
+            light.css("opacity", 0);
+            for (var j = 0; j < iframes.length; j++) {
+                iframes[j].style.zIndex = "11";
+            }
+        });
+        
+        players[i].on('ended', function() {
+            light.css("opacity", 0);
+            for (var j = 0; j < iframes.length; j++) {
+                iframes[j].style.zIndex = "11";
+            }
+        });
+        
+        
+    }
+    
+    
+    
+    
+
+
+    
+    
+
+    
+</script>
+
 
 
 

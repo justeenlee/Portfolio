@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Justeen Lee | Interaction Designer</title>
+        <meta name="description" content="I am a Human Interaction Designer who believes products should be meaningful and carry experience loops of delight, surprise and emotion, currently designing at Pinterest.">
+        <meta name="keywords" content="parallex, shooting star, interactive, interaction, user experience, UX, user interface, UI, portfolio, justeen lee, san francisco, new york, hong kong" />
+        <link rel="shortcut icon" href="assets/favicon.ico"/>
+        <link rel="stylesheet" href="css/newstructure.css">
+        <link rel="stylesheet" href="playground/css/playground.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+<!--        <script src="js/overall.js" defer></script>-->
+        <title>objX</title>
+        <meta name="description" content="">
+<!--        <link rel="stylesheet" href="main.css">-->
+        <style>
+            #header{
+                //background-color: yellow;
+                width: 700px;
+                position: absolute;
+                left: 50%;
+                margin-left: -350px;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+        <ul id = "navigation">
+            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="">PLAYGROUND</a></li>
+
+            <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="projects/projects.html">PROJECTS</a></li>
+
+            <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="resume/resume.html">RESUME</a></li>
+
+            <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="about/about.html">ABOUT</a></li>
+        </ul>
+        <span id="indicator-dot"></span>
+        <div class="band" id="navBand"></div>
+        </header>
+        <div id="morph">
+<!--            <video autoplay loop src="playground/images/morph5s.mp4"></video>-->
+<!--            <img src="playground/images/morph5s.gif">-->
+        </div>
+        <div id="block" data-movement = "random" onclick="move()"></div>
+        <svg id = "grid"></svg><!--grid ends-->
+        <svg id = "dotGrid"></svg><!--grid ends-->
+<!--        <div id="test"></div>-->
+        <section class="allLines">
+            <!-- 1 unit = 10 pixels-->
+            <div data-value = "50"></div>
+            <div data-value = "10"></div>
+            <div data-value = "20"></div>
+            <div data-value = "80"></div>
+            <div data-value = "700"></div>
+            <div data-value = "400"></div>
+        </section>
+        
+        
+<!--
+        <p id="value">origin</p>
+        <p id="key">-</p>
+-->
+        <h1 id="personal-title">I’M AN <span id="strike">INTERACTIONIST</span></h1>
+        <h2 id="personal-statement">I define experience through reimaging interaction among human, object and interface.</h2>
+        
+       
+    
+    </body>
+
+     <script>
+         var screenWidth = document.documentElement.clientWidth;
+         console.log(screenWidth);
+         var screenHeight = document.documentElement.clientHeight;
+         document.getElementById("grid").width = screenWidth;
+         var bw = document.getElementsByTagName("body")[0].clientWidth;
+         var bh = document.getElementsByTagName("body")[0].clientHeight;
+                  document.getElementById("dotGrid").width = bw+20;
+
+         (function(){
+//document.getElementById("block").style.left = bw/2-25+"px";
+             //document.getElementById("block").style.top = bh/2-25+"px";
+             horizontalPress = Math.floor(Math.random() * 10);
+             verticalPress = Math.floor(Math.random() * 10);
+             
+             mapToDesination(horizontalPress, verticalPress);
+             createGrid();
+             createDotGrid();
+        })();
+            function createGrid(){
+                var svgNS = "http://www.w3.org/2000/svg"; 
+                var grid = document.getElementById("grid");
+                var startingX = 50;
+                for (i = 0; i < 19; i++) {
+                    //g = document.createElement("svg");
+                    //b.appendChild(g);
+                    var vertical = document.createElementNS(svgNS, "line");
+                    vertical.setAttributeNS(null,"x1", 50*(i+1));
+                    vertical.setAttributeNS(null,"y1", 0);
+                    vertical.setAttributeNS(null,"x2", 50*(i+1));
+                    vertical.setAttributeNS(null,"y2", screenHeight);
+                    vertical.setAttributeNS(null,"class", "vertical");
+                    grid.appendChild(vertical);
+                    
+                    var horizontal = document.createElementNS(svgNS, "line");
+                    horizontal.setAttributeNS(null,"x1", 0);
+                    horizontal.setAttributeNS(null,"y1", 50*(i+1));
+                    horizontal.setAttributeNS(null,"x2", screenWidth);
+                    horizontal.setAttributeNS(null,"y2", 50*(i+1));
+                    horizontal.setAttributeNS(null,"class", "vertical");
+                    grid.appendChild(horizontal);
+                }
+            }
+         
+            function createDotGrid(){
+                var svgNS = "http://www.w3.org/2000/svg"; 
+                var dotGrid = document.getElementById("dotGrid");
+                var startingX = 50;
+                for (var i = 0; i < bw/50 + 1; i++) {
+                    for (var j = 0; j < bh/50; j++) {
+                        var dot = document.createElementNS(svgNS, "rect");
+                        if (i == bw/50) {
+                            dot.setAttributeNS(null,"x", i * 50 - 1);
+                        } else {
+                            dot.setAttributeNS(null,"x", i * 50);
+                        }
+                        dot.setAttributeNS(null,"y", j * 50);
+                        dot.setAttributeNS(null,"width", 1);
+                        dot.setAttributeNS(null,"height", 1);
+                        dot.setAttributeNS(null,"fill", "#fff");
+                        dotGrid.appendChild(dot);
+                    }
+                }
+            }
+         
+         $(window).resize(function(){
+        });
+            
+         
+            //=====keyboard interaction=============================================
+            document.addEventListener("keydown", keypressed, false);
+            document.addEventListener("keyup", onkeyup, false);
+         
+            var horizontalPress, verticalPress, hDestination, vDestination;
+            var keyCode;
+            var display = document.getElementById("value");
+         
+            function mapToDesination(hP, vP) {
+                //hDestination = hP.num.map(0, bw/50, 0, bw);
+                //vDestination = vP.num.map(0, bh/50, 0, bh);
+                hDestination = hP/(bw/50)*bw;
+                vDestination = vP/(bh/50)*bh;
+                console.log(hDestination +" "+vDestination);
+                document.getElementById("block").style.left = hDestination+"px";
+                document.getElementById("block").style.top = vDestination+"px";
+            }
+         
+            function keypressed(e) {
+                keyCode = e.keyCode;
+                if(keyCode==37) {
+                    //document.getElementById("key").innerHTML = "right";
+                    if (0 < horizontalPress){
+                        horizontalPress--;
+                    }
+                } else if(keyCode==38) {
+                    //document.getElementById("key").innerHTML = "up";
+                    if (0 < verticalPress){
+                        verticalPress--;
+                    }
+                } else if(keyCode==39) {
+                    //document.getElementById("key").innerHTML = "right";
+                    if (horizontalPress < bw/50 - 1){
+                        horizontalPress++;
+                    }
+                } else if(keyCode==40) {
+                    //document.getElementById("key").innerHTML = "down";
+                    if (verticalPress < screenHeight/50 -1 ){
+                    verticalPress++;
+                    }
+                } //allowed condition ended
+                console.log(horizontalPress+" "+verticalPress);
+                mapToDesination(horizontalPress, verticalPress);
+            }
+
+            
+            var display;
+            var newObjX;
+            var newObjY;
+            var increment = 50;
+            var curX;
+            var curY;
+            function updatePos(pos, direction, keyCode) {
+                display = document.getElementById("value");
+                curX = document.getElementById("block").offsetLeft;
+                curY = document.getElementById("block").offsetTop;
+                newObjX = curX + increment*direction+"px";
+                newObjY = curY + increment*direction+"px";
+                console.log("curX = "+curX+"..."+"newObjX = "+newObjX);
+                //left and right
+                if (keyCode == 37 || keyCode == 39) {
+                    console.log(curX > 100);
+                    if (250 < curX < 1000) {
+                        document.getElementById("block").style.left = newObjX;
+                    }
+                } else if (keyCode == 38 || keyCode == 40) {
+                    if (50 < curY < 500) {
+                        document.getElementById("block").style.top = newObjY;
+                        //display.innerHTML = "top = "+newObjX;
+                    }
+                }
+                    
+                 
+                display.innerHTML = curX+" , "+curY;
+                
+                
+            }
+        </script>
+</html>

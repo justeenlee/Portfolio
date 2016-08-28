@@ -31,19 +31,19 @@
 
 	
 <body>
-    <div id = "navigation">
-        <ul>
-            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
-            
-    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
-            
-    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
-            
-    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/">ABOUT</a></li>
-        </ul>
-        <span id="indicator-dot"></span>
-	</div>
-	<div id = "cf"></div>
+    <header id="header">
+    <ul id = "navigation">
+        <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+
+        <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+
+        <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
+
+        <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/about.html">ABOUT</a></li>
+    </ul>
+    <span id="indicator-dot"></span>
+    <div class="band" id="navBand"></div>
+    </header>
 
 <!--title panel------------------------------>
     <div id = "title-panel">
@@ -55,7 +55,7 @@
             <h2>
                 Parking &amp; Payment System
             </h2>
-            <h3>Park when signalled and pay by photo</h3>
+            <h3>No need to find parking. No more space number.</h3>
         </div>     
         
     </div>
@@ -64,7 +64,7 @@
 <!--intro panel------------------------------>
     <div id = "intro-panel">
         <p>
-            Native is a redesign of parking system and kiosk UI that the <span class="emphasis">parking lot signals you where to park</span> and <span class="emphasis">you pay for a photo of your car</span>, delivering a fast and intuitive way to park and pay without the need of finding open spots and memorizing space number.
+            Native is a redesign of parking system and kiosk UI. The parking lot signals you where to park and capture a photo of your car as the ID for payment, without the need of finding open spots and memorizing space number for a fast and intuitive way to park and pay.
 		</p>
     </div>
     	
@@ -105,7 +105,12 @@
                     </g>
                 </g>
             </svg>
-            <h3>Redesign the parking kiosk interface to quickly guide user through the payment process</h3>
+            <h3>Redesign the parking kiosk interface to quickly guide users through the payment</h3>
+        </div>
+        
+        <div class="band">
+            <img id="early-concepts" src="images/ideation-early-concepts.jpg">
+            <div class="short-caption">Early approaches and concepts</div>
         </div>
         
 		<div class="highlight">
@@ -126,7 +131,7 @@
 		<img src="images/new-parking-system.gif" width="100%">
 		<div class="highlight">
 			<h3>
-				Pay by spot ?  Instead, pay by zone and photo
+				Still Pay by spot?<br>Now pay by zone and photo
 			</h3>
 		</div>
 		<p>In the new parking system, I divide all spots into 10 zones; in each zone there is one pole, which plays the significant role in memory offloading.
@@ -142,43 +147,23 @@
 		</div>
 		<p>Using recognition instead of recall provides memory offload, which benefits users a more effortless parking payment experience.</p>
         <div class="quote">
-            <svg class="quote-mark" width="60px" height="49px" viewBox="0 0 60 49">
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g transform="translate(-300.000000, -16608.000000)" stroke="#101b7d" fill="#101b7d">
-                        <g transform="translate(300.000000, 16596.930164)">
-                            <path d="M26.7089844,17.1523438 C23.9550644,18.7343829 21.7285241,20.096674 20.0292969,21.2392578 C18.3300696,22.3818417 16.6015713,23.8906156 14.84375,25.765625 C13.2031168,27.5234463 11.9433638,29.369131 11.0644531,31.3027344 C10.1855425,33.2363378 9.57031426,35.7265473 9.21875,38.7734375 L13.4375,38.7734375 C17.0703307,38.7734375 19.9267474,39.6669833 22.0068359,41.4541016 C24.0869245,43.2412199 25.1269531,45.863264 25.1269531,49.3203125 C25.1269531,51.7812623 24.2041108,54.081044 22.3583984,56.2197266 C20.5126861,58.3584091 17.9785317,59.4277344 14.7558594,59.4277344 C9.71677168,59.4277344 6.11329209,57.7724775 3.9453125,54.4619141 C1.77733291,51.1513506 0.693359375,46.8008082 0.693359375,41.4101562 C0.693359375,37.6015435 1.51366367,34.1298985 3.15429688,30.9951172 C4.79493008,27.8603359 6.78709766,25.0625123 9.13085938,22.6015625 C11.5332151,20.0820187 14.0820178,17.9433682 16.7773438,16.1855469 C19.4726697,14.4277256 21.7285065,12.9921931 23.5449219,11.8789062 L26.7089844,17.1523438 Z M59.2285156,17.1523438 C56.4745956,18.7343829 54.2480554,20.096674 52.5488281,21.2392578 C50.8496009,22.3818417 49.1211025,23.8906156 47.3632812,25.765625 C45.664054,27.5820403 44.3896527,29.4423733 43.5400391,31.3466797 C42.6904254,33.2509861 42.0898455,35.7265473 41.7382812,38.7734375 L45.9570312,38.7734375 C49.5898619,38.7734375 52.4462787,39.6669833 54.5263672,41.4541016 C56.6064557,43.2412199 57.6464844,45.863264 57.6464844,49.3203125 C57.6464844,51.7812623 56.723642,54.081044 54.8779297,56.2197266 C53.0322173,58.3584091 50.498063,59.4277344 47.2753906,59.4277344 C42.2363029,59.4277344 38.6328233,57.7724775 36.4648438,54.4619141 C34.2968642,51.1513506 33.2128906,46.8008082 33.2128906,41.4101562 C33.2128906,37.6015435 34.0331949,34.1298985 35.6738281,30.9951172 C37.3144613,27.8603359 39.3066289,25.0625123 41.6503906,22.6015625 C44.0527464,20.0820187 46.601549,17.9433682 49.296875,16.1855469 C51.992201,14.4277256 54.2480378,12.9921931 56.0644531,11.8789062 L59.2285156,17.1523438 Z"></path>
-                        </g>
-                    </g>
-                </g>
-            </svg>
+            <svg></svg>
+            
+
 			<h3>You can forget about the space number, but not how your car looks like.</h3>
 		</div>
 		<img src="images/pole-placeholder.jpg" width="100%">
 
-        <div class = "loading slide-container">
-            <section class="slider">
-            <div class="flexslider" slidespeed = "3800">
-              <ul class="slides">
-                <li>
-                <img src="images/iterations1.jpg" width="100%">
-                </li>
-                <li>
-                <img src="images/iterations2.jpg" width="100%">
-                </li>
-              </ul>
-            </div>
-            </section>
-		</div><!--slider ends-->
-		<p>Trying different means to smooth out the flow such as tab navigation and maps, after 10 iterations with feedback and testing within the team, I conclude with a navy design that matches the context.</p>
+<!--		<p>With an attempt to smooth out the flow such as tab navigation and maps through iterations-feedback-and- testing loop, I conclude with a navy visual that matches the context.</p>-->
 		<div class = "ui">
-			<img class = "shadow" src="images/UI-1-tap%20to%20start.jpg" width = "100%">
-			<img class = "shadow" src="images/UI-2.1-select%20zone%208.jpg" width = "100%">
-			<img class = "shadow" src="images/UI-3.1-add%2030%20mins.jpg" width = "100%">
-			<img class = "shadow" src="images/UI-4-confirmation.jpg" width = "100%">
-			<img class = "shadow" src="images/UI-5-ready%20to%20pay.jpg" width = "100%">
-			<img class = "shadow" src="images/UI-6-processing.jpg" width = "100%">
-			<img class = "shadow" src="images/UI-7-print%20recceipt.jpg" width = "100%">
-			<img class = "shadow" src="images/UI-8.1-thank%20you%20print%20receipt.jpg" width = "100%">
+			<img src="images/UI-1-tap%20to%20start.jpg" width = "100%">
+			<img src="images/UI-2.1-select%20zone%208.jpg" width = "100%">
+			<img src="images/UI-3.1-add%2030%20mins.jpg" width = "100%">
+			<img src="images/UI-4-confirmation.jpg" width = "100%">
+			<img src="images/UI-5-ready%20to%20pay.jpg" width = "100%">
+			<img src="images/UI-6-processing.jpg" width = "100%">
+			<img src="images/UI-7-print%20recceipt.jpg" width = "100%">
+			<img src="images/UI-8.1-thank%20you%20print%20receipt.jpg" width = "100%">
 		</div>
 <!--
 		<p>//have a detail page for UI</p>

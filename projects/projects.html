@@ -29,18 +29,17 @@
 
 <body>
     <header id="header">
-	<div id = "navigation">
-        <ul>
-            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
-            
-    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="">PROJECTS</a></li>
-            
-    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
-            
-    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/about.html">ABOUT</a></li>
-        </ul>
-        <span id="indicator-dot"></span>
-	</div>
+    <ul id = "navigation">
+        <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+
+        <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="">PROJECTS</a></li>
+
+        <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
+
+        <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/about.html">ABOUT</a></li>
+    </ul>
+    <span id="indicator-dot"></span>
+    <div class="band" id="navBand"></div>
     </header>
    
 <!--product panel------------------------------>
@@ -50,11 +49,11 @@
             <div class="tall one">
 				<a href="../flash/flash.html">
                     <section class="tall-img">
-                        <img class="data-img" src="images/flash-grey.png" alt="flash" width="100%">
-                         <img id="project-flash"  src="images/flash-color.png" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
+                        <img class="data-img" src="images/capidea.jpg" alt="flash" width="100%">
+                         <img id="project-flash"  src="images/capidea.jpg" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
                     </section>
                     <section class="caption">
-                        <h2>Flash</h2>
+                        <h2>Capidea</h2>
                         <h3 class="project-caption">Idea Collector &amp; Incubator</h3>
                     </section>
 				</a>
@@ -63,12 +62,12 @@
 			<div class="wide two">
 				<a href="../calor/calor.html">
                     <section class="wide-img">
-                        <img class="data-img" src="images/calor-grey.png" alt="calor" width="100%">
-                         <img id="project-calor"  src="images/calor-color.png" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
+                        <img class="data-img" src="images/calor.jpg" alt="calor" width="100%">
+                         <img id="project-calor"  src="images/calor.jpg" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
                     </section>
                     <section class="caption">
                         <h2>Calor</h2>
-                        <h3 class="project-caption">Smart Faucet System</h3>
+                        <h3 class="project-caption">Smart Faucet</h3>
                     </section>
 				</a>
 			</div>
@@ -94,8 +93,8 @@
             <div class="square three">
 				<a href="../native/native.html">
                     <section class="square-img">
-                        <img class="data-img" src="images/native-grey.png" alt="native" width="100%">
-                        <img id="project-native" src="images/native-color.png" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
+                        <img class="data-img" src="images/native.jpg" alt="native" width="100%">
+                        <img id="project-native" src="images/native.jpg" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
                     </section>
                     <section class="caption">
                         <h2>Native</h2>
@@ -107,8 +106,8 @@
             <div class="square one">
 				<a href="../webux/webux.html">
                     <section class="square-img">
-                        <img class="data-img" src="images/webux-grey.png" alt="webux" width="100%">
-                        <img id="project-webux" src="images/webux-color.png" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
+                        <img class="data-img" src="images/webux.jpg" alt="webux" width="100%">
+                        <img id="project-webux" src="images/webux.jpg" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
                     </section>
                     <section class="caption">
                         <h2>Web UX</h2>
@@ -139,14 +138,14 @@
 -->
             
             <div class="square two">
-				<a href="../symbio/symbio.html">
+				<a href="../animatopoeia/animatopoeia.html">
                     <section class="square-img">
-                        <img class="data-img" src="images/symbio-grey.png" alt="symbio" width="100%">
-                        <img id="project-symbio" src="images/symbio-color.png" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
+                        <img class="data-img" src="images/animatopoeia.jpg" alt="symbio" width="100%">
+                        <img id="project-symbio" src="images/animatopoeia.jpg" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
                     </section>
                     <section class="caption">
-                        <h2>Symbio</h2>
-                        <h3 class="project-caption">Networked Sound System</h3>
+                        <h2>Animatopoeia</h2>
+                        <h3 class="project-caption">Animal Sound Matching Game</h3>
                     </section>
 				</a>
 			</div>
@@ -156,8 +155,10 @@
             <div class="square three">
 				<a href="../tv">
                     <section class="square-img">
+<!--
                         <img class="data-img" src="../motion/images/spinning-craker-no-bg.gif" alt="motion" width="100%">
                         <img id="project-motion" src="../motion/images/spinning-craker-no-bg.gif" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
+-->
                     </section>
                     <section class="caption">
                         <h2>TV/Motion</h2>
@@ -184,8 +185,8 @@
             <div class="square one">
 				<a href="../parsons/parsons.html">
                     <section class="square-img">
-                        <img class="data-img" src="images/parsons-grey.png" alt="soaphero" width="100%">
-                        <img id="project-parsons" src="images/parsons-color.png" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
+                        <img class="data-img" src="images/parsons.jpg" alt="parson" width="100%">
+                        <img id="project-parsons" src="images/parsons.jpg" width="100%" onmouseover="focusOn(this)" onmouseout="focusOut()">
                     </section>
                     <section class="caption">
                         <h2>Parsons</h2>
@@ -194,6 +195,7 @@
 				</a>
 			</div>
 			
+<!--
          <div class="square two small">
 				<a href="../soaphero/soaphero.html">
                     <section class="caption">
@@ -204,17 +206,19 @@
                     </section>
 				</a>
 			</div>
+-->
 			
 
-			<div class="square three small">
+			<div class="square three small kitchen">
 				<a href="../experiment/experiment.html">
                     <section class="caption">
-                        <h2>Experiment</h2>
-                        <h3 class="project-caption">Side projects &amp; Explorations</h3>
+                        <h2>Kitchen &amp; Lab</h2>
+                        <h3 class="project-caption">Side projects/Experiments/Explorations</h3>
                     </section>
 				</a>
 			</div>
             
+<!--
            <div class="square one small">
 				<a href="../expression/expression.html">
                     <section class="caption">
@@ -223,6 +227,7 @@
                     </section>
 				</a>
 			</div>
+-->
             
 	</div><!--product panel ends--------------->
     

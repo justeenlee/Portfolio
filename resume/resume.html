@@ -26,19 +26,18 @@
 
 	
 <body>
-		    <header id="header">
-	<div id = "navigation">
-        <ul>
-            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
-            
-    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
-            
-    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="">RESUME</a></li>
-            
-    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/about.html">ABOUT</a></li>
-        </ul>
-        <span id="indicator-dot"></span>
-	</div>
+    <header id="header">
+    <ul id = "navigation">
+        <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+
+        <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+
+        <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="">RESUME</a></li>
+
+        <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/about.html">ABOUT</a></li>
+    </ul>
+    <span id="indicator-dot"></span>
+    <div class="band" id="navBand"></div>
     </header>
 
 <!--resume panel------------------------------>
@@ -50,7 +49,7 @@
 		
 		<div id = "objective" class = "section">
 			<h3>#Objective {</h3>
-			<p><bold>Actively seeking an internship that I could strengthen my design and prototyping skills in UX or related fields.</bold></p>
+			<p><bold>Actively seeking opportunity to make impacts in interaction/motion design and IoT fields with my design and prototyping expertise.</bold></p>
 			<h3>}</h3>
 		</div>
 		
@@ -58,13 +57,16 @@
 			<h3>#Education {</h3>
 			<h4 class="offset-height">Georgia Institute of Technology - Atlanta, GA<span>Expected Dec 2016</span></h4>
 			<h4><em>BS Industrial Design; Minor in HCI</em></h4>
-			<p>• ID GPA: 4.0&nbsp;&nbsp;&nbsp;&nbsp;Overall GPA: 3.94</p>
+			<p>• ID GPA: 4.0&nbsp;&nbsp;&nbsp;&nbsp;Overall GPA: 3.9</p>
 			<p>• Emphasis on interactivity, motion and
 IoT with graduate courses:<br> <i>"Design for Interaction",<br>"User Interface Design" and<br> "Design for Interactive Environment"</i></p>
+            
+<!--
             <h4 class = "h4-nonfirst offset-height">TheKineticUI Design Course<span>April 2016 - May 2016</span></h4>
             <h4><em>Mobile Apps Motion Design</em></h4>
             <p>• Learn from a former Apple Motion Designer on HI team</p>
 			<p>• Emphasis on ideas and technical skills needed to create beautiful and meaningful animations</p>
+-->
            
 			<h4 class = "h4-nonfirst offset-height">Parsons The New School for Design - New York, NY<span>May 2014 - Jun 2014</span></h4>
 			<h4><em>School of Art, Media, and Technology</em></h4>
@@ -77,22 +79,32 @@ communication and print design</p>
 		<div id = "experience" class = "section">
 			<h3>#Experience {</h3>
 			
-            <h4  class="offset-height"><a href="http://designstudio.gatech.edu/" target="_blank">Georgia Tech GVU Research Lab</a> - Atlanta, GA
+            <h4  class="offset-height"><a href="https://pinterest.com" target="_blank">Pinterest</a> - San Francisco, CA
+				<span>May 2016 - August 2016</span>
+			</h4>
+			<h4><em>Product/Motion Design Intern</em>
+			</h4>
+			<p>• Collaborate with IOS engineers within Search+Explore team</p>
+			<p>• Use motion/animations to improve user search engagement</p>
+            <p>• Define and prototype object detection microinteraction</p>
+
+            
+            <h4  class="h4-nonfirst offset-height"><a href="http://designstudio.gatech.edu/" target="_blank">Georgia Tech GVU Research Lab</a> - Atlanta, GA
 				<span>Sep 2015 - Present</span>
 			</h4>
 			<h4><em>Undergraduate Researcher</em>
 			</h4>
 			<p>• Strategize and redefine the narrative of a quantum mechanics game</p>
 			<p>• Lead motion and interaction design and prototype new game mechanics/interaction/motion for production</p>
-            <p>• Collaborate with 2D artists and developers to implement the game in Unity 3D</p>            
-            <h4  class="h4-nonfirst offset-height"><a href="https://www.ixda.gatech.edu" target="_blank">IxDA (Interaction Design Association)</a> - Atlanta, GA
+            <p>• Collaborate with 2D artists and developers to implement the game in Unity 3D</p>           
+            
+            <h4  class="h4-nonfirst offset-height"><a href="http://ixda.gatech.edu" target="_blank">IxDA (Interaction Design Association)</a> - Atlanta, GA
 				<span>Aug 2014 - May 2016</span>
 			</h4>
 			<h4><em>President of Georgia Tech Chapter</em>
-				
 			</h4>
 			<p>• Hold events on UX topics and electronic prototyping</p>
-			<p>• Teach workshops on Illustrator, Sketch, AE, HTML/CSS3/Javascript, Framer.js and etc.</p>
+			<p>• Teach workshops on Illustrator, Sketch, AE, HTML/CSS/Javascript, Framer.js and etc.</p>
             
             <h4 class=" h4-nonfirst offset-height"><a href="https://www.mulesoft.com/" target="_blank">MuleSoft Inc</a> - San Francisco, CA
 				<span>Jun 2015 - Aug 2015</span>
@@ -100,21 +112,17 @@ communication and print design</p>
 			<h4><em>UX Design Intern</em>
 				
 			</h4>
-			<p>• Design and prototype interaction and motion of new login screen
+            <p>• Work with cross-functional teams for MuleSoft Product UX Dashboard</p>
+			<p>• Design and prototype interaction/motion of new login screen, MuleSoft Web App home screen and onboarding UX
             </p>
-            <p>• Work with cross-functional teams to
-design a MuleSoft Product UX Dashboard</p>
-            <p>• Assist on the visual design and interaction of new feature concepts</p>
-            <p>• Collaborate with PM Intern to improve the onboarding UX</p>
-            <p>• Redesign and prototype the landing page of the main MuleSoft Web App</p>            
+
             <h4 class = "h4-nonfirst"><a href="http://www.lg.com/us" target="_blank">LG Electronics</a> - Atlanta, GA<span>Jun 2014 - Aug 2014</span></h4>
 			<h4><em>Product Design Consultant</em>
 			<p>• Collaborate with multidisciplinary Georgia Tech students as a team</p>
 			<p>• Develop concept proposals of future
-interactivity for home entertainment</p>
+interactivity for home entertainment including curved TV, remote control and BLE speaker.</p>
 			<h3>}</h3>
 		</div>
-		
 		
 		<div id="projects" class = "section">
 			<h3>#Projects {</h3>
@@ -126,16 +134,17 @@ interactivity for home entertainment</p>
             <p>• Calor - Smart Faucet System under Optimizing category</p>
             
             <h4  class="h4-nonfirst">TEDxGeorgia Tech -  Design Lead<span>Oct 2015 - Apr 2016</span></h4>
+<!--
             <p>• Strategize in branding and marketing of TEDxGeorgia Tech events</p>
 			<p>• Brainstorm, design and produce assets for promotions</p>
             <p>• Improve user experience of stage, exhibit and environment design</p>
+-->
             
             <h4  class="h4-nonfirst">Core77 -  Featured<span>Sep 2015</span></h4>
             <p>• Calor - Smart Faucet System</p>
 
 			<h4  class="h4-nonfirst">Bring the Heat Hackathon - Honorable Mention<span>Jun 2015</span></h4>
-            <p>• Develop concepts for an IOS App expanding the use of an infrared camera accessory</p>
-			<p>• Design App architecture and visual asset and style guide</p>
+			<p>• Design an IOS game concepts with a FLIR One infrared camera, game architecture, visual asset and style guide</p>
             <p>• Present and assist on implementation of an MVP with Objective-C</p>
 <!--
             <h4  class="h4-nonfirst">Atlanta Goodie Hack 2015 - Atlanta, GA<span>Feb 2015</span></h4>
@@ -163,17 +172,19 @@ community green space</p>
 		
 		<div id = "skill" class = "section">
 			<h3>#Skill {</h3>
-			<p>Sketch, InVision, Adobe CC, Axure, Final Cut Pro, Solidworks, KeyShot, C4D, Unity 3D, Maya</p>
-			<p>Java, Objective-C, HTML(5), CSS, Javascript, jQuery, Framer.js, D3.js</p>
-			<p>Arduino, Processing, EAGLE, PCB, UI/UX Design, Visual/Graphic Design, Photography</p>
+			<p>Sketch, Framer, Adobe CC, Axure, Final Cut Pro, Solidworks, KeyShot, C4D, Unity 3D, Maya</p>
+			<p>Java, Objective-C, HTML(5), CSS, Javascript, jQuery, D3.js</p>
+			<p>Arduino, Processing, EAGLE, PCB, UI/UX Design, Visual/Graphic Design, Production Photography, Green Screen</p>
 			<h3>}</h3>
 		</div>
 	</div> <!--resume panel ends-->
 	
 	
+<!--
 	<div id = "pdf">
         <h3><a href = "../assets/Justeen-Resume-IX.pdf" target="_blank"><span>View and Download Resume in PDF</span></a></h3>
 	</div>
+-->
 	
 	<footer>
 		<span class="author"></span>

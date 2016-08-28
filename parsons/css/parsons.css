@@ -7,6 +7,10 @@ p>a:link {color: #fa4b2a;}
 p>a:visited {color: #fa4b2a;}
 p>a:hover{text-decoration: underline;}
 
+#navBand {
+    background-color: #fe0032;
+}
+
 /*----------------Title----------------*/
 #title-panel{
     background-color: #fe0032;

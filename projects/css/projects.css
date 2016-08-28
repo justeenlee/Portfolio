@@ -4,13 +4,13 @@
 
 #indicator-dot{background-color: #555;}
 
-#product-panel{
-    //background-color: antiquewhite;
+html{
+    background-color: #FCFCFC;
 }
 
 .square, .wide, .tall{
-    background-color: yellow;
-    background-color: #fafafa;
+    //background-color: yellow;
+    //background-color: #fafafa;
 }
 
 header{left: 50%; margin-left: -350px;}
@@ -28,21 +28,20 @@ footer{margin-top: 80px;}
 /*----------------Product----------------*/
 #product-panel {
 	position: relative;
-    width: 990px; /*880-16*2(padding)*/
+    width: 825px; /*800+25*/
     left: 50%;
-    margin-left: -495px;
+    margin-left: -412px;
 	min-height: 1100px;
     height: auto;
     margin-top: 80px;
 }
 
 #product-panel>div{
-    box-shadow: 0 0 0 0 #ccc;
     transition: .3s;
+    //background-color: yellow;
 }
 
 #product-panel>div:hover{
-    box-shadow: 0 0 10px 0 #ccc;
     transition: .3s;
 }
 
@@ -50,14 +49,13 @@ footer{margin-top: 80px;}
 /*square property*/
 .square, .wide, .tall{
 	position: relative;
-	width: 310px;
-	height: 290px;
+	width: 250px;
+	height: 250px;
 	overflow: hidden;
 }
 
-.wide{width: 635px;}
-
-.tall{height: 595px;}
+.wide{width: 525px;}
+.tall{height: 524px;}
 
 .square a{
 	-webkit-transition: color .8s; /* For Safari 3.1 to 6.0 */
@@ -80,12 +78,12 @@ footer{margin-top: 80px;}
 
 .square-img, .wide-img, .tall-img{
 	position:relative;
-    width: 310px;
-    height: 290px;
+    width: 250px;
+    height: 200px;
 }
 
-.wide-img{width: 635px;}
-.tall-img{height: 595px;}
+.wide-img{width: 525px; height: 200px;}
+.tall-img{width: 250px; height: 474px;}
 
 .square-img>img, .wide-img>img, .tall-img>img{
     position: absolute;
@@ -93,15 +91,15 @@ footer{margin-top: 80px;}
 }
 
 
-[href="../motion/motion.html"]>.square-img{
+[href="../tv"]>.square-img{
     width: 250px;
     left: 50%;
     margin-left: -125px;
-    padding-top: 20px;
+    background-color: #2E2E2E;
+    background-image: url(../../motion/images/spinning-craker-no-glow@400.gif);
+    background-size: 250px;
 }
-[href="../motion/motion.html"]>.caption{
-    margin-top: -75px; /*55default + 20adjustment*/
-}
+
 
 
 #project-motion>img{
@@ -110,36 +108,49 @@ footer{margin-top: 80px;}
 }
 
 h2{
-	font-size: 20px;
-    font-family: Roboto-Regular;
+	font-size: 16px;
+    font-family: DINPro-Medium, sans-serif;
 }
 
 h3{
-	font-size: 16px;
-    font-family: Roboto-Light;
+	font-size: 14px;
+    font-family: DINPro-Regular, sans-serif;
 }
 
 .caption{
 	position:relative;
-    width: auto;
-    height: 50px;
+    width: 250px;
+    height: 40px;
     text-align: left;
-    margin-top: -55px;
-    margin-left: 15px;
+    margin-top: 8px;
+    //margin-left: 15px;
+    text-align: center;
+    letter-spacing: -1px;
+    
 }
 
-.small{height: 100px;width: 310px;}
+.small{height: 100px;width: 250px;}
 .small .caption{
     margin-top: 25px;
+}
+
+
+
+.wide .caption{
+    width: 525px;
 }
 
 
 /*padding property*/
 .square, .wide, .tall{
 	float: left;
-	margin:15px 0px 0px 15px;
+	margin:25px 0px 0px 25px;
 }
 
+.kitchen{
+    /*250+25+25*/
+    margin-left: 300px;
+}
 
 
 
@@ -166,43 +177,65 @@ h3{
         left: 0;
         margin-left: 0;
         //background-color: blue;
-        padding: 0 15px;
+        padding: 0 25px;
         height: 2100px;
     }
 
     
 	/*clear padding for all floors*/
-	#product-panel>div{padding: 0;}
+	#product-panel>div{
+        padding: 0;
+        //background-color: yellow;
+        //opacity: .9
+    }
 
     
     .wide~.tall~.square{
-        margin-top: 15px;
+        margin-top: 25px;
     }
 	
+/*
     #product-panel>.square{
         width: 310px;
     }
+*/
     
+
+    
+/*
     #product-panel>.square+.three,
     #product-panel>.wide>.square+.one,
     .small
     {
-        margin-left: 15px;
+        margin-left: 25px;
+    }
+*/
+    
+    
+    #product-panel>.square,
+    #product-panel>.wide{
+        margin-left: 25px;
+    
     }
     
     #product-panel>.small.two,
     #product-panel>.small.one
     {
-         margin-left: 15px;
+         margin-left: 25px;
     }
     /*---tall wide square square ends--*/
 
+    
+    
 
     
     /*---------span tall shade---------------*/
     #product-panel>.tall{
-        width: 100%;
+        left: 50%;
+        margin-left: -125px;
     }
+    
+
 
 }/* for 680px or less media query ends */
 
@@ -212,27 +245,61 @@ h3{
 /* for 480px or less */
 @media screen and (max-width: 480px) {
     
-    body, #product-panel{min-height: 2700px;}
+    body, #product-panel{min-height: 2800px;}
     
     body{
         left: 0;
         margin-left: 0;
         width: 100%;
     }
-        
-    .square-img{
-        width:320px;
-        position: relative;
-        left: 50%;
-        margin-left: -160px;
-        //background-color: blue;
-    }
-	
-	.square, .wide{
-		margin-right: 16px;
-		width: auto;
-		height: auto;
+        	
+	.square{
+		height: 330px;
 	}
+    
+    .wide {
+        height: 184px;
+    }
+    
+    .small{
+        height: 100px;
+    }
+    
+    .square-img{
+        width: 100%;
+        height: 280px;
+    }
+    
+    .wide-img{
+        width: 100%;
+        height: 134px;
+    }
+    .wide .caption{width: 100%;}
+
+    
+    
+    .tall{height: 714px;}
+    .tall-img{
+        width: 100%;
+        height: 664px;
+    }
+    
+    
+    
+    .caption{width: 100%;}
+    
+    
+    
+    
+    
+    [href="../tv"]>.square-img{
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        background-color: #2E2E2E;
+        background-image: url(../../motion/images/spinning-craker-no-glow@400.gif);
+        background-size: 100% 280px;
+    }
 		
 	.square a>h2, .wide a>h2, .tall a>h2{
 		position:absolute;
@@ -244,23 +311,16 @@ h3{
 	
 	.square, .wide, .tall{
 		float:none;
-	}
-    
-    .wide-img{
         width: 100%;
-    }
-    
-    .tall-img{
-        width: 85%;
-        margin-left: 40px;
-    }
-    
-    .tall-img>img{max-width: 300px;}
+	}
+
 	
     #product-panel>.square,
     #product-panel>.wide,
     #product-panel>.tall{
         width: 100%;
+        left: 0;
+        margin-left: 0;
     }
     
     
