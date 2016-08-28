@@ -68,7 +68,7 @@ p{
     z-index: 9;
     position: relative;
     width: 700px; /*0830 880 to 700, potentially delete this 0614*/  
-    height: 40px; /*0830 60 to 50*/
+    height: 46px; /*0830 60 to 50*/
 	background-color: transparent; /*0830 white to trans*/
     padding-top: 16px;
 	//overflow: hidden;
@@ -107,8 +107,8 @@ li>a:link, #navBand {transition: .35s ease;}
     width: 6px;
     height: 6px;
     background-color: #fff;
-    border-radius: 5px;
-    top: 44px;
+    //border-radius: 5px;
+    top: 48px;
     transition: .7s ease;
     //opacity: 0; /*hide when loading 1022*/
 }

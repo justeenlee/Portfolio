@@ -4,6 +4,7 @@ var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
 var currentPath = window.location.pathname.split("/")[(window.location.pathname.split("/").length)-2];
 
 var navColorAtTitle, navColorAtContent;
+var curNavLinkColor = "#F51488";
 
 function move(input){
     var dot = $("#indicator-dot");
@@ -14,27 +15,22 @@ function move(input){
     if ((input =="Portfolio")||(input=="justeenlee.com")||(input == "")){
         input = "index";
     }
-    
+    console.log(input);
     if (window.innerWidth > 680){
         if(input == "index"){
-            //dot.style.left = "210px";
-            dot.css("left","18%");
+            dot.css("left","17.6%");
         } else if (input == "resume"){
-            //dot.style.left = "552px";
-            dot.css("left","67.6%");
+            dot.css("left","63.5%");
         } else if (input == "about"){
-            //dot.style.left = "695px";
-            dot.css("left","88.5%");
+            dot.css("left","83.5%");
         } else {
             // projects
-            //dot.style.left = "395px";
-            dot.css("left","45%");
+            dot.css("left","42%");
         }
         $("#indicator-dot").css("opacity", 1);
     } else {
          $("#indicator-dot").css("opacity", 0);
-    }
-    
+    }    
 }
 
 //auto run function to set up when page is loaded
@@ -137,7 +133,20 @@ function tempNavSet(){
             var linkName = "#"+navLinkArray[i];
             $(linkName).css("color", "#F51488");
         }
-        $("#indicator-dot").css("backgroundColor", "#F51488");
+    }
+    $("#indicator-dot").css("backgroundColor", "#F51488");
+}
+
+function setCurNavLinkColor(cur){
+    if(cur == "index"){
+        $("#link-home").css("color", curNavLinkColor);
+    } else if (cur == "resume"){
+        $("#link-resume").css("color", curNavLinkColor);
+    } else if (cur == "about"){
+        $("#link-about").css("color", curNavLinkColor);
+    } else {
+        // projects
+        $("#link-projects").css("color", curNavLinkColor);
     }
 }
 
