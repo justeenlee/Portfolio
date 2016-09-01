@@ -35,11 +35,12 @@ function move(input){
 
 //auto run function to set up when page is loaded
 (function(){
+    console.log("current path = " + currentPath);
     navColorAtTitle = $("#navBand").css("backgroundColor");
     move(currentPath);
     setFullWidth();
     setNav();
-    tempNavSet();
+    setInitialNavProperty();
 })();
 
 
@@ -118,7 +119,7 @@ function setNav(){
     
 }
 
-function tempNavSet(){
+function setInitialNavProperty(){
     if  ((currentPath == "motion") ||
        (currentPath == "expression")){
         for (var i=0; i<navLinkArray.length; i++){
@@ -134,7 +135,16 @@ function tempNavSet(){
             $(linkName).css("color", "#F51488");
         }
     }
-    $("#indicator-dot").css("backgroundColor", "#F51488");
+    //090116 hard code indicator color
+    if (currentPath == "" ||
+        currentPath == "index" ||
+       currentPath == "projects" ||
+       currentPath == "about" ||
+       currentPath == "resume") { 
+        $("#indicator-dot").css("backgroundColor", "#F51488");
+    } else {
+        $("#indicator-dot").css("backgroundColor", "#FFFFFF");
+    }
 }
 
 function setCurNavLinkColor(cur){

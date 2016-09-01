@@ -73,11 +73,6 @@ p>a:hover{text-decoration: underline;}
 	font-size: 26px;
 } /*rewritten in media query*/
 
-.requirement>h3{
-	font-size: 16px;
-	text-align: center;
-}
-
 .album{
 	position: relative;
 	left: 50%;

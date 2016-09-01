@@ -7,9 +7,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 
-
 h1, h2, h3, h4, h5, h6, p, div{
-	font-family: "TyponineSansRegular";
+	font-family: sans-serif;
 	margin: 0px; /*delete if fix issue1*/
     /*font-weight: 300; 0830 delete*/
 }
@@ -340,6 +339,36 @@ img+.slide-container{
     height: auto;
 }
 
+/* ======== master style for list of projects ======= */
+.product-title{
+    margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.product-title>h1, .product-title>h2{
+	font-family: "TyponineSansRegular";
+	text-align: center;
+}
+
+.product-title>h1{
+	font-size: 44px;
+	color: #444;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.product-title>h2{
+	line-height: 1;
+	font-size: 26px;
+}
+
+.product-wrapper>h3{
+	font-family: "TyponineSansRegular";
+}
+
+/* ======================================= */
+
+
 .band {
     position: relative;
     left: 50%;
@@ -365,7 +394,7 @@ h6>a:link {color: #00aeef; text-decoration:none;}
 h6>a:visited {color: #00aeef;}
 h6>a:hover {color: silver;}
 
-h6{width: 340px; height: auto;}
+.comment>h6{width: 500px; height: auto; font-family: "TyponineSansRegular"}
 /*Footer-------------------------*/
 
 
@@ -379,7 +408,6 @@ footer{
 	font-size: 10pt; 
 	overflow: hidden;
     margin-bottom: 10px;
-
 }
 
 .author{

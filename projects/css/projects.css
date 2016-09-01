@@ -23,7 +23,9 @@ img~img{
 
 body{height: auto;width: 990px; margin-left: -495px}
 
-footer{margin-top: 80px;}
+footer{
+    margin-top: 80px;
+}
 
 /*----------------Product----------------*/
 #product-panel {

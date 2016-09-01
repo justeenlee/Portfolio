@@ -122,7 +122,7 @@ svg{
     height: 600px;
     //background-color: aquamarine;
     //background-color: #151515;
-    //top: 50px;
+    top: -52px;
     z-index: 0;
     //overflow: hidden;
 }
@@ -132,8 +132,6 @@ svg{
     left: 50%;
     margin-left: -800px;
     opacity: .35;
-    //background-color: #000;
-    //background-blend-mode: multiply;
 }
 #test{
     position: absolute;
@@ -176,7 +174,8 @@ div[data-value = "400"]{
         transform: translateX(0px);
         -webkit-transform: translateY(0px);
     }
-    50%{transform: translateX(-325px);
+    50%{
+        transform: translateX(-325px);
         -webkit-transform: translateX(-325px);
     }
     100% {
