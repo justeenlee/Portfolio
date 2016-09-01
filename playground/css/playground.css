@@ -50,6 +50,7 @@ body{
     background-color: white;
     opacity: .1;
     z-index: 5;
+    animation: autoFlash 2.35s 2s 2;
     -webkit-transition: .225s cubic-bezier(0,.65,.63,.99);
     transition: .225s cubic-bezier(0,.65,.63,.99);
 }
@@ -212,6 +213,20 @@ div[data-value = "400"]{
 
 
 /*----------------animations ----------------*/
+@keyframes autoFlash {
+    0% {opacity: .1;}
+    2%{opacity: 0;}
+    4%{opacity: .3;}
+    6%{opacity: 0;}
+    8%{opacity: .3;}
+    10%{opacity: 0;}
+    12%{opacity: .2}
+    15%{opacity: .2;}
+    /* wait 2s after */
+    16%{opacity: .1}
+    100%{opacity: .1}
+}
+
 @keyframes flashOnHover {
     0% {opacity: .1;}
     10%{opacity: 0;}
@@ -321,8 +336,21 @@ footer{margin-top:15px; color: #fff;}
 }
 
 
-
-
 @media screen and (max-width: 480px){
+    #personal-title {
+        left: 316px;
+        width: 320px;
+        font-size: 35px;
+    }
 
+    #personal-statement{
+        left: 316px;
+        width: 320px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    div[data-value = "400"]{top: 543px;}
+    div[data-value = "700"]{top: 548px;}
+    
 }
