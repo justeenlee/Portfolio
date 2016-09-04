@@ -3,7 +3,7 @@ var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
 
 var currentPath = window.location.pathname.split("/")[(window.location.pathname.split("/").length)-2];
 
-var navColorAtTitle, navColorAtContent;
+var navLinkColorAtTop, navColorAtTop, navColorAtContent;
 var curNavLinkColor = "#F51488";
 
 function move(input){
@@ -36,17 +36,18 @@ function move(input){
 //auto run function to set up when page is loaded
 (function(){
     console.log("current path = " + currentPath);
-    navColorAtTitle = $("#navBand").css("backgroundColor");
+    navColorAtTop = $("#navBand").css("backgroundColor");
+    navLinkColorAtTop = $("#link-home").css("color");
     move(currentPath);
     setFullWidth();
-    setNav();
+    setNavLinkColor();
     setInitialNavProperty();
 })();
 
 
 $(window).scroll(function (){
     check();
-    setNav();
+    setNavLinkColor();
 });
 
 $(window).resize(function(){
@@ -90,10 +91,12 @@ function check(){
     } else {
         toChangeNavColor = false;
     }
+    console.log("change color = " + toChangeNavColor);
 }
 
-//set nav color from start + update navigation text color and cf color,opacity as scroll
-function setNav(){
+//triggered when scrolling
+//set nav color from start + update navigation text color and cf color,opacity
+function setNavLinkColor(){
     var i = 0;
     if (toChangeNavColor){    
         var currentViewTopEdgePosition = $(window).scrollTop();
@@ -102,10 +105,10 @@ function setNav(){
         } else {
             for (var i=0; i<navLinkArray.length; i++){
                 var linkName = "#"+navLinkArray[i];
-                $(linkName).css("color", "#fff");
+                $(linkName).css("color", navLinkColorAtTop);
             }
-            $("#indicator-dot").css("backgroundColor", "#fff");
-            $("#navBand").css("backgroundColor",navColorAtTitle);
+        $("#indicator-dot").css("backgroundColor", navLinkColorAtTop);
+    $("#navBand").css("backgroundColor", navColorAtTop);
         }
     }
     if (window.innerWidth<679) {
@@ -142,6 +145,8 @@ function setInitialNavProperty(){
        currentPath == "about" ||
        currentPath == "resume") { 
         $("#indicator-dot").css("backgroundColor", "#F51488");
+    } else if (currentPath == "pinterest") {
+        $("#indicator-dot").css("backgroundColor", "#BD081C");
     } else {
         $("#indicator-dot").css("backgroundColor", "#FFFFFF");
     }
