@@ -23,7 +23,11 @@ footer{color: #555;}
     margin-top: -30px;
 }
 
-p{font-family: roboto-light;}
+p{
+    font-size: 23px;
+    font-family: DINPro-Light, sans-serif;
+    line-height: 1.15;
+}
 
 #cf{
     background-color: #000;
@@ -68,6 +72,7 @@ iframe{
 	//height: 470px;
     height: auto;
 	float:left;
+    border: 0;
 }
 
 .gif-object>h2{
@@ -91,7 +96,7 @@ iframe{
 
 div[data-type="motion-gif"]{
 	width: 338px;
-	background-color:#000;
+	//background-color:#000;
 }
 
 

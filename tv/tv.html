@@ -55,7 +55,8 @@
 		</div>
 -->
         <p>
-		Give vitality to all existing matters with motion and interaction in AE, C4D. More motion and visual exploration on <a href="https://dribbble.com/justeenlee" target="_blank">Dribbble</a>.
+            The my excitement towards <a href="http://thedesigninspiration.com/articles/20-incredible-mobile-ui-animations-in-gifs/" target="_blank">animations</a> in 2014 began my journey of exploring motion design. This series of work captures my fun experiments with timing, easing, modeling and lighting techniques in <i>After Effects</i>, <i>Rhino</i> and <i>Cinema 4D</i>.<br><br>
+        Follow my <a href="http://instagram.com/justeenlk" target="_blank">Instagram</a> and <a href="https://dribbble.com/justeenlee" target="_blank">Dribbble</a> to keep up with these ongoing moments of motion.
 		</p>
     </div>
 <!--product panel------------------------------>
@@ -69,6 +70,50 @@
         <div class="video-demo">
             <iframe src="https://player.vimeo.com/video/104974350?color= ED7032&portrait=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 		<div class="gif-container">
+            
+            <div class="gif-object">
+				<div data-type="motion-gif">
+				<img src="images/boltandnut.gif" width="100%">
+				</div>
+			</div>
+            
+            <div class="gif-object">
+				<div data-type="motion-gif">
+				<img src="images/lowpolydragon.gif" width="100%">
+				</div>
+			</div>   
+            
+            <div class="gif-object">
+				<div data-type="motion-gif">
+				<img src="images/siri.gif" width="100%">
+				</div>
+			</div>   
+            
+            <div class="gif-object">
+				<div data-type="motion-gif">
+				<img src="images/virus.gif" width="100%">
+				</div>
+			</div>
+            
+            <div class="gif-object">
+				<div data-type="motion-gif">
+				<img src="images/youtube.gif" width="100%">
+				</div>
+			</div>
+            
+            <div class="gif-object">
+				<div data-type="motion-gif">
+				<img src="images/bring-life-surprise-and-delight.gif" width="100%">
+				</div>
+<!--
+				<h2>The Dots</h2>
+				<p>Typography and geometry driven motion brings life surprise and delight with simple dots.
+					</p>
+-->
+			</div>
+            
+            
+            
             <div class="gif-object">
 				<div data-type="motion-gif">
 				<img src="images/spinning-craker-no-glow@400.gif" width="100%">
@@ -89,16 +134,7 @@
 					</p>
 -->
 			</div>
-             <div class="gif-object">
-				<div data-type="motion-gif">
-				<img src="images/bring-life-surprise-and-delight.gif" width="100%">
-				</div>
-<!--
-				<h2>The Dots</h2>
-				<p>Typography and geometry driven motion brings life surprise and delight with simple dots.
-					</p>
--->
-			</div>
+
             <div class="gif-object">
 				<div data-type="motion-gif">
 				<img src="images/hypnosis-anaglyph.gif" width="100%">
@@ -168,29 +204,17 @@
 				<p>Celebrating final match this year between Argentina and Germany, I create a teaser animation to promote this battle.</p>
 -->
 			</div>
+<!--            <h1 id="count">0</h1>-->
 
-			<div class="gif-object">
-				<div data-type="motion-gif">
-					<img src="images/progress-ring.gif" width="100%">
-				</div>
-<!--
-			<h2>Infinite Loop</h2>
-			<p>Using radial wipe, I create a progress ring with hue-changing infinite loop, to give users something pleasing to watch while waiting.</p>
--->
-			</div>
 				
-			<div class="gif-object">
-				<div data-type="motion-gif">
-				<img src="images/one-to-another.gif" width="100%">
-				</div>
-<!--
-			<h2>One to Another</h2>
-			<p>I play with scale and use some exaggeration to make ball bounce into a cube.</p>
--->
-			</div>
 		</div>
 	</div><!--product panel ends------------------->
-    <div id="light"></div>
+<!--
+    <div id="light">
+    
+        
+    </div>
+-->
 	
 	
 
@@ -204,6 +228,16 @@
 
     <script src="https://player.vimeo.com/api/player.js"></script>
 <script defer>
+    
+    var gifCount = $(".gif-container > .gif-object").length;
+    var unitMultiplier = Math.ceil(gifCount/2);
+    $(".gif-container").css("height", 254*unitMultiplier+50);
+    
+    
+    console.log(gifCount + $("#count"));
+    
+    $("#count").html();
+    
     var bw = $( document ).width(),
         bh = $( document ).height();
     var light = $("#light");
