@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="../css/newstructure.css">
 	<link rel="stylesheet" href="css/turo.css">
 	<script src="../js/jquery-1.11.1.min.js"></script>
-    <script src="js/calor.js" defer></script>
     <script src="../js/overall.js" defer></script>
 	<script src="../js/jquery.flexslider.js" defer></script>
         
@@ -33,19 +32,19 @@
 
 	
 <body>
-    <div id = "navigation">
-        <ul>
-            <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
-            
-    <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
-            
-    <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
-            
-    <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/">ABOUT</a></li>
-        </ul>
-        <span id="indicator-dot"></span>
-	</div>
-	<div id = "cf"></div>
+    <header id="header">
+    <ul id = "navigation">
+        <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+
+        <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+
+        <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
+
+        <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="">ABOUT</a></li>
+    </ul>
+    <span id="indicator-dot"></span>
+    <div class="band" id="navBand"></div>
+    </header>
 
 
 <!--title panel------------------------------>
@@ -57,9 +56,9 @@
         <div id ="title-description">
             <h1>Turo</h1>
             <h2>
-                Smart Thermometer System
+                Smart Thermometer
             </h2>
-            <h3>Better preparation with more accurate data</h3>
+            <h3>Stay warm before step outside</h3>
         </div>           
     </div>
 	
@@ -67,8 +66,9 @@
 <!--intro panel------------------------------>
     <div id = "intro-panel">
         <p>
-        Turo is a smart thermometer system that provides real-time temperature of your destination via crowdsourcing and suggest what to wear with machine learning to keep you stay prepared everyday.
+        Turo is a smart thermometer that provides real-time temperature data of target location via crowdsourcing. Its accompanied app uses machine learning to suggest you how much to wear before you step out on your doorstep.
 		</p>
+        <p><i>*Work in progress.</i></p>
     </div>
     	
 <!--research panel------------------------------>
@@ -79,6 +79,7 @@
             </h3>
         </div>
         
+<!--
 		<img src="images/research-pedestrian.jpg" width="100%">
         
         <div class="quote">
@@ -93,13 +94,9 @@
             </svg>
             <h3>After I leave my apartment, I often find it colder than expected</h3>
         </div>
+-->
         
-        
-		<div class="highlight">
-			<h3>tertiary and secondary research
-			</h3>
-		</div>
-		<p class="short-caption">According to <i>Harvard Medical School and flu experts</i>, findings show:</p>
+		<p>Through tertiary and secondary research, I look into research findings by <i>Harvard Medical School and flu experts</i>:</p>
 		<div class="current-study">
 			<p class="short-caption">
 			Low temperature</p>
@@ -111,14 +108,11 @@
 			<p class="short-caption">
 			Increase the chance of cold infection</p>
 		</div>
-		<div class="highlight">
-			<h3>Primary Research: survey
-			</h3>
-		</div>
-		<p class="short-caption">According to the survey I conducted in 2014, the result shows:</p>
-		<div class="primary-research">
-			<img src="images/research-primary-research.jpg" width="100%">
-		</div>
+		<p>To gather primary research data, I conduct a survey sampling how people's life style relate to temperature, and the summary of the response shows:</p>
+        <img src="images/research-primary-research.jpg" width="100%">
+        
+        
+<!--
 		<div class="highlight">
 			<h3>Extract the causal relationship through mapping
 			</h3>
@@ -133,35 +127,44 @@
 				  </ul>
 				</div>
 			  </section>
-		</div><!-----flexslider ends----->
+        </div>
+
 		
 		
 		<div class="highlight">
 			<h3>Discover Insights
 			</h3>
 		</div>
-		<p class="insight">
-			Quick access of accurate information 
-			<br>Better preparation against the cold weather
-		</p>
+ -->
+        
+        <div class="band">
+        <div class="statement">
+			<h3>Give users quick access of accurate data to better prepare for the cold weather before they step outside.
+			</h3>
+		</div>
+        </div>
+
 		<img src="images/moodboard.jpg" width="100%">				
-		<p>I drawing inspiration from products that convey something similar in their form: <i>Clarity, Efficiency and Continuity.</i></p>
+		<p>Looking into products for inspiration, I look for particular ones that convey <em>Clarity, Efficiency and Continuity </em> through their form and appearance.</p>
     </div>
 
 <!--ideation panel------------------------------>
 	
 	<div id = "ideation-panel" class = "panel">
 		<img src="images/ideation-photo-one.jpg" width="100%">
+<!--
 		<img src="images/ideation-phase-one.jpg" width="100%">
 		<img src="images/ideation-phase-two.jpg" width="100%">
 		<img src="images/ideation-phase-three.jpg" width="100%">
 		<img src="images/ideation-phase-four.jpg" width="100%">
 		<img src="images/ideation-final-form.jpg" width="100%">
+-->
     </div><!--ideation panel ends-------------------->
 
 
 <!--protytype panel------------------------------>
 	<div id = "prototype-panel" class = "panel">
+        <!--
 		<div class = "loading slide-container">
 			  <section class="slider">
 				<div class="flexslider" id = "slider-research"  slidespeed = "3800">
@@ -175,7 +178,7 @@
 				  </ul>
 				</div>
 			  </section>
-		</div><!-----flexslider ends----->
+		</div>
 		<div  class = "loading slide-container">
 			<div id="main" role="main">
 			  <section class="slider">
@@ -191,14 +194,16 @@
 				</div>
 			  </section>
 			</div>
-		</div><!-----flexslider ends----->
+		</div>
 		<p>Then I use wood and acrylic sheet to prototype the form.</p>
 		<img src="images/prototype-model-all.jpg" width="100%">
 		<div id="xbee-demo" class="video-demo"></div>
+-->
 	</div> 
 	
 <!--product panel------------------------------>
 	<div id = "product-panel" class = "panel">
+<!--
 		<img src="images/product-context-of-use.jpg" width="100%">
 		<img src="images/product-quick-reference.jpg" width="100%">
 		<img src="images/product-stay-warm.jpg" width="100%">
@@ -206,16 +211,22 @@
 		<img src="images/product-install.jpg" width="100%">
 		<img src="images/product-familiar.jpg" width="100%">
 		<img src="images/product-pitch.jpg" width="100%">
+-->
+        
+
 	</div>
+    
+        <p><i>*Work in progress.</i></p>
 	
 <!--other panel------------------------------>
 	
 <!--comment panel------------------------------>
 	<div class = "comment">
-		<h6><bold>Date</bold>: 2014</h6>
+		<h6><bold>Date</bold>: Present</h6>
 		<h6><bold>Client</bold>: Studio Project</h6>
 		<h6><bold>Team</bold>: Individual/Team(a line of products)</h6>
-		<h6><bold>State</bold>: Concept/Prototype</h6>
+		<h6><bold>State</bold>: Prototype</h6>
+        <h6><bold>Keyword</bold>: temperature, sensor technology, IoT, wireless</h6>
 	</div>
 	
 <!--body ends + footer ------------------------->
