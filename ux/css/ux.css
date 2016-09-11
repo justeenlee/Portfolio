@@ -10,11 +10,11 @@ p>a:link {color: #FFC413; text-decoration:underline}
 a:visited {color: #FFC413;}
 
 #navBand {
-    background-color: #00A4E6;
+    background-color: #C2EAF2 ;
 }
 
 #title-panel{
-    background-color: #00A4E6;   
+    background-color: #C2EAF2 ;   
 }
 
 #title-img{
@@ -22,8 +22,8 @@ a:visited {color: #FFC413;}
 }
 
 #title-img>img{
-    width: 500px;
-    margin-left: -250px;
+    width: 800px;
+    margin-left: -400px;
 }
 
 /*----------------product panel----------------*/
