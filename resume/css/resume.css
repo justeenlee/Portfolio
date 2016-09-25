@@ -1,6 +1,11 @@
 .li-nav>a:link,
-.li-nav>a:visited 
-{color: #555;}
+.li-nav>a:visited, p a
+{color: #555; text-decoration: none;}
+
+p a:hover{
+    color: #F51488;
+}
+
 #indicator-dot{background-color: #555;}
 
 /*purple #961176*/
@@ -13,8 +18,9 @@ span.course{
     border-bottom: 1px solid rgba(150,17,118, .75);
 }
 span.course::after{
-    
 }
+
+
 
 
 p{

@@ -87,60 +87,13 @@ a:visited {color: #FFC413;}
 }
 
 /*----------------Market----------------*/
-.app-left, .app-right{
-    position: relative;
-    left: 50%;
-    margin-left: -350px;
-    width: 700px;
-    height: 435px;
-    overflow: hidden;
-}
-
-
-.app-left-ui, 
-.app-left-info, 
-.app-right-ui, 
-.app-right-info{
-    position: relative;
-    float: left;
-    overflow: hidden;
-}
-
 .app-left-ui, .app-right-ui {
-    position: relative;  
-    margin-top: 60px;
-}
-.app-left-ui{margin-left: 70px;}
-/*reposition app-right content*/
-.app-right>*{position: absolute;}
-.app-right-ui{left: 450px;}
-
-.app-left-info>*, .app-right-info>*{
-    width: 350px;
+    margin-top: 30px;
 }
 
-.app-left-info, .app-right-info{
-    margin-left: 50px;
-    padding-top: 100px;
-}
-
-
-.app-left-info>h2, .app-right-info>h2{
-    font-size: 50px;
-    font-family: Roboto-Regular;
-}
-.app-left-info>h3, .app-right-info>h3{
-    font-size: 30px;
-    margin-bottom: 15px;
-    line-height: 1.4;
-    font-family: Roboto-Light;
-}
-
-.app-left-info>h4, .app-right-info>h4{
-    font-size: 22px;
-    line-height: 1.4;
-    font-family: Roboto-Light;
-
+.app-left-ui>img, .app-right-ui>img{
+    width: auto;
+    height: 450px;
 }
 
 #market-panel .band{padding: 0px;}

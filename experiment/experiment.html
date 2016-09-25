@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Experiment | Justeen Lee</title>
-    <meta name="description" content="A collection of selected side projects exploring and experimenting with different mediums">
+    <meta name="description" content="Playing with Electroincs">
 	<meta name="keywords" content="experiment, exploration, pet, cooking, christmas, interaction, IX, industrial, design, user experience, UX, user interface, UI, justeen, san francisco, new york, hong kong" />
  	<link rel="shortcut icon" href="../assets/favicon.ico"/>
 	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="css/experiment.css">
 	<script src="../js/jquery-1.11.1.min.js"></script>
     <script src="../js/overall.js" defer></script>
+	<script src="../js/jquery.flexslider.js" defer></script>
+
 
     
 	<script>
@@ -45,22 +47,107 @@
 
 <!--title panel------------------------------>	
 	<div id = "title-panel">
-		<img src="images/product-on-marble.jpg" width="100%">
+        <div id = "title-img">
+		  <img src="images/ee.png" width="100%">
+        </div>
     </div>
 	
 <!--intro panel------------------------------>
     <div id = "intro-panel">
-        <p>
-		A collection of selected side and short projects exploring and experimenting with different mediums.
+        <p class="din">
+		Since my first experience with electronic prototyping in 2013, I let my curiosity immerse in questioning how interaction I could make with these electroincs and how I could deliver an interactive experience from scratch to everyone around me. As a result, I found my way into this intricate and intriguing world from dabbling in wiring to honing product prototyping skills.
 		</p>
     </div>
 
 <!--product panel------------------------------>
 	<div id = "product-panel">
-        <!--QM------------------------------>
+        <div class = "product-wrapper">
+			<div class = "product-title">
+				<h1>Animatopoeia</h1>
+                <h2>Animal Sound Matching Game</h2>
+			</div>
+			<div id="animatopoeia" class="video-demo"></div>
+            <div class = "loading slide-container">
+              <section class="slider">
+                <div class="flexslider" id="PCB-fade" speed = "3000">
+                  <ul class="slides">
+                    <li>
+                    <img src="images/prototype-PCB-EAGLE.png" width="100%">
+                    </li>
+                    <li>
+                    <img src="images/prototype-PCB-unsoldered.jpg" width="100%">
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>	
+            <p>Animatopoeia is an handheld interactive device with which you can play an animal sound memory game. As the more correct matches your get, the more complex the sound sequence would get, making it fun for ones age 1 to infinity.</p>
+			<div class = "comment">
+				<h6><bold>Date</bold>: 2015</h6>
+                <h6><bold>Keyword</bold>: audio-visual, game, memory, sound, electronics</h6>
+			</div>
+		</div>
+        <!-- ------------------------------>
 		<div class = "product-wrapper">
+			<div class = "product-title">
+				<h1>Trax</h1>
+                <h2>EMG Sensor-Embeded Wearable for Athletes</h2>
+			</div>
+			<div id="trax" class="video-demo"></div>
+            <p>Trax is designed for active individuals and athletes to monitor their training performance and injury recovery progress through EMG sensors. After applying the kinesiology tape with electrodes, you can easily start tracking with the brace by a snap connection.</p>
+			<div class = "comment">
+				<h6><bold>Date</bold>: 2013</h6>
+                <h6><bold>Keyword</bold>: EMG, athlete, sport, rehab, training, sensor, electronics, IoT</h6>
+			</div>
+		</div>
+        <!-- ------------------------------>
+		<div class = "product-wrapper">
+			<div class = "product-title">
+				<h1>Symbio</h1>
+                <h2>Change the way you experience sound</h2>
+			</div>
+			<div id="symbio" class="video-demo"></div>
+            <p>Symbio is network of devices that changes the way you experience sound via the fusion of hardware and software. It not only helps people with progressive hearing loss, but also the enhances music listening experience, or even serves as a baby monitor, etc.</p>
+			<div class = "comment">
+				<h6><bold>Date</bold>: 2014</h6>
+                <h6><bold>Team</bold>: In collaboration with <a href = "http://joshuadycus.com" target="_blank">Josh Dycus</a> and <a href ="http://courtneygruber.com" target="_blank">Courtney Gruber</a></h6>
+                <h6><bold>Note</bold>: Exhibition at HEAL Event Open House 2014</h6>
+                <h6><bold>Keyword</bold>: sound, bone conduction, wearable, sensor, electronics, IoT</h6>
+			</div>
+		</div>
+        
+        <!--Puppy Watch------------------------------>
+		<div class = "product-wrapper">
+			<div class = "product-title">
+				<h1>Puppy Watch</h1>
+				<h2>Track how your puppy is doing when you're out</h2>
+			</div>
+			<div id="puppy-watch" class="video-demo"></div>
+            <p>
+                Collaborating with another CS student, we created a pet wearable that monitor how your pet behaved at home after you left for work. Embedded a microphone, an RFID reader and accelerometer, the collar tracks how much your pet barked, ate and exercised.
+            </p>
+			<div class = "comment">
+				<h6><bold>Date</bold>: 2013</h6>
+				<h6><bold>Team</bold>: In collaboration with <a href = "http://taylorkelly.me/" target="_blank">Taylor Kelly</a></h6>
+                <h6><bold>Keyword</bold>: wearable design, pet, tracking, IoT</h6>
+			</div>
+		</div>
+        
+        <!-- ------------------------------>
+		<div class = "product-wrapper">
+			<div class = "product-title">
+				<h1>LED Matrix through Veneer Testing</h1>
+			</div>
+			<div id="LED-veneer" class="video-demo"></div>
+			<div class = "comment">
+				<h6><bold>Date</bold>: 2013</h6>
+                <h6><bold>Keyword</bold>: veneer, electronics, LED Matrix, experiment</h6>
+			</div>
+		</div>
+
 			
         <!--Christmas Challenge------------------------->
+<!--
 		<div class ="product-wrapper">
 			<div class = "product-title">
 				<h1>Christmas Challenge</h1>
@@ -77,8 +164,13 @@
 				<h6><bold>State</bold>: Production</h6>
                 <h6><bold>Keyword</bold>: Christmas gift, holiday gift, ornament, DIY</h6>
 			</div>
-		</div><!--Christmas Challenge------>
+		</div>
+-->
+        <!--Christmas Challenge------>
+        
+        
         <!--agent------------------------------>
+<!--
 		<div class = "product-wrapper">
 			<div class = "product-title">
 				<h1>AGENT</h1>
@@ -91,6 +183,7 @@
 				<h6><bold>Keywords</bold>: Motion, Futuristic UI and game design</h6>
 			</div>
 		</div>
+-->
         <!--Parsons------------------------------>
 <!--
 		<div class = "product-wrapper">
@@ -108,21 +201,7 @@
         <!--Google Drive------------------------------>
 		
         
-		<!--Puppy Watch------------------------------>
-		<div class = "product-wrapper">
-			<div class = "product-title">
-				<h1>Puppy Watch</h1>
-				<h2>Track how your puppy is doing when you're out</h2>
-			</div>
-			<div id="puppy-watch" class="video-demo"></div>
-			<div class = "comment">
-				<h6><bold>Date</bold>: 2013</h6>
-				<h6><bold>Team</bold>: In collaboration with <a href = "http://taylorkelly.me/" target="_blank">Taylor Kelly</a></h6>
-				<h6><bold>State</bold>: Prototype</h6>
-                <h6><bold>Keyword</bold>: wearable design, pet, tracking, IoT</h6>
-			</div>
-		</div>
-
+		
 	</div> <!--product panel ends-->
 	
 	
@@ -136,14 +215,27 @@
 </body>
     
     <script>
+        $(window).load(function(){
+          $('.flexslider').flexslider({
+            animation: "fade",
+            start: function(slider){
+              $('div').removeClass('loading');
+            }
+          });
+        });
         //load video
         $(window).bind("load",
             function() {setTimeout(addVideo, 1400);}
         );
         function addVideo(){
-             document.getElementById("qm-trailer").innerHTML =	'<iframe src="http://player.vimeo.com/video/156731404?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
-            document.getElementById("puppy-watch").innerHTML =	'<iframe src="http://player.vimeo.com/video/101643280?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
-            document.getElementById("seesaw").innerHTML =	'<iframe src="http://player.vimeo.com/video/152912369?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+            
+            document.getElementById("animatopoeia").innerHTML =	'<iframe src="http://player.vimeo.com/video/143092412?byline=0&portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+            document.getElementById("trax").innerHTML =	'<iframe src="http://player.vimeo.com/video/102564768?byline=0&portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+            
+            document.getElementById("symbio").innerHTML =	'<iframe src="http://player.vimeo.com/video/99761829?byline=0&portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+             document.getElementById("LED-veneer").innerHTML =	'<iframe src="http://player.vimeo.com/video/91181193?byline=0&portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+            document.getElementById("puppy-watch").innerHTML =	'<iframe src="http://player.vimeo.com/video/101643280?byline=0&portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+            document.getElementById("seesaw").innerHTML =	'<iframe src="http://player.vimeo.com/video/152912369?byline=0&portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
         };
     </script>
 

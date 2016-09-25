@@ -17,7 +17,22 @@ a:visited {color: #FFC413;}
     background-color: transparent;
 }
 
+#title-panel{
+    background-color: #333;   
+}
 
+#title-img{
+    margin-top: 130px;
+}
+
+#title-img>img{
+    width: 500px;
+    margin-left: -250px;
+}
+
+#intro-panel{
+    margin-bottom: 85px;
+}
 
 /*----------------product panel----------------*/
 .product-wrapper{
@@ -72,12 +87,6 @@ a:visited {color: #FFC413;}
 
 
 @media screen and (max-width: 480px){
-	#techbadminton-logo{
-		left: 0;
-		margin-left: 0;
-		width: 100%;
-	}
-	
 	.poster-container>img{
 		left: 0;
 		margin-left: 0;

@@ -127,13 +127,20 @@ svg{
     z-index: 0;
     //overflow: hidden;
 }
-#morph>video, #morph>img{
+#morph>video{
     position: absolute;
     width: 1600px;
     left: 50%;
     margin-left: -800px;
     opacity: .35;
 }
+
+#morph>img{
+    position: relative;
+    left: 50%;
+    opacity: .35;
+}
+
 #test{
     position: absolute;
     width: 100px;
@@ -349,6 +356,20 @@ footer{margin-top:15px; color: #fff;}
         font-size: 25px;
         line-height: 30px;
     }
+    
+    #morph>img{
+        width: 1000px;
+        height: 800px;
+        margin-left: -500px;
+        background: url("../images/morph-static.jpg") no-repeat;
+        background-size: 1000px 800px;
+        margin-top: 0px;
+    }
+    
+    #morph>video{
+        display: none;
+    }
+
     
     div[data-value = "400"]{top: 543px;}
     div[data-value = "700"]{top: 548px;}

@@ -1,12 +1,6 @@
 .highlight>h3,.panel i, .panel em
 {color: #ff7b03;}
 
-.panel em{
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-}
-
-
 #navBand {
     background-color: transparent;
 }

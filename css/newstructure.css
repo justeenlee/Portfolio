@@ -6,14 +6,45 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-weight: normal;
 }
 
-
+/*font setup all----------------------*/
 h1, h2, h3, h4, h5, h6, p, div{
-	font-family: sans-serif;
+	font-family: dinpro-light, sans-serif;
 	margin: 0px; /*delete if fix issue1*/
     /*font-weight: 300; 0830 delete*/
 }
 
-bold{font-family: "TyponineSansText";}
+#title-description>h1,
+#title-description>h2,
+#title-description>h3,
+.issue-detail>h5,
+.feature-detail>h5{
+    font-family: dinpro-light, Roboto-light, sans-serif;
+}
+
+.issue-detail>h4,
+.feature-detail>h4{
+    font-family: dinpro-regular, sans-serif;
+}
+
+.highlight>h3{
+    font-family: mohave-italics, sans-serif;
+}
+
+.driving-question>h3, .statement>h3{
+    font-family: dinpro-regular, sans-serif;
+    line-height: 1.2;
+    font-size: 26px;
+    color: #555;
+}
+
+.quote>h3{
+    font-family: dinpro-light, serif;
+    line-height: 1.1;
+}
+
+bold, .panel em{font-family: dinpro-regular, serif;}
+
+
 
 iframe{position: absolute;}
 
@@ -50,9 +81,12 @@ p{
     /*line-height: 1.2; 0830 delete*/
 	/*word-spacing: 1px; 0830 delete*/
 	/*text-align: left; */
-    font-family: Baskerville, sans-serif; /*0830 added*/
+    //font-family: Dinpro-light, sans-serif;
     color: #555; 
 }
+
+
+
 
 .quoate~p{margin-top: -15px;}
 
@@ -188,11 +222,9 @@ body{
     color: #fff;
 }
 
-
 #title-description>h1{
     font-size: 62px;
     line-height: 1.3;
-    font-family: Roboto-light;
 }
 #title-description>h2{
     /*0830 reset*/
@@ -200,12 +232,10 @@ body{
 	margin-left: 0;
     line-height: 1.2;
     font-size: 38px;
-	font-family: Roboto-Light;
 }
 
 #title-description>h3{
     font-size: 28px;
-    font-family: Roboto-Light;
 }
 
 
@@ -239,6 +269,11 @@ body{
     opacity: 1;
 }
 
+#intro-panel .din{
+    font-size: 23px;
+    font-family: DINPro-Light, sans-serif;
+    line-height: 1.15;
+}
 
 
 /*----------------Promotion----------------*/
@@ -268,6 +303,7 @@ body{
 
 /*move to structure from calor 1005*/
 .issue, .feature{
+    position:relative;
 	padding: 40px 0;
 	height: auto;
     min-height: 120px; /*200 - 40*2padding*/
@@ -278,29 +314,34 @@ body{
 }
 
 .issue-icon, .feature-icon{
+    position:relative;
 	width:257px;
     float: left;
 }
 
 .issue-detail, .feature-detail{
+    position:relative;
     float: left;
 	margin-top: 10px;
 	width: 440px;;     
 }
 
 .issue-detail>h4, .feature-detail>h4{
+    position:relative;
 	margin: 0px;
 	left: 0px;
 	width: auto;
 	line-height: 1;
     color: #595959;
-    font-family: issue-title, sans-serif;
+    font-weight: 900;
+    font-size: 26px;
 }
 
 .issue-detail>h5, .feature-detail>h5{
-	padding-top: 10px;
-    font-family: Baskerville, sans-serif;
-    font-size: 25px;
+    position:relative;
+	padding-top: 6px;
+    line-height: 1.1;
+    font-size: 22px;
 }
 
 .statement>h3{
@@ -329,7 +370,7 @@ img+.slide-container{
 	width: 100%;
     min-height: 395px;
 	background-color: #000;
-    margin: 50px 0;
+    margin: 35px 0;
 }
 
 /*----------------Product----------------*/
@@ -346,11 +387,13 @@ img+.slide-container{
 }
 
 .product-title>h1, .product-title>h2{
-	font-family: "TyponineSansRegular";
+	//font-family: "TyponineSansRegular", sans-serif;
+    font-family: DINPro-Light, sans-serif;
 	text-align: center;
 }
 
 .product-title>h1{
+    font-family: DINPro;
 	font-size: 44px;
 	color: #444;
     line-height: 1;
@@ -363,7 +406,13 @@ img+.slide-container{
 }
 
 .product-wrapper>h3{
-	font-family: "TyponineSansRegular";
+	font-family: "TyponineSansRegular", sans-serif;
+}
+
+.product-wrapper p{
+    font-size: 23px;
+    font-family: DINPro-Light, sans-serif;
+    line-height: 1.15;
 }
 
 /* ======================================= */
@@ -388,13 +437,80 @@ img+.slide-container{
     margin: 70px 0;
 }
 
+/* == UI Showcase ============= */
+
+.app-left, .app-right{
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
+    margin-bottom: 20px;
+    width: 700px;
+    height: 435px;
+    overflow: hidden;
+}
+
+
+.app-left-ui, 
+.app-left-info, 
+.app-right-ui, 
+.app-right-info{
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+/*override the one in calor*/
+.app-left-ui, .app-right-ui {
+    position: relative;  
+    margin-top: 12px;
+}
+.app-left-ui{margin-left: 70px;}
+/*reposition app-right content*/
+.app-right>*{position: absolute;}
+.app-right-ui{left: 450px;}
+
+.app-left-info>*, .app-right-info>*{
+    width: 350px;
+}
+
+.app-left-ui>img, .app-right-ui>img{
+    width: 230px;
+}
+
+/*info can be pushed to next line due to app width*/
+.app-left-info, .app-right-info{
+    margin-left: 50px;
+    padding-top: 100px;
+}
+
+.app-left-info>h2, .app-right-info>h2{
+    font-size: 48px;
+    font-family: Roboto-Light;
+}
+.app-left-info>h3, .app-right-info>h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: Roboto-Light;
+}
+
+.app-left-info>h4, .app-right-info>h4{
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Roboto-Light;
+}
+
 
 /*----------------Comment----------------*/
 h6>a:link {color: #00aeef; text-decoration:none;}
 h6>a:visited {color: #00aeef;}
 h6>a:hover {color: silver;}
 
-.comment>h6{width: 500px; height: auto; font-family: "TyponineSansRegular"}
+.product-wrapper .comment{
+    margin-top: 35px;
+}
+
+.comment>h6{width: 500px; height: auto; font-family: "TyponineSansRegular", sans-serif;}
 /*Footer-------------------------*/
 
 
@@ -404,7 +520,7 @@ footer{
 	margin-top: 100px;
 	width: 100%;
 	height: 20px;
-	font-family: "MYRIADPRO-REGULAR";
+	font-family: "MYRIADPRO-REGULAR", sans-serif;
 	font-size: 10pt; 
 	overflow: hidden;
     margin-bottom: 10px;
@@ -457,9 +573,6 @@ footer{
     left: 50%;
     margin-left: -252px;
     width: 505px;
-    font-family: Baskerville, sans-serif;
-    font-size: 30px;
-    color: #555;
 }
 
 
@@ -470,7 +583,6 @@ footer{
 	width: 422px;
 	text-transform: uppercase;
 	text-align: center;	
-	font-family: quote-font;
 	font-size: 40px;
 	text-align: center;	
 }
@@ -496,9 +608,8 @@ footer{
 .quote>h3{
     position: relative;
     left: 50%;
-	margin-left: -180px;
-	width: 410px;
-	font-family: Baskerville;
+	margin-left: -250px;
+	width: 500px;
     font-style: italic;
 	font-size: 30px;
     color: #555;
@@ -506,7 +617,7 @@ footer{
 
 .quote>h4{
     position:relative;
-    font-family: Roboto-Light;
+    font-family: Roboto-Light, sans-serif;
     margin-top: 20px;
     font-size: 17px;
     text-align: right;
@@ -718,7 +829,7 @@ footer{
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
-
+    .comment>h6{width: 320px;}
     
 /*    added for headroom*/
     #header {
@@ -751,6 +862,9 @@ footer{
 	#link-resume, #link-about{line-height:2;}
 
 
+    .app-left, .app-right{
+        height: 700px;
+    }
     
 	footer{
 		//padding-left: 12px;
@@ -823,7 +937,7 @@ footer{
 }
 
 @font-face {
-	font-family: quote-font;	
+	font-family: mohave-italics;	
 	src:url('../assets/fontbook/Mohave Italics.otf');
 }
 
