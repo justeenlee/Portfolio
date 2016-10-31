@@ -69,7 +69,7 @@ footer{
 /*-- case 1 --*/
 /*-- wide, tall, square --*/
 .wide+.tall+.square{margin-top: -290px;}
-.tall+.square+.square{margin: -290px 0 0 340px;}
+//.tall+.square+.square{margin: -290px 0 0 340px;}
 
 
 #product-panel a:link, 

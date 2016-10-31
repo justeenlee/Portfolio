@@ -52,6 +52,9 @@
 	width: 100px;
 }
 
+#research-panel>img{
+    margin-top: 0px;
+}
 
 .band{
 	
@@ -69,14 +72,9 @@
 /*----------------Ideation----------------*/
 
 /*----------------prototype----------------*/
-#xbee-demo{margin-top: 30px;}
 
-.demo{
-	width: 100%;
-	min-height: 543px;
-	height: auto;
-	background-color: #000;
-}
+
+
 /*----------------Product----------------*/
 
 #product-panel>img {
@@ -111,5 +109,20 @@
 		height: auto;
 		background-color: #000;
 	}
+
+}
+
+@media screen and (max-width: 480px) {
+    #title-img>img{
+        width: 620px;
+        margin-left: -310px;
+    }
+    #title-panel{
+        height: 500px;
+    }
+    #title-description{
+        margin-top: -120px;
+    }
+
 
 }

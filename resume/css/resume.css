@@ -21,16 +21,15 @@ span.course::after{
 }
 
 
-
-
 p{
 	left: 0;
 	margin: 0;
 	margin-left: 20px;
 	font-family: "MYRIADPRO-regular";
+    font-family: dinpro-regular, sans-serif;
     font-size: 20px;
     color: #555;
-    //line-height: 1.1;
+    line-height: 1.1;
     width: 600px; /*added on 0729*/
 }
 
@@ -58,15 +57,14 @@ h1, h2{
 
 
 .section>h3{
-	font-family: "DINPRO-MEDIUM";
+	font-family: "DINPRO-MEDIUM", sans-serif;
     font-size: 23px;
     color:#63b092;
     color: purple;
 }
 
 .section>h4{
-	font-family: "MYRIADPRO-semibold";
-	font-family: "DINPRO-MEDIUM";
+	font-family: "DINPRO-MEDIUM", sans-serif;
     letter-spacing: -.4px;
 	color: #333;
     font-size: 20px;
@@ -87,7 +85,7 @@ h4>a:hover {
     
 }
 
-.h4-nonfirst{
+p+h4{
 	margin-top: 20px;
 }
 
@@ -185,9 +183,10 @@ em{
 	.section>h4>span{
 		display: block;
 	}
-	.offset-height {
-		height: 40px;
-	}
+    
+    p+h4{
+        height: 40px;
+    }
 
 }
 
@@ -213,12 +212,66 @@ em{
     header, footer, #objective {
         display: none;
     }
-    #header > h1{
-    padding: 0;
+    
+    span.course{
+        border-bottom: 0;
     }
+    
     #resume-panel {
         margin-top: 0;
         top: 0;
+        //background-color: yellow;
+        //height: auto;
+        //width: 2000px;
+        padding-top: 0;
+    }
+    
+    #header>h1{
+        padding: 0;
+        margin-top: 0;
+        //line-height: 1;
+        font-size: 40px;
+        //background-color: aqua;
+        height: auto;
+    }
+    #header>h2{
+        font-size: 15px;
+    }
+    
+    #education {
+        margin-top: -30px;
+    }
+    
+    /*company and title*/
+    .section>h3, .section>h4{
+        font-size: 15px;
+    }
+    
+    /*title*/
+    .section>h4{
+        line-height: 1.25;
+        padding-bottom: 0px;
+    }
+    
+    .section>p{
+        font-size: 13px;
+    }
+    
+    .section{margin-top: 0px;}
+
+    p+h4{
+        margin-top: 0;
+    }
+    
+    h4+p{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    
+    p{line-height: 1;}
+    
+    #skill>p{
+        padding-bottom: 0px;
     }
     
 }

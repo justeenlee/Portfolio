@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, p, div{
 }
 
 .driving-question>h3, .statement>h3{
-    font-family: dinpro-regular, sans-serif;
+    font-family: dinpro-light, sans-serif;
     line-height: 1.2;
     font-size: 26px;
     color: #555;
@@ -41,6 +41,15 @@ h1, h2, h3, h4, h5, h6, p, div{
     font-family: dinpro-light, serif;
     line-height: 1.1;
 }
+
+/* --- image/video caption --- */
+img+h5, .video-demo+h5{
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
 
 bold, .panel em{font-family: dinpro-regular, serif;}
 
@@ -351,7 +360,7 @@ body{
 }
 /*----------------Ideation----------------*/
 #ideation-panel>img {
-	box-shadow: 0 0 7px 0px grey;
+	//box-shadow: 0 0 7px 0px grey;
 }
 
 img+.slide-container{
@@ -370,7 +379,11 @@ img+.slide-container{
 	width: 100%;
     min-height: 395px;
 	background-color: #000;
-    margin: 35px 0;
+    margin-top: 35px;
+}
+
+.video-demo+p{
+    margin-top: 35px;
 }
 
 /*----------------Product----------------*/
