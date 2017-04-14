@@ -10,6 +10,14 @@ a:visited {color: #FFC413;}
 }
 /*once pass rendering, change color*/
 
+/*---  test spacing  ---*/
+/*
+div, div>div{
+    opacity: 0.6;
+    background-color: grey;
+}
+*/
+
 /*----------------Title----------------*/
 
 /*calor only begins -------*/
@@ -30,9 +38,6 @@ a:visited {color: #FFC413;}
 
 
 /*----------------intro----------------*/
-#intro-panel{
-    margin-top: 50px; /*share 20px margin with p class*/
-}
 
 #test2{
     background-image: url("../images/2016IxDAwards_Shortlist_Pin.png");

@@ -5,8 +5,17 @@
     background-color: transparent;
 }
 
+bold{
+    font-family: dinpro-medium;
+}
 
-
+/*---  test spacing  ---*/
+/*
+div, div>div{
+    opacity: 0.6;
+    background-color: grey;
+}
+*/
 
 
 /*----------------Title----------------*/
@@ -33,6 +42,7 @@
 
 /*----------------Research----------------*/
 
+/*
 .current-study, .primary-research{
 	padding: 20px 0px;
 	width: 100%;
@@ -51,23 +61,34 @@
 	margin-left: -50px;
 	width: 100px;
 }
+*/
 
 #research-panel>img{
     margin-top: 0px;
 }
 
 .band{
-	
 	background-color: #ff7b03;
+    background-color: #fff;
+    margin-bottom: 20px;
 }
 
-.band h3{
-    font-size: 20pt;
-	text-align: left;
-	color: #fff;
-    font-family: Roboto-Light;
-
+.band>img{
+    width: 1000px;
+    margin-left: -500px;
+    padding: 0;
 }
+@media screen and (max-width: 1000px){
+    .band>img{
+    width: 100%;
+    margin-left: 0px;
+    left: 0;
+    padding: 0;
+}
+}
+
+
+
 
 /*----------------Ideation----------------*/
 
@@ -75,19 +96,40 @@
 
 
 
+
 /*----------------Product----------------*/
 
-#product-panel>img {
-	border-top: 1px solid #ddd;	
-}
 
-#product-panel>img:first-child, #product-panel>img:last-child{
+#product-panel>img:first-child, 
+#product-panel>img:last-child{
 	border-top: none;	
 }
 
 #product-panel>img:last-child{
 	margin-bottom: 0px;
 }
+
+.app-left-ui>img,
+.app-right-ui>img{
+    box-shadow: 0px 0px 40px 5px #eee;
+}
+
+.app-left-ui, 
+.app-right-ui{
+    overflow: visible;
+}
+
+#product-panel .app-right,
+#product-panel .app-left{
+    padding: 20px 0;
+}
+
+#product-panel>.band{
+    padding: 10px 0;
+}
+
+
+
 
 /* for 680px or less */
 @media screen and (max-width: 680px){
@@ -109,6 +151,29 @@
 		height: auto;
 		background-color: #000;
 	}
+    
+    .band>img{
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+    
+/*=== UI showcase overide @680===*/
+    #product-panel .app-right,
+    #product-panel .app-left{
+        padding: 20px 0;
+    }
+
+    #product-panel>.band{
+        padding: 10px 0 ;
+    }
+    
+    .app-left, .app-right{
+        margin-bottom: 0;
+        height: 700px;
+    }
+/*=== UI showcase ends ===*/
+
 
 }
 
@@ -118,11 +183,12 @@
         margin-left: -310px;
     }
     #title-panel{
-        height: 500px;
+        height: 550px;
     }
     #title-description{
         margin-top: -120px;
     }
 
+    
 
 }

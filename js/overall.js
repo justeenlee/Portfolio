@@ -20,12 +20,12 @@ function move(input){
         if(input == "index"){
             dot.css("left","17.6%");
         } else if (input == "resume"){
-            dot.css("left","63.5%");
+            dot.css("left","59.5%");
         } else if (input == "about"){
-            dot.css("left","83.5%");
+            dot.css("left","79%");
         } else {
             // projects
-            dot.css("left","42%");
+            dot.css("left","40%");
         }
         $("#indicator-dot").css("opacity", 1);
     } else {
@@ -35,6 +35,7 @@ function move(input){
 
 //auto run function to set up when page is loaded
 (function(){
+    initAll();
     console.log("current path = " + currentPath);
     navColorAtTop = $("#navBand").css("backgroundColor");
     navLinkColorAtTop = $("#link-home").css("color");
@@ -43,6 +44,12 @@ function move(input){
     setNavLinkColor();
     setInitialNavProperty();
 })();
+
+function initAll() {
+    console.log("hallo");
+    $("#link-projects").text("WORK");
+    //$("#link-projects").css("backgroundColor", black);
+}
 
 
 $(window).scroll(function (){
@@ -107,8 +114,8 @@ function setNavLinkColor(){
                 var linkName = "#"+navLinkArray[i];
                 $(linkName).css("color", navLinkColorAtTop);
             }
-        $("#indicator-dot").css("backgroundColor", navLinkColorAtTop);
-    $("#navBand").css("backgroundColor", navColorAtTop);
+            $("#indicator-dot").css("backgroundColor", navLinkColorAtTop);
+            $("#navBand").css("backgroundColor", navColorAtTop);
         }
     }
     if (window.innerWidth<679) {
@@ -122,9 +129,11 @@ function setNavLinkColor(){
     
 }
 
+//also set navLinkColorAtTop with this function
 function setInitialNavProperty(){
     if  ((currentPath == "motion") ||
-       (currentPath == "expression")){
+       (currentPath == "expression") ||
+        (currentPath == "ux")){
         for (var i=0; i<navLinkArray.length; i++){
             var linkName = "#"+navLinkArray[i];
             $(linkName).css("color", "#555");
@@ -147,6 +156,8 @@ function setInitialNavProperty(){
         $("#indicator-dot").css("backgroundColor", "#F51488");
     } else if (currentPath == "pinterest") {
         $("#indicator-dot").css("backgroundColor", "#BD081C");
+    } else if (currentPath == "ux" || currentPath == "experiment") {
+        $("#indicator-dot").css("backgroundColor", "#555");
     } else {
         $("#indicator-dot").css("backgroundColor", "#FFFFFF");
     }

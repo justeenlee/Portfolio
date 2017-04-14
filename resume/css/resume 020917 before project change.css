@@ -1,0 +1,290 @@
+.li-nav>a:link,
+.li-nav>a:visited, p a
+{color: #555; text-decoration: none;}
+
+p a:hover{
+    color: #F51488;
+}
+
+#indicator-dot{background-color: #555;}
+
+/*purple #961176*/
+
+#navBand {
+    background-color: #FbFbFb;
+}
+span.course{
+    //padding-bottom: 10px;
+    border-bottom: 1px solid rgba(150,17,118, .75);
+}
+span.course::after{
+}
+
+
+p{
+	left: 0;
+	margin: 0;
+	margin-left: 20px;
+	font-family: "MYRIADPRO-regular";
+    font-family: dinpro-regular, sans-serif;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.1;
+    width: 600px; /*added on 0729*/
+}
+
+h1, h2{
+	font-family: "DINPRO-REGULAR";
+	text-align: center;
+    //color:#63b092;
+    color: #961176;
+}
+
+#header>h1{
+	padding-top: 10px; 
+	font-size: 45px;
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+}
+
+
+#header>h2{	
+	margin-top: -5px;
+	margin-bottom: 30px; 
+	font-size: 16px;; 
+	color: #222;
+}
+
+
+.section>h3{
+	font-family: "DINPRO-MEDIUM", sans-serif;
+    font-size: 23px;
+    color:#63b092;
+    color: purple;
+}
+
+.section>h4{
+	font-family: "DINPRO-MEDIUM", sans-serif;
+    letter-spacing: -.4px;
+	color: #333;
+    font-size: 20px;
+}
+
+.section>h4>span{
+	float: right;
+}
+
+h4>a:link,
+h4>a:visited{
+    text-decoration: none;
+    color: #555;
+}
+
+h4>a:hover {
+    color: #00A3E0;
+    
+}
+
+p+h4{
+	margin-top: 20px;
+}
+
+em{
+	font-family: "MYRIADPRO-regular";
+	color: #aaa;
+}
+
+.section{margin-top: 10px;}
+
+
+/*----------------Resume----------------*/
+#resume-panel {
+	position: relative;
+	margin-top: 70px;
+	height: auto;
+    margin-left:-325px;   
+	left: 50%;
+    width: 650px;
+	font-family: "MYRIADPRO-REGULAR", sans-serif;
+}
+
+#header{
+	margin-bottom: 45px;
+}
+
+#skill>p{
+    padding-bottom: 10px;
+}
+
+#resume-panel, #pdf{
+    font-size: 15px;
+}
+
+#projects a:link,
+#projects a:visited{
+    color: #555;
+    text-decoration: none;
+}
+#projects a:hover{color: #F51488;}
+
+#pdf>h3 {
+	margin-top: 100px;
+	text-align: center;
+	font-family: "MYRIADPRO-BOLD";
+}
+
+
+#pdf a:link {color: black; text-decoration:none;}
+#pdf a:visited {color: black;}
+#pdf a:hover {color: #999;animation: 1s ease;}
+
+
+#pdf:hover a span{
+    display: none;
+}
+
+#pdf:hover a:after{
+    content: "Thanks for your interest :)";
+    animation: 1s ease;
+}
+
+
+
+/*--------------Media Query starts-----------------*/
+/* for 680px or less */
+@media screen and (max-width: 680px) {
+    #link-resume{text-decoration: underline}
+
+	/* for resume.css only*/
+	#product-panel>div{padding: 0;}
+
+	#resume-panel{
+		width: 100%;
+		width:auto;/*0121 for padding*/
+		height: auto;
+		left: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0 10px;/*0121*/
+	}
+	
+	#resume-panel>div{
+		margin-left:10px;
+	}
+	
+	#resume-panel>div>*{
+		margin-right: 12px;
+	}
+	
+	p{
+		width: auto;
+		left: 0;
+		margin-left: 0;
+		padding:0px 12px;
+	}
+	/* for resume.css only*/
+
+}
+
+@media screen and (max-width: 550px){
+	.section>h4>span{
+		display: block;
+	}
+    
+    p+h4{
+        height: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){
+    h4+h4{
+        margin-top: 10px;
+    }
+}
+
+
+/* for 415px or less */
+/* exception: adjust size of name*/
+@media screen and (max-width: 430px) {
+	#header>h1{
+		font-size: 15vw;
+		margin-bottom: 10px;
+	} 
+}
+
+
+@media print {
+    header, footer, #objective {
+        display: none;
+    }
+    
+    span.course{
+        border-bottom: 0;
+    }
+    
+    #resume-panel {
+        margin-top: 0;
+        top: 0;
+        padding-top: 0;
+    }
+    
+    #header>h1{
+        padding: 0;
+        margin-top: 0;
+        //line-height: 1;
+        font-size: 35px;
+        //background-color: aqua;
+        height: auto;
+    }
+    #header>h2{
+        font-size: 15px;
+    }
+    
+    #education {
+        margin-top: -30px;
+    }
+    
+    /*company and title*/
+    .section>h3, .section>h4{
+        font-size: 15px;
+    }
+    
+    /*title*/
+    .section>h4{
+        line-height: 1.25;
+        padding-bottom: 0px;
+    }
+    
+    .section>p{
+        font-size: 13px;
+    }
+    
+    .section{margin-top: 0px;}
+
+    p+h4{
+        margin-top: 5px;
+    }
+    
+    /* paragraph after role */
+    h4+p{
+        margin-top: -2px;
+        //padding-top: 0px;
+    }
+    
+    p{line-height: 1;}
+    
+    #skill>p{
+        padding-bottom: 0px;
+    }
+    
+    #projects a:link,
+    #projects a:visited{
+        color: #555; 
+        text-decoration: none;
+    }
+    
+}
+
+

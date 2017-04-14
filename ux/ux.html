@@ -46,14 +46,17 @@
 
 <!--title panel------------------------------>	
 	<div id = "title-panel">
+<!--
 		<div id = "title-img">
             <img src="images/title-img-ux.png" width="100%">
         </div>
-<!--
-        <div id ="title-description">
-            <h1>Web UX</h1>
-        </div>   
 -->
+        <div id ="title-description">
+<!--            <h1>Web UX</h1>-->
+            <h2>A collection of professional and personal UX work
+            <br><br><br><br>-
+            </h2>
+        </div>   
     </div>
 
 <!--intro panel------------------------------>
@@ -64,19 +67,44 @@
 
 <!--product panel------------------------------>
 	<div id = "product-panel">
+        
+        <!--particle in a box -------------------------->
+		<div class = "product-wrapper">
+            <div class = "product-title">
+				<h1>Google Doc Right-click Menu</h1>
+				<h2>A conextual menu for spelling correction</h2>
+			</div>
+            <img src="images/google%20doc%20contextual%20menu.jpg" width="100%">
+            <p>With the hypothesis that correcting misspelling is a frequent action when users right click on the misspelled word, I come up with a contextual menu concept that minizes the pointer travel distance to select the suggested spelling, by changing the order of menu actions.</p>
+            <img src="images/google%20doc%20hover%20change.jpg" width="100%">
+            <p>Yet, here is redesign 2.0 with a dedicated hover menu, which is even more user-friendly for first time users without the frustration of noticing the shift in a right-clicked menu.</p>
+			<div class = "comment">
+				<h6><bold>Date</bold>: 2016</h6>
+                <h6><bold>Keywords</bold>: concept, web, google doc, menu, interaction, usability</h6>
+			</div>
+        </div>
+
         <!--particle in a box -------------------------->
 		<div class = "product-wrapper">
             <div class = "product-title">
 				<h1>Particle In A Box</h1>
-				<h2>A Quantum Mechanics Game</h2>
+				<h2>A Game on Quantum Mechanics </h2>
 			</div>
            <div id="qm-trailer" class="video-demo"></div>
-            <p>As a research assistant in the Georgia Tech research lab, <a href="http://designstudio.gatech.edu/" target="_blank">Design &amp; Social Interaction Studio</a>, I worked on a project of designing/implementing a game to help stuents visualize and better understand quantum physics. My work included redesiging the game mechanics, storyline, interaction and motion details along with a trailer video. As seen on the <a href="http://learnqm.gatech.edu" target="_blank">official site</a>.</p>
+            <p>As a research assistant in the Georgia Tech research lab, <a href="http://designstudio.gatech.edu/" target="_blank">Design &amp; Social Interaction Studio</a>, I worked on a project to design/implement a game to help students visualize and better understand quantum physics. My work includes redesiging the game mechanics, storyline, interaction and motion details along with a trailer video. As seen on the <a href="http://learnqm.gatech.edu" target="_blank">official site</a>.</p>
+            <img src="images/robot-movement.gif" width="100%">
+            <img src="images/current-gap.jpg" width="100%">
+            <h5>Speech bubble tutorial</h5>
+            <img src="images/new-attention%20light.jpg" width="100%">
+            <h5>Tutorial redesign: introducing new elements</h5>
+            <img src="images/new-new%20memory%203.jpg" width="100%">
+            <h5>Tutorial redesign: tutorial as memory of the robot
+</h5>
 			<div class = "comment">
 				<h6><bold>Date</bold>: Since 2015</h6>
                 <h6><bold>Keywords</bold>: Research, Quantum Mechanics, Game/Interaction/Motion Design</h6>
-                <h6><bold>Note 1</bold>: Password for this WIP trailer is "hi"</h6>
-                <h6><bold>Note 2</bold>: My design has not yet been implemented.</h6>
+                <h6><bold>Note 1</bold>: Password for this work in progress trailer is "qmtest"</h6>
+<!--                <h6><bold>Note 2</bold>: My design has not yet been implemented.</h6>-->
 			</div>
         </div>
         
@@ -183,7 +211,10 @@
             function() {setTimeout(addVideo, 1400);}
         );
         function addVideo(){
-        document.getElementById("qm-trailer").innerHTML =	'<iframe src="http://player.vimeo.com/video/156731404?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';}
+        document.getElementById("qm-trailer").innerHTML =	'<iframe src="http://player.vimeo.com/video/156731404?portrait=0&amp;color=35a1e1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+        
+        
+        }
     </script>
 
 

@@ -6,16 +6,23 @@
 5.others like animation
 */
 
-p>a:link {color: #FFC413; text-decoration:underline}
-a:visited {color: #FFC413;}
+/*set nav link color at the top*/
+.li-nav>a:link, .li-nav>a:visited{
+    color: #555;
+}
 
 #navBand {
-    background-color: #C2EAF2 ;
+    background-color: #C2EAF2;
+    background-color: #FbFbFb;
 }
 
+
 #title-panel{
-    background-color: #C2EAF2 ;   
+    background-color: transparent;
+    height: 400px;
 }
+
+/*
 
 #title-img{
     margin-top: 100px;;
@@ -25,6 +32,21 @@ a:visited {color: #FFC413;}
     width: 800px;
     margin-left: -400px;
 }
+*/
+
+#title-description{
+    margin-top: 200px;
+    color: #555;
+    text-align: center;
+}
+
+#title-description > h2{
+    font-size: 23pt;
+}
+
+
+
+
 
 /*----------------product panel----------------*/
 .product-wrapper{
@@ -32,8 +54,8 @@ a:visited {color: #FFC413;}
 	min-height: auto;
 }
 
-.product-wrapper img{
-	margin-bottom: 20px;
+img+p, h5+img{
+	margin-top: 20px;
 }
 
 .product-wrapper>h3{

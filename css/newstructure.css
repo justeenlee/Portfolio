@@ -43,10 +43,11 @@ h1, h2, h3, h4, h5, h6, p, div{
 }
 
 /* --- image/video caption --- */
-img+h5, .video-demo+h5{
+img+h5, .video-demo+h5, .slide-container+h5{
     font-style: italic;
     font-size: 14px;
     margin-top: 8px;
+    margin-bottom: 30px;
 }
 
 
@@ -77,12 +78,19 @@ html{
     width: 200px;
 }
 
-.panel>img{margin-top: 10px;}
+.panel>img{
+    //margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
+
 
 p{
 	position: relative;
 	left: 50%;
-	margin: 30px 0px; /*0830 20 to 30*/
+	margin-bottom: 30px;
 	margin-left: -350px; /*0830 -300 to -350*/
 	width: 700px; /*0830 600 to 700*/
     font-size: 23px; /*0830 14 to 25*/
@@ -94,7 +102,9 @@ p{
     color: #555; 
 }
 
-
+img+p, .band+p{
+    margin-top: 30px;
+}
 
 
 .quoate~p{margin-top: -15px;}
@@ -143,6 +153,9 @@ p{
 /*a:hover {color: silver;}*/
 .li-nav>a:active {color: #fff;} /*being clicked*/
 li>a:link, #navBand {transition: .35s ease;}
+
+p>a:link {color: #FFC413; text-decoration:underline}
+a:visited {color: #FFC413;}
 
 #indicator-dot{
     z-index: 10;
@@ -256,11 +269,13 @@ body{
 #intro-panel{
 	position: relative;
 	left: 50%;
+    margin-top: 50px; 
 	margin-left: -350px;
 	margin-bottom: 50px;
     width: 700px;
     min-height: 150px;
 }
+
 
 .recognition>p{
     text-align: center;
@@ -304,11 +319,6 @@ body{
     height: auto;
 }
 
-
-#research-panel>img{
-    margin: 30px 0;
-    width: 100%;
-}
 
 /*move to structure from calor 1005*/
 .issue, .feature{
@@ -363,9 +373,12 @@ body{
 	//box-shadow: 0 0 7px 0px grey;
 }
 
+/*what is this? 121316*/
+/*
 img+.slide-container{
     margin-top: 60px
 }
+*/
 
 /*----------------prototype----------------*/
 #prototype-panel {
@@ -380,6 +393,7 @@ img+.slide-container{
     min-height: 395px;
 	background-color: #000;
     margin-top: 35px;
+    overflow: hidden;
 }
 
 .video-demo+p{
@@ -392,6 +406,11 @@ img+.slide-container{
     width: 100%;
     height: auto;
 }
+
+#product-panel>img {
+	margin-bottom: 30px;
+}
+
 
 /* ======== master style for list of projects ======= */
 .product-title{
@@ -406,7 +425,7 @@ img+.slide-container{
 }
 
 .product-title>h1{
-    font-family: DINPro;
+    font-family: DINPro-Regular, sans-serif;
 	font-size: 44px;
 	color: #444;
     line-height: 1;
@@ -427,6 +446,16 @@ img+.slide-container{
     font-family: DINPro-Light, sans-serif;
     line-height: 1.15;
 }
+
+.product-wrapper img{
+    margin-bottom: 30px;
+}
+
+.product-wrapper img+h5{
+    margin-top: -30px;
+}
+
+
 
 /* ======================================= */
 
@@ -498,19 +527,20 @@ img+.slide-container{
 
 .app-left-info>h2, .app-right-info>h2{
     font-size: 48px;
-    font-family: Roboto-Light;
+    font-family: dinpro-light, sans-serif;
+    letter-spacing: -2px;
 }
 .app-left-info>h3, .app-right-info>h3{
     font-size: 28px;
     margin-bottom: 10px;
     line-height: 1.4;
-    font-family: Roboto-Light;
+    font-family: dinpro-light, sans-serif;
 }
 
 .app-left-info>h4, .app-right-info>h4{
     font-size: 20px;
     line-height: 1.4;
-    font-family: Roboto-Light;
+    font-family: dinpro-light, sans-serif;
 }
 
 
@@ -554,7 +584,7 @@ footer{
 }
 
 .copyright:after{
-    content: "© 2016 Justeen Lee | Craft Delightful Experience";
+    content: "© 2017 Justeen Lee | Craft Delightful Experience";
 }
 
 /*feature-type--------------*/
@@ -658,12 +688,8 @@ footer{
 /* for 680px or less */
 @media screen and (max-width: 680px) {
 /*	#navigation{width:100%;}*/
-    
-    
+
 /*    added for headroom*/
-
-
-    
     #header {
         width: 100%;
         margin-left: 0;
@@ -807,10 +833,7 @@ footer{
         text-align: center;
     }
     
-    .issue{
-        min-height: 220px;
-    }
-
+    .issue{min-height: 220px;}
 
     .issue-icon{
         width: 300px;
@@ -818,7 +841,62 @@ footer{
         margin-left: -150px;
     }
     
+    /*=== UI showcase ===*/
+    .app-left, .app-right{
+        margin-bottom: 100px;
+        height: 700px;
+    }
+    
+    .app-right>*{position:relative;}
+    
+    .app-left,
+    .app-left-ui, 
+    .app-left-info, 
+    .app-left-info>h2,
+    .app-left-info>h3,
+    .app-left-info>h4,
+    .app-left-info>h5,
+    .app-right,
+    .app-right-ui, 
+    .app-right-info,
+    .app-right-info>h2,
+    .app-right-info>h3,
+    .app-right-info>h4,
+    .app-right-info>h5{
+        width: auto;
+        left: 0;
+		margin-left: 0;
+        padding: 0;
+        overflow: visible;
+        text-align: center;
+    }
+    .app-left+.band{
+        height: 800px;
+        padding: 0;
+    }
+    
+    .feature-icon,
+    .app-left-ui, 
+    .app-right-ui{
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    
+    .feature-detail,
+    .app-left-info,
+    .app-right-info{
+        padding: 0 12px;
+    }
+    .app-right-info, 
+    .app-left-info{margin-top: 24px;}
+    /*=== UI showcase ends ===*/
 
+    img.coming-soon{
+        left: 0%;
+        margin-left: 0px;
+        //width: 150px;
+    }
     
 	footer{
 		width:auto;
@@ -862,29 +940,29 @@ footer{
         height: 80px;
     }
     
-
-
 	#navigation .li-nav{margin:0px;}
 	
-	#link-home{margin-left:40px;}
+	#link-home{margin-left:60px;}
 	
 	#link-projects, #link-about{margin-left:10px;}
 	
-	#link-resume{margin-left:93px;}
+	#link-resume{margin-left:103px;}
 	
 	#link-resume, #link-about{line-height:2;}
 
-
-    .app-left, .app-right{
-        height: 700px;
-    }
-    
 	footer{
 		//padding-left: 12px;
 		margin-bottom: 20px;
 	}
 }
 /*--------------Media Query ends-----------------*/
+
+
+@media print {
+    
+}
+
+
 
 
 /*--------------animation------------------*/

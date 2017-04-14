@@ -1,9 +1,10 @@
-.highlight>h3, a:link,a:visited {color: #DF3437 ;}
+.highlight>h3, a:link, a:visited, p a:link {color: #DF3437;}
 
 /*----------------Title----------------*/
 
 html, body{background-color: #eee;}
 footer{color: #555;}
+
 
 #navBand {
     background-color: #000;
@@ -29,11 +30,28 @@ footer{color: #555;}
 }
 
 /*----------------Title animation----------------*/
+
+#product-panel{
+    left: 50%;
+}
+
+.video-demo{
+    //height: 600px;
+}
+
+
 iframe{
     height: 100%;
     width: 100%;
     z-index: 11;
 }
+
+/*
+#mood {
+    min-height: 0px;
+    height: 394px;
+}
+*/
 
 #light{
     position: fixed;
@@ -49,9 +67,24 @@ iframe{
     transition: .75s;
 }
 
+.video-frame{
+    position: relative;
+    margin-top: 20px;
+    min-height: 300px; /*temporary*/
+}
+
+.video-frame>img{
+    float: left;
+}
+
+.video-frame+.video-demo{
+    margin-top: 50px;
+}
+
 /*----------------gif container----------------*/
 .gif-container, .gif-object{
 	position: relative;
+    display: none;
 }
 
 .gif-container{
