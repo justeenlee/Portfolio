@@ -276,11 +276,13 @@ body{
     min-height: 150px;
 }
 
+.recognition {
+    margin-bottom: 50px;
+}
 
 .recognition>p{
     text-align: center;
     font-size: 20px;
-
 }
 
 .recognition a:link{
