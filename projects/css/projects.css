@@ -93,13 +93,17 @@ footer{
 }
 
 
-[href="../tv/tv.html"]>.square-img{
+[href="../tv/tv.html"]>.square-img,
+[href="../tv"]>.square-img{
     width: 250px;
     left: 50%;
     margin-left: -125px;
-    background-color: #2E2E2E;
-    background-image: url(../../motion/images/spinning-craker-no-glow@400.gif);
-    background-size: 250px;
+    //background-color: #2E2E2E;
+    background-image: url(../../tv/images/web-topograhy.gif);
+    background-size: 266px 200px;
+    background-position: -8px 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 
