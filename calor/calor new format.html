@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calor | Justeen Lee</title>
+    <meta name="description" content="Calor is smart faucet system that enhances your shower experience and promote mindful water use">
+	<meta name="keywords" content="calor, yellow, smart, temperature sensor, faucet fixture, cartridge, interaction design, user experience, UX, IX, product design, industrial, design, justeen, san francisco, new york, hong kong" />
+	<link rel="shortcut icon" href="../assets/favicon.ico"/>
+	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../css/newstructure.css">
+	<link rel="stylesheet" href="css/calor.css">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="js/calor.js" defer></script>
+    <script src="../js/overall.js" defer></script>
+	<script src="../js/jquery.flexslider.js" defer></script>
+
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58728717-1', 'auto');
+  ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+    <header id="header">
+    <ul id = "navigation">
+        <li class="li-nav"><a id="link-home" onmouseover = "move('index')" onmouseout = "move('currentPath')" href="../index.html">PLAYGROUND</a></li>
+
+        <li class="li-nav"><a id="link-projects" onmouseover = "move('projects')" onmouseout = "move('currentPath')" href="../projects/projects.html">PROJECTS</a></li>
+
+        <li class="li-nav"><a id="link-resume" onmouseover = "move('resume')" onmouseout = "move('currentPath')" href="../resume/resume.html">RESUME</a></li>
+
+        <li class="li-nav"><a id="link-about" onmouseover = "move('about')" onmouseout = "move('currentPath')" href="../about/about.html">ABOUT</a></li>
+    </ul>
+    <span id="indicator-dot"></span>
+    <div class="band" id="navBand"></div>
+    </header>
+
+<!--title panel------------------------------>
+    <div id = "title-panel">
+		<div id = "title-img">
+            <img src="images/product-context-2.jpg" width="100%">
+        </div>
+		
+        <div id ="title-description">
+            <h1>CALOR</h1>
+            <h2>
+                Smart Shower Faucet
+            </h2>
+            <h3>A simple, safe and water-saving shower</h3>
+        </div>           
+    </div>
+
+<!--intro panel------------------------------>
+    <section class = "project-overview">
+        <div class = "project-intro">
+            <p> Calor is a smart shower faucet that safely and efficiently delivers your desired water temperature with integrated sensor technology. Through subtle suggestions and reward systems, it promotes a mindful water use and progressively guides you to a shorter shower time for water conservation.
+            </p>
+        </div>
+        <div class = "project-note">
+            <div class = "project-note-wrap comment">
+            <h6><bold>Date</bold>: 2015</h6>
+            <h6><bold>Client</bold>: Studio Project</h6>
+            <h6><bold>Team</bold>: Individual</h6>
+            <h6><bold>State</bold>: Concept/Prototype</h6>
+            <h6><bold>Next</bold>: Encapsulation<br>
+                Sony Xperia and Samsung Galaxy S4/5 have already shown waterproof electronics, which demonstrates the plausibility of encapsulation for calor.</h6>     
+        </div></div>
+
+    
+    </section>
+
+    
+    <div class="recognition">
+            <p>As seen on:
+                <a href="http://awards.ixda.org/entry/2016/calor-smart-faucet-system/" target="_blank">
+                <img src="images/2016IxDAwards_Shortlist_Pin.png" height="50px" id="test4"/>
+                </a>
+                <a href="http://www.core77.com/projects/40882/Calor-Smart-Faucet-System" target="_blank">
+                    <img src="../assets/core77logo.png" height="50px">
+                </a>
+            </p>
+        </div>
+
+<!--promotion panel------------------------------>
+	<div id = "promotion-panel">
+        <div id="calor-smart-faucet-system" class="video-demo"></div>
+    </div>
+	
+<!--research panel------------------------------>
+	<div id = "research-panel" class = "panel">
+        <img src="images/research-initial-thought.png" width="100%">
+        <p>Although faucet designs come out each year with new form and material reconsideration, the whole shower experience still remains inefficient and also reveals other problems.</p>
+        <img src="images/research-current-task-flow.png" width="100%">
+        <div class="band">
+        <div class = "project-problem">
+            <div class = "problem-unit">
+            <div class = "problem-unit-wrap">
+                <img src="images/icon-inefficiency.png" height="130px" class = "issue-img">
+                <h4>Unpredictability</h4>
+                <p>Due to inconsistent models and seasons, an average 2.7-time unnecessary adjustment causes time and water waste</p>
+            </div></div>
+            
+            <div class = "problem-unit">
+            <div class = "problem-unit-wrap">
+                <img src="images/icon-scalding.png" height="130px" class = "issue-img">
+                <h4>Scalding</h4>
+                <p>There are over 3000 scalding cases each year and over 90% incidents occur at home</p>
+            </div></div>
+            
+            <div class = "problem-unit">
+            <div class = "problem-unit-wrap">
+                <img src="images/icon-usage.png" height="130px" class = "issue-img">
+                <h4>Underestimated usage</h4>
+                <p>Showers take up 17% of water households use in the U.S., 3rd usage after washing machines and toilets</p>
+            </div></div>
+            
+            <div class = "problem-unit">
+            <div class = "problem-unit-wrap">
+                <img src="images/icon-conern.png" height="130px" class = "issue-img">
+                <h4>Growing concern</h4>
+                <p>More than 36 states are expecting water shortage in the next few years</p>
+            </div></div>
+            
+            
+           
+        </div>
+            </div><!--band ends-->
+        
+        <p>In response to <a href="http://www.cbsnews.com/pictures/californias-drought/7/" target="_blank">articles and news</a> on California drought crisis (SF has already had the water saving campaign all over the city), saving water becomes more important and inevitable.</p>
+        
+        <p>Facing these everyday hassles and public concerns, I set to envision the future shower experience and propose this flow: </p>
+        
+        <img src="images/research-proposed-flow.png" width="100%">
+		
+ 
+        <p>As technologies become more ubiquitous and accessible in our lives, shower faucet should also take advantage of them and be smarter, personalized and more safe.</p>
+       
+		<div class="value">
+            <div class="highlight">
+                <h3>Market Potential
+                </h3>
+            </div>
+		</div>
+        
+        <div class="band">
+        <img src="images/research-market-potential.png" width="100%">
+        </div>
+        
+        
+        
+<!--
+        <div class="band">
+		<div class="quote">
+            <svg class="quote-mark" width="60px" height="49px" viewBox="0 0 60 49">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-300.000000, -16608.000000)" stroke="#FFC413" fill="#FFC413">
+                        <g transform="translate(300.000000, 16596.930164)">
+                            <path d="M26.7089844,17.1523438 C23.9550644,18.7343829 21.7285241,20.096674 20.0292969,21.2392578 C18.3300696,22.3818417 16.6015713,23.8906156 14.84375,25.765625 C13.2031168,27.5234463 11.9433638,29.369131 11.0644531,31.3027344 C10.1855425,33.2363378 9.57031426,35.7265473 9.21875,38.7734375 L13.4375,38.7734375 C17.0703307,38.7734375 19.9267474,39.6669833 22.0068359,41.4541016 C24.0869245,43.2412199 25.1269531,45.863264 25.1269531,49.3203125 C25.1269531,51.7812623 24.2041108,54.081044 22.3583984,56.2197266 C20.5126861,58.3584091 17.9785317,59.4277344 14.7558594,59.4277344 C9.71677168,59.4277344 6.11329209,57.7724775 3.9453125,54.4619141 C1.77733291,51.1513506 0.693359375,46.8008082 0.693359375,41.4101562 C0.693359375,37.6015435 1.51366367,34.1298985 3.15429688,30.9951172 C4.79493008,27.8603359 6.78709766,25.0625123 9.13085938,22.6015625 C11.5332151,20.0820187 14.0820178,17.9433682 16.7773438,16.1855469 C19.4726697,14.4277256 21.7285065,12.9921931 23.5449219,11.8789062 L26.7089844,17.1523438 Z M59.2285156,17.1523438 C56.4745956,18.7343829 54.2480554,20.096674 52.5488281,21.2392578 C50.8496009,22.3818417 49.1211025,23.8906156 47.3632812,25.765625 C45.664054,27.5820403 44.3896527,29.4423733 43.5400391,31.3466797 C42.6904254,33.2509861 42.0898455,35.7265473 41.7382812,38.7734375 L45.9570312,38.7734375 C49.5898619,38.7734375 52.4462787,39.6669833 54.5263672,41.4541016 C56.6064557,43.2412199 57.6464844,45.863264 57.6464844,49.3203125 C57.6464844,51.7812623 56.723642,54.081044 54.8779297,56.2197266 C53.0322173,58.3584091 50.498063,59.4277344 47.2753906,59.4277344 C42.2363029,59.4277344 38.6328233,57.7724775 36.4648438,54.4619141 C34.2968642,51.1513506 33.2128906,46.8008082 33.2128906,41.4101562 C33.2128906,37.6015435 34.0331949,34.1298985 35.6738281,30.9951172 C37.3144613,27.8603359 39.3066289,25.0625123 41.6503906,22.6015625 C44.0527464,20.0820187 46.601549,17.9433682 49.296875,16.1855469 C51.992201,14.4277256 54.2480378,12.9921931 56.0644531,11.8789062 L59.2285156,17.1523438 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <h3>What you set is what you get. 
+No more trial and error.</h3>
+        </div>
+	   </div>
+-->
+        <img src="images/research-cartridge.png" width="100%">
+         <p>By disassembling a shower fixture, valve and cartridge, I understand how a faucet work behind the wall. Combining the market research findings, I go with a retrofitting solution that makes a tyical shower not only better, but afforable.</p>
+        
+		<div class = "loading slide-container">
+		  <section class="slider">
+			<div class="flexslider" slidespeed = "3800">
+			  <ul class="slides">
+				<li>
+				<img src="images/prototype-new-cartridge-mechanism-1.jpg" width="100%">
+				</li>
+				<li>
+				<img src="images/prototype-new-cartridge-mechanism-2.jpg" width="100%">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+        </div>
+    </div><!--research panel end -->
+
+<!--ideation panel------------------------------>
+	
+	<div id = "ideation-panel" class = "panel">
+        
+		<div class = "loading slide-container">
+		  <section class="slider">
+			<div class="flexslider" slidespeed = "3800">
+			  <ul class="slides">
+				<li>
+				<img src="images/ideation-sketches-form-1.jpg" width="100%">
+				</li>
+				<li>
+				<img src="images/ideation-sketches-form-2.jpg" width="100%">
+				</li>
+				<li>
+				<img src="images/ideation-sketches-form-3.jpg" width="100%">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+		</div>		
+		<P>As the design centers around temperature control, the form need to reflect and become the representation of that interface. When imaginging what a faucet fixture could be like, I experiment with different combinations of forms that are enough to prompt the interaction without being too distracting.</P>
+        <div class = "loading slide-container">
+		  <section class="slider">
+			<div class="flexslider" slidespeed = "3800">
+			  <ul class="slides">
+				<li>
+				<img src="images/ideation-hardware%20UI%201.jpg" width="100%">
+				</li>
+				<li>
+				<img src="images/ideation-hardware%20UI%202.jpg" width="100%">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+		</div>
+        <p>While pushing boundries on forms, I draw connections to hand ergonomics and an existing pattern that we are already familiar with turning a nob/handle. As a result, I keep this natual and analogical turning interaction as key mechanism of  controling water temperature. 
+<br><br>
+Since turning, a radial movment, is the interaction method here, I choose a round over retangular display for temperature information, to reflect that symmetrial and circular motion.
+<br><br>
+I also combine the display and the turning ring into the same entity, where display is directly within the ring, to create greater intimacy between you and your water temperature.</p>
+         <div class = "loading slide-container">
+		  <section class="slider">
+			<div class="flexslider" slidespeed = "3800">
+			  <ul class="slides">
+				<li>
+				<img src="images/ideation-hardware-UI-mock-1.jpg" width="100%">
+				</li>
+				<li>
+				<img src="images/ideation-hardware-UI-mock-2.jpg" width="100%">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+		</div>
+        <p>Moving both fast and slowly, I refine and clean up the interface so that it could quickly tell sufficient information while not  overwhelm with complexity. </p>
+        <div id="video-interaction" class="video-demo"></div>
+        
+    </div><!--ideation panel ends-------------------->
+
+
+<!--protytype panel------------------------------>
+	
+	<div id = "prototype-panel" class = "panel">
+		<div id="video-cartridge-mechanism" class="video-demo"></div>
+		<p>To support a static display witin a moveable outer ring, I need to first look closely into the cartridge structure in a mechanical faucet, and devise a new mechanism for this inteaction.</p>
+
+        <p>Testing the feasibilty of a new mechanism with a 3D-printed cartidge prototype, I replicate the water-mixing mechanism that provides higher precision control driven by a motor.</p>
+        
+        <div class = "loading slide-container">
+		  <section class="slider">
+			<div class="flexslider" slidespeed = "3800">
+			  <ul class="slides">
+                  <li><img src="images/prototype-physical-models.jpg"></li>
+				<li>
+				<img src="images/prototype-model-display.jpg" width="100%">
+				</li>
+				<li>
+				<img src="images/prototype-model-turning.jpg" width="100%">
+				</li>
+			  </ul>
+			</div>
+		  </section>
+		</div>
+        <img src="images/prototype-mechanism.jpg" width="100%">
+        
+        <div class="video-demo" id="video-temperature-calibration-mechanism"></div>
+        <p>I also prototype the temperature setting interaction, auto-calibration,and timer, with all intended sensors (rotary encoder and waterproof temperature sensor). 
+Check out the code on <a href="https://github.com/justeenlee/Faucet-Fixture" target="_blank">Github</a>.
+		</p>
+        
+	</div> <!--prototype panel ends --------------------------->
+
+	
+<!--product panel------------------------------>
+	<div id = "product-panel" class = "panel">
+        <div class="highlight">
+            <h3>Harness your smart phone</h3>
+        </div>
+		 <p>A survey I conducted shows that 1/3 of people interact with their phone or have in within close proximity, while they are waiting for hot water. Connecting them with their faucet and phone could benefit them in data viz and suggestions.</p>
+        <div class="band">
+        <img src="images/product-app-how-it-works.png" width="100%">
+            </div>
+        <img src="images/product-app-architecture.png" width="100%">
+        <img src="images/app-wireframe.jpg" width="100%">
+        <p>Transitioning from wireframes to mid-fidelity mockup still requires some additional iterations and tests to create a clear information hierarchy and consistent visual language.</p>
+        <img src="images/app-mockup-process.png" width="100%">
+	</div>
+	
+	
+<!--market panel------------------------------>
+	<div id="market-panel" class="panel">
+        <div class="app-left">
+            <div class="app-left-ui">
+                <img id="calor-app-sync" src= "images/sync-static.png" height="435px">
+            </div>
+            <div class= "app-left-info">
+                <h2>Sync</h2>
+                <h3>Set. Sync. Notify</h3>
+                <h4>A more efficient life style with notification, so you could grab your clothes, brush your teeth or respond an email and go back only when your shower tells you it's ready</h4>
+            </div>
+        </div>
+        <div class="band">
+        <div class="app-right">
+            <div class="app-right-ui">
+            <img id="calor-app-usage" src= "images/usage-static.png" height="435px">
+            </div>
+            <div class= "app-right-info">
+            <h2>Usage</h2>
+            <h3>Up-to-date anytime</h3>
+            <h4>Track your or even your entire family  water usage on a daily, monthly or a yearly basis on your phone in an engaging and delightful way.</h4>
+            </div>
+        </div>
+        </div>
+		<div class="app-left">
+            <div class="app-left-ui">
+                <img id="calor-app-stats" src= "images/stats-static.png" height="435px">
+            </div>
+            <div class= "app-left-info">
+            <h2>Stats</h2>
+            <h3>Useful reference sheet</h3>
+            <h4>Leverage the recommendations and suggestions from professional organizations, and begin your green and active lifestyle.</h4>
+            </div>
+        </div>
+        <div class="band">
+        <div class="app-right">
+            <div class="app-right-ui">
+            <img id="calor-app-profile" src= "images/profile-static.png">
+            </div>
+            <div class= "app-right-info">
+            <h2>Profile</h2>
+            <h3>Check your status</h3>
+            <h4>See how much money and water you have saved and how much you are ahead in your social circle.</h4>
+            </div>
+        </div>
+        </div>
+        <div class="highlight">
+        <h3>Reward system to make every drop count</h3>
+        </div>
+        
+        <div class="group-wrapper">
+            
+            
+        <div class="band">
+		<div class="feature" id="water-bucket">
+			<div class="feature-icon">
+				<img src="images/market-water-bucket.png" >
+			</div>
+			<div class="feature-detail">
+				<h4>Water Bucket</h4>
+				<h5>The water bucket serves as an unobtrusive motivation that educates users to be mindful of water use and guides them to 5-min shower suggested by EPA.</h5>
+			</div>
+             <img src="images/market-water-bucket-calculation.jpg" id="calculation">
+		</div><!--bucket feature ends-->
+        
+        </div>
+
+        <div class="feature" id="badges">
+			<div class="feature-icon">
+				<img src="images/market-feature-badges.png" >
+			</div>
+			<div class="feature-detail">
+				<h4>Level Badges</h4>
+				<h5>Earning a bucket is easy at the beginning and gets more challenging. As you earn more, you will receive rare badges and see how your achievement stands among your friends or neighbourhood/community.</h5>
+			</div>
+		</div><!--badge feature ends-->
+        </div>
+        
+        
+        <div class="quote long-quote">
+            <svg class="quote-mark" width="60px" height="49px" viewBox="0 0 60 49">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-300.000000, -16608.000000)" stroke="#FFC413" fill="#FFC413">
+                        <g transform="translate(300.000000, 16596.930164)">
+                            <path d="M26.7089844,17.1523438 C23.9550644,18.7343829 21.7285241,20.096674 20.0292969,21.2392578 C18.3300696,22.3818417 16.6015713,23.8906156 14.84375,25.765625 C13.2031168,27.5234463 11.9433638,29.369131 11.0644531,31.3027344 C10.1855425,33.2363378 9.57031426,35.7265473 9.21875,38.7734375 L13.4375,38.7734375 C17.0703307,38.7734375 19.9267474,39.6669833 22.0068359,41.4541016 C24.0869245,43.2412199 25.1269531,45.863264 25.1269531,49.3203125 C25.1269531,51.7812623 24.2041108,54.081044 22.3583984,56.2197266 C20.5126861,58.3584091 17.9785317,59.4277344 14.7558594,59.4277344 C9.71677168,59.4277344 6.11329209,57.7724775 3.9453125,54.4619141 C1.77733291,51.1513506 0.693359375,46.8008082 0.693359375,41.4101562 C0.693359375,37.6015435 1.51366367,34.1298985 3.15429688,30.9951172 C4.79493008,27.8603359 6.78709766,25.0625123 9.13085938,22.6015625 C11.5332151,20.0820187 14.0820178,17.9433682 16.7773438,16.1855469 C19.4726697,14.4277256 21.7285065,12.9921931 23.5449219,11.8789062 L26.7089844,17.1523438 Z M59.2285156,17.1523438 C56.4745956,18.7343829 54.2480554,20.096674 52.5488281,21.2392578 C50.8496009,22.3818417 49.1211025,23.8906156 47.3632812,25.765625 C45.664054,27.5820403 44.3896527,29.4423733 43.5400391,31.3466797 C42.6904254,33.2509861 42.0898455,35.7265473 41.7382812,38.7734375 L45.9570312,38.7734375 C49.5898619,38.7734375 52.4462787,39.6669833 54.5263672,41.4541016 C56.6064557,43.2412199 57.6464844,45.863264 57.6464844,49.3203125 C57.6464844,51.7812623 56.723642,54.081044 54.8779297,56.2197266 C53.0322173,58.3584091 50.498063,59.4277344 47.2753906,59.4277344 C42.2363029,59.4277344 38.6328233,57.7724775 36.4648438,54.4619141 C34.2968642,51.1513506 33.2128906,46.8008082 33.2128906,41.4101562 C33.2128906,37.6015435 34.0331949,34.1298985 35.6738281,30.9951172 C37.3144613,27.8603359 39.3066289,25.0625123 41.6503906,22.6015625 C44.0527464,20.0820187 46.601549,17.9433682 49.296875,16.1855469 C51.992201,14.4277256 54.2480378,12.9921931 56.0644531,11.8789062 L59.2285156,17.1523438 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <h3>A system that transforms a typical shower experience into an efficient one that is more personalized, safe and predictable.</h3>
+        </div>
+		<img src="images/market-bathroom.jpg" width="100%">
+		
+	</div>	
+	
+<!--comment panel------------------------------>
+	<div class = "comment">
+		<h6><bold>Date</bold>: 2015</h6>
+		<h6><bold>Client</bold>: Studio Project</h6>
+		<h6><bold>Team</bold>: Individual</h6>
+		<h6><bold>State</bold>: Concept/Prototype</h6>
+        <h6><bold>Next</bold>: Encapsulation<br>
+            Sony Xperia and Samsung Galaxy S4/5 have already shown waterproof electronics, which demonstrates the plausibility of encapsulation for calor.</h6>        
+	</div>
+	
+<!--body ends + footer ------------------------->
+		<footer>
+		<span class="author"></span>
+		<span class="copyright"></span>
+	</footer>
+</body>
+
+
+<script type="text/javascript"> 
+//    for slideshow
+	$(window).load(function(){
+	  $('.flexslider').flexslider({
+		animation: "slide",
+		start: function(slider){
+		  $('div').removeClass('loading');
+		}
+	  });
+	});
+    
+</script>
+    
+    
+
+    
+</html>

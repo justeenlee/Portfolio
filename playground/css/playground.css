@@ -16,6 +16,7 @@ html{
     width: 100%;
 
 }
+/* desktop */
 body{
     position: relative;
     //margin: 0 auto;
@@ -308,6 +309,95 @@ div[data-value = "400"]{
 
 
 
+@media screen and (max-width: 1368px) {
+}
+
+
+
+@media screen and (min-width: 1368px) {
+    
+}
+
+
+/*----------------native tags----------------*/
+
+
+
+
+.inline-highlight{text-decoration: underline}
+
+footer{margin-top:15px; color: #fff;}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+/* for 680px or less */
+@media screen and (max-width: 680px) {
+    /* desktop */
+    body{
+        width: auto;
+        left: 0;
+        margin-left: 0;
+       
+    }
+    
+    #personal-title, #personal-statement{
+        padding: 0 24px;
+        left: 0;
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    
+    #link-home{text-decoration: underline}
+    .li-nav:hover{text-decoration: underline}
+    
+    #strike:after{
+        width: 130px;
+    }
+    
+    #personal-title, #personal-statement{
+     padding: 0 12px;
+    }
+    
+    #personal-title {
+        //width: 320px;
+        font-size: 35px;
+    }
+
+    #personal-statement{
+        //width: 320px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    
+    #morph>img{
+        width: 1000px;
+        height: 800px;
+        margin-left: -500px;
+        background: url("../images/morph-static.jpg") no-repeat;
+        background-size: 1000px 800px;
+        margin-top: 0px;
+    }
+    
+    #morph>video{
+        display: none;
+    }
+
+    
+    div[data-value = "400"]{top: 543px;}
+    div[data-value = "700"]{top: 548px;}
+}
+
+
+
+
+/*----------------animations ----------------*/
+
 
 @keyframes linearSlide1 {
     0% {
@@ -325,20 +415,6 @@ div[data-value = "400"]{
 }
 
 
-@media screen and (max-width: 1368px) {
-}
-
-
-
-@media screen and (min-width: 1368px) {
-    
-}
-
-
-
-
-
-/*----------------animations ----------------*/
 .zoomToInfinite{
     //animation: zoomToInfinite 1s ease-in;
     animation: zoomToInfinite2 3s ease-in;
@@ -419,12 +495,6 @@ div[data-value = "400"]{
     98%{opacity: 0;}
     100%{opacity: 1;}
 }
-
-
-
-
-
-
 
 @keyframes flashOnHover {
     0% {opacity: .1;}
@@ -529,55 +599,4 @@ div[data-value = "400"]{
         opacity: 1;
         transform: translate(-1000px,500px);
     }
-}
-
-
-/*----------------native tags----------------*/
-
-
-
-
-.inline-highlight{text-decoration: underline}
-
-footer{margin-top:15px; color: #fff;}
-
-@media screen and (max-width: 1024px) {
-  
-}
-
-/* for 680px or less */
-@media screen and (max-width: 680px) {
-}
-
-
-@media screen and (max-width: 480px){
-    #personal-title {
-        left: 316px;
-        width: 320px;
-        font-size: 35px;
-    }
-
-    #personal-statement{
-        left: 316px;
-        width: 320px;
-        font-size: 25px;
-        line-height: 30px;
-    }
-    
-    #morph>img{
-        width: 1000px;
-        height: 800px;
-        margin-left: -500px;
-        background: url("../images/morph-static.jpg") no-repeat;
-        background-size: 1000px 800px;
-        margin-top: 0px;
-    }
-    
-    #morph>video{
-        display: none;
-    }
-
-    
-    div[data-value = "400"]{top: 543px;}
-    div[data-value = "700"]{top: 548px;}
 }

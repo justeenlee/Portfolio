@@ -239,9 +239,12 @@ h4+h4>em{
 
 
 @media screen and (max-width: 480px){
+    
     h4+h4{
         margin-top: 10px;
     }
+    
+   
 
 }
 

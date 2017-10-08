@@ -1,33 +1,37 @@
+/*----------------native tags----------------*/
+.inline-highlight{text-decoration: underline}
+
+p>a:hover {text-decoration: none;}
+footer{margin-top: 100px; color: #bbb;}
+
+
+/*-------------------------------*/
 #navBand, html, body {
     background-color: #222;
 }
 
+.keywords, p>a:link, p>a:visited {
+    color: #FF0990;
+    color: #CE4498;
+    color: #FF1A92 ;
+}
 
 /*----------------Title----------------*/
 #title-panel{
     position: relative;
-    height: 520px;
-    //background-color: rgb(230,230,230); /*testing*/
-	overflow: hidden;
-}
-
-
-img.second {
-	width: 900px;
-	height: 540px;
-}
-
-#title-panel{
-	padding-top:60px;/*no cf for smoothness*/
     height: auto;
-/*
-	background: -webkit-linear-gradient(top, #FF0990   3%,  #7B21A4  80%);
-	background: -moz-linear-gradient(top, #FF0990 10%,  #7B21A4 100%);
-	background: linear-gradient(top, #FF0990 10%,  #7B21A4 100%);   
-*/
+	overflow: hidden;
     background-color: #222;
     //background-color: #000;
+}
 
+#summary, h2 {
+    font-size: 40px;
+    font-family: Circular_Air-Bold, sans-serif;
+    letter-spacing: -1px;
+	word-spacing: 0px;
+    line-height: 1.2;
+    color: rgb(240,240,240);
 }
 
 
@@ -46,44 +50,39 @@ img.second {
     height: auto;
 	color: #dfdfdf;
 	overflow: hidden;
+    margin-top: 50px;
 }
 
-
-
 /*=== about me + about this site ===*/
-#me-panel>h2, #site-panel>h2{
-    margin-bottom: 20px;
-	width: 130px;
-	padding: 10px 20px;
-	font-size: 30px;
-    color: #dfdfdf;
-    text-align: center;
-    font-family: DINPro-Medium, sans-serif;
+
+h2 {
+    margin-bottom: 4px;
+    padding-left: 50px; /* half of strike*/
 }
 
 /*=== strikeline through ===*/
-#me-panel>h2:before,
-#site-panel>h2:before {
+h2:after {
     position: absolute;
-    top: 30px;
+    margin-top: 25px;
     left: 0px;
     content: "";
     width: 120px;
     height: 5px;
     background-color: #FF0990;
+    //background-color: #F31884;
 }
 
 /*=== subtitles ===*/
-#site-panel h3, #me-panel h3{
+h3{
 	font-size: 27px;
     font-family: DINPro-Regular, sans-serif;
 }
 
 /*=== body text/content ===*/
-#about-section-wrapper p{
+#about-section-wrapper p:not(#summary){
     width: 680px;
-    font-size: 25px;
-    font-family: DINPro-Light, sans-serif;
+    font-size: 20px;
+    font-family: Dinpro-light, sans-serif;
 	word-spacing: 0px;
     line-height: 1.2;
 	color: #dfdfdf;
@@ -100,22 +99,6 @@ p+h3{
 h3+p{
     margin-top: 10px;
 }
-
-/*----------------site panel----------------*/
-#site-panel{
-    margin-top: 50px;
-	position: relative;
-	margin-bottom: 100px;
-	min-height: 350px;
-    height: auto;
-	overflow: hidden;
-    color: #dfdfdf;
-}
-
-#site-panel>h2{
-	width: 200px;
-}
-
 
 
 /*----------------Comment----------------*/
@@ -136,73 +119,51 @@ span>a:visited {color: rgb(117,117,117);}
 
 
 
-/*----------------Animations----------------*/
-@-webkit-keyframes slideUp {
-    0% {top: 0px;}
-	33.3% {top: 0px;}
-	66.6% {top: -540px;}
-    100% {top: -540px;}
-}
 
 
-/*----------------native tags----------------*/
-
-
-p>a:link, p>a:visited {font-weight: 900; color:#FF0990; opacity: .75;}
-p>a:hover {text-decoration: none;}
-
-.inline-highlight{text-decoration: underline}
-
-footer{margin-top:15px; color: #bbb;}
 
 
 /* for 680px or less */
 @media screen and (max-width: 680px) {
 	/*--responsive all testing--*/
 /* for about.css only*/
-    
-#title-panel{
-    padding: 0; /* full bleed on about page*/
-    left: 50%;
-}
-    
-#me-panel, #site-panel{
-    width: auto;
-    padding: 60px 20px 0px 20px;
-}
 
-p{padding:0;}
-
-#about-section-wrapper{
-    width: auto;
-    margin-left: 0; /*reset >680px*/
-    left: 0; /*reset >680px*/
-}
-    
-/*=== body text/content ===*/
-#about-section-wrapper p{
-    width: auto;
-}
-    
 #link-about{text-decoration: underline}
 .li-nav:hover{text-decoration: underline}
 
+    
+/*
 
+body
+== title-panel
+==== about-section-wrapper
+===== me-pannel
+
+*/
+
+#about-section-wrapper{
+    width: auto;
+    margin-left: 0px;
+    left: 0;
+    padding: 0px 24px;
+}
+
+#about-section-wrapper p:not(#summary){
+    width: auto;
+}
+    
 @media screen and (max-width: 480px){
 	/* for about.css only*/
-	.panel-name{
-		position: relative;
-		left: 50%;
-		margin-left: -81px;
-		width: 162px;
-		padding: 0px 10px;
-	}
-	
-	.panel-name-site{
-		width:240px;
-		margin-left: -120px;
-	}
-	/* for about.css only*/
+    
+    #about-section-wrapper{
+        padding: 0px 12px;
+    }
+    
+    #summary, h2{
+        font-size: 35px;
+    }
 
-	
+	/* for about.css only*/	
 }
+    
+   

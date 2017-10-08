@@ -1,7 +1,7 @@
 
 
 /*<i> for in-text hightlight*/
-.highlight>h3,i, #title-description{color: #FFC413;}
+.highlight>h3,i, #title-description, em, bold{color: #FFC413;}
 p>a:link {color: #FFC413; text-decoration:underline}
 a:visited {color: #FFC413;}
 
@@ -36,6 +36,24 @@ div, div>div{
 }
 /*calor only ends -------*/
 
+/* --- new format comment 
+#title-panel{background-color: #FFFFFF;}
+
+#title-img{
+    margin-top: 0px;
+}
+
+#title-img>img{
+    //margin-left: -600px;
+}
+
+#title-description{
+    margin-top: -250px;
+    margin-left: -530px;
+}
+
+#title-description{color: #FFFFFF;}
+*/
 
 /*----------------intro----------------*/
 
@@ -62,13 +80,63 @@ div, div>div{
 .issue, .issue-icon, .issue-detail>h4, .issue-detail>h5,
 .feature, .feature-icon, .feature-detail>h4, .feature-detail>h5{
 	position:relative;
-    font-size: 25px;
+    //font-size: 25px;
     //float: left;
 	//height: auto;
 }
 
 .feature{padding: 80px 0;}
 
+
+img+.project-problem{
+    margin-top: 50px; /*special case*/
+}
+
+.project-problem{
+    position: relative;
+    width: 900px;
+    left: 50%;
+    margin-left: -450px;
+    min-height: 260px;
+    margin-bottom: 50px;
+    //background-color: yellow;
+}
+
+.problem-unit{
+    position: relative;
+    width: 225px;
+    float: left;
+}
+
+.problem-unit-wrap{
+    width: 94%;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    margin-left: -47%;
+}
+
+.problem-unit-wrap>img{
+    text-align: center;
+}
+.problem-unit-wrap>h4{
+    font-family: DINPRO-Regular, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    min-height: 40px;
+}
+
+.problem-unit-wrap>p{
+    left: 0;
+    margin-left: 0;
+    font-size: 15px;
+    width: inherit;
+}
+.issue-img{
+    position: relative;
+    left: 50%;
+}
 
 /*----------------Ideation----------------*/
 
@@ -80,7 +148,7 @@ div, div>div{
 
 #product-panel>img {
 	margin-bottom: 30px;
-	border-top: 1px solid #ddd;	
+	//border-top: 1px solid #ddd;	
 }
 
 #product-panel>img:first-child, #product-panel>img:last-child{

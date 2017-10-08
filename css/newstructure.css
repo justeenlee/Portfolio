@@ -469,6 +469,14 @@ img+.slide-container{
 	background-color: #fff;
 }
 
+img+.band{
+    margin-top: 50px;
+}
+
+.band+img, img+img{
+    margin-top: 24px;
+}
+
 .band>img{
     position: relative;
     left: 50%;

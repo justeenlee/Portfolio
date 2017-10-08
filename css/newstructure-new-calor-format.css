@@ -1,0 +1,1235 @@
+/*
+1. stay with margin-bottom ONLY, NO margin top
+
+*/
+
+/*reset all---------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+	vertical-align: bottom;
+	padding: 0px;
+	margin: 0px; /*0612 set, could cause issue!!*/
+    font-weight: normal;
+}
+
+/*font setup all----------------------*/
+h1, h2, h3, h4, h5, h6, p, div{
+	font-family: dinpro-light, sans-serif;
+	margin: 0px; /*delete if fix issue1*/
+    /*font-weight: 300; 0830 delete*/
+}
+
+#title-description>h1,
+#title-description>h2,
+#title-description>h3,
+.issue-detail>h5,
+.feature-detail>h5{
+    font-family: dinpro-light, Roboto-light, sans-serif;
+}
+
+.issue-detail>h4,
+.feature-detail>h4{
+    font-family: dinpro-regular, sans-serif;
+}
+
+.highlight>h3{
+    font-family: mohave-italics, sans-serif;
+}
+
+.driving-question>h3, .statement>h3{
+    font-family: dinpro-light, sans-serif;
+    line-height: 1.2;
+    font-size: 26px;
+    color: #555;
+}
+
+.quote>h3{
+    font-family: dinpro-light, serif;
+    line-height: 1.1;
+}
+
+/* --- image/video caption --- */
+img+h5, .video-demo+h5, .slide-container+h5{
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+
+
+bold, .panel em{font-family: dinpro-regular, serif;}
+
+
+
+iframe{position: absolute;}
+
+
+
+html{
+	margin-top: -10px; 
+	min-height: 500px; 
+	height: auto;
+	-webkit-font-smoothing: antialiased;
+	/*the following makes typo regular 18 look same as chrome*/
+	-webkit-font-smoothing: subpixel-antialiased;
+	//-webkit-font-smoothing: none;	
+    background-color: #FbFbFb; /*0901*/
+}
+
+.coming-soon{
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+}
+
+.panel>img{
+    //margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
+
+
+p {
+	position: relative;
+	left: 50%;
+	margin-bottom: 30px;
+	margin-left: -400px; /*0830 -300 to -350*/
+	width: 800px; /*0830 600 to 700*/
+/* 23 match 25pt font in 1000px img in sketch*/
+    font-size: 23px; 
+    color: #555;
+    /*line-height: 1.2; 0830 delete*/
+	/*word-spacing: 1px; 0830 delete*/
+	/*text-align: left; */
+    font-family: Dinpro-regular, sans-serif;
+    color: #555; 
+}
+
+img+p, .band+p{
+    margin-top: 30px;
+}
+
+
+.quoate~p{margin-top: -15px;}
+
+.emphasis{
+    //text-decoration: underline;
+    border-bottom: 4px solid #555;
+}
+
+
+/*---navigation---------------------------------*/
+#navigation{
+    z-index: 9;
+    position: relative;
+/*170813 700 to 1000, potentially delete this 0614*/  
+    width: 900px; 
+    height: 46px; /*0830 60 to 50*/
+	background-color: transparent; /*0830 white to trans*/
+    padding-top: 16px;
+	//overflow: hidden;
+}
+
+
+#navBand{
+    position: absolute;
+    height: 62px;
+    top: 0;
+    padding: 0;
+    opacity: .96;
+    background-color: white;
+}
+
+
+.li-nav{
+    display: inline;
+    margin-left: 72px;
+    padding: 0px;
+	font-size: 14px;
+    letter-spacing: 0px;
+    font-family: Lato-Bold, navigation, sans-serif;  /*1229*/
+    letter-spacing: 1.5px;
+}
+
+.li-nav>a:link {color: #fff; text-decoration:none;}
+/*unvisited link=visited link*/
+.li-nav>a:visited {color: #fff;}
+/*a:hover {color: silver;}*/
+.li-nav>a:active {color: #fff;} /*being clicked*/
+li>a:link, #navBand {transition: .35s ease;}
+
+p>a:link {color: #FFC413; text-decoration:underline}
+a:visited {color: #FFC413;}
+
+#indicator-dot{
+    z-index: 10;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    //border-radius: 5px;
+    top: 48px;
+    transition: .7s ease;
+    //opacity: 0; /*hide when loading 1022*/
+}
+
+header{
+    position: fixed;
+    z-index: 21;
+}
+
+
+.headroom {
+    will-change: transform;
+    -webkit-transition: transform 200ms linear;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+/*---body---------------------------------*/
+body{
+    position: absolute;
+    left: 50%;
+/*170813 700 to 1000*/ 
+    width: 900px; 
+    margin-left: -450px;
+    min-height: 500px;
+	height: auto;
+    font-size: 22px;
+    color: rgb(117,117,117);
+	background-color: lightblue;
+    background-color: #FbFbFb; /*0901*/
+}
+
+/*-------------title------------------------*/
+#title-panel{
+    position: relative;
+    height: 650px;
+    background-color: #fb4489;
+    overflow: hidden;
+    left: 50%;
+}
+
+/*set 1200px and -600px to structure after adding all*/
+
+
+#title-img{
+    position: relative;
+    left: 50%;
+    width: 1200px;
+    margin-left: -600px;
+    height: auto;
+    -webkit-animation: landing 1.2s; 
+    -webkit-animation-timing-function:ease-in-out;
+}
+
+#title-img>img{
+    position: relative;
+    left: 50%;
+}
+
+
+#title-description{	
+    position: relative;
+    height: auto;
+    width: 700px;
+    margin-left: -350px;
+    left: 50%;
+    margin-top: 50px;
+    -webkit-animation: float 2.2s; 
+    -webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+    color: #fff;
+}
+
+#title-description>h1{
+    font-size: 62px;
+    line-height: 1.3;
+}
+#title-description>h2{
+    /*0830 reset*/
+    margin-top: 0; 
+	margin-left: 0;
+    line-height: 1.2;
+    font-size: 38px;
+}
+
+#title-description>h3{
+    font-size: 28px;
+}
+
+
+
+
+
+
+/*----------------intro----------------*/
+.project-overview{
+    font-family: DINPro-Regular, sans-serif;
+    height: 250px;
+    overflow: hidden;
+    left: 50%;
+    position: relative;
+    margin-bottom: 50px;
+}
+.project-note{
+    //position: absolute;
+    position: relative;
+    height: inherit;
+    background-color: #FACE16;
+    min-width: 400px;
+    width: 40%;
+    float: left;
+}
+.project-note-wrap{
+    width: 258px;
+    height: 124px;
+    position: absolute;
+    left: 50%;
+    margin-left: -129px;
+    margin-top: 36px;
+}
+.project-note-wrap>h6{
+    color: #292929;
+    font-size: 14px;
+}
+
+.project-note-wrap>h6>bold{
+    font-family: dinpro-medium, sans-serif;
+}
+
+.project-intro{
+     float: left;
+   //display: none;
+    position: relative;
+    height: inherit;
+    background-color: #282826;
+    background-color: #FACE16;
+    width: 60%;
+    //min-width: 900px;
+    //margin-left: 40%;
+    overflow: hidden;
+}
+
+.project-intro>p{
+    position: absolute;
+    height: 160px;
+    font-size: 20px;
+    color: #fcfcfc;
+    color: #282826;
+    font-family: dinpro-light, sans-serif;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    margin-top: 50px;
+
+}
+
+#intro-panel{
+	position: relative;
+	left: 50%;
+    margin-top: 50px; 
+	margin-left: -350px;
+	margin-bottom: 50px;
+    width: 700px;
+    min-height: 150px;
+}
+
+.recognition {
+    margin-bottom: 50px;
+}
+
+.recognition>p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.recognition a:link{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.recognition img{
+    vertical-align: middle;
+    opacity: 1;
+}
+
+#intro-panel .din{
+    font-size: 23px;
+    font-family: DINPro-Light, sans-serif;
+    line-height: 1.15;
+}
+
+
+/*----------------Promotion----------------*/
+
+/*
+1920 x 1080 = 16:9
+900 x 506
+*/
+#promotion-panel{
+    position: relative;
+    min-height: 508px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.video-demo{
+	position: relative;
+	width: 100%;
+    min-height: 508px;
+	background-color: #000;
+    overflow: hidden;
+}
+
+p+.video-demo, 
+.video-demo+p,
+img+.video-demo {
+    margin-top: 35px;
+}
+
+
+/*----------------Research----------------*/
+#research-panel{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+img+.project-problem{
+    margin-top: 50px; /*special case*/
+}
+
+.project-problem{
+    position: relative;
+    width: 100%;
+    min-height: 260px;
+    margin-bottom: 50px;
+    //background-color: yellow;
+}
+
+.problem-unit{
+    position: relative;
+    width: 225px;
+    float: left;
+}
+
+.problem-unit-wrap{
+    width: 94%;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    margin-left: -47%;
+}
+
+.problem-unit-wrap>img{
+    text-align: center;
+}
+.problem-unit-wrap>h4{
+    font-family: DINPRO-Regular, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    min-height: 40px;
+}
+
+.problem-unit-wrap>p{
+    left: 0;
+    margin-left: 0;
+    font-size: 15px;
+    width: inherit;
+}
+
+.issue-img{
+    position: relative;
+    left: 50%;
+}
+
+
+
+/*move to structure from calor 1005*/
+.issue, .feature{
+    position:relative;
+	padding: 40px 0;
+	height: auto;
+    min-height: 120px; /*200 - 40*2padding*/
+    display: block;
+    width: 700px; 
+    left:50%; 
+    margin-left: -350px;
+}
+
+.issue-icon, .feature-icon{
+    position:relative;
+	width:257px;
+    float: left;
+}
+
+.issue-detail, .feature-detail{
+    position:relative;
+    float: left;
+	margin-top: 10px;
+	width: 440px;;     
+}
+
+.issue-detail>h4, .feature-detail>h4{
+    position:relative;
+	margin: 0px;
+	left: 0px;
+	width: auto;
+	line-height: 1;
+    color: #595959;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.issue-detail>h5, .feature-detail>h5{
+    position:relative;
+	padding-top: 6px;
+    line-height: 1.1;
+    font-size: 20px;
+}
+
+.statement>h3{
+    margin-left: -324px;
+    width: 644px;
+    text-align: center;
+}
+/*----------------Ideation----------------*/
+#ideation-panel>img {
+	//box-shadow: 0 0 7px 0px grey;
+}
+
+/*what is this? 121316*/
+/*
+img+.slide-container{
+    margin-top: 60px
+}
+*/
+
+/*----------------prototype----------------*/
+#prototype-panel {
+	position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/*----------------Product----------------*/
+#product-panel {
+	position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#product-panel>img {
+	margin-bottom: 30px;
+}
+
+
+/* ======== master style for list of projects ======= */
+.product-title{
+    margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.product-title>h1, .product-title>h2{
+	//font-family: "TyponineSansRegular", sans-serif;
+    font-family: DINPro-Light, sans-serif;
+	text-align: center;
+}
+
+.product-title>h1{
+    font-family: DINPro-Regular, sans-serif;
+	font-size: 44px;
+	color: #444;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.product-title>h2{
+	line-height: 1;
+	font-size: 26px;
+}
+
+.product-wrapper>h3{
+	font-family: "TyponineSansRegular", sans-serif;
+}
+
+.product-wrapper p{
+    font-size: 23px;
+    font-family: DINPro-Light, sans-serif;
+    line-height: 1.15;
+}
+
+.product-wrapper img{
+    margin-bottom: 30px;
+}
+
+.product-wrapper img+h5{
+    margin-top: -30px;
+}
+
+
+
+/* ======================================= */
+
+
+.band {
+    position: relative;
+    left: 50%;
+    padding: 20px 0;
+	background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.band>img{
+    position: relative;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    padding: 20px 0;
+}
+
+.market-panel-process{
+    margin: 70px 0;
+}
+
+/* == UI Showcase ============= */
+
+.app-left, .app-right{
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
+    margin-bottom: 20px;
+    width: 700px;
+    height: 435px;
+    overflow: hidden;
+}
+
+
+.app-left-ui, 
+.app-left-info, 
+.app-right-ui, 
+.app-right-info{
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+/*override the one in calor*/
+.app-left-ui, .app-right-ui {
+    position: relative;  
+    margin-top: 12px;
+}
+.app-left-ui{margin-left: 70px;}
+/*reposition app-right content*/
+.app-right>*{position: absolute;}
+.app-right-ui{left: 450px;}
+
+.app-left-info>*, .app-right-info>*{
+    width: 350px;
+}
+
+.app-left-ui>img, .app-right-ui>img{
+    width: 230px;
+}
+
+/*info can be pushed to next line due to app width*/
+.app-left-info, .app-right-info{
+    margin-left: 50px;
+    padding-top: 100px;
+}
+
+.app-left-info>h2, .app-right-info>h2{
+    font-size: 48px;
+    font-family: dinpro-light, sans-serif;
+    letter-spacing: -2px;
+}
+.app-left-info>h3, .app-right-info>h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: dinpro-light, sans-serif;
+}
+
+.app-left-info>h4, .app-right-info>h4{
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: dinpro-light, sans-serif;
+}
+
+
+/*----------------Comment----------------*/
+h6>a:link {color: #00aeef; text-decoration:none;}
+h6>a:visited {color: #00aeef;}
+h6>a:hover {color: silver;}
+
+.product-wrapper .comment{
+    margin-top: 35px;
+}
+
+/*
+.comment>h6{
+    width: 500px; 
+    height: auto; 
+    font-family: "TyponineSansRegular", sans-serif;
+}
+*/
+
+
+/*Footer-------------------------*/
+
+
+/*change to relative on 0809*/
+footer{
+	position: relative; 
+	margin-top: 100px;
+	width: 100%;
+	height: 20px;
+	font-family: "MYRIADPRO-REGULAR", sans-serif;
+	font-size: 10pt; 
+	overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.author{
+	display: inline;
+	float:left;
+}
+
+.copyright{
+	float: right;
+	display: inline;
+}
+
+.author:after{
+    content: "Designed and Handcrafted by Justeen Lee";
+}
+
+.copyright:after{
+    content: "© 2017 Justeen Lee | Craft Delightful Experience";
+}
+
+/*feature-type--------------*/
+.shadow{
+	/*box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;*/
+	box-shadow: 0px 0px 10px 0px grey ;
+}
+
+/*shoud use jquery remove class*/
+.shadow-off,
+#ideation-panel>.shadow-off
+{box-shadow: 0px;}
+
+.panel{margin-bottom: 50px;}
+
+.short-caption{text-align: center;}
+
+.slide-container{margin-top: 10px;}
+
+.driving-question, .statement, .highlight{
+    position: relative;
+    left: 50%;
+    margin: 80px 0 80px -350px;
+    width: 700px;
+}
+
+.driving-question>h3, .statement>h3{
+    position: relative;
+    left: 50%;
+    margin-left: -252px;
+    width: 505px;
+}
+
+
+.highlight>h3{
+	position: relative;
+    left: 50%;
+	margin-left: -211px;
+	width: 422px;
+	text-transform: uppercase;
+	text-align: center;	
+	font-size: 40px;
+	text-align: center;	
+}
+
+.animation-abstract{
+	position:relative;
+	left: 50%;
+	margin-left: -300px;
+	width:600px;
+	height: 400px;
+}
+
+.quote{
+	position: relative;
+	margin: 80px 0;
+	height: auto;	
+    float: none;
+    width: 700px;
+    left: 50%;
+    margin-left: -350px;
+}
+
+.quote>h3{
+    position: relative;
+    left: 50%;
+	margin-left: -250px;
+	width: 500px;
+    font-style: italic;
+	font-size: 30px;
+    color: #555;
+}
+
+.quote>h4{
+    position:relative;
+    font-family: Roboto-Light, sans-serif;
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: right;
+}
+
+.long-quote{
+    position: relative;
+}
+
+.long-quote>h3{
+	width: 530px;
+    margin-left: -250px;
+}
+
+.quote-mark, .question-mark, .statement-mark, .exclamation-mark{
+    position: absolute;
+    margin-left: -25px;
+}
+
+.statement-mark{margin: -20px 0 0 -10px;}
+.exclamation-mark{margin: 25px 0 0 -10px;}
+
+
+/*----------Media Query starts--------------*/
+/* for 680px or less */
+@media screen and (max-width: 680px) {
+/*	#navigation{width:100%;}*/
+
+/*    added for headroom*/
+    #header {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+    }
+    
+    #navigation{
+        width: 450px;
+        margin-left: -225px;
+        left: 50%;
+    }
+    
+
+	#navigation .li-nav{
+		display: inline;
+		margin-left: 18px;
+		padding: 0px;
+	}
+    
+/*
+    #navigation, #cf{
+        //width: 100%;
+    }
+*/
+    
+
+    #indicator-dot{
+        opacity: 0;
+    }
+	
+	body{
+		width: 100%; /*for slider, title-panel, band to work*/
+		left: 0; /*reset >680px*/
+		margin-left: 0; /*reset >680px*/
+        padding: 0;
+	}
+    
+    #title-panel{height: 700px;}
+
+    #title-description, 
+    #title-img-product, 
+    #title-description>h2{
+		position: relative;
+		width: auto;
+		height: auto;
+        left: 0%; /*reset >680px*/
+		margin-left: 0; /*reset >680px*/
+	}
+	
+    
+	#title-description{
+        padding: 0 12px;
+    }
+    
+/*add padding to all text, images*/   
+	#intro-panel, 
+    #promotion-panel,
+	#problem-panel,
+	#research-panel,
+	#ideation-panel,
+	#prototype-panel,
+    #product-panel,
+    #market-panel,
+    .quote,
+    .quote>h3,
+    .long-quote>h3,
+    .driving-question>h3
+    .statement>h3,
+    .comment
+    {
+        padding: 0 12px;
+    }
+    
+    .band>img,
+    .market-panel-process>img,
+    .feature>img,
+    #prototype-panel>img{
+        width: 100%; /* 100% for img?*/
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
+    }
+    
+    .quote-mark, 
+    .question-mark, 
+    .statement-mark, 
+    .exclamation-mark{
+		margin-left: 0px; /*reset >680px*/
+    }
+    
+    .exclamation-mark{
+        left: 0%; /*reset >680px*/
+    }
+    
+	#intro-panel, 
+    #promotion-panel,
+	#problem-panel,
+	#research-panel,
+	#ideation-panel,
+	#prototype-panel,
+	#prototype-panel>div,
+	#product-panel,
+	#product-panel>div,
+	#resume-panel,
+	#work-panel,
+	.comment,
+    p,
+    .quote,
+    .quote>h3,
+    .long-quote>h3,
+    .statement,
+    .statement>h3,
+    .driving-question,
+    .driving-question>h3,
+    .highlight,
+    .highlight>h3
+	{
+		width:auto;/*0121 for padding*/
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
+	}
+    
+    /*reset attr after above*/
+    #product-panel.panel>.band{
+        left: 50%;
+    }
+	
+	
+    .issue,
+    .issue-icon,
+    .issue-icon>img,
+    .issue-detail,
+    .issue-detail>h4,
+    .issue-detail>h5,
+    .feature-detail,
+    .feature-detail>h4,
+    .feature-detail>h5
+    {
+        width: auto;
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
+        text-align: center;
+    }
+    
+    .issue{min-height: 220px;}
+
+    .issue-icon{
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    
+    /*=== UI showcase ===*/
+    .app-left, .app-right{
+        margin-bottom: 100px;
+        height: 700px;
+    }
+    
+    .app-right>*{position:relative;}
+    
+    .app-left,
+    .app-left-ui, 
+    .app-left-info, 
+    .app-left-info>h2,
+    .app-left-info>h3,
+    .app-left-info>h4,
+    .app-left-info>h5,
+    .app-right,
+    .app-right-ui, 
+    .app-right-info,
+    .app-right-info>h2,
+    .app-right-info>h3,
+    .app-right-info>h4,
+    .app-right-info>h5{
+        width: auto;
+        left: 0;
+		margin-left: 0;
+        padding: 0;
+        overflow: visible;
+        text-align: center;
+    }
+    .app-left+.band{
+        height: 800px;
+        padding: 0;
+    }
+    
+    .feature-icon,
+    .app-left-ui, 
+    .app-right-ui{
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    
+    .feature-detail,
+    .app-left-info,
+    .app-right-info{
+        padding: 0 12px;
+    }
+    .app-right-info, 
+    .app-left-info{margin-top: 24px;}
+    /*=== UI showcase ends ===*/
+
+    img.coming-soon{
+        left: 0%;
+        margin-left: 0px;
+        //width: 150px;
+    }
+    
+	footer{
+		width:auto;
+		left: 0;
+		margin: 0;
+		margin-top: 100px;
+		height: auto;
+		max-height: 50px;
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+	}	
+
+	.author, .copyright{
+		float: none;
+		text-align: center;
+		display: block;
+		line-height: 1.5;
+	}
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+    .comment>h6{width: 320px;}
+    
+/*    added for headroom*/
+    #header {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+        height: 80px;
+    }
+    
+    #navigation{
+        width: 320px;
+        margin-left: -160px;
+        left: 50%;
+    }
+    
+    #navBand{
+        height: 80px;
+    }
+    
+	#navigation .li-nav{margin:0px;}
+	
+	#link-home{margin-left:60px;}
+	
+	#link-projects, #link-about{margin-left:10px;}
+	
+	#link-resume{margin-left:103px;}
+	
+	#link-resume, #link-about{line-height:2;}
+
+	footer{
+		//padding-left: 12px;
+		margin-bottom: 20px;
+	}
+}
+/*--------------Media Query ends-----------------*/
+
+
+@media print {
+    
+}
+
+
+
+
+/*--------------animation------------------*/
+@-webkit-keyframes landing {
+    0% {opacity: 0; -webkit-transform:translate(0px, -20px)}
+    100% {opacity: 1; -webkit-transform:translate(0px, 0px)}
+}
+
+
+
+@-webkit-keyframes float {
+0%{
+    opacity: 0;
+    -webkit-transform:translate(20px, 0px);
+}
+40%{
+    opacity: 0;
+    -webkit-transform:translate(20px, 0px);
+}
+100%{
+    opacity: 1;
+    -webkit-transform:translate(0px, 0px);
+}
+}
+
+
+/*---------font setup ----------------------------------*/
+@font-face {
+    font-family: DINPro-Light;
+    src: url('../assets/fontbook/DINPro-Light.otf');
+}
+@font-face {
+    font-family: DINPro-Regular;
+    src: url('../assets/fontbook/DINPro-Regular.otf');
+}
+@font-face {
+    font-family: DINPro-Medium;
+    src: url('../assets/fontbook/DINPro-Medium.otf');
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url('../assets/fontbook/Lato-Black.ttf');
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url('../assets/fontbook/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: Circular_Air-Bold;
+    src: url('../assets/fontbook/Circular_Air-Bold.ttf');
+}
+
+@font-face {
+	font-family: futura;	
+	src:url('../assets/fontbook/futura.otf');
+}
+
+@font-face {
+	font-family: navigation;	
+	src:url('../assets/fontbook/Geomanist-Regular.otf');
+}
+
+@font-face {
+	font-family: mohave-italics;	
+	src:url('../assets/fontbook/Mohave Italics.otf');
+}
+
+@font-face {
+	font-family: Roboto-Black;
+	src:url('../assets/fontbook/Roboto-Black.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Bold;
+	src:url('../assets/fontbook/Roboto-Bold.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src:url('../assets/fontbook/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Regular;
+	src:url('../assets/fontbook/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url(../assets/fontbook/baskvl.ttf);
+}
+
+@font-face {
+	font-family: "TyponineSansRegular";
+	src: url("../assets/fontbook/TyponineSansRegular.eot");
+	src: url("../assets/fontbook/TyponineSansRegular.eot?#iefix") format("embedded-opentype"), 
+		url("../assets/fontbook/TyponineSansRegular.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "TyponineSansText";
+	src: url("../assets/fontbook/TyponineSansText.eot");
+	src: url("../assets/fontbook/TyponineSansText.eot?#iefix") format("embedded-opentype"), 
+		url("../assets/fontbook/TyponineSansText.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+
+@font-face {
+    font-family: MYRIADPRO-REGULAR;
+    src: url('../assets/fontbook/MYRIADPRO-REGULAR.OTF');
+}
+
+@font-face {
+    font-family: MYRIADPRO-SEMIBOLD;
+    src: url('../assets/fontbook/MYRIADPRO-SEMIBOLD.OTF');
+}
+
+@font-face {
+    font-family: MYRIADPRO-BOLD;
+    src: url('../assets/fontbook/MYRIADPRO-BOLD.OTF');
+}
+
+@font-face {
+    font-family: issue-title;
+    src: url('../assets/fontbook/FrutigerLTStd-Bold.otf');
+}
+
+
+

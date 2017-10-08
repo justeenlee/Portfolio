@@ -98,7 +98,7 @@ footer{
     width: 250px;
     left: 50%;
     margin-left: -125px;
-    //background-color: #2E2E2E;
+    background-color: #FE4C7E;
     background-image: url(../../tv/images/web-topograhy.gif);
     background-size: 266px 200px;
     background-position: -8px 0px;
@@ -258,9 +258,15 @@ h3{
         margin-left: 0;
         width: 100%;
     }
+    
+    #product-panel{
+        padding: 0 12px;
+        height: auto;
+    }
+    
         	
-	.square{
-		height: 330px;
+	.square{ /* all are squares on 171007*/
+		height: 350px;
 	}
     
     .wide {
@@ -273,7 +279,7 @@ h3{
     
     .square-img{
         width: 100%;
-        height: 280px;
+        height: 300px;
     }
     
     .wide-img{
@@ -282,7 +288,7 @@ h3{
     }
     .wide .caption{width: 100%;}
 
-    
+
     
     .tall{height: 714px;}
     .tall-img{
@@ -292,19 +298,27 @@ h3{
     
     
     
-    .caption{width: 100%;}
+    .caption{
+        margin-bottom: 0px;
+        width: 100%;
+    }
     
     
     
+    #product-panel square-img #tv-bg{
+        background-color: beige;
+        width: 100%;
+        height: 300px;
+    }
     
     
-    [href="../tv"]>.square-img{
+    /* mobile version */
+    [href="../tv/tv.html"]>.square-img{
         width: 100%;
         left: 0;
         margin-left: 0;
-        background-color: #2E2E2E;
-        background-image: url(../../motion/images/spinning-craker-no-glow@400.gif);
-        background-size: 100% 280px;
+        background-size: 100% auto;
+
     }
 		
 	.square a>h2, .wide a>h2, .tall a>h2{

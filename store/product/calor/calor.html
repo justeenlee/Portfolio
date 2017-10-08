@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Store | Product | Calor</title>
+    <meta name="description" content="Store: product-calor">
+	<meta name="keywords" content="calor, yellow, smart, temperature sensor, faucet fixture, cartridge, interaction design, user experience, UX, IX, product design, industrial, design, justeen, san francisco, new york, hong kong" />
+	<link rel="shortcut icon" href="../assets/favicon.ico"/>
+	<link rel="stylesheet" href="../../../css/newstructure.css">
+	<link rel="stylesheet" href="product-calor.css">
+
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58728717-1', 'auto');
+  ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+    <section id="e-commerce">
+    <div id="product-img-panel">
+    <div id="product-img-panel-wrap">
+        <div class="img-selected">
+            
+        </div>
+        <div id="gallery">
+        <button type="button" class="img-button" autofocus = "yes">
+            Click Me!</button>
+        <button type="button" class="img-button">
+            Click Me!</button>
+        <button type="button" class="img-button">
+            Click Me!</button>
+
+            
+        </div>
+    </div>    
+    </div>
+    <div id="product-description-panel">
+<!--        <h1>Calor Smart Shower Faucet</h1>-->
+        <h1>this product</h1>
+        <h2>$ Unavaliable</h2>
+        <h3>QTY
+        <input type="number" id="quantity-label" value="1">
+         <button type="button" class="qty-button" onclick="decreaseQty()">
+            -</button>
+        <button type="button" class="qty-button" onclick="increaseQty()">
+            +</button>
+        
+        </h3>
+        <form>
+        <textarea name="paragraph_text" cols="50" rows="10" id="comment-field" placeholder="e.g., What you do think? 
+Like it? don’t like it? Why? 
+Wish you have it? Want to bring one home? 
+Any comments?"></textarea>
+        <input type="submit" value="Submit" id="submit-buttton">
+        </form>
+    </div>         
+ 
+    
+    
+    </section>
+
+
+</body>    
+
+<script>
+    function increaseQty(){
+        var quantityLabel = document.getElementById("quantity-label");
+        if (quantityLabel.value < 10) {
+            quantityLabel.value++;
+        } else {
+            this.disable;
+        }
+    }
+    function decreaseQty(){
+        var quantityLabel = document.getElementById("quantity-label");
+        if (quantityLabel.value > 1) {
+            quantityLabel.value--;
+        } else {
+            this.disable;
+        }
+    }
+</script>
+    
+    
+</html>

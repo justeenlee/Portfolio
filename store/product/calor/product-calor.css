@@ -1,0 +1,241 @@
+
+
+/*<i> for in-text hightlight*/
+.highlight>h3,i, #title-description{color: #FFC413;}
+p>a:link {color: #FFC413; text-decoration:underline}
+a:visited {color: #FFC413;}
+
+#navBand {
+    background-color: #212121;
+}
+/*once pass rendering, change color*/
+
+
+#e-commerce{
+    width: 100%;
+    min-height: 500px;
+    //background-color: yellow;
+    font-family: dinpro-regular,sans-serif;
+}
+
+#product-img-panel{
+    width: 60%;
+    min-height: 500px;
+    background-color: grey;
+    float: left;
+}
+
+#product-img-panel-wrap{
+    width: 350px;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    margin-left: -175px;
+}
+
+.img-selected{
+    background-color: red;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+}
+
+#gallery{
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.img-button{
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+button, input{
+    font-family: dinpro-regular,sans-serif;
+}
+
+#product-description-panel{
+    width: 40%;
+    min-height: 500px;
+    //background-color: blue;
+    float: left;
+}
+#product-description-panel>h1, 
+#product-description-panel>h2, 
+#product-description-panel>h3{
+    font-weight: 100;
+    width: 400px;
+    line-height: 1;
+
+}
+
+
+#product-description-panel>h1{
+    font-size: 40px;
+}
+
+#product-description-panel>h2{
+    font-size: 30px;
+    color: #aaa;
+}
+
+#product-description-panel>h3{
+    font-family: dinpro-medium;
+    font-size: 20px;
+    color: #454545 ;
+}
+
+#product-description-panel>h3>#quantity-label{
+    font-family: dinpro-light;
+    //padding-left: 30px;
+    //border: 1px solid #aaa;
+    text-align: center;
+    line-height: 1;
+}
+
+
+
+#comment-field{
+    width: 400px;
+    height: 200px;
+    font-size: 18px;
+    padding: 10px;
+    
+}
+
+#submit-buttton{
+    width: 130px;
+    height: 60px;
+}
+
+.qty-button{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #B4B4B4;
+    font-family: dinpro-regular,sans-serif;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #B4B4B4;
+    font-family: dinpro-regular,sans-serif;
+
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #B4B4B4;
+    font-family: dinpro-regular,sans-serif;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #B4B4B4;
+    font-family: dinpro-regular,sans-serif;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #B4B4B4;
+    font-family: dinpro-regular,sans-serif;    
+}
+
+/* for 680px or less */
+@media screen and (max-width: 680px){
+
+/*    #link-projects{text-decoration: underline;}*/
+    
+	/*calor only?*/
+	#prototype-panel>#market-cartridge-mechanism, 
+    #prototype-panel>#video-set-temp{
+		left: 0;
+		margin-left: 0;
+        padding: 0; //0621
+		width: 100%;
+        height: 150px;
+	}
+	
+	.issue, .issue-detail{
+		width: auto;
+	}
+    
+    .app-left, .app-right{
+        margin-bottom: 100px;
+        height: 700px;
+    }
+
+    
+    .app-right>*{position:relative;}
+    
+    .app-left,
+    .app-left-ui, 
+    .app-left-info, 
+    .app-left-info>h2,
+    .app-left-info>h3,
+    .app-left-info>h4,
+    .app-left-info>h5,
+    .app-right,
+    .app-right-ui, 
+    .app-right-info,
+    .app-right-info>h2,
+    .app-right-info>h3,
+    .app-right-info>h4,
+    .app-right-info>h5,
+    .feature,
+    .feature-icon,
+    .feature-detail{
+        //max-width: 680px;
+        width: auto;
+        left: 0%; /*reset >680px*/
+		margin-left: 0px; /*reset >680px*/
+        padding: 0;
+        overflow: visible;
+        text-align: center;
+    }
+    
+    
+    .band>.feature{height: 500px;}
+    .band+.feature{height: 400px; margin-top: 24px;}
+    
+    .app-left+.band{
+        height: 800px;
+        padding: 0;
+    }
+    
+
+    /*center app, feature img*/
+    .feature-icon, 
+    .app-left-ui, 
+    .app-right-ui{
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    
+    .feature-detail,
+    .app-left-info,
+    .app-right-info{
+        padding: 0 12px;}
+    .app-right-info, .app-left-info{margin-top: 24px;}
+
+}
+
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+    #title-panel{height: 750px;}
+
+    /*calor only begins------*/
+    #title-img{
+        margin-left: -630px;
+    }
+    #title-description{
+        margin-top: -210px;
+    }
+    /*calor only ends------*/
+    
+    
+    .app-left, .app-right{
+        height: 730px;
+    }
+    
+}

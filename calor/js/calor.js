@@ -1,4 +1,7 @@
-$(window).bind("load",function() {setTimeout(addVideo, 1400);});
+$(window).bind("load",function() {
+    setTimeout(addVideo, 1400);
+    centerIssueImg();
+});
 
 $(window).scroll(function (){
     gifCheck();
@@ -10,7 +13,7 @@ function addVideo(){
 	document.getElementById('video-cartridge-mechanism').innerHTML= '<iframe src="http://player.vimeo.com/video/123803268?byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 //	document.getElementById('video-set-temp').innerHTML= '<iframe src="http://player.vimeo.com/video/123803900?byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
     document.getElementById('video-interaction').innerHTML= '<iframe src="http://player.vimeo.com/video/145598752?autoplay=1&loop=1&byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
-    document.getElementById('video-mechanism').innerHTML= '<iframe src="http://player.vimeo.com/video/161575406?byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+    document.getElementById('video-temperature-calibration-mechanism').innerHTML= '<iframe src="http://player.vimeo.com/video/161575406?byline=0&amp;portrait=0&amp;color=deae62&amp;rel=0;" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 };
 
 var gifDisplayArray = [false, false, false, false];
@@ -90,27 +93,13 @@ function gifCheck(){
     }
 }
 
-
-
-//should go to overall.js
-//var navLinkArray = ["link-home", "link-projects", "link-resume", "link-about"];
-//
-//function navCheck(){
-//    var currentViewTopEdgePosition = $(window).scrollTop();
-//    if (currentViewTopEdgePosition > 625){
-//        for (var i=0; i<navLinkArray.length; i++){
-//            var linkName = "#"+navLinkArray[i];
-//            $(linkName).css("color", "#555");
-//        }
-//        $("#indicator-dot").css("backgroundColor", "#555");
-//        $("#cf").css("opacity", ".7");
-//    } else {
-//         for (var i=0; i<navLinkArray.length; i++){
-//            var linkName = "#"+navLinkArray[i];
-//            $(linkName).css("color", "#fff");
-//        }
-//        $("#indicator-dot").css("backgroundColor", "#fff");
-//        $("#cf").css("opacity", ".1");
-//    }
-//
-//}
+function centerIssueImg() {
+    var issueImgArray = $(".issue-img");
+    console.log(issueImgArray);
+    for (var i = 0; i < issueImgArray.length; i++) {
+        var newMarginLeft = issueImgArray[i].clientWidth / (-2);
+        console.log(newMarginLeft);
+        issueImgArray[i].style.marginLeft = newMarginLeft +"px";
+            //$("#title-panel").css("margin-left", newMarginLeft);
+    }
+}

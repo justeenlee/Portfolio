@@ -58,11 +58,11 @@ $(window).scroll(function (){
 });
 
 $(window).resize(function(){
-    setFullWidth();
+    
     if (window.innerWidth>679){
         $("#indicator-dot").css("opacity", 1);
         move("currentPath");
-        
+        setFullWidth();
     } else{
         $("#indicator-dot").css("opacity", 0);
     }
@@ -79,6 +79,8 @@ function setFullWidth(){
     $(".band").width(newWidth);
     $(".band").css("margin-left", newMarginLeft);
     //$(".band").css("left", "50%");
+    $(".project-overview").width(newWidth);
+    $(".project-overview").css("margin-left", newMarginLeft);
 }
     
 
@@ -126,7 +128,6 @@ function setNavLinkColor(){
 //    } else if (currentPath == "resume") {
 //        $("#navBand").css("backgroundColor", "yellow");
 //    }
-    
 }
 
 //also set navLinkColorAtTop with this function
