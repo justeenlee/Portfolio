@@ -81,6 +81,10 @@ iframe{
     margin-top: 50px;
 }
 
+.video-frame>img:first-child{
+    margin-top: 24px;
+}
+
 /*----------------gif container----------------*/
 .gif-container, .gif-object{
 	position: relative;
