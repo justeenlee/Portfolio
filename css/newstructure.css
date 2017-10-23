@@ -43,11 +43,11 @@ h1, h2, h3, h4, h5, h6, p, div{
 }
 
 /* --- image/video caption --- */
-img+h5, .video-demo+h5, .slide-container+h5{
+img+h5, .video-demo+h5, .slide-container+h5, iframe+h5{
     font-style: italic;
     font-size: 14px;
     margin-top: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 
